@@ -1,9 +1,9 @@
 {
-  "last_poll": "2026-10-12T08:43:14.060981+00:00",
+  "last_poll": "2026-10-12T08:45:21.594828+00:00",
   "interval_hours": 12,
   "history_window_days": 30,
   "sources_configured": 76,
-  "sources_successful": 76,
+  "sources_successful": 75,
   "source_health": [
     {
       "source": "ABC Asia Pacific",
@@ -58,14 +58,14 @@
       "source": "Archive China Copper recent",
       "region": "China",
       "ok": true,
-      "count": 13,
+      "count": 0,
       "error": null
     },
     {
       "source": "Archive Global Brent older",
       "region": "Global",
       "ok": true,
-      "count": 52,
+      "count": 0,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "source": "Archive Global Uranium recent",
       "region": "Global",
       "ok": true,
-      "count": 57,
+      "count": 0,
       "error": null
     },
     {
@@ -100,7 +100,7 @@
       "source": "Archive Hormuz Oil recent",
       "region": "MENA",
       "ok": true,
-      "count": 100,
+      "count": 0,
       "error": null
     },
     {
@@ -114,7 +114,7 @@
       "source": "Archive Kazakhstan ASEAN recent",
       "region": "ASEAN",
       "ok": true,
-      "count": 46,
+      "count": 0,
       "error": null
     },
     {
@@ -128,7 +128,7 @@
       "source": "Archive Kazakhstan Africa recent",
       "region": "Africa",
       "ok": true,
-      "count": 39,
+      "count": 0,
       "error": null
     },
     {
@@ -142,7 +142,7 @@
       "source": "Archive Kazakhstan Caspian recent",
       "region": "Central Asia",
       "ok": true,
-      "count": 100,
+      "count": 0,
       "error": null
     },
     {
@@ -156,7 +156,7 @@
       "source": "Archive Kazakhstan Central Asia recent",
       "region": "Central Asia",
       "ok": true,
-      "count": 57,
+      "count": 0,
       "error": null
     },
     {
@@ -177,14 +177,14 @@
       "source": "Archive Kazakhstan EU older",
       "region": "Europe/UK",
       "ok": true,
-      "count": 44,
+      "count": 0,
       "error": null
     },
     {
       "source": "Archive Kazakhstan EU recent",
       "region": "Europe/UK",
       "ok": true,
-      "count": 52,
+      "count": 50,
       "error": null
     },
     {
@@ -205,28 +205,28 @@
       "source": "Archive Kazakhstan India older",
       "region": "India",
       "ok": true,
-      "count": 59,
+      "count": 0,
       "error": null
     },
     {
       "source": "Archive Kazakhstan India recent",
       "region": "India",
       "ok": true,
-      "count": 39,
+      "count": 0,
       "error": null
     },
     {
       "source": "Archive Kazakhstan Internet older",
       "region": "Central Asia",
       "ok": true,
-      "count": 43,
+      "count": 45,
       "error": null
     },
     {
       "source": "Archive Kazakhstan Internet recent",
       "region": "Central Asia",
       "ok": true,
-      "count": 59,
+      "count": 57,
       "error": null
     },
     {
@@ -247,7 +247,7 @@
       "source": "Archive Kazakhstan MENA older",
       "region": "MENA",
       "ok": true,
-      "count": 40,
+      "count": 0,
       "error": null
     },
     {
@@ -268,7 +268,7 @@
       "source": "Archive Kazakhstan Migration recent",
       "region": "Central Asia",
       "ok": true,
-      "count": 41,
+      "count": 42,
       "error": null
     },
     {
@@ -282,7 +282,7 @@
       "source": "Archive Kazakhstan Mining recent",
       "region": "Kazakhstan",
       "ok": true,
-      "count": 56,
+      "count": 55,
       "error": null
     },
     {
@@ -296,14 +296,14 @@
       "source": "Archive Kazakhstan Oil recent",
       "region": "Kazakhstan",
       "ok": true,
-      "count": 56,
+      "count": 0,
       "error": null
     },
     {
       "source": "Archive Kazakhstan Russia older",
       "region": "Russia/Eurasia",
       "ok": true,
-      "count": 47,
+      "count": 0,
       "error": null
     },
     {
@@ -323,15 +323,15 @@
     {
       "source": "Archive Kazakhstan US recent",
       "region": "US",
-      "ok": true,
-      "count": 45,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source": "Archive Oil Market OPEC older",
       "region": "Global",
       "ok": true,
-      "count": 42,
+      "count": 44,
       "error": null
     },
     {
@@ -345,7 +345,7 @@
       "source": "Archive Red Sea Supply older",
       "region": "MENA",
       "ok": true,
-      "count": 49,
+      "count": 0,
       "error": null
     },
     {
@@ -366,7 +366,7 @@
       "source": "Archive Russia Oil Transit recent",
       "region": "Russia/Eurasia",
       "ok": true,
-      "count": 63,
+      "count": 62,
       "error": null
     },
     {
@@ -485,7 +485,7 @@
       "source": "Google News ASEAN",
       "region": "ASEAN",
       "ok": true,
-      "count": 100,
+      "count": 0,
       "error": null
     },
     {
@@ -499,7 +499,7 @@
       "source": "Google News Central Asia",
       "region": "Central Asia",
       "ok": true,
-      "count": 100,
+      "count": 0,
       "error": null
     },
     {
@@ -527,7 +527,7 @@
       "source": "Google News MENA",
       "region": "MENA",
       "ok": true,
-      "count": 74,
+      "count": 73,
       "error": null
     },
     {
@@ -538,7 +538,7 @@
       "error": null
     }
   ],
-  "candidate_count": 437,
-  "new_candidates": 11,
+  "candidate_count": 436,
+  "new_candidates": 0,
   "error": null
 }
