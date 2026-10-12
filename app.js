@@ -48,6 +48,7 @@
     };
     if(event.url)add(event.source||"Article / event reporting",event.url,"News or official reporting; inspect original");
     const report=memory.reports[event.id];
+    for(let s of event.related_sources||[])add(s.publisher_guess||s.source||s.title,s.url,"Article reporting this development; syndication is possible");
     for(let s of report?.independent_reporting_leads||[])add(s.publisher||s.title,s.url,"Similar reporting lead; may be syndicated");
     for(let s of report?.original_source_leads||[])add(s.title,s.url,"Possible official-domain search result; not yet verified");
     for(let s of (event.matches||[]).slice(0,4))add(s.asset_id+" — "+s.asset,s.source_url,"Atlas background for asset relationship");
@@ -78,16 +79,21 @@
   function fillFilters(){fillOptions("sector",allSectors());fillOptions("region",allRegions());fillOptions("country",allCountries());}
   function filterEvents(){
     const q=$("search").value.trim().toLowerCase(),sec=$("sector").value,region=$("region").value,country=$("country").value,eff=$("effect").value,days=Number($("window").value),item=currentItems();
-    return item.filter(e=>{
+    const filtered=item.filter(e=>{
       if(memory.mode==="atlas")return (!sec||e.sector===sec)&&(!q||[e.name,e.external_counterpart,e.id,e.sector].join(" ").toLowerCase().includes(q));
       if(memory.mode==="live"&&daysOld(e)>days)return false;
       return (!sec||e.sector===sec)&&(!region||e.region===region)&&(!country||e.country===country)&&(!eff||direction(e)===eff)&&(!q||[e.title,e.summary,e.sector,e.region,e.country,(e.matches||[]).map(x=>x.asset).join(" ")].join(" ").toLowerCase().includes(q));
     });
+    if(memory.mode==="live"&&$("sortOrder").value==="priority"){
+      const weight=x=>({high:0,medium:1,review:2})[x.triage?.priority]??3;
+      filtered.sort((a,b)=>weight(a)-weight(b)||new Date(b.published)-new Date(a.published));
+    }
+    return filtered;
   }
   function setMode(m){
     memory.mode=m;for(const [id,key] of [["tabLive","live"],["tabHistory","historical"],["tabAtlas","atlas"],["tabScenario","scenario"]])$(id).classList.toggle("active",key===m);
-    $("feedHeading").textContent=m==="live"?"News monitoring":m==="historical"?"Historical cases":m==="atlas"?"Dependency Atlas":"Scenario lab";
-    $("feedSubtitle").textContent=m==="live"?"Screened Kazakhstan exposure candidates":m==="historical"?"Documented reference incidents":m==="atlas"?"Named assets and external relationships":"Illustrative conditional effects";
+    $("feedHeading").textContent=m==="live"?"Event monitor":m==="historical"?"Historical cases":m==="atlas"?"Dependency Atlas":"Scenario lab";
+    $("feedSubtitle").textContent=m==="live"?"Reported developments with specific Kazakhstan pathways":m==="historical"?"Documented reference incidents":m==="atlas"?"Named assets and external relationships":"Illustrative conditional effects";
     $("effect").value="";$("sector").value="";$("region").value="";$("country").value="";$("search").value="";
     closeProfile();
     if(m==="scenario")pick(demo,{showProfile:false});
@@ -98,7 +104,7 @@
   }
   function renderFeed(){
     const filtered=filterEvents(),feed=$("feed");clear(feed);
-    $("feedTotal").textContent=filtered.length+" "+(memory.mode==="atlas"?"assets":"items");
+    $("feedTotal").textContent=filtered.length+" "+(memory.mode==="atlas"?"assets":memory.mode==="live"?"event groups":"items");
     if(!filtered.length){feed.append(make("div","empty",memory.mode==="live"?"No matching current reports. Check the collector health; this does not mean no relevant event occurred.":"No matches for the current filters."));globe.setEvents([]);$("unlocatedMarker").hidden=true;return;}
     const fragment=document.createDocumentFragment();
     for(const e of filtered){
@@ -108,8 +114,14 @@
       card.append(make("h3","event-title",atlasMode?e.name:e.title));
       if(atlasMode)card.append(make("p","event-reason",shortText(e.external_counterpart,100)));
       else {
-        card.append(make("div","event-meta",(e.country||"Geography unresolved")+" · "+e.sector+" · "+(e.tier||"Screened candidate")));
-        if((e.impact_channels||[]).length>0){card.append(make("p","event-reason",(e.impact_channels||[]).length+" pathway(s) to inspect · "+(e.scenario?"conditional":"event-based")));}
+        card.append(make("div","event-meta",(e.country||"Geography unresolved")+" · "+e.sector+" · "+(memory.mode==="live"?(e.triage?.kind||"Reported development"):e.tier||"Historical event")));
+        if(memory.mode==="live"){
+          const count=e.article_count||1;
+          card.append(make("p","event-reason",(e.triage?.priority||"review").toUpperCase()+" investigation priority · "+count+" linked report"+(count===1?"":"s")));
+        }
+        else if((e.impact_channels||[]).length>0){
+          card.append(make("p","event-reason",(e.impact_channels||[]).length+" pathway(s) to inspect · "+(e.scenario?"conditional":"event-based")));
+        }
       }
       card.onclick=()=>atlasMode?pickAsset(e):pick(e);fragment.append(card);
     }
@@ -147,14 +159,18 @@
     heading.append(make("div","meta",(event.source||"")+(event.published?" · "+(event.publication_precision==="date"?new Date(event.published).toLocaleDateString("en-GB"):new Date(event.published).toLocaleString("en-GB")):" · Hypothetical scenario")));
     pane.append(heading);
     pane.append(pair("Origin",event.country||"Not established"),pair("Sector",event.sector||"Not classified"),
+      ...(event.triage?[pair("Reported development",event.triage.kind||"Unclassified"),
+           pair("Investigation priority",(event.triage.priority||"review")+" (NOT severity)"),
+           pair("Related articles",String(event.article_count||1))]:[]),
       pair("Impact severity",Number.isInteger(event.severity)&&event.severity>=1&&event.severity<=5?event.severity+"/5 — assessed":"Unassessed"),
       pair("Probability","Unassessed · specify outcome & horizon"));
-    const explanation=event.scenario?"Two opposing effects are mapped as conditional scenarios, not observed net benefits or losses.":"The article is screened for possible Kazakhstan relevance; further independent verification is required.";
+    const explanation=event.scenario?"Two opposing effects are mapped as conditional scenarios, not observed net benefits or losses.":"A reported event has passed preliminary eventness and Kazakhstan-link screening; factual verification and domestic-impact assessment remain separate.";
     pane.append(make("div","insight warning",explanation));
     sectionTitle(pane,"Event overview");
     pane.append(make("p","profile-text",event.summary||"No article synopsis is available. Open the linked source."));
     sectionTitle(pane,"Why Kazakhstan may be exposed");
     pane.append(make("p","profile-text",event.reason||"Further investigation is needed to establish a specific relationship."));
+    if(event.triage?.reason)pane.append(make("div","insight","Why it passed screening: "+event.triage.reason));
     if(event.impact_summary)pane.append(make("p","profile-text",event.impact_summary));
     const channels=event.impact_channels||[];
     sectionTitle(pane,"Impact channels"+(channels.length?" · "+channels.length:""));
@@ -200,7 +216,7 @@
   function safeFetch(file){return fetch("data/"+file+".json?"+Date.now()).then(r=>{if(!r.ok)throw Error(file+" HTTP "+r.status);return r.json()});}
   async function start(){
     globe.resize();renderFeed();drawProfile(null);
-    const settled=await Promise.allSettled(["world","feed","status","atlas","investigations"].map(safeFetch));
+    const settled=await Promise.allSettled(["world","events","status","atlas","investigations"].map(safeFetch));
     const take=i=>settled[i].status==="fulfilled"?settled[i].value:null;
     if(take(0)){memory.world=take(0).features||[];globe.setWorld(memory.world);}else{memory.worldError=true;$("mapNotice").textContent="Map coastlines unavailable; displaying a globe with grid lines.";}
     if(take(1))memory.events=take(1).events||[];
@@ -211,8 +227,8 @@
     const st=memory.status, time=st?.last_poll?new Date(st.last_poll).toLocaleString("en-GB"):"not collected";
     $("lastUpdated").textContent=time;
     $("sourceHealth").textContent=st?st.sources_successful+"/"+st.sources_configured:"Unavailable";
-    $("sourceStatus").textContent=st?st.sources_successful+"/"+st.sources_configured+" sources reached · "+(st.error||"Scheduled every 12 hours (best effort)."):"Monitoring status cannot be loaded.";
-    $("mainCount").textContent=memory.events.length+" screened reports · 30 days";
+    $("sourceStatus").textContent=st?st.sources_successful+"/"+st.sources_configured+" searches reached · "+memory.events.length+" provisional developments after event-first screening. Not factual or causal verification.":"Monitoring status cannot be loaded.";
+    $("mainCount").textContent=memory.events.length+" filtered events · 30 days";
     $("atlasCount").textContent=(memory.atlas.assets?.length||0)+" assets";
     if(memory.events.length){const preferred=memory.events.find(e=>direction(e)==="mixed"&&Number.isFinite(e.lat))||
       memory.events.find(e=>(e.matches||[]).length&&Number.isFinite(e.lat))||
@@ -387,7 +403,7 @@
   $("tabAtlas").onclick=()=>setMode("atlas");
   $("tabScenario").onclick=()=>setMode("scenario");
   $("scenarioShortcut").onclick=()=>setMode("scenario");
-  for(const id of ["search","sector","region","country","effect","window"])$(id).addEventListener("input",renderFeed);
+  for(const id of ["search","sector","region","country","effect","window","sortOrder"])$(id).addEventListener("input",renderFeed);
   $("zoomIn").onclick=()=>globe.zoom=Math.min(1.55,globe.zoom*1.12);
   $("zoomOut").onclick=()=>globe.zoom=Math.max(.7,globe.zoom/1.12);
   $("resetView").onclick=()=>{globe.lon=66;globe.lat=28;globe.zoom=1;};
