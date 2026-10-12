@@ -77,16 +77,16 @@ def build_sources(reference=None):
  return sources
 SOURCES=build_sources()
 SECTOR_TAGS=[
- ('Oil',r'\\boil\\b|\\bcrude\\b|\\bpetroleum\\b|\\bdiesel\\b|\\bfuel\\b|\\bpipeline\\b|\\bcpc\\b|\\btengiz\\b|\\bkashagan\\b|\\brefiner\\w*\\b'),
- ('Mining',r'\\buranium\\b|\\bmining\\b|\\bmineral\\w*\\b|\\bcopper\\b|\\brare earth\\b|\\bmetallurg\\w*\\b|\\bzinc\\b'),
- ('Electricity',r'\\belectricity\\b|\\bpower grid\\b|\\bpower outage\\b|\\binterconnector\\b'),
- ('Water',r'\\bwater\\b|\\briver\\b|\\bdam\\b|\\breservoir\\b|\\birrigat\\w*\\b'),
- ('Transport',r'\\brail\\w*\\b|\\btransit\\b|\\bcorridor\\b|\\bshipping\\b|\\bport\\b|\\blogistic\\w*\\b|\\baviation\\b|\\bflight\\b'),
- ('Food',r'\\bwheat\\b|\\bgrain\\b|\\bfood\\b|\\bfertiliz\\w*\\b|\\bflour\\b|\\bagricultur\\w*\\b|\\bseed export\\b'),
- ('Finance',r'\\bbank\\w*\\b|\\bcurrency\\b|\\btenge\\b|\\bfiscal\\b|\\binflation\\b|\\bpayment\\w*\\b|\\binvestment\\b|\\bdebt\\b|\\bforex\\b'),
- ('Digital',r'\\bdigital\\b|\\binternet\\b|\\btelecom\\b|\\bfibre\\b|\\bfiber\\b|\\bai\\b|\\bcyber\\b|\\bdata cent\\w*\\b'),
- ('Migration',r'\\bmigrat\\w*\\b|\\bremittance\\w*\\b|\\bworker mobility\\b'),
- ('Trade',r'\\btrade\\b|\\bexport\\w*\\b|\\bimport\\w*\\b|\\btariff\\w*\\b|\\bsanction\\w*\\b|\\bcustoms\\b')
+ ('Oil',r'\boil\b|\bcrude\b|\bpetroleum\b|\bdiesel\b|\bfuel\b|\bpipeline\b|\bcpc\b|\btengiz\b|\bkashagan\b|\brefiner\w*\b'),
+ ('Mining',r'\buranium\b|\bmining\b|\bmineral\w*\b|\bcopper\b|\brare earth\b|\bmetallurg\w*\b|\bzinc\b'),
+ ('Electricity',r'\belectricity\b|\bpower grid\b|\bpower outage\b|\binterconnector\b'),
+ ('Water',r'\bwater\b|\briver\b|\bdam\b|\breservoir\b|\birrigat\w*\b'),
+ ('Transport',r'\brail\w*\b|\btransit\b|\bcorridor\b|\bshipping\b|\bport\b|\blogistic\w*\b|\baviation\b|\bflight\b'),
+ ('Food',r'\bwheat\b|\bgrain\b|\bfood\b|\bfertiliz\w*\b|\bflour\b|\bagricultur\w*\b|\bseed export\b'),
+ ('Finance',r'\bbank\w*\b|\bcurrency\b|\btenge\b|\bfiscal\b|\binflation\b|\bpayment\w*\b|\binvestment\b|\bdebt\b|\bforex\b'),
+ ('Digital',r'\bdigital\b|\binternet\b|\btelecom\b|\bfibre\b|\bfiber\b|\bai\b|\bcyber\b|\bdata cent\w*\b'),
+ ('Migration',r'\bmigrat\w*\b|\bremittance\w*\b|\bworker mobility\b'),
+ ('Trade',r'\btrade\b|\bexport\w*\b|\bimport\w*\b|\btariff\w*\b|\bsanction\w*\b|\bcustoms\b')
 ]
 def sector_from_text(text):
  for name,pattern in SECTOR_TAGS:
@@ -148,13 +148,13 @@ def classify(title,summary):
  # Resolve source geography from the headline, prioritizing an international
  # counterpart if a Kazakhstan partnership mentions both countries.
  h=title.lower()
- mentioned_title=[c for c in LOC if re.search(r'(?<!\\w)'+re.escape(c.lower())+r'(?!\\w)',h)]
- mentioned_summary=[c for c in LOC if re.search(r'(?<!\\w)'+re.escape(c.lower())+r'(?!\\w)',t)]
+ mentioned_title=[c for c in LOC if re.search(r'(?<!\w)'+re.escape(c.lower())+r'(?!\w)',h)]
+ mentioned_summary=[c for c in LOC if re.search(r'(?<!\w)'+re.escape(c.lower())+r'(?!\w)',t)]
  foreign_title=[c for c in mentioned_title if c!='Kazakhstan']
  foreign_summary=[c for c in mentioned_summary if c!='Kazakhstan']
  if foreign_title:country=foreign_title[0]
  elif mentioned_title:country=foreign_summary[0] if (foreign_summary and
-       re.search(r'\\bcooperat\\w*\\b|\\bbilateral\\b|\\btrade ties\\b|\\bagreement\\b|\\bpartnership\\b',t)) else mentioned_title[0]
+       re.search(r'\bcooperat\w*\b|\bbilateral\b|\btrade ties\b|\bagreement\b|\bpartnership\b',t)) else mentioned_title[0]
  elif foreign_summary:country=foreign_summary[0]
  else:country=mentioned_summary[0] if mentioned_summary else 'Unknown'
  if country=='Unknown' and 'cpc' in t:country='Russia'
