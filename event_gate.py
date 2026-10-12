@@ -56,9 +56,26 @@ DIRECT_ACT=re.compile(
     r'raise(?:d|s) (?:tariffs?|interest rates?|export duties)|'
     r'reduc(?:ed|es) (?:tariffs?|interest rates?|export duties)|'
     r'ordered|vetoed|cancelled|terminated|'
+    r'approv(?:ed|es) (?:a |the )?(?:uranium|oil|mineral|energy|export|investment) (?:deal|contract|sale)|'
+    r'shareholders? approv(?:ed|es) |'
+    r'(?:rules?|regulations?|export controls?) (?:tightened|imposed|took effect)|'
+    r'tightens? (?:export|import|tariff|customs|trade) (?:rules?|controls?|restrictions?)|'
+    r'restor(?:ed|es) (?:operations?|shipments?|supplies?|pipeline|oil|transport)|'
     r'production (?:halted|resumed|declined|fell)|'
     r'exports? (?:fell|rose|plunged|jumped|slumped|surged)|'
     r'imports? (?:fell|rose|plunged|jumped|slumped|surged))\b',re.I)
+QUANTIFIED_SHIFT=re.compile(
+    r'\b(?:rose|rise|rises|increased|increases|boosts|grew|climbs|jumped|fell|drops|'
+    r'declined|plunges|surges|cut|slashed|reduced|down|up)\b',re.I)
+QUANTIFIED_AMOUNT=re.compile(r'(\d+(?:\.\d+)?)\s*%|\b(\d+(?:\.\d+)?)\s*[- ]fold\b',re.I)
+MATERIAL_ACTOR=re.compile(r'\b(kaztransoil|cpc|kazatomprom|oil exports?|oil shipments?|'
+    r'oil transportation|power supply|electricity|transit|export route|uranium|'
+    r'remittance|money transfers?|wheat exports?|oil production)\b',re.I)
+def quantified_material(title):
+    """Material measured shifts in exposed volumes, transfers or production (not GDP forecasting)."""
+    if not (QUANTIFIED_SHIFT.search(title) and MATERIAL_ACTOR.search(title)):return False
+    matches=QUANTIFIED_AMOUNT.findall(title)
+    return any((pct and float(pct)>=10) or (fold and float(fold)>=2) for pct,fold in matches)
 SIGNIFICANT_MOVE=re.compile(
     r'\b(surged|plunged|slumped|collapsed|soared|spiked|tumbled|'
     r'reached (?:a |an )?(?:record|all-time)|'
@@ -118,7 +135,7 @@ def screen(article):
     market=tier=='Systemic-market candidate'
     editorial=bool(EDITORIAL.search(title) or BACKGROUND.search(title))
     observed=bool(DIRECT_ACT.search(title))
-    change=bool(SIGNIFICANT_MOVE.search(title))
+    change=bool(SIGNIFICANT_MOVE.search(title) or quantified_material(title))
     speculative=bool(SPECULATIVE.search(title))
     named_channel=bool(SHOCK_LOCATION.search(prose))
     official=bool(article.get('source_status'))
@@ -171,7 +188,25 @@ def screen(article):
 def similarity(a,b):
     A=words(canonical_title(a));B=words(canonical_title(b))
     return len(A&B)/len(A|B) if A and B else 0
+def situation_key(event):
+    title=event.get('title','').lower()
+    country=(event.get('country') or '').lower()
+    if ('hormuz' in title or 'strait of hormuz' in country):
+        if re.search(r'\b(tankers?|ships?|projectiles?|mines?|vessels?)\b',title) and (
+                re.search(r'\b(attacks?|attacked|struck|strike|strikes|hit|explod|damag|fire|mine|rescu)\w*\b',title)):
+            return 'hormuz-tanker-incidents'
+        if re.search(r'\b(blocked|closure|closed|shipping (?:stops|halt|plunges)|transit stopped)\b',title):
+            return 'hormuz-shipping-access'
+    if 'kazatomprom' in title and re.search(r'china|chinese|uranium one|uranium deal',title):
+        if re.search(r'approv|reject|vot|contract|sale',title):return 'kazatomprom-uranium-votes'
+    if re.search(r'zolotaya korona|money transfers?|remittances?',title) and re.search(r'russia|kazakhstan|sanction',title):
+        if re.search(r'plung|fall|declin|drop|12.fold',title):return 'russia-kazakhstan-transfer-fall'
+    return None
 def groupable(a,b):
+    keya,keyb=situation_key(a),situation_key(b)
+    if keya and keya==keyb:
+        ad,bd=date(a.get('published','')),date(b.get('published',''))
+        return bool(ad and bd and abs((ad-bd).total_seconds())<=7*86400)
     if a.get('sector')!=b.get('sector'):return False
     dt_a=date(a.get('published',''));dt_b=date(b.get('published',''))
     if not dt_a or not dt_b or abs((dt_a-dt_b).total_seconds())>60*3600:return False
@@ -198,6 +233,18 @@ def cluster(articles):
         reasons=[x.get('triage',{}).get('reason') for x in group]
         bundle=dict(rep)
         bundle['news_group_id']='event-'+str(rep['id'])
+        sit=situation_key(rep)
+        if sit and len(group)>1:
+            if sit=='hormuz-tanker-incidents':
+                bundle['title']='Multiple reported tanker attacks and incidents near Strait of Hormuz'
+            elif sit=='hormuz-shipping-access':
+                bundle['title']='Reported shipping access restrictions near Strait of Hormuz'
+            elif sit=='kazatomprom-uranium-votes':
+                bundle['title']='Kazatomprom shareholders vote on China uranium sales and Russian venture'
+            elif sit=='russia-kazakhstan-transfer-fall':
+                bundle['title']='Russia–Kazakhstan money transfers fall following payment sanctions'
+            bundle['summary']='Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. '+str(rep.get('summary',''))[:240]
+            bundle['situation_cluster']=sit
         bundle['article_count']=len(group)
         bundle['publisher_names']=sorted(publishers)
         bundle['publisher_count_heuristic']=len(publishers)
