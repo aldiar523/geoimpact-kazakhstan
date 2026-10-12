@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - index.html
+      - app.js
+      - styles.css
+      - impact_model.py
+      - data/world.json
       - monitor.py
       - atlas.py
       - investigate.py
@@ -69,8 +73,8 @@ jobs:
       - name: Assemble Pages artifact
         run: |
           mkdir -p site/data
-          cp index.html site/index.html
-          cp data/feed.json data/status.json data/investigations.json data/atlas.json site/data/
+          cp index.html app.js styles.css site/
+          cp data/feed.json data/status.json data/investigations.json data/atlas.json data/world.json site/data/
           touch site/.nojekyll
       - name: Configure Pages
         uses: actions/configure-pages@v5
