@@ -52,11 +52,20 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/feed.json data/status.json data/investigations.json data/atlas.json
-          if ! git diff --cached --quiet; then
+          mkdir -p /tmp/geoimpact-monitor-data
+          cp data/feed.json data/status.json data/investigations.json data/atlas.json /tmp/geoimpact-monitor-data/
+          success=0
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/geoimpact-monitor-data/* data/
+            git add data/feed.json data/status.json data/investigations.json data/atlas.json
+            if git diff --cached --quiet; then success=1; break; fi
             git commit -m 'data: 12-hour GeoImpact source check [skip ci]'
-            git push
-          fi
+            if git push origin HEAD:main; then success=1; break; fi
+            sleep 2
+          done
+          test "$success" = 1
       - name: Assemble Pages artifact
         run: |
           mkdir -p site/data
