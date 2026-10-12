@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-12T10:11:59.997311+00:00",
+  "generated_at": "2026-10-12T10:14:52.333593+00:00",
   "lookback_start": "2026-09-12",
   "lookback_end": "2026-10-12",
   "all_reports": 496,
-  "eligible_reports": 46,
-  "displayed_event_groups": 43,
-  "filtered_reports": 450,
+  "eligible_reports": 49,
+  "displayed_event_groups": 24,
+  "filtered_reports": 447,
   "excluded_by_kind": {
-    "background": 450
+    "background": 447
   },
-  "high_priority_event_groups": 34,
+  "high_priority_event_groups": 15,
   "source_reviewed_groups": 1,
   "decision_log": [
     {
@@ -42,10 +42,12 @@
       "title": "KazTransOil boosts oil transshipment to CPC-K by 42% in Jan-Sep 2026 - Trend News Agency",
       "sector": "Oil",
       "tier": "Named asset match",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 6,
-      "kind": "background"
+      "included": true,
+      "reason": "named Kazakhstan dependency; Kazakhstan explicitly exposed; measured or sharp change",
+      "score": 9,
+      "kind": "measured development",
+      "priority": "high",
+      "pathway": "asset-linked"
     },
     {
       "id": "e5032ad9f80f92dd50",
@@ -53,10 +55,12 @@
       "title": "KazTransOil’s oil shipments via BTC rise 24% to 1.164M tons in nine months - Trend News Agency",
       "sector": "Oil",
       "tier": "Named asset match",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 6,
-      "kind": "background"
+      "included": true,
+      "reason": "named Kazakhstan dependency; Kazakhstan explicitly exposed; measured or sharp change",
+      "score": 9,
+      "kind": "measured development",
+      "priority": "high",
+      "pathway": "asset-linked"
     },
     {
       "id": "9959fdaef5276e0417",
@@ -1043,10 +1047,12 @@
       "title": "Kazakhstan approves uranium deal with China, declines supply agreement for Russia - The New Voice of Ukraine",
       "sector": "Mining",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; concrete reported development",
+      "score": 6,
+      "kind": "reported action",
+      "priority": "medium",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "7a754abe4ab4c72b1e",
