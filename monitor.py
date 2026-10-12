@@ -132,7 +132,7 @@ EXTERNAL_EXPOSURES=[
 ]
 EXTERNAL_CHANGE=re.compile(r'\b(attacked?|struck?|hit by|destroyed|disrupted|disruption|explosion|'
  r'outage|shutdown|closed|blocked|stopped|halted|banned|ban imposed|'
- r'imposed|tighten(?:ed|s)|restricted|export control|sanctioned|tariffs? raised|'
+ r'imposed|imposes?|tighten(?:ed|s)|restricted|export controls?|sanctioned|tariffs? raised|'
  r'ratified|took effect|entered into force|agreed production cut|'
  r'cut production|production cut|pipeline closed|port closure|'
  r'plunged|surged|soared|collapsed|slumped|'
