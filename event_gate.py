@@ -56,6 +56,17 @@ DIRECT_ACT=re.compile(
     r'raise(?:d|s) (?:tariffs?|interest rates?|export duties)|'
     r'reduc(?:ed|es) (?:tariffs?|interest rates?|export duties)|'
     r'ordered|vetoed|cancelled|terminated|'
+    r'(?:agree|agrees|agreed) (?:a |the )?(?:water|electricity|power) allocation|'
+    r'(?:sign|signed|signs) (?:an? |the )?(?:nuclear|energy|mineral|water|investment|trade) (?:pact|agreement|deal)|'
+    r'commission(?:s|ed|ing) (?:an? |the )?(?:water|energy|digital|rail|power) |'
+    r'launch(?:es|ed) (?:new )?exports? |'
+    r'joined as (?:a )?(?:shareholder|investor)|'
+    r'(?:new|foreign|minority) shareholder (?:joins|acquires)|'
+    r'cuts? (?:\\w+\\s+){0,3}exports? |'
+    r'(?:hit|sets?|reaches?) (?:a |an )?(?:new )?record|'
+    r'(?:entered|comes) into operation|'
+    r'(?:signed|signs) over [1-9]\\d* (?:new )?contracts?|'
+
     r'approv(?:ed|es) (?:a |the )?(?:uranium|oil|mineral|energy|export|investment) (?:deal|contract|sale)|'
     r'shareholders? approv(?:e|ed|es) |'
     r'(?:rules?|regulations?|export controls?) (?:tightened|imposed|took effect)|'
@@ -70,7 +81,9 @@ QUANTIFIED_SHIFT=re.compile(
 QUANTIFIED_AMOUNT=re.compile(r'(\d+(?:\.\d+)?)\s*%|\b(\d+(?:\.\d+)?)\s*[- ]fold\b',re.I)
 MATERIAL_ACTOR=re.compile(r'\b(kaztransoil|cpc|kazatomprom|oil exports?|oil shipments?|'
     r'oil transportation|power supply|electricity|transit|export route|uranium|'
-    r'remittance|money transfers?|wheat exports?|oil production)\b',re.I)
+    r'remittance|money transfers?|wheat exports?|grain exports?|'
+    r'grain rail shipments?|rail grain shipments?|rail freight exports?|'
+    r'oil production|goods exports?|it exports?|copper exports?)\b',re.I)
 def quantified_material(title):
     """Material measured shifts in exposed volumes, transfers or production (not GDP forecasting)."""
     if not (QUANTIFIED_SHIFT.search(title) and MATERIAL_ACTOR.search(title)):return False
@@ -79,6 +92,8 @@ def quantified_material(title):
 SIGNIFICANT_MOVE=re.compile(
     r'\b(surged|plunged|slumped|collapsed|soared|spiked|tumbled|'
     r'reached (?:a |an )?(?:record|all-time)|'
+    r'(?:hit|hits|set|sets) (?:a |an )?(?:new )?record|'
+
     r'dropped [1-9][0-9]?%|rose [1-9][0-9]?%|'
     r'fell [1-9][0-9]?%|'
     r'declined [1-9][0-9]?%|'
@@ -160,6 +175,10 @@ def screen(article):
     # 1: actual incident/decision or measured material market development
     if not (observed or change):
         return dict(included=False,reason='No discrete incident, implemented decision, or material measurable change',score=score,kind='background')
+    # Non-binding diplomatic signals are research leads; they do not establish
+    # commitments, investment disbursement, new infrastructure or new production.
+    if re.search(r'\b(mou|memorandum|letter of intent|discuss(?:es|ed) cooperation)\b',title,re.I) and not (matched or official):
+        return dict(included=False,reason='Non-binding cooperation signal; no material implementation demonstrated',score=score,kind='signal')
     # 2: exclude editorial with no definite observed trigger
     if editorial and not (official and observed):
         return dict(included=False,reason='Analysis/commentary; source material rather than a new event',score=score,kind='analysis')
