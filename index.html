@@ -9,8 +9,8 @@
 </header>
 <main class="workspace">
   <aside class="panel feed-panel" aria-label="Screened global news">
-    <div class="panel-head"><div class="overline">Live intelligence stream</div><h2 id="feedHeading">News monitoring</h2><p id="feedSubtitle">Screened Kazakhstan exposure candidates</p>
-      <nav class="tabbar" aria-label="Research views"><button class="tab active" id="tabLive">Live feed</button><button class="tab" id="tabHistory">History</button><button class="tab" id="tabAtlas">Atlas</button><button class="tab" id="tabScenario">Scenarios</button></nav>
+    <div class="panel-head"><div class="overline">Live intelligence stream</div><h2 id="feedHeading">Event monitor</h2><p id="feedSubtitle">Distinct reported developments with plausible Kazakhstan transmission</p>
+      <nav class="tabbar" aria-label="Research views"><button class="tab active" id="tabLive">Events</button><button class="tab" id="tabHistory">History</button><button class="tab" id="tabAtlas">Atlas</button><button class="tab" id="tabScenario">Scenarios</button></nav>
     </div>
     <div class="panel-body feed-body">
       <div class="search"><input id="search" type="search" placeholder="Search events, countries and assets…" aria-label="Search events"></div>
@@ -50,7 +50,7 @@
     </div>
   </section>
   <aside class="panel profile-panel" aria-label="Filters and monitoring status">
-    <div class="panel-head"><div class="overline">Investigation controls</div><h2>Filters and monitoring</h2><p>Select an event in the feed or globe to open its source-linked profile above the map</p></div>
+    <div class="panel-head"><div class="overline">Investigation controls</div><h2>Filters and monitoring</h2><p>Select a discrete development, not an analysis article, to inspect evidence and exposure above the map</p></div>
     <div class="panel-body">
       <div class="overline">Narrow the investigation</div>
       <div class="filters">
@@ -58,6 +58,7 @@
         <div class="field"><label for="effect">Effect</label><select id="effect"><option value="">All directions</option><option value="positive">Positive</option><option value="negative">Negative</option><option value="critical">Critical</option><option value="neutral">Neutral</option><option value="unknown">Unknown</option><option value="mixed">Mixed</option></select></div>
         <div class="field"><label for="country">Event country</label><select id="country"><option value="">All countries</option></select></div>
         <div class="field"><label for="region">World region</label><select id="region"><option value="">All regions</option></select></div>
+        <div class="field"><label for="sortOrder">Display order</label><select id="sortOrder"><option value="priority" selected>Investigation priority</option><option value="newest">Newest developments</option></select></div>
         <div class="field"><label for="window">Publication window</label><select id="window"><option value="1">24 hours</option><option value="3">3 days</option><option value="7">7 days</option><option value="14">14 days</option><option value="30" selected>Last 30 days</option></select></div>
       </div>
       <div class="source-health" id="sourceStatus">Source health and data freshness loading…</div>
