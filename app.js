@@ -5,7 +5,7 @@
   const $ = id => document.getElementById(id);
   const tone = {positive:{color:"#189968",klass:"green",label:"Positive"},negative:{color:"#d64c53",klass:"red",label:"Negative"},critical:{color:"#26303c",klass:"dark",label:"Critical"},neutral:{color:"#407fdc",klass:"blue",label:"Neutral"},unknown:{color:"#8291a4",klass:"grey",label:"Unknown"},mixed:{color:"#9b7c70",klass:"mixed",label:"Mixed"}};
   const KZ = [48,67];
-  const memory = {mode:"live",events:[],international:[],history:[],scenario:[],atlas:{assets:[],links:[],owners:[]},reports:{},world:[],status:null,selection:null,worldError:false};
+  const memory = {mode:"international",events:[],international:[],history:[],scenario:[],atlas:{assets:[],links:[],owners:[]},reports:{},world:[],status:null,selection:null,worldError:false};
   const REVIEW_KEY="geoimpact-reviews-v1";
   function loadReviews(){try{const v=JSON.parse(window.localStorage.getItem(REVIEW_KEY)||"{}");return v&&typeof v==="object"?v:{}}catch{return {}}}
   memory.reviews=loadReviews();
@@ -320,9 +320,9 @@
     $("mainCount").textContent=memory.events.length+" linked events · "+memory.international.length+" foreign watch · 30 days";
     updateReviewProgress();
     $("atlasCount").textContent=(memory.atlas.assets?.length||0)+" assets";
-    if(memory.events.length){const preferred=memory.events.find(e=>direction(e)==="mixed"&&Number.isFinite(e.lat))||
-      memory.events.find(e=>(e.matches||[]).length&&Number.isFinite(e.lat))||
-      memory.events.find(e=>Number.isFinite(e.lat))||memory.events[0];pick(preferred,{showProfile:false});}else drawProfile(null);
+    const opening=currentItems();
+    if(opening.length){const preferred=opening.find(e=>Number.isFinite(e.lat)&&Number.isFinite(e.lon))||opening[0];
+      pick(preferred,{showProfile:false});}else drawProfile(null);
     renderFeed();
   }
 
@@ -477,7 +477,10 @@
     ctx.save();ctx.lineWidth=width;ctx.lineCap="round";ctx.lineJoin="round";ctx.strokeStyle=color;ctx.globalAlpha=selected?.96:.48;
     if(dashed)ctx.setLineDash([5,6]);
     ctx.beginPath();let active=false;
-    for(const p of pts){if(p.z>-.035){if(!active)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);active=true;}else active=false;}ctx.stroke();
+    for(const p of pts){if(p.z>-.035){if(!active)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);active=true;}else active=false;}if(color===tone.critical.color){
+      ctx.save();ctx.strokeStyle="#a9bdd0";ctx.lineWidth=width+1.8;ctx.globalAlpha=.55;ctx.stroke();ctx.restore();
+    }
+    ctx.stroke();
     if(selected&&!dashed&&pts.length){const p=pts[Math.floor((ts*.00022%1)*(pts.length-1))];if(p.z>0){ctx.setLineDash([]);ctx.globalAlpha=1;ctx.beginPath();ctx.arc(p.x,p.y,Math.max(2,width*.75),0,Math.PI*2);ctx.fillStyle=color;ctx.fill();}}
     const end=pts[pts.length-1],prev=pts[pts.length-5];
     if(end?.z>0&&prev?.z>0){ctx.setLineDash([]);ctx.globalAlpha=selected?1:.75;const a=Math.atan2(end.y-prev.y,end.x-prev.x);ctx.beginPath();ctx.moveTo(end.x,end.y);ctx.lineTo(end.x-4*Math.cos(a-.5),end.y-4*Math.sin(a-.5));ctx.lineTo(end.x-4*Math.cos(a+.5),end.y-4*Math.sin(a+.5));ctx.closePath();ctx.fillStyle=color;ctx.fill();}
