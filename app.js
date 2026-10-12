@@ -51,6 +51,7 @@
     for(let s of report?.independent_reporting_leads||[])add(s.publisher||s.title,s.url,"Similar reporting lead; may be syndicated");
     for(let s of report?.original_source_leads||[])add(s.title,s.url,"Possible official-domain search result; not yet verified");
     for(let s of (event.matches||[]).slice(0,4))add(s.asset_id+" — "+s.asset,s.source_url,"Atlas background for asset relationship");
+    for(let s of event.other_sources||[])add(s.label,s.url,s.role||"Inspected background or original reporting");
     for(let s of event.market_evidence||[])add(s.label,s.url,s.role||"Economic background — not proof of the event");
     for(let c of event.impact_channels||[])for(let s of c.source_links||[])add(s.label,s.url,s.role||"Background mechanism");
     return out;
@@ -138,7 +139,7 @@
     if(!event){pane.append(make("div","empty","Select a news event or asset to inspect the evidence, sources and potential channels to Kazakhstan."));return;}
     const d=direction(event),heading=make("div","profilehead");heading.append(statusPill(d));
     heading.append(make("h3","",event.title));
-    heading.append(make("div","meta",(event.source||"")+(event.published?" · "+new Date(event.published).toLocaleString("en-GB"):" · Hypothetical scenario")));
+    heading.append(make("div","meta",(event.source||"")+(event.published?" · "+(event.publication_precision==="date"?new Date(event.published).toLocaleDateString("en-GB"):new Date(event.published).toLocaleString("en-GB")):" · Hypothetical scenario")));
     pane.append(heading);
     pane.append(pair("Origin",event.country||"Not established"),pair("Sector",event.sector||"Not classified"),
       pair("Impact severity",Number.isInteger(event.severity)&&event.severity>=1&&event.severity<=5?event.severity+"/5 — assessed":"Unassessed"),
