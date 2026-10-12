@@ -87,7 +87,8 @@ def main():
   leads=official_leads(event) if event['id'] in eligible_ids else []
   if event['id'] in eligible_ids:searched+=1
   human=review(event,reviews)
-  stage=('Human-reviewed factual event' if human else
+  stage=(event.get('source_status') if event.get('source_status') else
+         'Human-reviewed factual event' if human else
          'Primary-source research leads found' if leads else
          'Corroborated reporting; primary evidence missing' if similar else
          'Single news candidate; primary evidence missing')
