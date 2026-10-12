@@ -57,6 +57,15 @@ class EventScreeningTests(unittest.TestCase):
   second=self.ev("Seven vessels hit by projectiles in Strait of Hormuz",country="Strait of Hormuz")
   first['id']='t1';second['id']='t2'
   self.assertEqual(len(cluster([{**first,"triage":screen(first)},{**second,"triage":screen(second)}])),1)
+ def test_explanatory_article_with_actual_decision(self):
+  e=self.ev("China Tightens Car Export Rules - Will It Affect Kazakhstan?",tier="Kazakhstan mentioned",sector="Trade",country="China")
+  self.assertTrue(screen(e)["included"],screen(e))
+ def test_promo_infrastructure_upgrades_not_event(self):
+  e=self.ev("Kazakhstan Bridges Distances With Major Transport Upgrades",tier="Kazakhstan mentioned",sector="Transport",country="Kazakhstan")
+  self.assertFalse(screen(e)["included"],screen(e))
+ def test_cross_border_water_allocation_agreement(self):
+  e=self.ev("Kazakhstan and Central Asian States Agree Water Allocation for 2026-2027",tier="Kazakhstan mentioned",sector="Water",country="Uzbekistan")
+  self.assertTrue(screen(e)["included"],screen(e))
  def test_unrelated_news_not_risk(self):
   e=self.ev("New fashion collection launches in London",tier="Kazakhstan mentioned")
   self.assertFalse(screen(e)["included"])
