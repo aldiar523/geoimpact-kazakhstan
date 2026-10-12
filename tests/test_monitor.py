@@ -3,7 +3,8 @@ class MonitorTests(unittest.TestCase):
  def test_expected_feeds(self):
   from urllib.parse import unquote
   self.assertEqual(len(monitor.BASE_SOURCES),24)
-  self.assertEqual(len(monitor.SOURCES),76)
+  self.assertEqual(len(monitor.SOURCES),len(monitor.BASE_SOURCES)+2*len(monitor.REVIEW_QUERIES))
+  self.assertGreaterEqual(len(monitor.SOURCES),120)
   self.assertTrue(any('after:' in unquote(x[2]) and 'before:' in unquote(x[2]) for x in monitor.SOURCES))
  def test_asset_match(self):self.assertEqual(monitor.classify('Kropotkinskaya CPC pumping station damaged in Russia','')['sector'],'Oil')
  def test_no_unrelated(self):self.assertIsNone(monitor.classify('Film actor launches clothing line',''))
