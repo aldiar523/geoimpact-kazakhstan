@@ -26,7 +26,15 @@
       <button id="resetView" class="roundbtn" aria-label="Reset globe view" title="Reset view">⌖</button>
       <button id="spin" class="roundbtn" aria-label="Toggle globe rotation" title="Toggle globe rotation">↻</button>
     </div>
-    <div class="mapnotice" id="mapNotice">Braided lines = different impact channels · line width = assessed severity</div>
+    <div class="mapnotice" id="mapNotice">Close-braided fibres = opposing impact channels · thin routes = severity unassessed</div>
+    <div id="profileLayer" class="profile-layer" hidden>
+      <div id="profileScrim" class="profile-scrim"></div>
+      <section id="profileModal" class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+        <div class="profile-modal-head"><div><div class="overline">Evidence investigation</div><h2 id="profileTitle">Event intelligence profile</h2></div>
+        <button id="closeProfile" class="close-profile" aria-label="Close event profile">✕</button></div>
+        <div id="profile" class="profile-scroll"></div>
+      </section>
+    </div>
     <div class="mapfooter" aria-label="Impact route legend">
       <div class="legend"><span class="stroke" style="background:#189968"></span>Positive</div>
       <div class="legend"><span class="stroke" style="background:#d64c53"></span>Negative</div>
@@ -37,8 +45,8 @@
       <span class="tiny">Dashed = needs review · thin = severity unassessed</span>
     </div>
   </section>
-  <aside class="panel profile-panel" aria-label="Filters and event investigation">
-    <div class="panel-head"><div class="overline">Evidence and exposure</div><h2>Event intelligence profile</h2><p>Original reporting, causal channels and what remains unknown</p></div>
+  <aside class="panel profile-panel" aria-label="Filters and monitoring status">
+    <div class="panel-head"><div class="overline">Investigation controls</div><h2>Filters and monitoring</h2><p>Select an event in the feed or globe to open its source-linked profile above the map</p></div>
     <div class="panel-body">
       <div class="overline">Narrow the investigation</div>
       <div class="filters">
@@ -46,11 +54,11 @@
         <div class="field"><label for="effect">Effect</label><select id="effect"><option value="">All directions</option><option value="positive">Positive</option><option value="negative">Negative</option><option value="critical">Critical</option><option value="neutral">Neutral</option><option value="unknown">Unknown</option><option value="mixed">Mixed</option></select></div>
         <div class="field"><label for="country">Event country</label><select id="country"><option value="">All countries</option></select></div>
         <div class="field"><label for="region">World region</label><select id="region"><option value="">All regions</option></select></div>
-        <div class="field"><label for="window">Publication window</label><select id="window"><option value="1">24 hours</option><option value="3">3 days</option><option value="7" selected>7 days</option><option value="14">14 days</option><option value="30">30 days</option></select></div>
+        <div class="field"><label for="window">Publication window</label><select id="window"><option value="1">24 hours</option><option value="3">3 days</option><option value="7">7 days</option><option value="14">14 days</option><option value="30" selected>Last 30 days</option></select></div>
       </div>
       <div class="source-health" id="sourceStatus">Source health and data freshness loading…</div>
       <div class="line"></div>
-      <div id="profile"><div class="empty">Select a live news event to see its detailed profile.</div></div>
+      <div class="insight">Select an event to open its detailed in-page popup. It will include multiple sources where available, evidence status, transmission channels, affected groups, and the limits of each assessment.</div>
       <div class="line"></div><div class="sectionhead">Explore a two-channel case</div>
       <button id="scenarioShortcut" class="roundbtn" style="width:100%;height:auto;padding:11px 10px;display:flex;gap:10px;align-items:center;justify-content:center;background:#f4f9ff">⤳ See braided Hormuz oil scenario</button>
       <div class="countrow"><span id="atlasCount">— assets</span> mapped in the research Atlas</div>
