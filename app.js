@@ -526,5 +526,35 @@
   $("zoomOut").onclick=()=>globe.zoom=Math.max(.7,globe.zoom/1.12);
   $("resetView").onclick=()=>{globe.lon=66;globe.lat=28;globe.zoom=1;};
   $("spin").onclick=()=>{globe.spin=!globe.spin;$("spin").classList.toggle("active",globe.spin);};
+  // Static GitHub Pages cannot write to the repository. Reviews are device-local,
+  // with explicit import/export for reproducible analyst work.
+  $("exportReviews").onclick=()=>{
+    const backup={schema:"geoimpact-human-review-v1",exported_at:new Date().toISOString(),decisions:memory.reviews};
+    const blob=new Blob([JSON.stringify(backup,null,2)],{type:"application/json"});
+    const url=URL.createObjectURL(blob),a=document.createElement("a");
+    a.href=url;a.download="geoimpact-human-reviews.json";document.body.append(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),2500);
+  };
+  $("importReviews").onclick=()=>$("reviewFile").click();
+  $("reviewFile").onchange=async e=>{
+    const file=e.target.files?.[0];if(!file)return;
+    try{
+      if(file.size>5_000_000)throw Error("Review file exceeds 5 MB");
+      const parsed=JSON.parse(await file.text());
+      if(parsed.schema!=="geoimpact-human-review-v1"||!parsed.decisions||typeof parsed.decisions!=="object")throw Error("Not a GeoImpact review export");
+      let loaded=0;
+      for(const [k,v] of Object.entries(parsed.decisions)){
+        if(k.length>250||!v||!["keep","dismiss","unsure"].includes(v.decision))continue;
+        memory.reviews[k]={decision:v.decision,note:String(v.note||"").slice(0,2000),
+          reviewed_at:String(v.reviewed_at||new Date().toISOString()),
+          title:String(v.title||"").slice(0,250),country:String(v.country||"").slice(0,100)};
+        loaded++;
+      }
+      window.localStorage.setItem(REVIEW_KEY,JSON.stringify(memory.reviews));
+      updateReviewProgress();renderFeed();if(memory.selection)drawProfile(memory.selection);
+      $("reviewProgress").textContent="Imported "+loaded+" decisions · stored in this browser";
+    }catch(err){$("reviewProgress").textContent="Import failed: "+(err.message||"invalid review file");}
+    e.target.value="";
+  };
   start();
 })();
