@@ -1,3 +1,15 @@
+# GeoImpact Kazakhstan v0.8 — Global-first geopolitical intelligence
+
+**Dashboard:** https://aldiar523.github.io/geoimpact-kazakhstan/
+
+**New in v0.8:** dark midnight-blue design, thin physically intertwined green/red fibres for opposing impact channels, country-level event switching, and human **Keep / Dismiss / Not sure** relevance review with optional notes and JSON import/export. The Global watch tab opens by default, separate from the Kazakhstan-linked event feed.
+
+**Review persistence:** decisions are saved in this browser's local storage, not written to GitHub or synchronized across devices. Use **Export reviews** to back them up. Keeping an item confirms analytical relevance only, not that the news, a causal effect or impact severity was independently verified.
+
+Global shock candidates and seven source-inspected examples are published in `data/international_watch.json`. The historical event-gate archive remains separate. See [v0.8 methods and limitations](HUMAN_REVIEW_GLOBAL_V08.md).
+
+---
+
 # GeoImpact Kazakhstan v0.7 — Event-first intelligence
 
 **Live events:** https://aldiar523.github.io/geoimpact-kazakhstan/
