@@ -100,7 +100,7 @@
     $("feedTotal").textContent=filtered.length+" "+(memory.mode==="atlas"?"assets":"items");
     if(!filtered.length){feed.append(make("div","empty",memory.mode==="live"?"No matching current reports. Check the collector health; this does not mean no relevant event occurred.":"No matches for the current filters."));globe.setEvents([]);return;}
     const fragment=document.createDocumentFragment();
-    for(const e of filtered.slice(0,90)){
+    for(const e of filtered){
       const atlasMode=memory.mode==="atlas",card=make("article","event"+((memory.selection?.id===(atlasMode?e.id:e.id))?" chosen":""));
       const row=make("div","event-head");row.append(make("span","",atlasMode?e.id+" · "+e.sector:(e.source||"Source")+" · "+(e.published?new Date(e.published).toLocaleDateString("en-GB"):"Scenario")));
       if(!atlasMode)row.append(statusPill(direction(e)));card.append(row);
@@ -113,7 +113,11 @@
       card.onclick=()=>atlasMode?pickAsset(e):pick(e);fragment.append(card);
     }
     feed.append(fragment);
-    globe.setEvents(filtered.filter(e=>Number.isFinite(e.lat)&&Number.isFinite(e.lon)));
+    const plotted=filtered.filter(e=>Number.isFinite(e.lat)&&Number.isFinite(e.lon));
+    globe.setEvents(plotted);
+    if(memory.mode==="live"){
+      $("mapNotice").textContent=plotted.length+" of "+filtered.length+" screened reports geolocated · overlapping origins grouped · click a marker for all related stories";
+    }
   }
   function pair(label,value){const p=make("div","info-row");p.append(make("span","",label),make("strong","",value));return p;}
   function sectionTitle(p,text){p.append(make("div","sectionhead",text));}
@@ -202,7 +206,7 @@
     $("lastUpdated").textContent=time;
     $("sourceHealth").textContent=st?st.sources_successful+"/"+st.sources_configured:"Unavailable";
     $("sourceStatus").textContent=st?st.sources_successful+"/"+st.sources_configured+" sources reached · "+(st.error||"Scheduled every 12 hours (best effort)."):"Monitoring status cannot be loaded.";
-    $("mainCount").textContent=memory.events.length+" screened candidates";
+    $("mainCount").textContent=memory.events.length+" screened reports · 30 days";
     $("atlasCount").textContent=(memory.atlas.assets?.length||0)+" assets";
     if(memory.events.length){const preferred=memory.events.find(e=>direction(e)==="mixed"&&Number.isFinite(e.lat))||
       memory.events.find(e=>(e.matches||[]).length&&Number.isFinite(e.lat))||
