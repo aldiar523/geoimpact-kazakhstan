@@ -375,17 +375,17 @@
   }
   Globe.prototype.render=function(ts){
     const ctx=this.ctx,w=this.w,h=this.h;if(w<8||h<8)return;
-    ctx.clearRect(0,0,w,h);ctx.fillStyle="#f6faff";ctx.fillRect(0,0,w,h);
+    ctx.clearRect(0,0,w,h);ctx.fillStyle="#0a1a2b";ctx.fillRect(0,0,w,h);
     this.cx=w*.5;this.cy=h*.515;this.rad=Math.min(w*.43,h*.37)*this.zoom;
     const cx=this.cx,cy=this.cy,r=this.rad;
     // soft outer halo
-    const halo=ctx.createRadialGradient(cx,cy,r*.71,cx,cy,r*1.25);halo.addColorStop(0,"rgba(180,211,239,0)");halo.addColorStop(.75,"rgba(123,167,214,.10)");halo.addColorStop(1,"rgba(123,167,214,0)");
+    const halo=ctx.createRadialGradient(cx,cy,r*.71,cx,cy,r*1.25);halo.addColorStop(0,"rgba(15,74,117,0)");halo.addColorStop(.75,"rgba(31,134,201,.13)");halo.addColorStop(1,"rgba(35,101,170,0)");
     ctx.fillStyle=halo;ctx.beginPath();ctx.arc(cx,cy,r*1.28,0,Math.PI*2);ctx.fill();
     const sea=ctx.createRadialGradient(cx-r*.26,cy-r*.42,r*.06,cx+r*.14,cy+r*.13,r*1.24);
-    sea.addColorStop(0,"#ecf7ff");sea.addColorStop(.58,"#bfdcec");sea.addColorStop(1,"#79a8c7");
+    sea.addColorStop(0,"#254d68");sea.addColorStop(.58,"#15354f");sea.addColorStop(1,"#071a2e");
     ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.fillStyle=sea;ctx.fill();
     ctx.save();ctx.beginPath();ctx.arc(cx,cy,r-.25,0,Math.PI*2);ctx.clip();
-    ctx.strokeStyle="rgba(100,141,169,.19)";ctx.lineWidth=.8;
+    ctx.strokeStyle="rgba(102,181,223,.15)";ctx.lineWidth=.8;
     const graticule=(points)=>{ctx.beginPath();let active=false;for(const [lat,lon] of points){const p=this.project(lat,lon);if(p.z>0){if(!active)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);active=true}else active=false;}ctx.stroke();};
     for(let lat=-60;lat<=60;lat+=30){const pts=[];for(let lon=-180;lon<=180;lon+=3)pts.push([lat,lon]);graticule(pts);}
     for(let lon=-180;lon<180;lon+=30){const pts=[];for(let lat=-90;lat<=90;lat+=3)pts.push([lat,lon]);graticule(pts);}
@@ -393,14 +393,14 @@
       const ring=feature.ring,ka=feature.name==="Kazakhstan";
       ctx.beginPath();let visible=false,has=false;
       for(let i=0;i<ring.length;i++){const p=this.project(ring[i][0],ring[i][1]);if(p.z>0){if(!visible)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);visible=true;has=true;}else visible=false;}
-      if(!has)continue;ctx.closePath();ctx.fillStyle=ka?"#f2d8a5":"#d3e4d9";ctx.fill();
-      ctx.strokeStyle=ka?"#c29c5f":"#aac9c1";ctx.lineWidth=ka?1.25:.55;ctx.stroke();
+      if(!has)continue;ctx.closePath();ctx.fillStyle=ka?"#4d8eaf":"#27566c";ctx.fill();
+      ctx.strokeStyle=ka?"#a7d7ec":"#39718a";ctx.lineWidth=ka?1.25:.55;ctx.stroke();
     }
     // transparent depth overlay to show sphere curvature
     const shade=ctx.createRadialGradient(cx-r*.38,cy-r*.5,r*.1,cx+r*.19,cy+r*.1,r*1.33);
-    shade.addColorStop(0,"rgba(255,255,255,.10)");shade.addColorStop(.55,"rgba(14,56,83,0)");shade.addColorStop(1,"rgba(13,55,101,.20)");
+    shade.addColorStop(0,"rgba(155,219,255,.08)");shade.addColorStop(.55,"rgba(9,30,53,.0)");shade.addColorStop(1,"rgba(0,5,13,.53)");
     ctx.fillStyle=shade;ctx.fillRect(cx-r,cy-r,r*2,r*2);ctx.restore();
-    ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.lineWidth=1.5;ctx.strokeStyle="#85aecb";ctx.stroke();
+    ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.lineWidth=1.5;ctx.strokeStyle="#31688b";ctx.stroke();
     this.pins=[];
     const candidates=this.events.slice().filter(e=>Number.isFinite(e.lat)&&Number.isFinite(e.lon));
     const selected=this.sel;
@@ -408,7 +408,7 @@
     // origin group; clicking the marker opens a dossier listing all reports.
     const groups=new Map();
     for(const e of candidates){
-      const key=e.lat.toFixed(2)+"|"+e.lon.toFixed(2)+"|"+direction(e);
+      const key=(e.country||"unknown").toLowerCase();
       if(!groups.has(key))groups.set(key,[]);
       groups.get(key).push(e);
     }
@@ -418,10 +418,10 @@
       this.drawEvent(ctx,{...representative,groupEvents:group},ts,false);
     }
     if(selected&&candidates.some(e=>e.id===selected.id))
-      this.drawEvent(ctx,{...selected,groupEvents:groups.get(selected.lat.toFixed(2)+"|"+selected.lon.toFixed(2)+"|"+direction(selected))||[selected]},ts,true);
+      this.drawEvent(ctx,{...selected,groupEvents:groups.get((selected.country||"unknown").toLowerCase())||[selected]},ts,true);
     const kz=this.project(KZ[0],KZ[1]);if(kz.z>=0){
-      ctx.beginPath();ctx.arc(kz.x,kz.y,8,0,Math.PI*2);ctx.fillStyle="#2066cb";ctx.fill();ctx.lineWidth=3;ctx.strokeStyle="#fff";ctx.stroke();
-      ctx.fillStyle="#195095";ctx.font="700 10px DM Sans, sans-serif";ctx.fillText("KAZAKHSTAN",kz.x+13,kz.y-10);
+      ctx.beginPath();ctx.arc(kz.x,kz.y,8,0,Math.PI*2);ctx.fillStyle="#59c8f0";ctx.fill();ctx.lineWidth=3;ctx.strokeStyle="#dff6ff";ctx.stroke();
+      ctx.fillStyle="#c2eafa";ctx.font="700 10px DM Sans, sans-serif";ctx.fillText("KAZAKHSTAN",kz.x+13,kz.y-10);
     }
   };
   const vec=(lat,lon)=>{const la=lat*Math.PI/180,lo=lon*Math.PI/180;return [Math.cos(la)*Math.cos(lo),Math.cos(la)*Math.sin(lo),Math.sin(la)]};
@@ -430,20 +430,48 @@
   const interp=(a,b,t)=>{let dot=Math.min(1,Math.max(-1,a.reduce((v,x,i)=>v+x*b[i],0)));const th=Math.acos(dot),sin=Math.sin(th);return sin<.0001?norm(a.map((x,i)=>x*(1-t)+b[i]*t)):a.map((x,i)=>(x*Math.sin((1-t)*th)+b[i]*Math.sin(t*th))/sin)};
   const geo=v=>[Math.atan2(v[2],Math.hypot(v[0],v[1]))*180/Math.PI,Math.atan2(v[1],v[0])*180/Math.PI];
   Globe.prototype.pointsFor=function(e,side){
-    const A=vec(e.lat,e.lon),B=vec(KZ[0],KZ[1]),base=[];
-    for(let i=0;i<=90;i++){
-      const t=i/90,xyz=interp(A,B,t),ll=geo(xyz),lift=1+.11*Math.sin(Math.PI*t);
+    const A=vec(e.lat,e.lon),B=vec(KZ[0],KZ[1]),base=[],N=120;
+    for(let i=0;i<=N;i++){
+      const t=i/N,xyz=interp(A,B,t),ll=geo(xyz),lift=1+.11*Math.sin(Math.PI*t);
       base.push({...this.project(ll[0],ll[1],lift),t});
     }
-    // Braid in *screen pixels*, not geographic degrees: two hairline fibres
-    // touch or slightly overlap rather than diverging to country-size curves.
     if(!side)return base;
     return base.map((p,i)=>{
-      const a=base[Math.max(0,i-1)],b=base[Math.min(base.length-1,i+1)];
+      const a=base[Math.max(0,i-1)],b=base[Math.min(N,i+1)];
       const dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1;
-      const amplitude=0.72*side*Math.sin(10*Math.PI*p.t);
-      return {...p,x:p.x-dy/len*amplitude,y:p.y+dx/len*amplitude};
+      // Narrow true braid: fibres weave around same central path (<= 5px total).
+      const offset=side*1.15*Math.sin(12*Math.PI*p.t);
+      return {...p,x:p.x-dy/len*offset,y:p.y+dx/len*offset};
     });
+  };
+  Globe.prototype.braidArc=function(ctx,e,selected,pos,neg){
+    // Render each half twist independently. Paint the under fibre first and
+    // swap which fibre is on top at *every* crossing. These are interwoven
+    // hairlines, not two separated loops across the geography.
+    const green=this.pointsFor(e,+1),red=this.pointsFor(e,-1),halfTurns=12,steps=10;
+    const gw=Math.min(2.5,widthFor(pos?.severity,selected));
+    const rw=Math.min(2.5,widthFor(neg?.severity,selected));
+    const draw=(points,from,to,color,width,front)=>{
+      ctx.save();ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineJoin="round";ctx.lineCap="round";
+      ctx.globalAlpha=selected?(front?1:.89):(front?.85:.68);
+      if(front){ctx.shadowBlur=2;ctx.shadowColor=color;}
+      ctx.beginPath();let active=false;
+      for(let i=from;i<=to;i++){
+        const p=points[i];if(p.z<-.035){active=false;continue;}
+        if(!active)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);active=true;
+      }
+      ctx.stroke();ctx.restore();
+    };
+    for(let j=0;j<halfTurns;j++){
+      const from=j*steps,to=(j+1)*steps,greenAbove=j%2===0;
+      if(greenAbove){
+        draw(red,from,to,tone.negative.color,rw,false);
+        draw(green,from,to,tone.positive.color,gw,true);
+      }else{
+        draw(green,from,to,tone.positive.color,gw,false);
+        draw(red,from,to,tone.negative.color,rw,true);
+      }
+    }
   };
   Globe.prototype.strokeArc=function(ctx,pts,color,width,dashed,ts,selected){
     ctx.save();ctx.lineWidth=width;ctx.lineCap="round";ctx.lineJoin="round";ctx.strokeStyle=color;ctx.globalAlpha=selected?.96:.48;
@@ -466,8 +494,7 @@
     const dir=direction(e),channels=e.impact_channels||[],hasMixed=dir==="mixed"&&channels.some(x=>normalizeDirection(x.direction)==="positive")&&channels.some(x=>normalizeDirection(x.direction)==="negative");
     if(hasMixed){
       const pos=channels.find(x=>normalizeDirection(x.direction)==="positive"),neg=channels.find(x=>normalizeDirection(x.direction)==="negative");
-      this.strokeArc(ctx,this.pointsFor(e,+1),tone.positive.color,widthFor(pos?.severity,selected),!e.human_reviewed,ts,selected);
-      this.strokeArc(ctx,this.pointsFor(e,-1),tone.negative.color,widthFor(neg?.severity,selected),!e.human_reviewed,ts,selected);
+      this.braidArc(ctx,e,selected,pos,neg);
     }else{
       const effective=dir==="mixed"?"unknown":dir;
       this.strokeArc(ctx,this.pointsFor(e,0),tone[effective].color,widthFor(e.severity,selected),!e.human_reviewed,ts,selected);
