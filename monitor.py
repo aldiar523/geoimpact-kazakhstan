@@ -118,6 +118,26 @@ def sector_from_text(text):
  return 'Cross-sector'
 ASSETS=[('Oil','CPC pipeline','cpc|kropotkinskaya|novorossiysk|caspian pipeline|tengiz'),('Mining','Kazatomprom','kazatomprom|uranium one|sulphuric acid|sulfuric acid'),('Electricity','Central Asian grid','kegoc|syrdarya power|uzbekistan power grid'),('Water','Transboundary rivers','ili river|irtysh|syr darya|syrdarya|chu talas'),('Digital','Cross-border telecom','kazakhtelecom|transtelecom|caspilink|trans-caspian cable'),('Mining','Copper smelting and mining','kazzinc|kazchrome|kaz minerals|aktogay|bozshakol')]
 GLOBAL=[('Oil','brent crude|global oil price|world oil prices|opec|strait of hormuz'),('Mining','global uranium price|uranium spot price|global copper price'),('Transport','suez canal blocked|red sea shipping disruption|caspian pipeline shutdown')]
+# Broad cross-border shock channels: discovery only. A match is NOT a measured KZ impact.
+EXTERNAL_EXPOSURES=[
+ ('Trade / sanctions',r'\b(sanction(?:s|ed)?|tariff(?:s)?|export controls?|import ban|trade embargo)\b', 'Trade','Institutional change or export access may alter Kazakhstan trading conditions or supply chains'),
+ ('Energy / oil',r'\b(opec|crude oil|brent|hormuz|oil production|oil pipeline|petroleum exports?|refinery)\b','Oil','Global oil supply/price or export-transit channel may change Kazakhstan oil receipts and import costs'),
+ ('Metals and minerals',r'\b(rare earth|mineral export|copper smelter|uranium|nickel export|lithium|metal mine)\b','Mining','Critical-mineral supply or processing changes can alter Kazakhstan market access or input/price competition'),
+ ('Food and inputs',r'\b(wheat|grain|fertiliz(?:er|er)?|sulphur|sulfur|agricultural export)\b','Food','Food and chemical input disruptions could affect Kazakhstan export markets or import prices'),
+ ('Transport / chokepoints',r'\b(suez|red sea|black sea|caspian|middle corridor|shipping|tanker|rail corridor|port closed|freight)\b','Transport','Transit, freight and insurance costs can affect Kazakhstan trade routes'),
+ ('Electricity / gas',r'\b(electricity grid|power outage|natural gas|gas pipeline|electricity exports?)\b','Electricity','Regional grid, energy supply or gas input channel'),
+ ('Water / climate',r'\b(transboundary water|reservoir releases?|river basin|severe drought|cross-border flood)\b','Water','Hydrological changes could affect irrigation or energy systems with cross-border links'),
+ ('Finance / FX',r'\b(interest rate|capital controls?|bank default|payment sanctions?|currency crisis|credit rating)\b','Finance','External credit, payment, investment and exchange rate channels may transmit to Kazakhstan'),
+ ('Digital / internet',r'\b(undersea cable|international internet|telecom outage|semiconductor export|data centre shutdown)\b','Digital','Digital supply, transit or technology control may affect Kazakhstan providers and users'),
+]
+EXTERNAL_CHANGE=re.compile(r'\b(attacked?|struck?|hit by|destroyed|disrupted|disruption|explosion|'
+ r'outage|shutdown|closed|blocked|stopped|halted|banned|ban imposed|'
+ r'imposed|tighten(?:ed|s)|restricted|export control|sanctioned|tariffs? raised|'
+ r'ratified|took effect|entered into force|agreed production cut|'
+ r'cut production|production cut|pipeline closed|port closure|'
+ r'plunged|surged|soared|collapsed|slumped|'
+ r'export curbs|severed|floods?|drought|defaulted)\b',re.I)
+
 LOC={'Russia':[61,105],'China':[35,104],'Uzbekistan':[41,64],'India':[21,79],'Iran':[32,54],'United States':[38,-97],
 'Ukraine':[49,32],'Turkey':[39,35],'Germany':[51,10],'United Kingdom':[54,-2],'Kazakhstan':[48,67],
 'Afghanistan':[34,67],'Saudi Arabia':[24,45],'Israel':[31.5,35],'Azerbaijan':[40,48],
@@ -161,14 +181,17 @@ def classify(title,summary):
  matched=match_assets(t)
  hits=[(a['sector'],a['name']) for a in matched]
  markets=[s for s,terms in GLOBAL if any(k in t for k in terms.split('|'))]
+ external=[(label,sect,reason) for label,pattern,sect,reason in EXTERNAL_EXPOSURES if re.search(pattern,t)]
+ external_trigger=bool(EXTERNAL_CHANGE.search(title))
+ external_candidate=bool(external and external_trigger and not direct)
  # Require a named asset, an explicit Kazakhstan economic exposure, or a genuine global-market trigger.
  contextual=bool(re.search(r'\btrade\b|\bimport\w*\b|\bexport\w*\b|\benergy\b|\boil\b|\bmining\b|\buranium\b|\belectricity\b|\bwater\b|\bmigration\b|\binvest\w*\b|\bfinanc\w*\b|\btransport\b|\bpipeline\b|\brail\b|\bsanction\w*\b|\bdigital\b|\bsupply\b|\bpolicy\b|\bborder\b|\btariff\w*\b',t))
- if not (hits or markets or (direct and contextual)):return None
+ if not (hits or markets or (direct and contextual) or external_candidate):return None
  # Suppress event types lacking a documented exposure pathway, rather than
  # retaining every otherwise-irrelevant Kazakhstan mention.
  if not hits and not markets and direct and re.search(r'\bconcert\b|\bfootball\b|\bfilm festival\b|\bfashion show\b|\bforex trading legal\b|\bhow to trade forex\b',t):return None
- sector=(hits[0][0] if hits else markets[0] if markets else sector_from_text(t))
- tier='Named asset match' if hits else 'Kazakhstan mentioned' if direct else 'Systemic-market candidate'
+ sector=(hits[0][0] if hits else external[0][1] if external_candidate else markets[0] if markets else sector_from_text(t))
+ tier='Named asset match' if hits else 'Kazakhstan mentioned' if direct else 'External shock watch' if external_candidate else 'Systemic-market candidate'
  # Resolve source geography from the headline, prioritizing an international
  # counterpart if a Kazakhstan partnership mentions both countries.
  h=title.lower()
@@ -189,7 +212,7 @@ def classify(title,summary):
  if re.search(r'\bnew export route\b|\broute opens\b|\bnew capacity\b',t):direction='Potential positive'
  return dict(sector=sector,country=country,lat=latlon[0],lon=latlon[1],direction=direction,tier=tier,
              matches=[{'asset':a['name'],'asset_id':a['id'],'sector':a['sector'],'source_url':a['source_url'],'external_counterpart':a['external_counterpart']} for a in matched],probability='Unassessed',severity=None,
-             reason='; '.join(a for _,a in hits) if hits else ('Kazakhstan explicitly mentioned' if direct else 'Potential global market exposure'))
+             reason='; '.join(a for _,a in hits) if hits else ('Kazakhstan explicitly mentioned' if direct else external[0][2] if external_candidate else 'Potential global market exposure'))
 def collect(src):
  name,region,url=src
  try:
