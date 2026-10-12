@@ -32,7 +32,7 @@ Google News LATAM|LATAM|https://news.google.com/rss/search?q=Latin+America+minin
 Google News MENA|MENA|https://news.google.com/rss/search?q=Middle+East+oil+OR+Hormuz+OR+Red+Sea+shipping+when%3A7d&hl=en-US&gl=US&ceid=US:en"""
 SOURCES=[tuple(x.split('|',2)) for x in RAW.splitlines()]
 ASSETS=[('Oil','CPC pipeline','cpc|kropotkinskaya|novorossiysk|caspian pipeline|tengiz'),('Mining','Kazatomprom','kazatomprom|uranium one|sulphuric acid|sulfuric acid'),('Electricity','Central Asian grid','kegoc|syrdarya power|uzbekistan power grid'),('Water','Transboundary rivers','ili river|irtysh|syr darya|syrdarya|chu talas'),('Digital','Cross-border telecom','kazakhtelecom|transtelecom|caspilink|trans-caspian cable'),('Mining','Copper smelting and mining','kazzinc|kazchrome|kaz minerals|aktogay|bozshakol')]
-GLOBAL=[('Oil','brent crude|opec|oil price|oil production cut|strait of hormuz'),('Trade','sanctions|tariffs|export ban|trade restrictions'),('Transport','red sea|suez canal|shipping route|caspian sea|rail transit'),('Mining','uranium price|critical minerals|copper prices|rare earth exports')]
+GLOBAL=[('Oil','brent crude|global oil price|world oil prices|opec production|opec output|strait of hormuz'),('Mining','global uranium price|uranium spot price|global copper price'),('Transport','suez canal blocked|red sea shipping disruption|caspian pipeline shutdown')]
 LOC={'Russia':[61,105],'China':[35,104],'Uzbekistan':[41,64],'India':[21,79],'Iran':[32,54],'United States':[38,-97],'Ukraine':[49,32],'Turkey':[39,35],'Germany':[51,10],'United Kingdom':[54,-2],'Kazakhstan':[48,67],'Afghanistan':[34,67],'Saudi Arabia':[24,45],'Israel':[31.5,35],'Azerbaijan':[40,48]}
 def now():return datetime.now(timezone.utc)
 def date(v):
@@ -62,7 +62,9 @@ def classify(title,summary):
  direct=bool(re.search(r'\bkazakhstan\b|\bkazakh\b|\bastana\b|\balmaty\b',t))
  hits=[(s,a) for s,a,terms in ASSETS if any(k in t for k in terms.split('|'))]
  markets=[s for s,terms in GLOBAL if any(k in t for k in terms.split('|'))]
- if not (direct or hits or markets):return None
+ # Require a named asset, an explicit Kazakhstan economic exposure, or a genuine global-market trigger.
+ contextual=bool(re.search(r'\btrade\b|\bimport\w*\b|\bexport\w*\b|\benergy\b|\boil\b|\bmining\b|\buranium\b|\belectricity\b|\bwater\b|\bmigration\b|\binvest\w*\b|\bfinanc\w*\b|\btransport\b|\bpipeline\b|\brail\b|\bsanction\w*\b|\bdigital\b|\bsupply\b|\bpolicy\b|\bborder\b|\btariff\w*\b',t))
+ if not (hits or markets or (direct and contextual)):return None
  sector=(hits[0][0] if hits else markets[0] if markets else 'Cross-sector')
  tier='Named asset match' if hits else 'Kazakhstan mentioned' if direct else 'Systemic-market candidate'
  country=next((c for c in LOC if c.lower() in t),'Unknown')
@@ -87,7 +89,11 @@ def main():
  try:prior=json.loads((DATA/'feed.json').read_text())['events']
  except Exception:prior=[]
  start=now(); cutoff=start-timedelta(days=30)
- byid={x['id']:x for x in prior if date(x.get('published','')) and date(x['published'])>=cutoff}
+ byid={}
+ for x in prior:
+  if not date(x.get('published','')) or date(x['published'])<cutoff:continue
+  updated=classify(x.get('title',''),x.get('summary',''))
+  if updated is not None:byid[x['id']]={**x,**updated}
  health=[];added=0
  with ThreadPoolExecutor(max_workers=8) as pool:
   for task in as_completed([pool.submit(collect,s) for s in SOURCES]):
