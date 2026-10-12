@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-12T11:26:36.806246+00:00",
+  "generated_at": "2026-10-12T11:27:24.043029+00:00",
   "lookback_start": "2026-09-12",
   "lookback_end": "2026-10-12",
-  "all_reports": 570,
+  "all_reports": 571,
   "eligible_reports": 33,
   "displayed_event_groups": 21,
   "indicator_groups": 6,
-  "filtered_reports": 537,
+  "filtered_reports": 538,
   "excluded_by_kind": {
-    "background": 472,
+    "background": 473,
     "unlinked": 64,
     "analysis": 1
   },
@@ -3775,6 +3775,17 @@
       "reason": "No documented or specific plausible Kazakhstan transmission",
       "score": 4,
       "kind": "unlinked"
+    },
+    {
+      "id": "4f6ad733587168f359",
+      "date": "2026-09-30T07:00:00+00:00",
+      "title": "OPEC Expected to Keep Oil Production Quotas Unchanged - Crude Oil Prices Today | OilPrice.com",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": -1,
+      "kind": "background"
     },
     {
       "id": "53d6e269aa9c3325ef",
