@@ -21,3 +21,7 @@
 .profile-scroll{padding:15px 22px 22px;overflow-y:auto;overscroll-behavior:contain}
 .profile-scroll .profilehead h3{font-size:17px}
 @media(max-width:660px){.profile-layer{padding:18px 10px}.profile-modal{max-height:100%}.profile-scroll{padding:14px}.profile-modal-head{padding:12px 14px}}
+
+.grouped-reports{display:grid;grid-template-columns:1fr;gap:6px;margin-top:8px}
+.grouped-event{text-align:left;border:1px solid #e5ecf5;background:#f8fbff;color:#355676;border-radius:8px;padding:8px 10px;font-size:11px;line-height:1.4}
+.grouped-event:hover{background:#e9f2ff;border-color:#b8d1f0}
