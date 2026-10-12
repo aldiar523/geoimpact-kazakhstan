@@ -1,0 +1,61 @@
+name: GeoImpact KZ — collect and publish
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - monitor.py
+      - tests/**
+      - .github/workflows/**
+  schedule:
+    - cron: '17 0,12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: geoimpact-kz
+  cancel-in-progress: false
+jobs:
+  monitor-and-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: https://aldiar523.github.io/geoimpact-kazakhstan/
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify monitoring tests
+        run: python -m unittest discover -s tests -v
+      - name: Poll 24 regional and global feeds
+        run: python monitor.py
+      - name: Preserve candidate archive and health metrics
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/feed.json data/status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: 12-hour GeoImpact source check [skip ci]'
+            git push
+          fi
+      - name: Assemble Pages artifact
+        run: |
+          mkdir -p site/data
+          cp index.html site/index.html
+          cp data/feed.json data/status.json site/data/
+          touch site/.nojekyll
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
