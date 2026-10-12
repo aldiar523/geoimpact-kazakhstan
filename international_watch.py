@@ -11,7 +11,7 @@ from event_gate import cluster,EDITORIAL,BACKGROUND,DIRECT_ACT,SIGNIFICANT_MOVE,
 from monitor import EXTERNAL_EXPOSURES,EXTERNAL_CHANGE,date
 DATA=Path(__file__).resolve().parent/'data'
 INTEREST_RE=re.compile(r'\b(opec|oil price|brent|tanker|hormuz|shipping|port|freight|'
- r'export control|sanction|tariff|critical|mineral|uranium|copper|semiconductor|'
+ r'export controls?|sanction|tariff|critical|minerals?|rare earths?|uranium|copper|semiconductor|'
  r'power grid|electricity|gas pipeline|border|customs|financial|banking|'
  r'food prices|grain|wheat|water|reservoir|drought|rail|trade route|'
  r'supply chain|freight|currency|interest rates?|fertiliz)\b',re.I)
@@ -63,6 +63,7 @@ def main():
                            for label,sec,mechanism in x['channels']]
   item['triage']={'included':True,'kind':'reported international development',
                   'priority':'medium' if x['interest']=='strong candidate' else 'review',
+                  'score':5 if x['interest']=='strong candidate' else 3,
                   'reason':x['reason']+'; no explicit Kazakhstan impact identified'}
   item['direction']='Unknown';item['overall_effect']='unknown'
   item['impact_channels']=[];item['probability']='Unassessed';item['severity']=None
