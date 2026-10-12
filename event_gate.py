@@ -52,7 +52,8 @@ DIRECT_ACT=re.compile(
     r'launch(?:ed|es) (?:an? |the )?(?:service|project|pipeline|rail|route)|'
     r'open(?:ed|s) (?:an? |the )?(?:pipeline|port|route|plant|rail|factory)|'
     r'begin(?:s|ning)? operation(?:s)?|commission(?:ed|ing)|'
-    r'default(?:ed|s)|downgrad(?:ed|es)|upgrad(?:ed|es)|'
+    r'default(?:ed|s)|(?:credit |issuer )?rating (?:upgraded|downgraded)|'
+    r'(?:s&p|moody.?s|fitch) (?:upgrades?|downgrades?) |'
     r'raise(?:d|s) (?:tariffs?|interest rates?|export duties)|'
     r'reduc(?:ed|es) (?:tariffs?|interest rates?|export duties)|'
     r'ordered|vetoed|cancelled|terminated|'
@@ -70,7 +71,7 @@ DIRECT_ACT=re.compile(
     r'approv(?:ed|es) (?:a |the )?(?:uranium|oil|mineral|energy|export|investment) (?:deal|contract|sale)|'
     r'shareholders? approv(?:e|ed|es) |'
     r'(?:rules?|regulations?|export controls?) (?:tightened|imposed|took effect)|'
-    r'tightens? (?:export|import|tariff|customs|trade) (?:rules?|controls?|restrictions?)|'
+    r'tightens? (?:\w+\s+){0,3}(?:export|import|tariff|customs|trade) (?:rules?|controls?|restrictions?)|'
     r'restor(?:ed|es) (?:operations?|shipments?|supplies?|pipeline|oil|transport)|'
     r'production (?:halted|resumed|declined|fell)|'
     r'exports? (?:fell|rose|plunged|jumped|slumped|surged)|'
@@ -181,7 +182,10 @@ def screen(article):
         return dict(included=False,reason='Non-binding cooperation signal; no material implementation demonstrated',score=score,kind='signal')
     # 2: exclude editorial with no definite observed trigger
     if editorial and not (official and observed):
-        return dict(included=False,reason='Analysis/commentary; source material rather than a new event',score=score,kind='analysis')
+        first_clause=title.split(' - ',1)[0]
+        a_decision=bool(re.search(r'\b(tightens?|imposes?|ratifies?|enters into force|signed|approved)\b',first_clause,re.I))
+        if not (a_decision and observed and title.endswith('?')):
+            return dict(included=False,reason='Analysis/commentary; source material rather than a new event',score=score,kind='analysis')
     if speculative and not observed and change:
         return dict(included=False,reason='Projected movement rather than observed change',score=score,kind='forecast')
     # 3: event must connect to Kazakhstan directly or via a credible external systemic channel.
