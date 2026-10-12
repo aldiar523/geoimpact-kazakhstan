@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f4f7fc"><meta name="description" content="GeoImpact Kazakhstan — evidence-led international news monitoring and dependency mapping">
-<title>GeoImpact Kazakhstan · Global Exposure Intelligence</title><link rel="stylesheet" href="./styles.css"></head>
+<meta name="theme-color" content="#091321"><meta name="description" content="GeoImpact Kazakhstan — evidence-led international news monitoring and dependency mapping">
+<title>GeoImpact Kazakhstan · Global Exposure Intelligence</title><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./theme.css"></head>
 <body>
 <header class="topbar">
   <div class="brand"><span class="brandmark" aria-hidden="true">◎</span><div><h1>GeoImpact <span class="kz">Kazakhstan</span></h1><small>GLOBAL EXPOSURE INTELLIGENCE</small></div></div>
@@ -10,7 +10,7 @@
 <main class="workspace">
   <aside class="panel feed-panel" aria-label="Screened global news">
     <div class="panel-head"><div class="overline">Live intelligence stream</div><h2 id="feedHeading">Event monitor</h2><p id="feedSubtitle">Distinct reported developments with plausible Kazakhstan transmission</p>
-      <nav class="tabbar" aria-label="Research views"><button class="tab active" id="tabLive">Events</button><button class="tab" id="tabHistory">History</button><button class="tab" id="tabAtlas">Atlas</button><button class="tab" id="tabScenario">Scenarios</button></nav>
+      <nav class="tabbar" aria-label="Research views"><button class="tab active" id="tabLive">Events</button><button class="tab" id="tabInternational">Global watch</button><button class="tab" id="tabHistory">History</button><button class="tab" id="tabAtlas">Atlas</button><button class="tab" id="tabScenario">Scenarios</button></nav>
     </div>
     <div class="panel-body feed-body">
       <div class="search"><input id="search" type="search" placeholder="Search events, countries and assets…" aria-label="Search events"></div>
@@ -36,7 +36,12 @@
       <section id="profileModal" class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
         <div class="profile-modal-head"><div><div class="overline">Evidence investigation</div><h2 id="profileTitle">Event intelligence profile</h2></div>
         <button id="closeProfile" class="close-profile" aria-label="Close event profile">✕</button></div>
-        <div id="profile" class="profile-scroll"></div>
+        <div class="country-switcher" id="countrySwitcher" hidden>
+<button id="prevCountryEvent" aria-label="Previous event from this country">‹</button>
+<div class="country-switch-center"><label for="countryEventSelect" id="countryEventLabel">Events from this country</label>
+<select id="countryEventSelect" aria-label="Select event from this country"></select></div>
+<button id="nextCountryEvent" aria-label="Next event from this country">›</button></div>
+<div id="profile" class="profile-scroll"></div>
       </section>
     </div>
     <div class="mapfooter" aria-label="Impact route legend">
@@ -59,9 +64,19 @@
         <div class="field"><label for="country">Event country</label><select id="country"><option value="">All countries</option></select></div>
         <div class="field"><label for="region">World region</label><select id="region"><option value="">All regions</option></select></div>
         <div class="field"><label for="sortOrder">Display order</label><select id="sortOrder"><option value="priority" selected>Investigation priority</option><option value="newest">Newest developments</option></select></div>
-        <div class="field"><label for="window">Publication window</label><select id="window"><option value="1">24 hours</option><option value="3">3 days</option><option value="7">7 days</option><option value="14">14 days</option><option value="30" selected>Last 30 days</option></select></div>
+        <div class="field"><label for="reviewFilter">Human review</label><select id="reviewFilter">
+<option value="active">Active (dismissed hidden)</option><option value="pending">Pending review</option>
+<option value="keep">Keep</option><option value="unsure">Not sure</option><option value="dismiss">Dismissed</option>
+<option value="all">All decisions</option></select></div>
+<div class="field"><label for="window">Publication window</label><select id="window"><option value="1">24 hours</option><option value="3">3 days</option><option value="7">7 days</option><option value="14">14 days</option><option value="30" selected>Last 30 days</option></select></div>
       </div>
-      <div class="source-health" id="sourceStatus">Source health and data freshness loading…</div>
+      <div class="review-toolbar">
+<div class="review-progress" id="reviewProgress">Human review: 0 / 0</div>
+<div class="review-actions"><button id="exportReviews" title="Export your decisions as JSON">Export reviews</button>
+<button id="importReviews" title="Import decisions from JSON">Import</button>
+<input type="file" id="reviewFile" accept="application/json,.json" hidden></div>
+<p class="review-explainer">Keep, Dismiss and Not sure assess relevance, not factual truth. Saved in this browser; export a backup.</p></div>
+<div class="source-health" id="sourceStatus">Source health and data freshness loading…</div>
       <div class="line"></div>
       <div class="insight">Select an event to open its detailed in-page popup. It will include multiple sources where available, evidence status, transmission channels, affected groups, and the limits of each assessment.</div>
       <div class="line"></div><div class="sectionhead">Explore a two-channel case</div>
