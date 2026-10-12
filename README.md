@@ -1,3 +1,17 @@
+# GeoImpact Kazakhstan v0.7 — Event-first intelligence
+
+**Live events:** https://aldiar523.github.io/geoimpact-kazakhstan/
+
+The live globe now shows **reported discrete geopolitical developments and continuing situations**, rather than every article that mentions Kazakhstan or a commodity. It uses a 30-day event gate and groups related reporting. Investigation priority is distinct from impact severity and probability. Original articles and exclusion reasons remain accessible in the project's research archive.
+
+- [Event-detection methodology, inclusion/exclusion criteria, and evaluation needs](EVENT_FIRST_METHOD_V07.md)
+- [All screened reporting](data/feed.json) · [Published event groups](data/events.json) · [Observed outcome indicators](data/indicators.json)
+- [Traceable 30-day screening decisions](data/event_gate_audit.json)
+
+**No automated claim of a confirmed Kazakhstan impact is made.** Reported events, causal transmission, effect severity, and forecast probabilities require different evidence and human review.
+
+---
+
 # GeoImpact Kazakhstan v0.5
 
 **Live dashboard:** https://aldiar523.github.io/geoimpact-kazakhstan/
