@@ -153,7 +153,7 @@ def screen(article):
         return dict(included=False,reason='No documented or specific plausible Kazakhstan transmission',score=score,kind='unlinked')
     # 4: generic market news is weak. Require concrete shock, significant move, or official source.
     if market and not direct and not matched:
-        strong_systemic=bool(MATERIAL_TYPES['disruption'].search(title) or
+        strong_systemic=bool(observed or MATERIAL_TYPES['disruption'].search(title) or
                              MATERIAL_TYPES['binding-decision'].search(title) or change)
         if not strong_systemic:
             return dict(included=False,reason='Routine market coverage without external shock',score=score,kind='routine')
@@ -206,8 +206,8 @@ def cluster(articles):
         bundle['event_status']='Reported event candidate — not independently verified'
         bundle['triage']={'included':True,'kind':rep['triage']['kind'],
                          'score':max(x['triage']['score'] for x in group),
-                         'priority':'high' if any(x['triage']['priority']=='high' for x in group) else
-                          'medium' if any(x['triage']['priority']=='medium' for x in group) else 'review',
+                         'priority':'high' if any(x['triage'].get('priority','review')=='high' for x in group) else
+                          'medium' if any(x['triage'].get('priority','review')=='medium' for x in group) else 'review',
                          'reason':'; '.join(dict.fromkeys(x for x in reasons if x))[:300],
                          'source_role':'Publication count does not establish independent corroboration'}
         merged.append(bundle)
