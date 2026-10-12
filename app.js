@@ -88,9 +88,10 @@
     $("feedHeading").textContent=m==="live"?"News monitoring":m==="historical"?"Historical cases":m==="atlas"?"Dependency Atlas":"Scenario lab";
     $("feedSubtitle").textContent=m==="live"?"Screened Kazakhstan exposure candidates":m==="historical"?"Documented reference incidents":m==="atlas"?"Named assets and external relationships":"Illustrative conditional effects";
     $("effect").value="";$("sector").value="";$("region").value="";$("country").value="";$("search").value="";
-    if(m==="scenario")pick(demo);
-    else if(m==="historical")pick(memory.history[0]);
-    else if(m==="live"&&memory.events.length)pick(memory.events.find(e=>direction(e)==="mixed"&&Number.isFinite(e.lat))||memory.events.find(e=>Number.isFinite(e.lat))||memory.events[0]);
+    closeProfile();
+    if(m==="scenario")pick(demo,{showProfile:false});
+    else if(m==="historical")pick(memory.history[0],{showProfile:false});
+    else if(m==="live"&&memory.events.length)pick(memory.events.find(e=>direction(e)==="mixed"&&Number.isFinite(e.lat))||memory.events.find(e=>Number.isFinite(e.lat))||memory.events[0],{showProfile:false});
     else {memory.selection=null;drawProfile(null);}
     renderFeed();
   }
@@ -117,7 +118,7 @@
   function pair(label,value){const p=make("div","info-row");p.append(make("span","",label),make("strong","",value));return p;}
   function sectionTitle(p,text){p.append(make("div","sectionhead",text));}
   function pickAsset(a){
-    memory.selection=a;globe.focusCountry(a.external_counterpart);
+    memory.selection=a;openProfile();globe.focusCountry(a.external_counterpart);
     renderFeed();
     const pane=$("profile");clear(pane);
     const heading=make("div","profilehead");heading.append(make("span","pill blue",a.id+" · "+a.sector),make("h3","",a.name));pane.append(heading);
@@ -170,7 +171,12 @@
       "Did world oil prices actually change? What happened to Kazakhstan's realized export prices and shipments? Were domestic fuel and freight prices transmitted to households? What is the timeframe and baseline?":
       "Did the reported event occur? Which named dependency was affected? What domestic outcome was observed? What alternative explanations and counterfactuals apply?"));
   }
-  function pick(e){memory.selection=e;drawProfile(e);globe.selectEvent(e);renderFeed();}
+  function pick(e,{showProfile=true}={}){memory.selection=e;drawProfile(e);globe.selectEvent(e);if(showProfile)openProfile();renderFeed();}
+  function openProfile(){const layer=$("profileLayer");layer.hidden=false;$("closeProfile").focus({preventScroll:true});}
+  function closeProfile(){const layer=$("profileLayer");layer.hidden=true;}
+  $("closeProfile").addEventListener("click",closeProfile);
+  $("profileScrim").addEventListener("click",closeProfile);
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("profileLayer").hidden)closeProfile();});
   function safeFetch(file){return fetch("data/"+file+".json?"+Date.now()).then(r=>{if(!r.ok)throw Error(file+" HTTP "+r.status);return r.json()});}
   async function start(){
     globe.resize();renderFeed();drawProfile(null);
@@ -190,7 +196,7 @@
     $("atlasCount").textContent=(memory.atlas.assets?.length||0)+" assets";
     if(memory.events.length){const preferred=memory.events.find(e=>direction(e)==="mixed"&&Number.isFinite(e.lat))||
       memory.events.find(e=>(e.matches||[]).length&&Number.isFinite(e.lat))||
-      memory.events.find(e=>Number.isFinite(e.lat))||memory.events[0];pick(preferred);}else drawProfile(null);
+      memory.events.find(e=>Number.isFinite(e.lat))||memory.events[0];pick(preferred,{showProfile:false});}else drawProfile(null);
     renderFeed();
   }
 
@@ -286,15 +292,20 @@
   const interp=(a,b,t)=>{let dot=Math.min(1,Math.max(-1,a.reduce((v,x,i)=>v+x*b[i],0)));const th=Math.acos(dot),sin=Math.sin(th);return sin<.0001?norm(a.map((x,i)=>x*(1-t)+b[i]*t)):a.map((x,i)=>(x*Math.sin((1-t)*th)+b[i]*Math.sin(t*th))/sin)};
   const geo=v=>[Math.atan2(v[2],Math.hypot(v[0],v[1]))*180/Math.PI,Math.atan2(v[1],v[0])*180/Math.PI];
   Globe.prototype.pointsFor=function(e,side){
-    const A=vec(e.lat,e.lon),B=vec(KZ[0],KZ[1]),normal=norm(cross(A,B)),mixed=direction(e)==="mixed",pts=[];
-    for(let i=0;i<=70;i++){
-      const t=i/70,base=interp(A,B,t),wave=mixed?side*.028*Math.sin(8*Math.PI*t):0;
-      let offset=norm(base.map((x,j)=>x+normal[j]*wave));
-      const helix=mixed?side*.014*Math.cos(8*Math.PI*t)*Math.sin(Math.PI*t):0;
-      const lift=1+.18*Math.sin(Math.PI*t)+helix;
-      const ll=geo(offset),p=this.project(ll[0],ll[1],lift);
-      pts.push({...p,t});
-    }return pts;
+    const A=vec(e.lat,e.lon),B=vec(KZ[0],KZ[1]),base=[];
+    for(let i=0;i<=90;i++){
+      const t=i/90,xyz=interp(A,B,t),ll=geo(xyz),lift=1+.11*Math.sin(Math.PI*t);
+      base.push({...this.project(ll[0],ll[1],lift),t});
+    }
+    // Braid in *screen pixels*, not geographic degrees: two hairline fibres
+    // touch or slightly overlap rather than diverging to country-size curves.
+    if(!side)return base;
+    return base.map((p,i)=>{
+      const a=base[Math.max(0,i-1)],b=base[Math.min(base.length-1,i+1)];
+      const dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1;
+      const amplitude=0.72*side*Math.sin(10*Math.PI*p.t);
+      return {...p,x:p.x-dy/len*amplitude,y:p.y+dx/len*amplitude};
+    });
   };
   Globe.prototype.strokeArc=function(ctx,pts,color,width,dashed,ts,selected){
     ctx.save();ctx.lineWidth=width;ctx.lineCap="round";ctx.lineJoin="round";ctx.strokeStyle=color;ctx.globalAlpha=selected?.96:.48;
@@ -303,12 +314,14 @@
     for(const p of pts){if(p.z>-.035){if(!active)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);active=true;}else active=false;}ctx.stroke();
     if(selected&&!dashed&&pts.length){const p=pts[Math.floor((ts*.00022%1)*(pts.length-1))];if(p.z>0){ctx.setLineDash([]);ctx.globalAlpha=1;ctx.beginPath();ctx.arc(p.x,p.y,Math.max(2,width*.75),0,Math.PI*2);ctx.fillStyle=color;ctx.fill();}}
     const end=pts[pts.length-1],prev=pts[pts.length-5];
-    if(end?.z>0&&prev?.z>0){ctx.setLineDash([]);ctx.globalAlpha=selected?1:.75;const a=Math.atan2(end.y-prev.y,end.x-prev.x);ctx.beginPath();ctx.moveTo(end.x,end.y);ctx.lineTo(end.x-8*Math.cos(a-.5),end.y-8*Math.sin(a-.5));ctx.lineTo(end.x-8*Math.cos(a+.5),end.y-8*Math.sin(a+.5));ctx.closePath();ctx.fillStyle=color;ctx.fill();}
+    if(end?.z>0&&prev?.z>0){ctx.setLineDash([]);ctx.globalAlpha=selected?1:.75;const a=Math.atan2(end.y-prev.y,end.x-prev.x);ctx.beginPath();ctx.moveTo(end.x,end.y);ctx.lineTo(end.x-4*Math.cos(a-.5),end.y-4*Math.sin(a-.5));ctx.lineTo(end.x-4*Math.cos(a+.5),end.y-4*Math.sin(a+.5));ctx.closePath();ctx.fillStyle=color;ctx.fill();}
     ctx.restore();
   };
   function widthFor(severity,selected){
     const sev=Number(severity);
-    return Number.isInteger(sev)&&sev>=1&&sev<=5?(1.8+sev*1.25+(selected?.7:0)):(selected?3:2.25);
+    // All fibres stay thin on the globe. Severity controls relative weight
+    // but does not create ribbons spanning regions or countries.
+    return Number.isInteger(sev)&&sev>=1&&sev<=5?(1.05+sev*.34+(selected?.2:0)):(selected?1.65:1.35);
   }
   Globe.prototype.drawEvent=function(ctx,e,ts,selected){
     const p=this.project(e.lat,e.lon);if(p.z<-.15&&!selected)return;
@@ -322,7 +335,7 @@
       this.strokeArc(ctx,this.pointsFor(e,0),tone[effective].color,widthFor(e.severity,selected),!e.human_reviewed,ts,selected);
     }
     if(p.z>=0){
-      ctx.save();ctx.beginPath();ctx.arc(p.x,p.y,selected?8:5,0,2*Math.PI);
+      ctx.save();ctx.beginPath();ctx.arc(p.x,p.y,selected?5:3.2,0,2*Math.PI);
       ctx.fillStyle=hasMixed?"#b17d75":tone[dir].color;ctx.fill();
       ctx.lineWidth=selected?3:2;ctx.strokeStyle="#fff";ctx.stroke();ctx.restore();
       this.pins.push({x:p.x,y:p.y,event:e});
