@@ -6,6 +6,8 @@ on:
       - index.html
       - app.js
       - styles.css
+      - theme.css
+      - international_watch.py
       - impact_model.py
       - data/world.json
       - monitor.py
@@ -57,6 +59,8 @@ jobs:
         run: python investigate.py
       - name: Build event-first relevance feed and audit rejected articles
         run: python event_gate.py
+      - name: Build international geopolitical watch for non-Kazakhstan shocks
+        run: python international_watch.py
       - name: Export full research Atlas
         run: python export_atlas.py
       - name: Preserve candidate archive and health metrics
@@ -64,13 +68,13 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           mkdir -p /tmp/geoimpact-monitor-data
-          cp data/feed.json data/status.json data/investigations.json data/atlas.json data/review_audit.json data/events.json data/indicators.json data/event_gate_audit.json /tmp/geoimpact-monitor-data/
+          cp data/feed.json data/status.json data/investigations.json data/atlas.json data/review_audit.json data/events.json data/indicators.json data/event_gate_audit.json data/international_watch.json /tmp/geoimpact-monitor-data/
           success=0
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
             cp /tmp/geoimpact-monitor-data/* data/
-            git add data/feed.json data/status.json data/investigations.json data/atlas.json data/review_audit.json data/events.json data/indicators.json data/event_gate_audit.json
+            git add data/feed.json data/status.json data/investigations.json data/atlas.json data/review_audit.json data/events.json data/indicators.json data/event_gate_audit.json data/international_watch.json
             if git diff --cached --quiet; then success=1; break; fi
             git commit -m 'data: 12-hour GeoImpact source check [skip ci]'
             if git push origin HEAD:main; then success=1; break; fi
@@ -80,8 +84,8 @@ jobs:
       - name: Assemble Pages artifact
         run: |
           mkdir -p site/data
-          cp index.html app.js styles.css site/
-          cp data/feed.json data/status.json data/investigations.json data/atlas.json data/world.json data/review_audit.json data/events.json data/indicators.json data/event_gate_audit.json site/data/
+          cp index.html app.js styles.css theme.css site/
+          cp data/feed.json data/status.json data/investigations.json data/atlas.json data/world.json data/review_audit.json data/events.json data/indicators.json data/event_gate_audit.json data/international_watch.json site/data/
           touch site/.nojekyll
       - name: Configure Pages
         uses: actions/configure-pages@v5
