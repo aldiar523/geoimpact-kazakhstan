@@ -2,9 +2,9 @@ import unittest
 from event_gate import screen,similarity,cluster
 class EventScreeningTests(unittest.TestCase):
  def ev(self,title,tier="Systemic-market candidate",sector="Oil",country="Iran",**extra):
-  return dict(id=title[:16],title=title,summary="",published="2026-10-10T12:00:00+00:00",
+  return dict(dict(id=title[:16],title=title,summary="",published="2026-10-10T12:00:00+00:00",
               source="News outlet",url="https://example.org/"+str(len(title)),tier=tier,
-              sector=sector,country=country,matches=[],**extra)
+              sector=sector,country=country,matches=[]),**extra)
  def test_incident_hormuz_kept(self):
   e=self.ev("Tankers attacked near Strait of Hormuz, oil shipping disrupted")
   self.assertTrue(screen(e)["included"])
