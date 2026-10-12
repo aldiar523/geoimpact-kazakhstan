@@ -166,6 +166,16 @@
     if(!all.length)sources.append(make("div","empty","No accessible source link is supplied for this entry."));
     else for(const s of all.slice(0,15))sourceLink(sources,s);
     pane.append(sources);
+    const related=event.groupEvents||[];
+    if(related.length>1){
+      sectionTitle(pane,"Other reports from this map location · "+related.length+" total");
+      const others=make("div","grouped-reports");
+      for(const r of related.filter(v=>v.id!==event.id).slice(0,60)){
+        const button=make("button","grouped-event",shortText(r.title,100));
+        button.type="button";button.onclick=()=>pick(r);others.append(button);
+      }
+      pane.append(others);
+    }
     sectionTitle(pane,"Remaining analytical questions");
     pane.append(make("p","profile-text",event.scenario?
       "Did world oil prices actually change? What happened to Kazakhstan's realized export prices and shipments? Were domestic fuel and freight prices transmitted to households? What is the timeframe and baseline?":
@@ -278,9 +288,21 @@
     this.pins=[];
     const candidates=this.events.slice().filter(e=>Number.isFinite(e.lat)&&Number.isFinite(e.lon));
     const selected=this.sel;
-    const shown=candidates.slice(0,16).filter(e=>e.id!==selected?.id);
-    for(const e of shown)this.drawEvent(ctx,e,ts,false);
-    if(selected&&Number.isFinite(selected.lat)&&Number.isFinite(selected.lon))this.drawEvent(ctx,selected,ts,true);
+    // Group shared map origins by direction. Every report is represented by its
+    // origin group; clicking the marker opens a dossier listing all reports.
+    const groups=new Map();
+    for(const e of candidates){
+      const key=e.lat.toFixed(2)+"|"+e.lon.toFixed(2)+"|"+direction(e);
+      if(!groups.has(key))groups.set(key,[]);
+      groups.get(key).push(e);
+    }
+    for(const group of groups.values()){
+      const representative=group.find(e=>e.id===selected?.id)||group[0];
+      if(group.some(e=>e.id===selected?.id))continue;
+      this.drawEvent(ctx,{...representative,groupEvents:group},ts,false);
+    }
+    if(selected&&candidates.some(e=>e.id===selected.id))
+      this.drawEvent(ctx,{...selected,groupEvents:groups.get(selected.lat.toFixed(2)+"|"+selected.lon.toFixed(2)+"|"+direction(selected))||[selected]},ts,true);
     const kz=this.project(KZ[0],KZ[1]);if(kz.z>=0){
       ctx.beginPath();ctx.arc(kz.x,kz.y,8,0,Math.PI*2);ctx.fillStyle="#2066cb";ctx.fill();ctx.lineWidth=3;ctx.strokeStyle="#fff";ctx.stroke();
       ctx.fillStyle="#195095";ctx.font="700 10px DM Sans, sans-serif";ctx.fillText("KAZAKHSTAN",kz.x+13,kz.y-10);
@@ -339,6 +361,11 @@
       ctx.fillStyle=hasMixed?"#b17d75":tone[dir].color;ctx.fill();
       ctx.lineWidth=selected?3:2;ctx.strokeStyle="#fff";ctx.stroke();ctx.restore();
       this.pins.push({x:p.x,y:p.y,event:e});
+      if((e.groupEvents||[]).length>1){
+        const n=e.groupEvents.length;
+        ctx.save();ctx.font="700 9px DM Sans, sans-serif";ctx.fillStyle="#213c5b";
+        ctx.fillText(n>99?"99+":String(n),p.x+7,p.y-7);ctx.restore();
+      }
       if(selected){ctx.fillStyle="#314964";ctx.font="700 10px DM Sans, sans-serif";ctx.fillText(e.country,p.x+12,p.y+3);}
     }
   };
