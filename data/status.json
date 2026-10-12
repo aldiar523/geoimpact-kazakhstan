@@ -1,8 +1,8 @@
 {
-  "last_poll": "2026-10-12T06:36:19.392636+00:00",
+  "last_poll": "2026-10-12T06:43:01.969227+00:00",
   "interval_hours": 12,
   "sources_configured": 24,
-  "sources_successful": 17,
+  "sources_successful": 24,
   "source_health": [
     {
       "source": "ABC Asia Pacific",
@@ -119,51 +119,51 @@
     {
       "source": "Google News ASEAN",
       "region": "ASEAN",
-      "ok": false,
-      "count": 0,
-      "error": "The read operation timed out"
+      "ok": true,
+      "count": 100,
+      "error": null
     },
     {
       "source": "Google News Africa",
       "region": "Africa",
-      "ok": false,
-      "count": 0,
-      "error": "The read operation timed out"
+      "ok": true,
+      "count": 67,
+      "error": null
     },
     {
       "source": "Google News Central Asia",
       "region": "Central Asia",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "count": 100,
+      "error": null
     },
     {
       "source": "Google News East Asia",
       "region": "East Asia",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "count": 60,
+      "error": null
     },
     {
       "source": "Google News Eurasia",
       "region": "Russia/Eurasia",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "count": 100,
+      "error": null
     },
     {
       "source": "Google News LATAM",
       "region": "LATAM",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "error": null
     },
     {
       "source": "Google News MENA",
       "region": "MENA",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "ok": true,
+      "count": 72,
+      "error": null
     },
     {
       "source": "Guardian World",
