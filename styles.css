@@ -25,3 +25,9 @@
 .grouped-reports{display:grid;grid-template-columns:1fr;gap:6px;margin-top:8px}
 .grouped-event{text-align:left;border:1px solid #e5ecf5;background:#f8fbff;color:#355676;border-radius:8px;padding:8px 10px;font-size:11px;line-height:1.4}
 .grouped-event:hover{background:#e9f2ff;border-color:#b8d1f0}
+
+.unlocated-marker[hidden]{display:none!important}
+.unlocated-marker{position:absolute;top:182px;right:14px;z-index:10;display:flex;align-items:center;gap:7px;padding:8px 10px;background:rgba(255,255,255,.93);color:#5a708a;border:1px solid #dce8f5;border-radius:11px;box-shadow:0 4px 12px #1b324415;font-size:10px;font-weight:700;max-width:185px;text-align:left}
+.unlocated-marker:hover{background:#edf6ff;border-color:#9cbfeb}
+.unlocated-count{display:grid;place-items:center;border-radius:7px;background:#eef1f7;color:#36536f;padding:2px 6px;font-size:12px;font-weight:800;min-width:25px}
+@media(max-width:660px){.unlocated-marker{top:172px;right:8px;max-width:142px}}
