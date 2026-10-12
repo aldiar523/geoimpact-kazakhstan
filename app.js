@@ -99,7 +99,7 @@
   function renderFeed(){
     const filtered=filterEvents(),feed=$("feed");clear(feed);
     $("feedTotal").textContent=filtered.length+" "+(memory.mode==="atlas"?"assets":"items");
-    if(!filtered.length){feed.append(make("div","empty",memory.mode==="live"?"No matching current reports. Check the collector health; this does not mean no relevant event occurred.":"No matches for the current filters."));globe.setEvents([]);return;}
+    if(!filtered.length){feed.append(make("div","empty",memory.mode==="live"?"No matching current reports. Check the collector health; this does not mean no relevant event occurred.":"No matches for the current filters."));globe.setEvents([]);$("unlocatedMarker").hidden=true;return;}
     const fragment=document.createDocumentFragment();
     for(const e of filtered){
       const atlasMode=memory.mode==="atlas",card=make("article","event"+((memory.selection?.id===(atlasMode?e.id:e.id))?" chosen":""));
@@ -115,6 +115,11 @@
     }
     feed.append(fragment);
     const plotted=filtered.filter(e=>Number.isFinite(e.lat)&&Number.isFinite(e.lon));
+    const unlocated=filtered.filter(e=>!(Number.isFinite(e.lat)&&Number.isFinite(e.lon))&&memory.mode!=="atlas");
+    $("unlocatedMarker").hidden=unlocated.length===0;
+    $("unlocatedCount").textContent=unlocated.length;
+    $("unlocatedMarker").onclick=()=>{if(!unlocated.length)return;
+      pick({...unlocated[0],groupEvents:unlocated});};
     globe.setEvents(plotted);
     if(memory.mode==="live"){
       $("mapNotice").textContent=plotted.length+" of "+filtered.length+" screened reports geolocated · overlapping origins grouped · click a marker for all related stories";
