@@ -1,9 +1,9 @@
 {
-  "last_poll": "2026-10-12T08:51:41.684328+00:00",
+  "last_poll": "2026-10-12T10:08:40.386127+00:00",
   "interval_hours": 12,
   "history_window_days": 30,
-  "sources_configured": 76,
-  "sources_successful": 76,
+  "sources_configured": 124,
+  "sources_successful": 124,
   "source_health": [
     {
       "source": "ABC Asia Pacific",
@@ -20,6 +20,34 @@
       "error": null
     },
     {
+      "source": "Archive Africa Mining Export Shock older",
+      "region": "Africa",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
+      "source": "Archive Africa Mining Export Shock recent",
+      "region": "Africa",
+      "ok": true,
+      "count": 3,
+      "error": null
+    },
+    {
+      "source": "Archive Caspian Oil Event older",
+      "region": "Russia/Eurasia",
+      "ok": true,
+      "count": 40,
+      "error": null
+    },
+    {
+      "source": "Archive Caspian Oil Event recent",
+      "region": "Russia/Eurasia",
+      "ok": true,
+      "count": 72,
+      "error": null
+    },
+    {
       "source": "Archive Central Asia Grid older",
       "region": "Central Asia",
       "ok": true,
@@ -30,7 +58,21 @@
       "source": "Archive Central Asia Grid recent",
       "region": "Central Asia",
       "ok": true,
-      "count": 4,
+      "count": 5,
+      "error": null
+    },
+    {
+      "source": "Archive Central Asia Power Failure older",
+      "region": "Central Asia",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
+      "source": "Archive Central Asia Power Failure recent",
+      "region": "Central Asia",
+      "ok": true,
+      "count": 2,
       "error": null
     },
     {
@@ -58,7 +100,49 @@
       "source": "Archive China Copper recent",
       "region": "China",
       "ok": true,
-      "count": 14,
+      "count": 15,
+      "error": null
+    },
+    {
+      "source": "Archive China Manufacturing Shock older",
+      "region": "China",
+      "ok": true,
+      "count": 31,
+      "error": null
+    },
+    {
+      "source": "Archive China Manufacturing Shock recent",
+      "region": "China",
+      "ok": true,
+      "count": 24,
+      "error": null
+    },
+    {
+      "source": "Archive China Minerals Restriction older",
+      "region": "China",
+      "ok": true,
+      "count": 2,
+      "error": null
+    },
+    {
+      "source": "Archive China Minerals Restriction recent",
+      "region": "China",
+      "ok": true,
+      "count": 1,
+      "error": null
+    },
+    {
+      "source": "Archive EU Russia Sanctions older",
+      "region": "Europe/UK",
+      "ok": true,
+      "count": 46,
+      "error": null
+    },
+    {
+      "source": "Archive EU Russia Sanctions recent",
+      "region": "Europe/UK",
+      "ok": true,
+      "count": 46,
       "error": null
     },
     {
@@ -76,10 +160,66 @@
       "error": null
     },
     {
+      "source": "Archive Global Credit Financial Shock older",
+      "region": "Global",
+      "ok": true,
+      "count": 25,
+      "error": null
+    },
+    {
+      "source": "Archive Global Credit Financial Shock recent",
+      "region": "Global",
+      "ok": true,
+      "count": 44,
+      "error": null
+    },
+    {
+      "source": "Archive Global Fertilizer Disruption older",
+      "region": "Global",
+      "ok": true,
+      "count": 1,
+      "error": null
+    },
+    {
+      "source": "Archive Global Fertilizer Disruption recent",
+      "region": "Global",
+      "ok": true,
+      "count": 1,
+      "error": null
+    },
+    {
+      "source": "Archive Global Freight Cost Spike older",
+      "region": "Global",
+      "ok": true,
+      "count": 68,
+      "error": null
+    },
+    {
+      "source": "Archive Global Freight Cost Spike recent",
+      "region": "Global",
+      "ok": true,
+      "count": 61,
+      "error": null
+    },
+    {
+      "source": "Archive Global Oil Supply Disruption older",
+      "region": "Global",
+      "ok": true,
+      "count": 47,
+      "error": null
+    },
+    {
+      "source": "Archive Global Oil Supply Disruption recent",
+      "region": "Global",
+      "ok": true,
+      "count": 35,
+      "error": null
+    },
+    {
       "source": "Archive Global Uranium older",
       "region": "Global",
       "ok": true,
-      "count": 24,
+      "count": 25,
       "error": null
     },
     {
@@ -87,6 +227,20 @@
       "region": "Global",
       "ok": true,
       "count": 57,
+      "error": null
+    },
+    {
+      "source": "Archive Hormuz Attacks Shipping older",
+      "region": "MENA",
+      "ok": true,
+      "count": 42,
+      "error": null
+    },
+    {
+      "source": "Archive Hormuz Attacks Shipping recent",
+      "region": "MENA",
+      "ok": true,
+      "count": 62,
       "error": null
     },
     {
@@ -104,6 +258,20 @@
       "error": null
     },
     {
+      "source": "Archive India Trade Policy Change older",
+      "region": "India",
+      "ok": true,
+      "count": 6,
+      "error": null
+    },
+    {
+      "source": "Archive India Trade Policy Change recent",
+      "region": "India",
+      "ok": true,
+      "count": 8,
+      "error": null
+    },
+    {
       "source": "Archive Kazakhstan ASEAN older",
       "region": "ASEAN",
       "ok": true,
@@ -114,7 +282,7 @@
       "source": "Archive Kazakhstan ASEAN recent",
       "region": "ASEAN",
       "ok": true,
-      "count": 46,
+      "count": 47,
       "error": null
     },
     {
@@ -128,7 +296,7 @@
       "source": "Archive Kazakhstan Africa recent",
       "region": "Africa",
       "ok": true,
-      "count": 39,
+      "count": 38,
       "error": null
     },
     {
@@ -174,6 +342,20 @@
       "error": null
     },
     {
+      "source": "Archive Kazakhstan Digital Infrastructure older",
+      "region": "Central Asia",
+      "ok": true,
+      "count": 6,
+      "error": null
+    },
+    {
+      "source": "Archive Kazakhstan Digital Infrastructure recent",
+      "region": "Central Asia",
+      "ok": true,
+      "count": 2,
+      "error": null
+    },
+    {
       "source": "Archive Kazakhstan EU older",
       "region": "Europe/UK",
       "ok": true,
@@ -191,7 +373,7 @@
       "source": "Archive Kazakhstan Economy older",
       "region": "Kazakhstan",
       "ok": true,
-      "count": 68,
+      "count": 67,
       "error": null
     },
     {
@@ -205,28 +387,28 @@
       "source": "Archive Kazakhstan India older",
       "region": "India",
       "ok": true,
-      "count": 59,
+      "count": 60,
       "error": null
     },
     {
       "source": "Archive Kazakhstan India recent",
       "region": "India",
       "ok": true,
-      "count": 40,
+      "count": 39,
       "error": null
     },
     {
       "source": "Archive Kazakhstan Internet older",
       "region": "Central Asia",
       "ok": true,
-      "count": 45,
+      "count": 43,
       "error": null
     },
     {
       "source": "Archive Kazakhstan Internet recent",
       "region": "Central Asia",
       "ok": true,
-      "count": 59,
+      "count": 57,
       "error": null
     },
     {
@@ -261,7 +443,7 @@
       "source": "Archive Kazakhstan Migration older",
       "region": "Central Asia",
       "ok": true,
-      "count": 31,
+      "count": 30,
       "error": null
     },
     {
@@ -282,7 +464,7 @@
       "source": "Archive Kazakhstan Mining recent",
       "region": "Kazakhstan",
       "ok": true,
-      "count": 56,
+      "count": 59,
       "error": null
     },
     {
@@ -328,31 +510,129 @@
       "error": null
     },
     {
+      "source": "Archive Kazakhstan Wheat Access older",
+      "region": "Global",
+      "ok": true,
+      "count": 47,
+      "error": null
+    },
+    {
+      "source": "Archive Kazakhstan Wheat Access recent",
+      "region": "Global",
+      "ok": true,
+      "count": 58,
+      "error": null
+    },
+    {
+      "source": "Archive LATAM Copper Mining Shock older",
+      "region": "LATAM",
+      "ok": true,
+      "count": 8,
+      "error": null
+    },
+    {
+      "source": "Archive LATAM Copper Mining Shock recent",
+      "region": "LATAM",
+      "ok": true,
+      "count": 23,
+      "error": null
+    },
+    {
+      "source": "Archive MENA Oil Output Event older",
+      "region": "MENA",
+      "ok": true,
+      "count": 55,
+      "error": null
+    },
+    {
+      "source": "Archive MENA Oil Output Event recent",
+      "region": "MENA",
+      "ok": true,
+      "count": 58,
+      "error": null
+    },
+    {
+      "source": "Archive Middle Corridor Disruption older",
+      "region": "Central Asia",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
+      "source": "Archive Middle Corridor Disruption recent",
+      "region": "Central Asia",
+      "ok": true,
+      "count": 1,
+      "error": null
+    },
+    {
       "source": "Archive Oil Market OPEC older",
       "region": "Global",
       "ok": true,
-      "count": 44,
+      "count": 45,
       "error": null
     },
     {
       "source": "Archive Oil Market OPEC recent",
       "region": "Global",
       "ok": true,
-      "count": 71,
+      "count": 72,
+      "error": null
+    },
+    {
+      "source": "Archive Red Sea Actual Blockage older",
+      "region": "MENA",
+      "ok": true,
+      "count": 46,
+      "error": null
+    },
+    {
+      "source": "Archive Red Sea Actual Blockage recent",
+      "region": "MENA",
+      "ok": true,
+      "count": 51,
       "error": null
     },
     {
       "source": "Archive Red Sea Supply older",
       "region": "MENA",
       "ok": true,
-      "count": 49,
+      "count": 51,
       "error": null
     },
     {
       "source": "Archive Red Sea Supply recent",
       "region": "MENA",
       "ok": true,
-      "count": 62,
+      "count": 64,
+      "error": null
+    },
+    {
+      "source": "Archive Russia Kazakhstan Migration Decision older",
+      "region": "Russia/Eurasia",
+      "ok": true,
+      "count": 7,
+      "error": null
+    },
+    {
+      "source": "Archive Russia Kazakhstan Migration Decision recent",
+      "region": "Russia/Eurasia",
+      "ok": true,
+      "count": 6,
+      "error": null
+    },
+    {
+      "source": "Archive Russia Oil Sanction Event older",
+      "region": "Russia/Eurasia",
+      "ok": true,
+      "count": 50,
+      "error": null
+    },
+    {
+      "source": "Archive Russia Oil Sanction Event recent",
+      "region": "Russia/Eurasia",
+      "ok": true,
+      "count": 43,
       "error": null
     },
     {
@@ -366,21 +646,77 @@
       "source": "Archive Russia Oil Transit recent",
       "region": "Russia/Eurasia",
       "ok": true,
-      "count": 62,
+      "count": 63,
+      "error": null
+    },
+    {
+      "source": "Archive Southeast Asia Mineral Trade Shock older",
+      "region": "ASEAN",
+      "ok": true,
+      "count": 1,
+      "error": null
+    },
+    {
+      "source": "Archive Southeast Asia Mineral Trade Shock recent",
+      "region": "ASEAN",
+      "ok": true,
+      "count": 1,
+      "error": null
+    },
+    {
+      "source": "Archive Transboundary Water Incident older",
+      "region": "Central Asia",
+      "ok": true,
+      "count": 3,
+      "error": null
+    },
+    {
+      "source": "Archive Transboundary Water Incident recent",
+      "region": "Central Asia",
+      "ok": true,
+      "count": 5,
+      "error": null
+    },
+    {
+      "source": "Archive US Tariff New Action older",
+      "region": "US",
+      "ok": true,
+      "count": 9,
+      "error": null
+    },
+    {
+      "source": "Archive US Tariff New Action recent",
+      "region": "US",
+      "ok": true,
+      "count": 17,
+      "error": null
+    },
+    {
+      "source": "Archive Uranium Production Event older",
+      "region": "Global",
+      "ok": true,
+      "count": 2,
+      "error": null
+    },
+    {
+      "source": "Archive Uranium Production Event recent",
+      "region": "Global",
+      "ok": true,
+      "count": 7,
       "error": null
     },
     {
       "source": "Archive Wheat Fertilizer older",
       "region": "Global",
       "ok": true,
-      "count": 51,
+      "count": 50,
       "error": null
     },
     {
       "source": "Archive Wheat Fertilizer recent",
       "region": "Global",
       "ok": true,
-      "count": 69,
+      "count": 68,
       "error": null
     },
     {
@@ -401,7 +737,7 @@
       "source": "BBC Business",
       "region": "Global",
       "ok": true,
-      "count": 40,
+      "count": 41,
       "error": null
     },
     {
@@ -527,7 +863,7 @@
       "source": "Google News MENA",
       "region": "MENA",
       "ok": true,
-      "count": 72,
+      "count": 65,
       "error": null
     },
     {
@@ -538,8 +874,8 @@
       "error": null
     }
   ],
-  "candidate_count": 450,
-  "new_candidates": 3,
+  "candidate_count": 495,
+  "new_candidates": 45,
   "source_reviewed_cases": 6,
   "error": null
 }
