@@ -40,6 +40,8 @@ jobs:
           python-version: '3.11'
       - name: Verify monitoring tests
         run: python -m unittest discover -s tests -v
+      - name: Validate dashboard JavaScript
+        run: node tests/check_dashboard.cjs
       - name: Poll 24 regional and global feeds
         run: python monitor.py
       - name: Investigate matches and find primary-source leads
