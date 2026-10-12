@@ -32,7 +32,7 @@ Google News LATAM|LATAM|https://news.google.com/rss/search?q=Latin+America+minin
 Google News MENA|MENA|https://news.google.com/rss/search?q=Middle+East+oil+OR+Hormuz+OR+Red+Sea+shipping+when%3A7d&hl=en-US&gl=US&ceid=US:en"""
 SOURCES=[tuple(x.split('|',2)) for x in RAW.splitlines()]
 ASSETS=[('Oil','CPC pipeline','cpc|kropotkinskaya|novorossiysk|caspian pipeline|tengiz'),('Mining','Kazatomprom','kazatomprom|uranium one|sulphuric acid|sulfuric acid'),('Electricity','Central Asian grid','kegoc|syrdarya power|uzbekistan power grid'),('Water','Transboundary rivers','ili river|irtysh|syr darya|syrdarya|chu talas'),('Digital','Cross-border telecom','kazakhtelecom|transtelecom|caspilink|trans-caspian cable'),('Mining','Copper smelting and mining','kazzinc|kazchrome|kaz minerals|aktogay|bozshakol')]
-GLOBAL=[('Oil','brent crude|global oil price|world oil prices|opec production|opec output|strait of hormuz'),('Mining','global uranium price|uranium spot price|global copper price'),('Transport','suez canal blocked|red sea shipping disruption|caspian pipeline shutdown')]
+GLOBAL=[('Oil','brent crude|global oil price|world oil prices|opec|strait of hormuz'),('Mining','global uranium price|uranium spot price|global copper price'),('Transport','suez canal blocked|red sea shipping disruption|caspian pipeline shutdown')]
 LOC={'Russia':[61,105],'China':[35,104],'Uzbekistan':[41,64],'India':[21,79],'Iran':[32,54],'United States':[38,-97],'Ukraine':[49,32],'Turkey':[39,35],'Germany':[51,10],'United Kingdom':[54,-2],'Kazakhstan':[48,67],'Afghanistan':[34,67],'Saudi Arabia':[24,45],'Israel':[31.5,35],'Azerbaijan':[40,48]}
 def now():return datetime.now(timezone.utc)
 def date(v):
