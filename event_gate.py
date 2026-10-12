@@ -57,7 +57,7 @@ DIRECT_ACT=re.compile(
     r'reduc(?:ed|es) (?:tariffs?|interest rates?|export duties)|'
     r'ordered|vetoed|cancelled|terminated|'
     r'approv(?:ed|es) (?:a |the )?(?:uranium|oil|mineral|energy|export|investment) (?:deal|contract|sale)|'
-    r'shareholders? approv(?:ed|es) |'
+    r'shareholders? approv(?:e|ed|es) |'
     r'(?:rules?|regulations?|export controls?) (?:tightened|imposed|took effect)|'
     r'tightens? (?:export|import|tariff|customs|trade) (?:rules?|controls?|restrictions?)|'
     r'restor(?:ed|es) (?:operations?|shipments?|supplies?|pipeline|oil|transport)|'
