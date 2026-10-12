@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime,timezone,timedelta
 from email.utils import parsedate_to_datetime
 from concurrent.futures import ThreadPoolExecutor,as_completed
+from atlas import match_assets
 ROOT=Path(__file__).parent;DATA=ROOT/'data'
 RAW="""BBC World|Global|https://feeds.bbci.co.uk/news/world/rss.xml
 Al Jazeera|Global|https://www.aljazeera.com/xml/rss/all.xml
@@ -60,7 +61,8 @@ def parse(blob):
 def classify(title,summary):
  t=(title+' '+summary[:400]).lower()
  direct=bool(re.search(r'\bkazakhstan\b|\bkazakh\b|\bastana\b|\balmaty\b',t))
- hits=[(s,a) for s,a,terms in ASSETS if any(k in t for k in terms.split('|'))]
+ matched=match_assets(t)
+ hits=[(a['sector'],a['name']) for a in matched]
  markets=[s for s,terms in GLOBAL if any(k in t for k in terms.split('|'))]
  # Require a named asset, an explicit Kazakhstan economic exposure, or a genuine global-market trigger.
  contextual=bool(re.search(r'\btrade\b|\bimport\w*\b|\bexport\w*\b|\benergy\b|\boil\b|\bmining\b|\buranium\b|\belectricity\b|\bwater\b|\bmigration\b|\binvest\w*\b|\bfinanc\w*\b|\btransport\b|\bpipeline\b|\brail\b|\bsanction\w*\b|\bdigital\b|\bsupply\b|\bpolicy\b|\bborder\b|\btariff\w*\b',t))
@@ -75,7 +77,7 @@ def classify(title,summary):
  if re.search(r'\battack\b|\bshortage\b|\boutage\b|\bdisrupt\w*\b|\bclosed\b|\bsanction\w*\b',t):direction='Potential negative'
  if re.search(r'\bnew export route\b|\broute opens\b|\bnew capacity\b',t):direction='Potential positive'
  return dict(sector=sector,country=country,lat=latlon[0],lon=latlon[1],direction=direction,tier=tier,
-             matches=[{'asset':a,'sector':s} for s,a in hits],probability='Unassessed',severity=None,
+             matches=[{'asset':a['name'],'asset_id':a['id'],'sector':a['sector'],'source_url':a['source_url'],'external_counterpart':a['external_counterpart']} for a in matched],probability='Unassessed',severity=None,
              reason='; '.join(a for _,a in hits) if hits else ('Kazakhstan explicitly mentioned' if direct else 'Potential global market exposure'))
 def collect(src):
  name,region,url=src
