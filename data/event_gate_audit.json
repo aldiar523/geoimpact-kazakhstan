@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-12T10:14:52.333593+00:00",
+  "generated_at": "2026-10-12T10:16:23.723290+00:00",
   "lookback_start": "2026-09-12",
   "lookback_end": "2026-10-12",
   "all_reports": 496,
-  "eligible_reports": 49,
+  "eligible_reports": 51,
   "displayed_event_groups": 24,
-  "filtered_reports": 447,
+  "filtered_reports": 445,
   "excluded_by_kind": {
-    "background": 447
+    "background": 445
   },
   "high_priority_event_groups": 15,
   "source_reviewed_groups": 1,
@@ -733,10 +733,12 @@
       "title": "Kazatomprom Shareholders Approve Major Chinese Uranium Contract, Reject Deal With Russia - NucNet",
       "sector": "Mining",
       "tier": "Named asset match",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 6,
-      "kind": "background"
+      "included": true,
+      "reason": "named Kazakhstan dependency; Kazakhstan explicitly exposed; concrete reported development",
+      "score": 10,
+      "kind": "reported action",
+      "priority": "high",
+      "pathway": "asset-linked"
     },
     {
       "id": "9c19e8d139ff165b13",
@@ -1115,10 +1117,12 @@
       "title": "Kazatomprom shareholders approve China uranium sale, Uranium One proposal fails - Mugglehead Investment Magazine",
       "sector": "Mining",
       "tier": "Named asset match",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 6,
-      "kind": "background"
+      "included": true,
+      "reason": "named Kazakhstan dependency; Kazakhstan explicitly exposed; concrete reported development",
+      "score": 10,
+      "kind": "reported action",
+      "priority": "high",
+      "pathway": "asset-linked"
     },
     {
       "id": "7f2f68be14e0d50326",
