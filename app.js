@@ -190,6 +190,31 @@
     heading.append(make("h3","",event.title));
     heading.append(make("div","meta",(event.source||"")+(event.published?" · "+(event.publication_precision==="date"?new Date(event.published).toLocaleDateString("en-GB"):new Date(event.published).toLocaleString("en-GB")):" · Hypothetical scenario")));
     pane.append(heading);
+    if(["live","international"].includes(memory.mode)){
+      sectionTitle(pane,"Human relevance review");
+      const current=reviewFor(event),line=make("div","review-state",
+        current?"Saved locally: "+current.decision.toUpperCase()+" · "+new Date(current.reviewed_at).toLocaleString():"Pending · no reviewer judgment");
+      pane.append(line);
+      const row=make("div","review-choices");
+      for(const [state,label,cls] of [["keep","✓ Keep","review-keep"],["dismiss","× Dismiss","review-dismiss"],["unsure","? Not sure","review-unsure"]]){
+        const btn=make("button",cls+(current?.decision===state?" active":""),label);
+        btn.type="button";btn.onclick=()=>{
+          saveReview(event,state,note.value);
+          drawProfile(event);
+          if(state==="dismiss"&&$("reviewFilter").value==="active"){
+            const next=filterEvents().find(x=>x.id!==event.id);
+            if(next)pick(next);else closeProfile();
+          }
+        };row.append(btn);
+      }
+      pane.append(row);
+      const note=make("textarea","review-note");
+      note.placeholder="Optional: why keep / dismiss / uncertain? State what needs verification.";
+      note.value=current?.note||"";note.maxLength=2000;
+      pane.append(note);
+      const help=make("p","review-explainer","This decision only assesses monitoring relevance; it does not independently verify that an event occurred or its effects on Kazakhstan.");
+      pane.append(help);
+    }
     pane.append(pair("Origin",event.country||"Not established"),pair("Sector",event.sector||"Not classified"),
       ...(event.triage?[pair("Reported development",event.triage.kind||"Unclassified"),
            pair("Investigation priority",(event.triage.priority||"review")+" (NOT severity)"),
@@ -204,6 +229,17 @@
     pane.append(make("p","profile-text",event.reason||"Further investigation is needed to establish a specific relationship."));
     if(event.triage?.reason)pane.append(make("div","insight","Why it passed screening: "+event.triage.reason));
     if(event.impact_summary)pane.append(make("p","profile-text",event.impact_summary));
+    if(event.hypothesis_not_impact){
+      pane.append(make("div","insight warning","International watch: any Kazakhstan effect is a hypothesis, not an assessed magnitude, likelihood or measured domestic consequence."));
+      if(event.exposure_channels?.length){
+        sectionTitle(pane,"Potential Kazakhstan transmission mechanisms");
+        for(const path of event.exposure_channels){
+          const c=make("div","channel grey");c.append(make("div","channel-title",path.name),
+            make("p","",path.mechanism),make("p","",path.evidence_status||"To be investigated"));
+          pane.append(c);
+        }
+      }
+    }
     const channels=event.impact_channels||[];
     sectionTitle(pane,"Impact channels"+(channels.length?" · "+channels.length:""));
     if(!channels.length)pane.append(make("div","insight","Specific socioeconomic transmission and direction remain unresolved. A headline/asset match is insufficient to infer an effect."));
@@ -239,7 +275,27 @@
       "Did world oil prices actually change? What happened to Kazakhstan's realized export prices and shipments? Were domestic fuel and freight prices transmitted to households? What is the timeframe and baseline?":
       "Did the reported event occur? Which named dependency was affected? What domestic outcome was observed? What alternative explanations and counterfactuals apply?"));
   }
-  function pick(e,{showProfile=true}={}){memory.selection=e;drawProfile(e);globe.selectEvent(e);if(showProfile)openProfile();renderFeed();}
+  function countryCandidates(event){
+    const name=(event.country||"Unknown").toLowerCase();
+    const arr=filterEvents().filter(x=>(x.country||"Unknown").toLowerCase()===name);
+    if(!arr.some(x=>x.id===event.id))arr.unshift(event);
+    return arr;
+  }
+  function refreshCountrySwitcher(e){
+    const list=countryCandidates(e),picker=$("countrySwitcher");
+    picker.hidden=list.length<=1;
+    if(list.length<=1)return;
+    const pos=Math.max(0,list.findIndex(x=>x.id===e.id)),menu=$("countryEventSelect");
+    menu.replaceChildren();
+    for(const x of list){const o=document.createElement("option");o.value=x.id;o.textContent=(x.published||"").slice(0,10)+" · "+shortText(x.title,95);menu.add(o);}
+    menu.value=e.id;
+    $("countryEventLabel").textContent=(e.country||"Unknown")+" · event "+(pos+1)+" of "+list.length;
+    const move=i=>pick(list[(pos+i+list.length)%list.length]);
+    $("prevCountryEvent").onclick=()=>move(-1);
+    $("nextCountryEvent").onclick=()=>move(+1);
+    menu.onchange=()=>{const next=list.find(x=>x.id===menu.value);if(next)pick(next)};
+  }
+  function pick(e,{showProfile=true}={}){memory.selection=e;drawProfile(e);refreshCountrySwitcher(e);globe.selectEvent(e);if(showProfile)openProfile();renderFeed();}
   function openProfile(){const layer=$("profileLayer");layer.hidden=false;$("closeProfile").focus({preventScroll:true});}
   function closeProfile(){const layer=$("profileLayer");layer.hidden=true;}
   $("closeProfile").addEventListener("click",closeProfile);
@@ -248,19 +304,21 @@
   function safeFetch(file){return fetch("data/"+file+".json?"+Date.now()).then(r=>{if(!r.ok)throw Error(file+" HTTP "+r.status);return r.json()});}
   async function start(){
     globe.resize();renderFeed();drawProfile(null);
-    const settled=await Promise.allSettled(["world","events","status","atlas","investigations"].map(safeFetch));
+    const settled=await Promise.allSettled(["world","events","status","atlas","investigations","international_watch"].map(safeFetch));
     const take=i=>settled[i].status==="fulfilled"?settled[i].value:null;
     if(take(0)){memory.world=take(0).features||[];globe.setWorld(memory.world);}else{memory.worldError=true;$("mapNotice").textContent="Map coastlines unavailable; displaying a globe with grid lines.";}
     if(take(1))memory.events=take(1).events||[];
     if(take(2))memory.status=take(2);
     if(take(3))memory.atlas=take(3);
     if(take(4))memory.reports=Object.fromEntries((take(4).cases||[]).map(x=>[x.event_id,x]));
+    if(take(5))memory.international=take(5).groups||[];
     fillFilters();
     const st=memory.status, time=st?.last_poll?new Date(st.last_poll).toLocaleString("en-GB"):"not collected";
     $("lastUpdated").textContent=time;
     $("sourceHealth").textContent=st?st.sources_successful+"/"+st.sources_configured:"Unavailable";
     $("sourceStatus").textContent=st?st.sources_successful+"/"+st.sources_configured+" searches reached · "+memory.events.length+" provisional developments after event-first screening. Not factual or causal verification.":"Monitoring status cannot be loaded.";
-    $("mainCount").textContent=memory.events.length+" filtered events · 30 days";
+    $("mainCount").textContent=memory.events.length+" linked events · "+memory.international.length+" foreign watch · 30 days";
+    updateReviewProgress();
     $("atlasCount").textContent=(memory.atlas.assets?.length||0)+" assets";
     if(memory.events.length){const preferred=memory.events.find(e=>direction(e)==="mixed"&&Number.isFinite(e.lat))||
       memory.events.find(e=>(e.matches||[]).length&&Number.isFinite(e.lat))||
@@ -431,11 +489,12 @@
   const globe=new Globe($("globe"));
   globe.onPick=e=>pick(e);
   $("tabLive").onclick=()=>setMode("live");
+  $("tabInternational").onclick=()=>setMode("international");
   $("tabHistory").onclick=()=>setMode("historical");
   $("tabAtlas").onclick=()=>setMode("atlas");
   $("tabScenario").onclick=()=>setMode("scenario");
   $("scenarioShortcut").onclick=()=>setMode("scenario");
-  for(const id of ["search","sector","region","country","effect","window","sortOrder"])$(id).addEventListener("input",renderFeed);
+  for(const id of ["search","sector","region","country","effect","window","sortOrder","reviewFilter"])$(id).addEventListener("input",renderFeed);
   $("zoomIn").onclick=()=>globe.zoom=Math.min(1.55,globe.zoom*1.12);
   $("zoomOut").onclick=()=>globe.zoom=Math.max(.7,globe.zoom/1.12);
   $("resetView").onclick=()=>{globe.lon=66;globe.lat=28;globe.zoom=1;};
