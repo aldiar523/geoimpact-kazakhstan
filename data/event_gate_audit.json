@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-12T10:16:23.723290+00:00",
+  "generated_at": "2026-10-12T10:18:26.936287+00:00",
   "lookback_start": "2026-09-12",
   "lookback_end": "2026-10-12",
   "all_reports": 496,
-  "eligible_reports": 51,
-  "displayed_event_groups": 24,
-  "filtered_reports": 445,
+  "eligible_reports": 58,
+  "displayed_event_groups": 30,
+  "filtered_reports": 438,
   "excluded_by_kind": {
-    "background": 445
+    "background": 438
   },
   "high_priority_event_groups": 15,
   "source_reviewed_groups": 1,
@@ -577,10 +577,12 @@
       "title": "Kazakhstan's rail grain shipments rise 12% in nine months - Trend News Agency",
       "sector": "Transport",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; measured or sharp change",
+      "score": 5,
+      "kind": "measured development",
+      "priority": "review",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "af2a05585f489096d7",
@@ -711,10 +713,12 @@
       "title": "Kazakhstan's goods exports rise 27.1% to $48.5B in H1 2026 - Trend News Agency",
       "sector": "Trade",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; measured or sharp change",
+      "score": 5,
+      "kind": "measured development",
+      "priority": "review",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "0f8a768629afba26eb",
@@ -1005,10 +1009,12 @@
       "title": "Tanker Attacks in Strait of Hormuz Hit Record Weekly High Since War Began - Haaretz",
       "sector": "Oil",
       "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
+      "included": true,
+      "reason": "global commodity or infrastructure channel; concrete reported development; measured or sharp change",
+      "score": 10,
+      "kind": "reported incident",
+      "priority": "high",
+      "pathway": "systemic-market"
     },
     {
       "id": "ee89f972995c35ad85",
@@ -1174,10 +1180,12 @@
       "title": "Kazakhstan and Central Asian States Agree Water Allocation for 2026-2027 - Kazakhstan Today",
       "sector": "Water",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; concrete reported development",
+      "score": 6,
+      "kind": "reported action",
+      "priority": "medium",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "e1c5446d3eabaedf69",
@@ -2920,10 +2928,12 @@
       "title": "Kazakhstan’s grain rail shipments hit record 1.45 mln tons in September - Qazinform",
       "sector": "Transport",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; concrete reported development; measured or sharp change",
+      "score": 9,
+      "kind": "measured development",
+      "priority": "medium",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "b65c1ae998bafd4fb9",
@@ -3291,10 +3301,12 @@
       "title": "Kazakhstan’s grain exports to Afghanistan rise 4.4-fold in eight months - خبرگزاری اطلس",
       "sector": "Food",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; measured or sharp change",
+      "score": 5,
+      "kind": "measured development",
+      "priority": "review",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "09ed807d4f44faa296",
@@ -4364,10 +4376,12 @@
       "title": "Polpharma Santo launches exports of Kazakhstan-made medicines to EU - Qazinform",
       "sector": "Trade",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; concrete reported development",
+      "score": 6,
+      "kind": "reported action",
+      "priority": "medium",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "6fde52b6d41779ffa5",
