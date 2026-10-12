@@ -1,9 +1,9 @@
 {
-  "last_poll": "2026-10-12T08:45:21.594828+00:00",
+  "last_poll": "2026-10-12T08:46:21.980233+00:00",
   "interval_hours": 12,
   "history_window_days": 30,
   "sources_configured": 76,
-  "sources_successful": 75,
+  "sources_successful": 76,
   "source_health": [
     {
       "source": "ABC Asia Pacific",
@@ -323,9 +323,9 @@
     {
       "source": "Archive Kazakhstan US recent",
       "region": "US",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "ok": true,
+      "count": 45,
+      "error": null
     },
     {
       "source": "Archive Oil Market OPEC older",
