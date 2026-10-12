@@ -6,6 +6,7 @@ from datetime import datetime,timezone,timedelta
 from email.utils import parsedate_to_datetime
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from atlas import match_assets
+from impact_model import decorate
 ROOT=Path(__file__).parent;DATA=ROOT/'data'
 RAW="""BBC World|Global|https://feeds.bbci.co.uk/news/world/rss.xml
 Al Jazeera|Global|https://www.aljazeera.com/xml/rss/all.xml
@@ -95,7 +96,7 @@ def main():
  for x in prior:
   if not date(x.get('published','')) or date(x['published'])<cutoff:continue
   updated=classify(x.get('title',''),x.get('summary',''))
-  if updated is not None:byid[x['id']]={**x,**updated}
+  if updated is not None:byid[x['id']]=decorate({**x,**updated})
  health=[];added=0
  with ThreadPoolExecutor(max_workers=8) as pool:
   for task in as_completed([pool.submit(collect,s) for s in SOURCES]):
@@ -107,10 +108,11 @@ def main():
     if not d or d<start-timedelta(days=14) or d>start+timedelta(days=1):continue
     c=classify(title,summary)
     if c is None:continue
+    c=decorate({**c,'title':title,'summary':summary})
     uid=hashlib.sha256(url.encode()).hexdigest()[:18]
     if uid not in byid:
      byid[uid]=dict(id=uid,title=title[:220],url=url,summary=summary[:350],published=d.isoformat(),source=name,region=region,
-                    verification='News candidate — not primary-source verified',detected_at=start.isoformat(),**c)
+                    verification='News candidate — not primary-source verified',detected_at=start.isoformat(),**{k:v for k,v in c.items() if k not in ('title','summary')})
      added+=1
  events=sorted(byid.values(),key=lambda v:v['published'],reverse=True)[:300]
  good=sum(x['ok'] for x in health)
