@@ -295,8 +295,17 @@ def main():
                           'sector':item.get('sector'),'tier':item.get('tier'),**v})
         if v['included']:selected.append(itemcopy)
         else:reasons[v['kind']]+=1
-    clusters=cluster(selected)
+    # Domestic observed statistics are validation indicators, not initiating
+    # external shocks. Keep them available, but outside the live event map.
+    indicators=[e for e in selected if e['triage']['kind']=='measured development' and
+                e.get('tier')!='Systemic-market candidate']
+    event_candidates=[e for e in selected if e not in indicators]
+    clusters=cluster(event_candidates)
+    indicator_groups=cluster(indicators)
     latest=datetime.now(timezone.utc).isoformat()
+    (DATA/'indicators.json').write_text(json.dumps({
+        'generated_at':latest,'status':'Observed reported measurements for impact evaluation; not exogenous geopolitical shocks',
+        'items':indicator_groups},ensure_ascii=False,indent=2)+'\n')
     (DATA/'events.json').write_text(json.dumps({
         'generated_at':latest,'lookback_start':feed.get('lookback_start'),
         'lookback_end':feed.get('lookback_end'),
@@ -306,12 +315,13 @@ def main():
         'generated_at':latest,'lookback_start':feed.get('lookback_start'),
         'lookback_end':feed.get('lookback_end'),
         'all_reports':len(events),'eligible_reports':len(selected),
-        'displayed_event_groups':len(clusters),'filtered_reports':len(events)-len(selected),
+        'displayed_event_groups':len(clusters),'indicator_groups':len(indicator_groups),
+        'filtered_reports':len(events)-len(selected),
         'excluded_by_kind':dict(reasons),
         'high_priority_event_groups':sum(g['triage']['priority']=='high' for g in clusters),
         'source_reviewed_groups':sum(bool(g.get('source_status')) for g in clusters),
         'decision_log':decisions},ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'reports':len(events),'eligible':len(selected),
-                      'groups':len(clusters),'excluded':dict(reasons),
+                      'groups':len(clusters),'indicators':len(indicator_groups),'excluded':dict(reasons),
                       'priority_high':sum(g['triage']['priority']=='high' for g in clusters)},ensure_ascii=False))
 if __name__=='__main__':main()
