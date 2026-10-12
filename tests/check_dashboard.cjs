@@ -2,11 +2,17 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const assert=require('node:assert/strict');
 const html=fs.readFileSync('index.html','utf8');
-const scripts=[...html.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)];
-assert.ok(scripts.length>0,'Expected inline dashboard script');
-for (const [i,m] of scripts.entries())new vm.Script(m[1],{filename:'index-inline-'+i+'.js'});
-for(const id of ['tablive','tabhist','tabatlas','map','feed','detail']){
- assert.ok(html.includes('id="'+id+'"'),'Missing UI control '+id);
+const app=fs.readFileSync('app.js','utf8');
+const css=fs.readFileSync('styles.css','utf8');
+new vm.Script(app,{filename:'app.js'});
+assert.ok(html.includes('src="./app.js"'),'App bundle must be referenced');
+assert.ok(html.includes('href="./styles.css"'),'Light stylesheet must be referenced');
+for(const id of ['globe','tabLive','tabHistory','tabAtlas','tabScenario','feed','profile','sector','region','country','effect','window','scenarioShortcut','sourceHealth']){
+  assert.ok(html.includes('id="'+id+'"'),'Missing required user control '+id);
 }
-assert.ok(html.includes("data/"),'Static dashboard must load monitored JSON');
-console.log('Dashboard script syntax and controls verified');
+assert.ok(app.includes('this.geoWorld')&&app.includes('Globe.prototype.drawEvent'),'3D globe not configured');
+assert.ok(app.includes('Math.sin(8*Math.PI*t)'),'Braided dual-impact geometry is missing');
+assert.ok(app.includes('widthFor'),'Severity-based width is missing');
+assert.ok(app.includes('candidateSources(event)'),'Event evidence source grouping missing');
+assert.ok(css.includes('.panel')&&css.includes('.globe-panel')&&!css.includes('color-scheme:dark'),'Light UI must render');
+console.log('GeoImpact v0.5 JS syntax, layout, braided arc and evidence-profile assertions passed');
