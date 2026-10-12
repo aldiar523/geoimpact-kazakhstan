@@ -83,6 +83,28 @@ def main():
   g['overall_effect']='unknown';g['direction']='Unknown'
   g['impact_channels']=[]
   g['hypothesis_not_impact']=True
+ # Hand-inspected public/institutional cases supplement incomplete RSS sampling.
+ try:curated=json.loads((DATA/'curated_global.json').read_text()).get('records',[])
+ except Exception:curated=[]
+ for item in curated:
+  e=dict(item)
+  e['id']=item['id'];e['tier']='Source-inspected international watch'
+  e['article_count']=1+len(item.get('other_sources',[]))
+  e['source_status']=item.get('status','Source review pending')
+  e['hypothesis_not_impact']=True
+  e['reason']=item['reason'];e['direction']='Unknown';e['overall_effect']='unknown'
+  e['impact_channels']=[];e['severity']=None;e['probability']='Unassessed'
+  e['exposure_channels']=item.get('exposure_channels',[])
+  e['related_sources']=[{'title':item['title'],'source':item['source'],'url':item['url'],
+                         'published':item['published']}]+[
+      {'title':x['label'],'source':x['label'],'url':x['url'],'published':item['published']}
+      for x in item.get('other_sources',[])]
+  e['triage']={'included':True,'kind':'international external event or decision',
+               'score':6,'priority':'medium' if item.get('watch_level')=='strong candidate' else 'review',
+               'reason':item['reason']}
+  selected_groups=[g for g in selected_groups if g.get('id')!=e['id']]
+  selected_groups.append(e)
+ selected_groups.sort(key=lambda x:x.get('published',''),reverse=True)
  data={'generated_at':datetime.now(timezone.utc).isoformat(),
        'status':'Reported foreign developments for investigator screening; Kazakhstan effects hypothetical',
        'disclaimer':'Watch level is screening attention, not impact magnitude or likelihood',
