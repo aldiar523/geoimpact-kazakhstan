@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-12T10:18:26.936287+00:00",
+  "generated_at": "2026-10-12T10:19:08.898951+00:00",
   "lookback_start": "2026-09-12",
   "lookback_end": "2026-10-12",
-  "all_reports": 496,
-  "eligible_reports": 58,
-  "displayed_event_groups": 30,
-  "filtered_reports": 438,
+  "all_reports": 497,
+  "eligible_reports": 60,
+  "displayed_event_groups": 32,
+  "filtered_reports": 437,
   "excluded_by_kind": {
-    "background": 438
+    "background": 437
   },
   "high_priority_event_groups": 15,
   "source_reviewed_groups": 1,
@@ -1289,6 +1289,17 @@
       "kind": "background"
     },
     {
+      "id": "f5917c5cf0fdd41714",
+      "date": "2026-10-08T07:32:35+00:00",
+      "title": "President: Azerbaijan is working jointly with Kazakhstan and Uzbekistan to create a green energy corridor - Report.az",
+      "sector": "Transport",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
       "id": "96ddf55483a30d1787",
       "date": "2026-10-08T07:13:00+00:00",
       "title": "President: Azerbaijan is working jointly with Kazakhstan and Uzbekistan to create a green energy corridor - Apa.az",
@@ -1406,10 +1417,12 @@
       "title": "Kazakhstan cuts sunflower seed exports amid record processing - UkrAgroConsult",
       "sector": "Trade",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; concrete reported development",
+      "score": 6,
+      "kind": "reported action",
+      "priority": "medium",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "4eb522271e1d21b7d2",
@@ -2078,10 +2091,12 @@
       "title": "Kazakhstan signs over 60 new contracts at Digital Bridge forum - Telecompaper",
       "sector": "Digital",
       "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
+      "included": true,
+      "reason": "Kazakhstan explicitly exposed; concrete reported development",
+      "score": 6,
+      "kind": "reported action",
+      "priority": "medium",
+      "pathway": "kazakhstan-direct"
     },
     {
       "id": "b877c78849f7c116b0",
