@@ -8,3 +8,16 @@
 @media(max-width:1290px){.workspace{grid-template-columns:minmax(270px,320px) minmax(370px,1fr) minmax(280px,330px);gap:9px;padding:9px}.topbar{padding:14px 17px}.tab{padding:7px 9px}}
 @media(max-width:1080px){.workspace{grid-template-columns:315px 1fr;grid-template-rows:minmax(480px,63vh) minmax(330px,auto);height:auto}.profile-panel{grid-column:1/-1}.feed-panel{grid-row:1}.globe-panel{grid-row:1}.profile-panel .panel-body{max-height:none}}
 @media(max-width:660px){.topbar{align-items:flex-start;flex-direction:column}.workspace{display:flex;flex-direction:column;height:auto}.feed-panel{max-height:370px}.globe-panel{height:480px;min-height:480px}.maptop{top:12px;left:13px}.maptop h2{font-size:15px}.globe-controls{top:12px;right:11px}.mapfooter{bottom:8px;font-size:9px}.mapnotice{display:none}}
+
+/* v0.6: evidence dossier floats above the globe, never consumes the right filter column. */
+.profile-layer[hidden]{display:none!important}
+.profile-layer{position:absolute;inset:0;z-index:45;display:flex;justify-content:center;align-items:flex-start;padding:58px 24px 26px}
+.profile-scrim{position:absolute;inset:0;background:rgba(24,43,70,.12);backdrop-filter:blur(2px);cursor:pointer}
+.profile-modal{position:relative;z-index:1;width:min(640px,100%);max-height:calc(100% - 4px);display:flex;flex-direction:column;overflow:hidden;background:#fff;border:1px solid #d9e5f3;box-shadow:0 20px 65px rgba(22,50,83,.23);border-radius:17px}
+.profile-modal-head{padding:16px 21px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e7edf4;background:#fcfdff;flex-shrink:0}
+.profile-modal-head h2{font:800 17px/1.4 Manrope,sans-serif;margin:3px 0 0}
+.close-profile{border:1px solid #dde6f1;color:#5c708c;background:#f6f9fd;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:14px}
+.close-profile:hover,.close-profile:focus{background:#e6f2ff;color:#235eaa}
+.profile-scroll{padding:15px 22px 22px;overflow-y:auto;overscroll-behavior:contain}
+.profile-scroll .profilehead h3{font-size:17px}
+@media(max-width:660px){.profile-layer{padding:18px 10px}.profile-modal{max-height:100%}.profile-scroll{padding:14px}.profile-modal-head{padding:12px 14px}}
