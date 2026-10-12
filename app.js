@@ -5,7 +5,31 @@
   const $ = id => document.getElementById(id);
   const tone = {positive:{color:"#189968",klass:"green",label:"Positive"},negative:{color:"#d64c53",klass:"red",label:"Negative"},critical:{color:"#26303c",klass:"dark",label:"Critical"},neutral:{color:"#407fdc",klass:"blue",label:"Neutral"},unknown:{color:"#8291a4",klass:"grey",label:"Unknown"},mixed:{color:"#9b7c70",klass:"mixed",label:"Mixed"}};
   const KZ = [48,67];
-  const memory = {mode:"live",events:[],history:[],scenario:[],atlas:{assets:[],links:[],owners:[]},reports:{},world:[],status:null,selection:null,worldError:false};
+  const memory = {mode:"live",events:[],international:[],history:[],scenario:[],atlas:{assets:[],links:[],owners:[]},reports:{},world:[],status:null,selection:null,worldError:false};
+  const REVIEW_KEY="geoimpact-reviews-v1";
+  function loadReviews(){try{const v=JSON.parse(window.localStorage.getItem(REVIEW_KEY)||"{}");return v&&typeof v==="object"?v:{}}catch{return {}}}
+  memory.reviews=loadReviews();
+  function reviewId(e){
+    const month=(e.published||"").slice(0,7);
+    if(e.situation_cluster)return "situation:"+e.situation_cluster+":"+month;
+    const ids=Array.isArray(e.article_ids)?e.article_ids:[];
+    return (e.news_group_id&&ids.length?"group:"+ids.slice().sort()[0]:"event:"+(e.id||e.title||"unknown"));
+  }
+  function reviewFor(e){return memory.reviews[reviewId(e)]||null}
+  function statusFor(e){return reviewFor(e)?.decision||"pending"}
+  function saveReview(e,decision,note){
+    if(!["keep","dismiss","unsure"].includes(decision))return;
+    memory.reviews[reviewId(e)]={decision,note:String(note||"").slice(0,2000),
+      reviewed_at:new Date().toISOString(),title:e.title||"",country:e.country||"Unknown"};
+    try{window.localStorage.setItem(REVIEW_KEY,JSON.stringify(memory.reviews))}catch{
+      $("reviewProgress").textContent="Local storage unavailable: export reviews to save";
+    }
+    updateReviewProgress();renderFeed();
+  }
+  function updateReviewProgress(){
+    const list=memory.mode==="international"?memory.international:memory.events;
+    $("reviewProgress").textContent="Human review: "+list.filter(e=>statusFor(e)!=="pending").length+" / "+list.length+" · browser only";
+  }
   const defaultContext=[
     {label:"EIA — world oil transit chokepoints",url:"https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",role:"Structural background, not verification of a news article"},
     {label:"IMF — Kazakhstan economic outlook (2026)",url:"https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",role:"Economic transmission background; not event-specific evidence"}
@@ -66,8 +90,8 @@
     a.append(note);parent.append(a);
   }
   function statusPill(state){const dir=normalizeDirection(state);return make("span","pill "+tone[dir].klass,tone[dir].label);}
-  function currentItems(){return memory.mode==="live"?memory.events:memory.mode==="historical"?memory.history:memory.mode==="scenario"?memory.scenario:memory.atlas.assets;}
-  function allSectors(){return [...new Set(memory.events.concat(memory.history,memory.scenario).map(e=>e.sector).filter(Boolean))].sort();}
+  function currentItems(){return memory.mode==="live"?memory.events:memory.mode==="international"?memory.international:memory.mode==="historical"?memory.history:memory.mode==="scenario"?memory.scenario:memory.atlas.assets;}
+  function allSectors(){return [...new Set(memory.events.concat(memory.international,memory.history,memory.scenario).map(e=>e.sector).filter(Boolean))].sort();}
   function allRegions(){return [...new Set(memory.events.concat(memory.history,memory.scenario).map(e=>e.region).filter(Boolean))].sort();}
   function allCountries(){return [...new Set(memory.events.concat(memory.history,memory.scenario).map(e=>e.country).filter(Boolean))].sort();}
   function fillOptions(id,options){
@@ -81,31 +105,36 @@
     const q=$("search").value.trim().toLowerCase(),sec=$("sector").value,region=$("region").value,country=$("country").value,eff=$("effect").value,days=Number($("window").value),item=currentItems();
     const filtered=item.filter(e=>{
       if(memory.mode==="atlas")return (!sec||e.sector===sec)&&(!q||[e.name,e.external_counterpart,e.id,e.sector].join(" ").toLowerCase().includes(q));
-      if(memory.mode==="live"&&daysOld(e)>days)return false;
+      if(["live","international"].includes(memory.mode)&&daysOld(e)>days)return false;
+      if(["live","international"].includes(memory.mode)){
+        const st=statusFor(e),filter=$("reviewFilter").value;
+        if(filter==="active"&&st==="dismiss")return false;
+        if(!["all","active"].includes(filter)&&st!==filter)return false;
+      }
       return (!sec||e.sector===sec)&&(!region||e.region===region)&&(!country||e.country===country)&&(!eff||direction(e)===eff)&&(!q||[e.title,e.summary,e.sector,e.region,e.country,(e.matches||[]).map(x=>x.asset).join(" ")].join(" ").toLowerCase().includes(q));
     });
-    if(memory.mode==="live"&&$("sortOrder").value==="priority"){
+    if(["live","international"].includes(memory.mode)&&$("sortOrder").value==="priority"){
       const weight=x=>({high:0,medium:1,review:2})[x.triage?.priority]??3;
       filtered.sort((a,b)=>weight(a)-weight(b)||new Date(b.published)-new Date(a.published));
     }
     return filtered;
   }
   function setMode(m){
-    memory.mode=m;for(const [id,key] of [["tabLive","live"],["tabHistory","historical"],["tabAtlas","atlas"],["tabScenario","scenario"]])$(id).classList.toggle("active",key===m);
-    $("feedHeading").textContent=m==="live"?"Event monitor":m==="historical"?"Historical cases":m==="atlas"?"Dependency Atlas":"Scenario lab";
-    $("feedSubtitle").textContent=m==="live"?"Reported developments with specific Kazakhstan pathways":m==="historical"?"Documented reference incidents":m==="atlas"?"Named assets and external relationships":"Illustrative conditional effects";
+    memory.mode=m;for(const [id,key] of [["tabLive","live"],["tabInternational","international"],["tabHistory","historical"],["tabAtlas","atlas"],["tabScenario","scenario"]])$(id).classList.toggle("active",key===m);
+    $("feedHeading").textContent=m==="live"?"Kazakhstan-linked events":m==="international"?"Global shock watch":m==="historical"?"Historical cases":m==="atlas"?"Dependency Atlas":"Scenario lab";
+    $("feedSubtitle").textContent=m==="live"?"Reported developments with specific Kazakhstan pathways":m==="international"?"Foreign developments · hypothetical Kazakhstan transmission":m==="historical"?"Documented reference incidents":m==="atlas"?"Named assets and external relationships":"Illustrative conditional effects";
     $("effect").value="";$("sector").value="";$("region").value="";$("country").value="";$("search").value="";
     closeProfile();
     if(m==="scenario")pick(demo,{showProfile:false});
     else if(m==="historical")pick(memory.history[0],{showProfile:false});
-    else if(m==="live"&&memory.events.length)pick(memory.events.find(e=>direction(e)==="mixed"&&Number.isFinite(e.lat))||memory.events.find(e=>Number.isFinite(e.lat))||memory.events[0],{showProfile:false});
+    else if(["live","international"].includes(m)&&currentItems().length)pick(currentItems().find(e=>Number.isFinite(e.lat))||currentItems()[0],{showProfile:false});
     else {memory.selection=null;drawProfile(null);}
-    renderFeed();
+    updateReviewProgress();renderFeed();
   }
   function renderFeed(){
     const filtered=filterEvents(),feed=$("feed");clear(feed);
-    $("feedTotal").textContent=filtered.length+" "+(memory.mode==="atlas"?"assets":memory.mode==="live"?"event groups":"items");
-    if(!filtered.length){feed.append(make("div","empty",memory.mode==="live"?"No matching current reports. Check the collector health; this does not mean no relevant event occurred.":"No matches for the current filters."));globe.setEvents([]);$("unlocatedMarker").hidden=true;return;}
+    $("feedTotal").textContent=filtered.length+" "+(memory.mode==="atlas"?"assets":memory.mode==="live"?"event groups":memory.mode==="international"?"foreign developments":"items");
+    if(!filtered.length){feed.append(make("div","empty",["live","international"].includes(memory.mode)?"No matching developments. This does not prove there were no important events.":"No matches for the current filters."));globe.setEvents([]);$("unlocatedMarker").hidden=true;return;}
     const fragment=document.createDocumentFragment();
     for(const e of filtered){
       const atlasMode=memory.mode==="atlas",card=make("article","event"+((memory.selection?.id===(atlasMode?e.id:e.id))?" chosen":""));
@@ -115,9 +144,12 @@
       if(atlasMode)card.append(make("p","event-reason",shortText(e.external_counterpart,100)));
       else {
         card.append(make("div","event-meta",(e.country||"Geography unresolved")+" · "+e.sector+" · "+(memory.mode==="live"?(e.triage?.kind||"Reported development"):e.tier||"Historical event")));
-        if(memory.mode==="live"){
+        if(["live","international"].includes(memory.mode)){
           const count=e.article_count||1;
           card.append(make("p","event-reason",(e.triage?.priority||"review").toUpperCase()+" investigation priority · "+count+" linked report"+(count===1?"":"s")));
+          const state=statusFor(e);
+          card.append(make("span","review-status-chip "+state,state==="pending"?"Review pending":state==="keep"?"Keep":state==="dismiss"?"Dismissed":"Not sure"));
+          if(memory.mode==="international")card.append(make("p","watch-tag","Potential indirect exposure · "+(e.watch_level||"hypothesis")));
         }
         else if((e.impact_channels||[]).length>0){
           card.append(make("p","event-reason",(e.impact_channels||[]).length+" pathway(s) to inspect · "+(e.scenario?"conditional":"event-based")));
