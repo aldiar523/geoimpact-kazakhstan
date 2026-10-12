@@ -46,6 +46,17 @@ class EventScreeningTests(unittest.TestCase):
   b=dict(self.ev("Oil terminal closed after fire in Black Sea",country="Russia"),
          published="2026-10-01T12:00:00+00:00")
   self.assertEqual(len(cluster([{**a,"triage":screen(a)},{**b,"triage":screen(b)}])),2)
+ def test_material_oil_shipments_rise(self):
+  e=self.ev("KazTransOil’s oil shipments via BTC rise 24% to 1.164M tons",tier="Named asset match",country="Kazakhstan",matches=[{"asset_id":"CA-003"}])
+  self.assertTrue(screen(e)["included"],screen(e))
+ def test_named_uranium_approval(self):
+  e=self.ev("Kazatomprom shareholders approve China uranium sale",tier="Named asset match",sector="Mining",country="Kazakhstan",matches=[{"asset_id":"CA-011"}])
+  self.assertTrue(screen(e)["included"],screen(e))
+ def test_tanker_incidents_grouped_as_situation(self):
+  first=self.ev("Two oil tankers attacked near Strait of Hormuz",country="Strait of Hormuz")
+  second=self.ev("Seven vessels hit by projectiles in Strait of Hormuz",country="Strait of Hormuz")
+  first['id']='t1';second['id']='t2'
+  self.assertEqual(len(cluster([{**first,"triage":screen(first)},{**second,"triage":screen(second)}])),1)
  def test_unrelated_news_not_risk(self):
   e=self.ev("New fashion collection launches in London",tier="Kazakhstan mentioned")
   self.assertFalse(screen(e)["included"])
