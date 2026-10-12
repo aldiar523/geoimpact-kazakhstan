@@ -62,10 +62,10 @@ DIRECT_ACT=re.compile(
     r'launch(?:es|ed) (?:new )?exports? |'
     r'joined as (?:a )?(?:shareholder|investor)|'
     r'(?:new|foreign|minority) shareholder (?:joins|acquires)|'
-    r'cuts? (?:\\w+\\s+){0,3}exports? |'
+    r'cuts? (?:\w+\s+){0,3}exports? |'
     r'(?:hit|sets?|reaches?) (?:a |an )?(?:new )?record|'
     r'(?:entered|comes) into operation|'
-    r'(?:signed|signs) over [1-9]\\d* (?:new )?contracts?|'
+    r'(?:signed|signs) over [1-9]\d* (?:new )?contracts?|'
 
     r'approv(?:ed|es) (?:a |the )?(?:uranium|oil|mineral|energy|export|investment) (?:deal|contract|sale)|'
     r'shareholders? approv(?:e|ed|es) |'
