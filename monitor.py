@@ -131,9 +131,9 @@ def classify(title,summary):
  tier='Named asset match' if hits else 'Kazakhstan mentioned' if direct else 'Systemic-market candidate'
  # Prefer the headline location, not a secondary country mentioned in a snippet.
  h=title.lower()
- country=next((c for c in LOC if re.search(r'(?<!\\w)'+re.escape(c.lower())+r'(?!\\w)',h)),None)
+ country=next((c for c in LOC if re.search(r'(?<!\w)'+re.escape(c.lower())+r'(?!\w)',h)),None)
  if not country:
-  country=next((c for c in LOC if re.search(r'(?<!\\w)'+re.escape(c.lower())+r'(?!\\w)',t)),'Unknown')
+  country=next((c for c in LOC if re.search(r'(?<!\w)'+re.escape(c.lower())+r'(?!\w)',t)),'Unknown')
  if country=='Unknown' and 'cpc' in t:country='Russia'
  if country=='Unknown' and 'hormuz' in t:country='Iran'
  latlon=LOC.get(country,[None,None])
