@@ -200,12 +200,34 @@ def main():
      byid[uid]=dict(id=uid,title=title[:220],url=url,summary=summary[:350],published=d.isoformat(),source=name,region=region,
                     verification='News candidate — not primary-source verified',detected_at=start.isoformat(),**{k:v for k,v in c.items() if k not in ('title','summary')})
      added+=1
+ # Six dated original-source cases added during the September–October audit.
+ # These do not imply that downstream Kazakhstan impacts were measured.
+ try:curated=json.loads((DATA/'curated_month.json').read_text()).get('items',[])
+ except Exception:curated=[]
+ curated_count=0
+ for item in curated:
+  published=item['date']+'T00:00:00+00:00'
+  dt=date(published)
+  if not dt or dt<cutoff:continue
+  label=item['title'];details=item.get('summary','')
+  classified=classify(label,details) or {}
+  enriched=decorate({**classified,'title':label,'summary':details,'sector':item.get('sector','Cross-sector')})
+  eid='source-'+hashlib.sha256(item['url'].encode()).hexdigest()[:18]
+  enriched.update({'country':item['country'],'lat':item['lat'],'lon':item['lon'],'region':item['region'],
+                   'sector':item['sector'],'reason':item['reason'],'tier':'Source-inspected record',
+                   'source_status':item.get('source_status','Source record reviewed; impacts not assessed'),
+                   'publication_precision':'date','other_sources':item.get('sources',[])})
+  byid[eid]=dict(id=eid,title=label,url=item['url'],summary=details,published=published,
+                 source=item['source'],detected_at=start.isoformat(),
+                 verification=item.get('source_status','Source record; impact not verified'),
+                 **{k:v for k,v in enriched.items() if k not in ('title','summary')})
+  curated_count+=1
  events=sorted(byid.values(),key=lambda v:v['published'],reverse=True)[:800]
  good=sum(x['ok'] for x in health)
  feed=dict(generated_at=start.isoformat(),lookback_start=cutoff.date().isoformat(),lookback_end=start.date().isoformat(),
  classification='30-day candidate backfill; not exhaustive or independently verified',events=events)
  status=dict(last_poll=start.isoformat(),interval_hours=12,history_window_days=30,sources_configured=len(SOURCES),sources_successful=good,
-             source_health=sorted(health,key=lambda x:x['source']),candidate_count=len(events),new_candidates=added,
+             source_health=sorted(health,key=lambda x:x['source']),candidate_count=len(events),new_candidates=added,source_reviewed_cases=curated_count,
              error='All sources failed; do not interpret an empty feed as no developments' if good==0 else None)
  (DATA/'feed.json').write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n')
  (DATA/'status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n')
