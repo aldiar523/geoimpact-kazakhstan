@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """GeoImpact KZ: public RSS news candidate screening; not verification."""
-import json,re,html,urllib.request,xml.etree.ElementTree as ET,hashlib
+import json,re,html,urllib.request,urllib.parse,xml.etree.ElementTree as ET,hashlib
 from pathlib import Path
 from datetime import datetime,timezone,timedelta
 from email.utils import parsedate_to_datetime
@@ -32,10 +32,66 @@ Google News ASEAN|ASEAN|https://news.google.com/rss/search?q=ASEAN+OR+Vietnam+OR
 Google News Africa|Africa|https://news.google.com/rss/search?q=Africa+mining+OR+oil+exports+OR+shipping+when%3A7d&hl=en-US&gl=US&ceid=US:en
 Google News LATAM|LATAM|https://news.google.com/rss/search?q=Latin+America+mining+OR+oil+OR+commodity+exports+when%3A7d&hl=en-US&gl=US&ceid=US:en
 Google News MENA|MENA|https://news.google.com/rss/search?q=Middle+East+oil+OR+Hormuz+OR+Red+Sea+shipping+when%3A7d&hl=en-US&gl=US&ceid=US:en"""
-SOURCES=[tuple(x.split('|',2)) for x in RAW.splitlines()]
+BASE_SOURCES=[tuple(x.split('|',2)) for x in RAW.splitlines()]
+# Dated search queries extend RSS back to the entire previous month; two half-month
+# windows reduce search-feed result truncation. Source names explain the origin.
+REVIEW_QUERIES=[
+ ('Kazakhstan Economy','Kazakhstan', '"Kazakhstan" (exports OR inflation OR currency OR budget)'),
+ ('Kazakhstan Oil','Kazakhstan', '"Kazakhstan" (CPC OR Tengiz OR Kashagan OR oil pipeline)'),
+ ('Kazakhstan Mining','Kazakhstan', '"Kazakhstan" (uranium OR Kazatomprom OR critical minerals)'),
+ ('Kazakhstan China','China', '"Kazakhstan" "China" (trade OR tariff OR rail OR investment)'),
+ ('Kazakhstan Russia','Russia/Eurasia', '"Kazakhstan" "Russia" (sanctions OR transit OR energy)'),
+ ('Kazakhstan EU','Europe/UK', '"Kazakhstan" (EU OR Europe) (trade OR critical minerals OR sanctions)'),
+ ('Kazakhstan US','US', '"Kazakhstan" "United States" (tariffs OR sanctions OR investment)'),
+ ('Kazakhstan Central Asia','Central Asia', '"Kazakhstan" (Uzbekistan OR Kyrgyzstan OR Tajikistan) (water OR power OR trade)'),
+ ('Kazakhstan Caspian','Central Asia', '"Kazakhstan" (Caspian OR Azerbaijan OR corridor OR logistics)'),
+ ('Kazakhstan Internet','Central Asia', '"Kazakhstan" (internet OR fibre OR telecom OR cyber)'),
+ ('Kazakhstan Migration','Central Asia', '"Kazakhstan" (migration OR remittances OR refugees)'),
+ ('Kazakhstan MENA','MENA', '"Kazakhstan" (Iran OR Hormuz OR Middle East OR oil price)'),
+ ('Kazakhstan India','India', '"Kazakhstan" "India" (trade OR investment OR energy)'),
+ ('Kazakhstan ASEAN','ASEAN', '"Kazakhstan" (ASEAN OR Indonesia OR Vietnam OR Malaysia OR Singapore) (trade OR investment)'),
+ ('Kazakhstan Africa','Africa', '"Kazakhstan" (Africa OR Zambia OR Congo) (mining OR trade)'),
+ ('Kazakhstan Latin America','LATAM', '"Kazakhstan" (Brazil OR Chile OR Argentina) (trade OR mining)'),
+ ('Hormuz Oil','MENA', '"Strait of Hormuz" (oil OR exports OR tanker OR blockade)'),
+ ('Oil Market OPEC','Global', 'OPEC (oil production OR oil prices OR exports)'),
+ ('Global Brent','Global', '"Brent" (oil prices OR supply shock OR production)'),
+ ('Red Sea Supply','MENA', '"Red Sea" (shipping disruption OR oil freight OR supply chain)'),
+ ('Global Uranium','Global', '"uranium" (price OR mine disruption OR supply shortage)'),
+ ('China Copper','China', '"China" (copper demand OR metal prices OR industrial slowdown)'),
+ ('Wheat Fertilizer','Global', 'global (wheat OR fertilizer) (prices OR export ban OR shortage)'),
+ ('Central Asia Grid','Central Asia', '"Central Asia" (grid outage OR electricity shortage OR power interconnection)'),
+ ('Central Asia Water','Central Asia', '"Central Asia" (water shortage OR irrigation OR reservoir)'),
+ ('Russia Oil Transit','Russia/Eurasia', '"Russia" (pipeline disruption OR oil export sanctions OR CPC)'),
+]
+def build_sources(reference=None):
+ today=(reference or datetime.now(timezone.utc)).date()
+ first=today-timedelta(days=30)
+ halfway=today-timedelta(days=15)
+ # Search-feed queries are provisional retrieval tools, not complete news archives.
+ sources=list(BASE_SOURCES)
+ for label,region,q in REVIEW_QUERIES:
+  for lo,hi,part in [(first,halfway,'older'),(halfway,today+timedelta(days=1),'recent')]:
+   query=q+' after:'+lo.isoformat()+' before:'+hi.isoformat()
+   url='https://news.google.com/rss/search?'+urllib.parse.urlencode({'q':query,'hl':'en-US','gl':'US','ceid':'US:en'})
+   sources.append(('Archive '+label+' '+part,region,url))
+ return sources
+SOURCES=build_sources()
 ASSETS=[('Oil','CPC pipeline','cpc|kropotkinskaya|novorossiysk|caspian pipeline|tengiz'),('Mining','Kazatomprom','kazatomprom|uranium one|sulphuric acid|sulfuric acid'),('Electricity','Central Asian grid','kegoc|syrdarya power|uzbekistan power grid'),('Water','Transboundary rivers','ili river|irtysh|syr darya|syrdarya|chu talas'),('Digital','Cross-border telecom','kazakhtelecom|transtelecom|caspilink|trans-caspian cable'),('Mining','Copper smelting and mining','kazzinc|kazchrome|kaz minerals|aktogay|bozshakol')]
 GLOBAL=[('Oil','brent crude|global oil price|world oil prices|opec|strait of hormuz'),('Mining','global uranium price|uranium spot price|global copper price'),('Transport','suez canal blocked|red sea shipping disruption|caspian pipeline shutdown')]
-LOC={'Russia':[61,105],'China':[35,104],'Uzbekistan':[41,64],'India':[21,79],'Iran':[32,54],'United States':[38,-97],'Ukraine':[49,32],'Turkey':[39,35],'Germany':[51,10],'United Kingdom':[54,-2],'Kazakhstan':[48,67],'Afghanistan':[34,67],'Saudi Arabia':[24,45],'Israel':[31.5,35],'Azerbaijan':[40,48]}
+LOC={'Russia':[61,105],'China':[35,104],'Uzbekistan':[41,64],'India':[21,79],'Iran':[32,54],'United States':[38,-97],
+'Ukraine':[49,32],'Turkey':[39,35],'Germany':[51,10],'United Kingdom':[54,-2],'Kazakhstan':[48,67],
+'Afghanistan':[34,67],'Saudi Arabia':[24,45],'Israel':[31.5,35],'Azerbaijan':[40,48],
+'Kyrgyzstan':[41.2,74.7],'Tajikistan':[38.8,71],'Turkmenistan':[39.1,59.4],
+'Singapore':[1.35,103.8],'Indonesia':[-2,118],'Malaysia':[4.2,102],'Vietnam':[16,108],
+'Thailand':[15,101],'Philippines':[12,122],'Pakistan':[30,69],'UAE':[24,54],
+'United Arab Emirates':[24,54],'Iraq':[33,44],'Qatar':[25.3,51.2],'Oman':[21.5,56],
+'France':[46,2],'Italy':[42.5,12.5],'Belgium':[50.7,4.5],'Poland':[52,19],'Romania':[46,25],
+'Georgia':[42,43.5],'Armenia':[40,45],'Netherlands':[52.1,5.3],'Switzerland':[47,8.2],
+'Japan':[36,138],'South Korea':[36,128],'Mongolia':[47,103],'Taiwan':[23.8,121],
+'Brazil':[-10,-55],'Argentina':[-34,-64],'Chile':[-33,-71],'Mexico':[23,-102],
+'Canada':[56,-106],'Australia':[-25,133],'South Africa':[-29,24],'Nigeria':[9,8],
+'Egypt':[27,30],'Ethiopia':[9,40],'Kenya':[0.1,38],'Zambia':[-13.1,27.9],
+'Democratic Republic of Congo':[-3,23],'DR Congo':[-3,23],'Congo':[-3,23]}
 def now():return datetime.now(timezone.utc)
 def date(v):
  try:return parsedate_to_datetime(v).astimezone(timezone.utc)
@@ -68,9 +124,16 @@ def classify(title,summary):
  # Require a named asset, an explicit Kazakhstan economic exposure, or a genuine global-market trigger.
  contextual=bool(re.search(r'\btrade\b|\bimport\w*\b|\bexport\w*\b|\benergy\b|\boil\b|\bmining\b|\buranium\b|\belectricity\b|\bwater\b|\bmigration\b|\binvest\w*\b|\bfinanc\w*\b|\btransport\b|\bpipeline\b|\brail\b|\bsanction\w*\b|\bdigital\b|\bsupply\b|\bpolicy\b|\bborder\b|\btariff\w*\b',t))
  if not (hits or markets or (direct and contextual)):return None
+ # Suppress event types lacking a documented exposure pathway, rather than
+ # retaining every otherwise-irrelevant Kazakhstan mention.
+ if not hits and not markets and direct and re.search(r'\bconcert\b|\bfootball\b|\bfilm festival\b|\bfashion show\b',t):return None
  sector=(hits[0][0] if hits else markets[0] if markets else 'Cross-sector')
  tier='Named asset match' if hits else 'Kazakhstan mentioned' if direct else 'Systemic-market candidate'
- country=next((c for c in LOC if c.lower() in t),'Unknown')
+ # Prefer the headline location, not a secondary country mentioned in a snippet.
+ h=title.lower()
+ country=next((c for c in LOC if re.search(r'(?<!\\w)'+re.escape(c.lower())+r'(?!\\w)',h)),None)
+ if not country:
+  country=next((c for c in LOC if re.search(r'(?<!\\w)'+re.escape(c.lower())+r'(?!\\w)',t)),'Unknown')
  if country=='Unknown' and 'cpc' in t:country='Russia'
  if country=='Unknown' and 'hormuz' in t:country='Iran'
  latlon=LOC.get(country,[None,None])
@@ -105,7 +168,7 @@ def main():
    if err:continue
    for title,url,summary,pub in news:
     d=date(pub)
-    if not d or d<start-timedelta(days=14) or d>start+timedelta(days=1):continue
+    if not d or d<start-timedelta(days=30) or d>start+timedelta(days=1):continue
     c=classify(title,summary)
     if c is None:continue
     c=decorate({**c,'title':title,'summary':summary})
@@ -114,10 +177,11 @@ def main():
      byid[uid]=dict(id=uid,title=title[:220],url=url,summary=summary[:350],published=d.isoformat(),source=name,region=region,
                     verification='News candidate — not primary-source verified',detected_at=start.isoformat(),**{k:v for k,v in c.items() if k not in ('title','summary')})
      added+=1
- events=sorted(byid.values(),key=lambda v:v['published'],reverse=True)[:300]
+ events=sorted(byid.values(),key=lambda v:v['published'],reverse=True)[:800]
  good=sum(x['ok'] for x in health)
- feed=dict(generated_at=start.isoformat(),classification='Screened news reporting — unverified candidates',events=events)
- status=dict(last_poll=start.isoformat(),interval_hours=12,sources_configured=len(SOURCES),sources_successful=good,
+ feed=dict(generated_at=start.isoformat(),lookback_start=cutoff.date().isoformat(),lookback_end=start.date().isoformat(),
+ classification='30-day candidate backfill; not exhaustive or independently verified',events=events)
+ status=dict(last_poll=start.isoformat(),interval_hours=12,history_window_days=30,sources_configured=len(SOURCES),sources_successful=good,
              source_health=sorted(health,key=lambda x:x['source']),candidate_count=len(events),new_candidates=added,
              error='All sources failed; do not interpret an empty feed as no developments' if good==0 else None)
  (DATA/'feed.json').write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n')
