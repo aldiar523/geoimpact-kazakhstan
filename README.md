@@ -1,3 +1,19 @@
+# GeoImpact Kazakhstan v0.5
+
+**Live dashboard:** https://aldiar523.github.io/geoimpact-kazakhstan/
+
+The interface now uses a light, responsive design and an interactive 3D globe rendered from **locally hosted Natural Earth country boundaries**. No external map tile API key is required.
+
+The left panel is the 12-hour screened news feed, the central panel is the globe, and the right panel contains filters and an event dossier with description, original reporting, research sources and Kazakhstan impact channels.
+
+**Route legend:** green = positive; red = negative; charcoal = critical; blue = neutral; grey = unknown. Mixed events are shown as **two braided green/red strands**, with separate directional mechanisms. Stroke width varies with documented 1–5 severity; no rating is invented when severity is unknown. Dashed lines remain subject to evidence review.
+
+The Scenario tab provides an explicitly hypothetical Hormuz oil-price case. Actual oil-price reactions and Kazakhstan domestic consequences must be verified, so EIA and IMF material is presented only as background evidence.
+
+Implementation notes: [impact encoding v0.5](IMPACT_VISUALIZATION_V05.md) · [evidence review protocol](METHODOLOGY_V04.md).
+
+---
+
 # GeoImpact Kazakhstan
 
 **Repository:** https://github.com/aldiar523/geoimpact-kazakhstan
