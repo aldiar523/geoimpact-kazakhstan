@@ -1,81 +1,62 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>GeoImpact — Kazakhstan External Shock Monitor</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-<style>
-:root{color-scheme:dark;--bg:#0a111d;--panel:#101c2c;--border:#2c415a;--text:#eff5fc;--muted:#9eb0c6;--blue:#62c9ed}*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:13px/1.52 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
-header{height:70px;padding:12px 21px;background:#0e1826;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:12px}
-h1{font-size:20px;margin:0;letter-spacing:.1px}header small{font-size:10px;color:var(--muted);letter-spacing:1px}
-.status{color:var(--muted);font-size:11px;text-align:right}main{display:grid;grid-template-columns:minmax(290px,345px) 1fr 275px;height:calc(100vh - 70px);min-height:590px}
-aside{background:var(--panel);overflow:auto}.left{border-right:1px solid var(--border)}.right{border-left:1px solid var(--border)}.padding{padding:16px}
-h2{font-size:13px;letter-spacing:1px;margin:3px 0 13px}.tabs{display:flex;gap:7px;margin:8px 0 11px}button,select,input{background:#17273a;color:var(--text);border:1px solid #3d556e;border-radius:7px;padding:8px 9px;outline:0}button{cursor:pointer}button.on{background:#26465e;border-color:#6ccaf3}button:hover{border-color:#85d8fa}
-.tabs button{flex:1}.hint{font-size:11px;color:#dcc290;background:#34291952;padding:9px;border-radius:7px;margin-bottom:12px;border:1px solid #665037}
-.event{border:1px solid #30465d;background:#17253a;border-radius:10px;padding:13px;margin-bottom:9px;cursor:pointer}.event:hover,.event.selected{border-color:#79d6ef}
-.event h3{font-size:13px;line-height:1.4;margin:8px 0 5px}.minor{color:var(--muted);font-size:11px}.badge{display:inline-block;border:1px solid #65798f;border-radius:14px;padding:1px 8px;font-size:10px;color:#d6e3f0}
-#map{height:100%;width:100%;background:#0b1828}.mapwrap{position:relative}.mapnote{position:absolute;top:15px;left:16px;z-index:500;padding:12px;background:#0b1829e8;border-radius:10px;border:1px solid #35516c;max-width:290px;font-size:12px;pointer-events:none}.mapnote b{display:block;font-size:13px}.mapkey{position:absolute;bottom:18px;left:15px;z-index:500;background:#0b1829e8;border:1px solid #35516c;border-radius:7px;padding:6px 10px;font-size:11px}
-.control{margin-bottom:13px}.control label{display:block;color:var(--muted);margin-bottom:4px;font-size:11px}.control select,.control input{width:100%}
-.box{border:1px solid #3a516b;background:#132338;border-radius:10px;padding:12px;font-size:12px;margin-bottom:11px}.box h3{margin:0 0 9px;font-size:13px}
-.box p{margin:6px 0}.box a{color:#9ddffe;overflow-wrap:anywhere}.empty{text-align:center;color:var(--muted);padding:25px 10px}
-.flow{stroke-dasharray:9 9;animation:flow 1.5s linear infinite}@keyframes flow{to{stroke-dashoffset:-36}}
-.leaflet-container{background:#132234}.leaflet-control-attribution{font-size:9px!important}
-footer{color:var(--muted);font-size:11px}
-@media(max-width:980px){main{display:flex;flex-direction:column;height:auto}.left{order:1;max-height:390px}.mapwrap{height:65vh;min-height:350px;order:2}.right{order:3}header{height:auto}.status{text-align:left}}
-</style></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f7fc"><meta name="description" content="GeoImpact Kazakhstan — evidence-led international news monitoring and dependency mapping">
+<title>GeoImpact Kazakhstan · Global Exposure Intelligence</title><link rel="stylesheet" href="./styles.css"></head>
 <body>
-<header><div><h1>◉ GeoImpact <span style="color:#69d3f2">Kazakhstan</span></h1><small>GLOBAL SHOCKS · EXTERNAL DEPENDENCIES · EVIDENCE TRIAGE</small></div><div id="status" class="status">Checking monitoring status…</div></header>
-<main>
-<aside class="left"><div class="padding"><h2>INTELLIGENCE FEED</h2><div class="tabs"><button id="tablive" class="on">Live candidates</button><button id="tabhist">Historical cases</button><button id="tabatlas">Dependency Atlas</button></div><div class="hint">News candidates are automatically screened, not verified Kazakhstan impacts.</div><div id="feed" aria-live="polite"></div></div></aside>
-<section class="mapwrap"><div id="map"></div><div class="mapnote"><b>Global exposure map → Kazakhstan</b>Animated paths are potential transmission links requiring investigation, not evidence of an impact.</div><div class="mapkey">● Kazakhstan · ◉ External news origin · ┄ Potential pathway</div></section>
-<aside class="right"><div class="padding"><h2>EXPLORE & FILTER</h2>
-<div class="control"><label for="q">Search headlines</label><input id="q" placeholder="Event, location, asset…"/></div>
-<div class="control"><label for="sector">Sector</label><select id="sector"><option value="">All sectors</option></select></div>
-<div class="control"><label for="region">Region</label><select id="region"><option value="">All regions</option></select></div>
-<div class="control"><label for="country">Country</label><select id="country"><option value="">All countries</option></select></div>
-<div class="control"><label for="direction">Potential effect</label><select id="direction"><option value="">Any</option><option>Potential positive</option><option>Potential negative</option><option>Unknown</option><option>Observed negative</option></select></div>
-<div class="control"><label for="days">Publication window</label><select id="days"><option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7" selected>Last 7 days</option><option value="14">Last 14 days</option><option value="30">Last 30 days</option></select></div>
-<div id="health" class="box"><h3>Collector health</h3>Not yet verified.</div>
-<div id="detail" class="box"><h3>Event evidence</h3><p class="minor">Select an event to inspect its potential Kazakhstan link and source.</p></div>
-<footer>Geopolitical risk research prototype. Severity and probabilities are unassessed without validated models and supporting evidence.</footer>
-</div></aside></main>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-const el=id=>document.getElementById(id),KZ=[48,67];
-const historical=[
-{id:'historical-2022-grid',title:'Central Asian electricity grid disruption, January 2022',summary:'KEGOC reported that a disturbance originating in Uzbekistan propagated into Kazakhstan’s interconnected grid, causing load shedding.',published:'2022-01-25T08:00:00Z',source:'KEGOC',url:'https://www.kegoc.kz/en/',country:'Uzbekistan',region:'Central Asia',sector:'Electricity',direction:'Observed negative',lat:41,lon:64,reason:'Kazakhstan–Central Asia electrical interconnection',matches:[{asset:'National electricity grid'}]},
-{id:'historical-2025-cpc',title:'CPC Kropotkinskaya pumping station disruption, February 2025',summary:'CPC reported damaged infrastructure and a bypass arrangement. Incident-specific national export or fiscal losses were not established.',published:'2025-02-17T08:00:00Z',source:'CPC',url:'https://www.cpc.ru/en/',country:'Russia',region:'Russia/Eurasia',sector:'Oil',direction:'Observed negative',lat:45.5,lon:40.6,reason:'Kazakhstan oil exports depend on CPC infrastructure in Russia',matches:[{asset:'Caspian Pipeline Consortium'}]}];
-let items=[],mode='live',selected=null,link=null,origin=null,map=null,atlas={assets:[],links:[],owners:[]},investigations={};
-if(window.L){map=L.map('map',{worldCopyJump:true}).setView([39,57],3);L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:18,attribution:'© OpenStreetMap · CARTO'}).addTo(map);L.circleMarker(KZ,{radius:10,color:'#b3eaff',fillColor:'#46bce5',fillOpacity:.93,weight:2}).addTo(map).bindPopup('Kazakhstan — country of policy impact');}
-function fill(id,vals){const node=el(id),prior=node.value;while(node.options.length>1)node.remove(1);[...new Set(vals.filter(Boolean))].sort().forEach(v=>{const o=document.createElement('option');o.textContent=v;o.value=v;node.add(o)});node.value=prior}
-function updateFilters(){let z=items.concat(historical);fill('sector',z.map(x=>x.sector));fill('region',z.map(x=>x.region));fill('country',z.map(x=>x.country));}
-function drawAtlas(){const list=atlas.assets||[],q=el('q').value.toLowerCase(),sec=el('sector').value;el('feed').replaceChildren();let filtered=list.filter(a=>(!sec||sec===a.sector)&&(!q||[a.name,a.external_counterpart,a.sector,a.id].join(' ').toLowerCase().includes(q)));if(!filtered.length){const d=document.createElement('div');d.className='empty';d.textContent='No Atlas assets match the search';el('feed').append(d)}for(const a of filtered){const c=document.createElement('article');c.className='event';const m=document.createElement('div');m.className='minor';m.textContent=a.id+' · '+a.sector;const t=document.createElement('h3');t.textContent=a.name;const p=document.createElement('p');p.className='minor';p.textContent=a.external_counterpart;c.append(m,t,p);c.onclick=()=>inspectAtlas(a);el('feed').append(c)}}
-function inspectAtlas(a){const d=el('detail');d.replaceChildren();const h=document.createElement('h3');h.textContent=a.name;d.append(h);const add=(label,value)=>{const p=document.createElement('p'),b=document.createElement('b');b.textContent=label+': ';p.append(b,document.createTextNode(value||'Not established'));d.append(p)};add('Research asset ID',a.id);add('Sector',a.sector);add('External counterpart',a.external_counterpart);add('Evidence', 'Existing Atlas relationship; not a verified new event');const link=document.createElement('a');link.href=a.source_url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Original research source ↗';d.append(link);const owns=atlas.owners.filter(x=>{let n=a.name.toLowerCase(),e=x.entity.toLowerCase();return (n.includes('cpc')&&e.includes('cpc'))||(n.includes('tengizchevroil')&&e.includes('tengizchevroil'))||(n.includes('kashagan')&&e.includes('ncoc'))||(n.includes('kazzinc')&&e.includes('kazzinc'))||(n.includes('kazatomprom')&&e.includes('kazatomprom'))||(n.includes('erg')&&e==='erg')||(n.includes('kegoc')&&e==='kegoc')||(n.includes('transtelecom')&&e==='transtelecom')||(n.includes('kazakhtelecom')&&e==='kazakhtelecom')});if(owns.length){let head=document.createElement('h3');head.textContent='Ownership observations (dated)';head.style.marginTop='12px';d.append(head);for(const o of owns.slice(0,12))add(o.holder,o.stake)}add('Sector links in the Atlas',String(atlas.links.filter(x=>x.sector===a.sector).length));add('Policy impact','Requires event-specific causal evidence');}
-function draw(){if(mode==='atlas'){drawAtlas();return}let base=mode==='live'?items:historical,query=el('q').value.toLowerCase(),windowDays=+el('days').value,now=Date.now();
-let list=base.filter(x=>(mode!=='live'||now-new Date(x.published).getTime()<=windowDays*86400000)&&(!query||[x.title,x.summary,x.country,x.sector,x.region].join(' ').toLowerCase().includes(query))&&(!el('sector').value||el('sector').value===x.sector)&&(!el('region').value||el('region').value===x.region)&&(!el('country').value||el('country').value===x.country)&&(!el('direction').value||el('direction').value===x.direction));
-el('feed').replaceChildren();
-if(!list.length){const d=document.createElement('div');d.className='empty';d.textContent=mode==='live'?'No current matching candidates. This does not prove no relevant events occurred; check source health.':'No historical examples match these filters.';el('feed').append(d);}
-for(let x of list.slice(0,80)){const card=document.createElement('article');card.className='event'+(selected?.id===x.id?' selected':'');
-const meta=document.createElement('div');meta.className='minor';meta.textContent=x.source+' · '+new Date(x.published).toLocaleDateString();
-const title=document.createElement('h3');title.textContent=x.title;
-const subt=document.createElement('div');subt.className='minor';subt.textContent=[x.sector,x.country,x.direction].join(' · ');
-const tag=document.createElement('span');tag.className='badge';tag.textContent=mode==='live'?(x.matches?.length?'NAMED ASSET · UNVERIFIED':'NEWS · UNVERIFIED'):'HISTORICAL CASE';
-card.append(meta,title,subt,tag);card.onclick=()=>inspect(x);el('feed').append(card);}
-}
-function inspect(x){selected=x;const d=el('detail');d.replaceChildren();const h=document.createElement('h3');h.textContent=x.title;d.append(h);
-function row(label,value){let p=document.createElement('p'),b=document.createElement('b');b.textContent=label+': ';p.append(b,document.createTextNode(value||'Unknown'));d.append(p)}
-row('Evidence status',x.investigation_stage||x.verification||'Historical operator documentation');row('Connection to Kazakhstan',x.reason);row('Relevant assets',(x.matches||[]).map(v=>v.asset).join(', ')||'No named asset verified');row('Effect direction',x.direction);row('Severity','Unassessed');row('Future impact probability','Unassessed');row('Description',x.summary);
-const ev=investigations[x.id];if(ev){row('Independent reporting leads',String(ev.independent_reporting_leads?.length||0));row('Primary-source search leads',String(ev.original_source_leads?.length||0));for(const m of (ev.original_source_leads||[]).slice(0,2)){let p=document.createElement('p'),a=document.createElement('a');a.textContent='Inspect possible official document ↗';a.href=m.url;a.target='_blank';a.rel='noopener noreferrer';p.append(a);d.append(p)}}
-for(const m of (x.matches||[]).slice(0,3)){if(m.source_url){let p=document.createElement('p'),a=document.createElement('a');a.href=m.source_url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Atlas background source for '+m.asset_id+' ↗';p.append(a);d.append(p)}}
-const a=document.createElement('a');a.textContent='Open original source ↗';a.href=x.url;a.target='_blank';a.rel='noopener noreferrer';d.append(a);
-if(map){if(link)map.removeLayer(link);if(origin)map.removeLayer(origin);if(Number.isFinite(x.lat)&&Number.isFinite(x.lon)){origin=L.circleMarker([x.lat,x.lon],{radius:8,color:'#f3c589',fillColor:'#c67b45',fillOpacity:.95}).addTo(map);link=L.polyline([[x.lat,x.lon],KZ],{color:'#65d3ee',weight:3,opacity:.8,className:'flow'}).addTo(map);map.fitBounds([[x.lat,x.lon],KZ],{padding:[80,80],maxZoom:5});}}
-draw()}
-['q','sector','region','country','direction','days'].forEach(id=>el(id).addEventListener('input',draw));
-function switchTab(next){mode=next;for(const k of ['live','hist','atlas'])el('tab'+k).classList.toggle('on',next===k);draw()}
-el('tablive').onclick=()=>switchTab('live');
-el('tabhist').onclick=()=>switchTab('historical');el('tabatlas').onclick=()=>switchTab('atlas');
-Promise.all(['feed','status','atlas','investigations'].map(n=>fetch('data/'+n+'.json?'+Date.now()).then(x=>{if(!x.ok)throw Error('Missing '+n);return x.json()}))).then(([f,s,a,v])=>{atlas=a;investigations=Object.fromEntries((v.cases||[]).map(x=>[x.event_id,x]));
-items=f.events||[];updateFilters();el('status').textContent='Last check: '+(s.last_poll?new Date(s.last_poll).toLocaleString():'not yet run')+' · '+s.sources_successful+'/'+s.sources_configured+' sources';
-el('health').replaceChildren();const h=document.createElement('h3');h.textContent='Collector health';const p=document.createElement('p');p.textContent=(s.error?s.error+'. ':'')+s.sources_successful+'/'+s.sources_configured+' sources reached; '+items.length+' screened candidates. Atlas: '+atlas.assets.length+' assets, '+atlas.owners.length+' ownership observations and '+atlas.links.length+' links. Checks every 12 hours (best effort).';el('health').append(h,p);draw()
-}).catch(()=>{el('status').textContent='Monitoring feed unavailable';el('health').textContent='Unable to load current feed data. Check GitHub Actions deployment.';draw()});
-draw();
-</script></body></html>
+<header class="topbar">
+  <div class="brand"><span class="brandmark" aria-hidden="true">◎</span><div><h1>GeoImpact <span class="kz">Kazakhstan</span></h1><small>GLOBAL EXPOSURE INTELLIGENCE</small></div></div>
+  <div class="topright"><span class="chip alive"><span class="dot"></span> MONITORING SCHEDULED</span><span class="chip">Sources <strong id="sourceHealth">—</strong></span><span class="chip">Updated <strong id="lastUpdated">checking…</strong></span></div>
+</header>
+<main class="workspace">
+  <aside class="panel feed-panel" aria-label="Screened global news">
+    <div class="panel-head"><div class="overline">Live intelligence stream</div><h2 id="feedHeading">News monitoring</h2><p id="feedSubtitle">Screened Kazakhstan exposure candidates</p>
+      <nav class="tabbar" aria-label="Research views"><button class="tab active" id="tabLive">Live feed</button><button class="tab" id="tabHistory">History</button><button class="tab" id="tabAtlas">Atlas</button><button class="tab" id="tabScenario">Scenarios</button></nav>
+    </div>
+    <div class="panel-body feed-body">
+      <div class="search"><input id="search" type="search" placeholder="Search events, countries and assets…" aria-label="Search events"></div>
+      <div class="feed-count"><span id="feedTotal">Loading news…</span><span id="mainCount">Checking RSS</span></div>
+      <div id="feed" aria-live="polite"><div class="empty">Loading source-linked news candidates…</div></div>
+    </div>
+  </aside>
+  <section class="globe-panel" aria-label="Interactive three-dimensional global exposure globe">
+    <div class="canvas-wrap"><canvas id="globe" aria-label="Rotatable 3D world globe with colored impact pathways into Kazakhstan"></canvas></div>
+    <div class="maptop"><div class="overline">Geographic transmission</div><h2>The world → Kazakhstan</h2><p>Drag to rotate · scroll to zoom · select a source marker</p></div>
+    <div class="globe-controls">
+      <button id="zoomIn" class="roundbtn" aria-label="Zoom in" title="Zoom in">+</button><button id="zoomOut" class="roundbtn" aria-label="Zoom out" title="Zoom out">−</button>
+      <button id="resetView" class="roundbtn" aria-label="Reset globe view" title="Reset view">⌖</button>
+      <button id="spin" class="roundbtn" aria-label="Toggle globe rotation" title="Toggle globe rotation">↻</button>
+    </div>
+    <div class="mapnotice" id="mapNotice">Braided lines = different impact channels · line width = assessed severity</div>
+    <div class="mapfooter" aria-label="Impact route legend">
+      <div class="legend"><span class="stroke" style="background:#189968"></span>Positive</div>
+      <div class="legend"><span class="stroke" style="background:#d64c53"></span>Negative</div>
+      <div class="legend"><span class="stroke" style="background:#26303c"></span>Critical</div>
+      <div class="legend"><span class="stroke" style="background:#407fdc"></span>Neutral</div>
+      <div class="legend"><span class="stroke" style="background:#8291a4"></span>Unknown</div>
+      <div class="legend"><span class="double"><i style="background:#189968"></i><i style="background:#d64c53"></i></span>Mixed / braided</div>
+      <span class="tiny">Dashed = needs review · thin = severity unassessed</span>
+    </div>
+  </section>
+  <aside class="panel profile-panel" aria-label="Filters and event investigation">
+    <div class="panel-head"><div class="overline">Evidence and exposure</div><h2>Event intelligence profile</h2><p>Original reporting, causal channels and what remains unknown</p></div>
+    <div class="panel-body">
+      <div class="overline">Narrow the investigation</div>
+      <div class="filters">
+        <div class="field"><label for="sector">Sector</label><select id="sector"><option value="">All sectors</option></select></div>
+        <div class="field"><label for="effect">Effect</label><select id="effect"><option value="">All directions</option><option value="positive">Positive</option><option value="negative">Negative</option><option value="critical">Critical</option><option value="neutral">Neutral</option><option value="unknown">Unknown</option><option value="mixed">Mixed</option></select></div>
+        <div class="field"><label for="country">Event country</label><select id="country"><option value="">All countries</option></select></div>
+        <div class="field"><label for="region">World region</label><select id="region"><option value="">All regions</option></select></div>
+        <div class="field"><label for="window">Publication window</label><select id="window"><option value="1">24 hours</option><option value="3">3 days</option><option value="7" selected>7 days</option><option value="14">14 days</option><option value="30">30 days</option></select></div>
+      </div>
+      <div class="source-health" id="sourceStatus">Source health and data freshness loading…</div>
+      <div class="line"></div>
+      <div id="profile"><div class="empty">Select a live news event to see its detailed profile.</div></div>
+      <div class="line"></div><div class="sectionhead">Explore a two-channel case</div>
+      <button id="scenarioShortcut" class="roundbtn" style="width:100%;height:auto;padding:11px 10px;display:flex;gap:10px;align-items:center;justify-content:center;background:#f4f9ff">⤳ See braided Hormuz oil scenario</button>
+      <div class="countrow"><span id="atlasCount">— assets</span> mapped in the research Atlas</div>
+      <p class="footnote">Colored arcs represent documented or potential channels, not verified net effects. News articles, repeated reporting and hypothetical macro pathways require separate evidence checks. This is a decision-support prototype, not an investment signal.</p>
+    </div>
+  </aside>
+</main>
+<script defer src="./app.js"></script>
+</body></html>
