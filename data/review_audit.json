@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-10-12T11:31:00.556879+00:00",
+  "generated_at": "2026-10-12T11:33:32.416572+00:00",
   "requested_window": "Rolling prior 30 days (publication timestamps); RSS searches are not exhaustive",
   "window": {
     "start": "2026-09-12",
     "end": "2026-10-12"
   },
-  "screened_articles": 580,
+  "screened_articles": 585,
   "dated_more_than_14_days": 212,
   "earliest": "2026-09-13T07:00:00+00:00",
   "latest": "2026-10-12T11:17:29+00:00",
-  "geolocated": 473,
-  "unlocated": 107,
+  "geolocated": 477,
+  "unlocated": 108,
   "by_tier": {
-    "Systemic-market candidate": 229,
-    "Kazakhstan mentioned": 222,
-    "External shock watch": 100,
-    "Named asset match": 23,
+    "Systemic-market candidate": 231,
+    "Kazakhstan mentioned": 223,
+    "External shock watch": 101,
+    "Named asset match": 24,
     "Source-inspected record": 6
   },
   "by_sector": {
-    "Oil": 342,
-    "Trade": 73,
-    "Transport": 39,
+    "Oil": 344,
+    "Trade": 74,
+    "Transport": 40,
     "Digital": 22,
     "Finance": 22,
     "Mining": 19,
     "Cross-sector": 18,
     "Food": 18,
     "Water": 14,
-    "Internet": 5,
+    "Internet": 6,
     "Electricity": 4,
     "Migration": 4
   },
   "by_region": {
-    "MENA": 188,
+    "MENA": 189,
+    "Global": 112,
     "Kazakhstan": 111,
-    "Global": 111,
-    "Central Asia": 75,
-    "Russia/Eurasia": 28,
+    "Central Asia": 77,
+    "Russia/Eurasia": 29,
     "China": 17,
     "Africa": 16,
     "Europe/UK": 11,
@@ -47,16 +47,16 @@
     "India": 3
   },
   "by_country": {
-    "Strait of Hormuz": 181,
+    "Strait of Hormuz": 182,
     "Kazakhstan": 113,
-    "Unknown": 107,
+    "Unknown": 108,
     "Russia": 26,
     "Uzbekistan": 23,
     "Iran": 15,
     "China": 13,
     "India": 12,
-    "Oman": 9,
-    "Azerbaijan": 6,
+    "Oman": 11,
+    "Azerbaijan": 7,
     "Italy": 6,
     "Germany": 6,
     "UAE": 5,
@@ -90,9 +90,9 @@
     "2026-09 / week 2": 32,
     "2026-09 / week 3": 85,
     "2026-09 / week 4": 100,
-    "2026-09 / week 5": 32,
-    "2026-10 / week 1": 183,
-    "2026-10 / week 2": 148
+    "2026-09 / week 5": 33,
+    "2026-10 / week 1": 185,
+    "2026-10 / week 2": 150
   },
   "unlocated_examples": [
     {
@@ -116,6 +116,17 @@
       "tier": "External shock watch",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVUZjaUZ6MlNUT2hOcUFmZWZiSnV5dl9xT0tYTTRqNnYxSUlvUTFJa0QyeElsbHlhTnQ5X2N0QzZTa2RhN0FHVXNLU0Y0UWhLcmhSV3JEaVEwY0hZZFh1ZDg5UE10dUVWWUZETVNkaHc0ZkMxLUJJTWtCQXRQTjZMTk52eGhjMUdlWjNNb2I0VzVVY1pjT0szQ2liYzlmelpHU0ZrWDFmTFNQTmdKR21KeU9hcDNnXzQ3MXBTRnRNaUk0UkdieG0wNU9MRnQ?oc=5",
       "id": "e5997080db53825e6a"
+    },
+    {
+      "published": "2026-10-12T10:49:00+00:00",
+      "title": "EU imposes sanctions on almost 1,600 Russians and companies linked to Russian arms industry - News4JAX",
+      "source": "Google News Eurasia",
+      "sector": "Trade",
+      "country": "Unknown",
+      "region": "Russia/Eurasia",
+      "tier": "External shock watch",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUmViTTE3Y21YZUpnVjctWU1pSk5JYWw5eThWMzFTVy11UVFROEhzVkpHY1djVUlLWnNOU2o0R2ZvaUxVTVc2bVdubG5rcGRmeFpMVUNnTElOWm5GYzNZdEN4b0FVS19WRHJSTk0wVzA0YWU5ajhJMjNEeEMyT2d6TGF2X1dwRVRrZDhveGlFVkgwQk5peDFvN3ZEdXVxM1lfdWxnbUs4eGJRZXZzUU03ckthZk0xV0xmZGxyTEVsa3h5SXdSeGhDaWJoU3kzZVJjSHc?oc=5",
+      "id": "e69df3b91f9a8ccd79"
     },
     {
       "published": "2026-10-12T10:09:08+00:00",
@@ -248,17 +259,6 @@
       "tier": "Systemic-market candidate",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUlRXNXhTX1kxVEllU2VDY0RYTnF2MkpEVGhjTEpiNlB2TG5nTGxPeExuZ0NCUFJJaXh2RjBfSnNuNmQyR3VXd01uRDNsdV9vZ2JaNW1XWG9YcmlXMmQtT0ZkUjlpQV9ac0pTRkdyeXB6aWQ3c0JmTlpxU1BWNno0c3BjaF9rUVc0TDNnOEVPckkzdlNQbGNLV1ZiMm1QSm5JNlFZ?oc=5",
       "id": "7d5235bdec07caee6e"
-    },
-    {
-      "published": "2026-10-09T10:44:00+00:00",
-      "title": "OSCE Promotes Youth Engagement at Syr Darya Forum - Mirage News",
-      "source": "Archive Transboundary Water Incident recent",
-      "sector": "Water",
-      "country": "Unknown",
-      "region": "Central Asia",
-      "tier": "Named asset match",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQLW9odWh2Uml4WGdNM0g3UjJUWjlxRG92UlMxZTFPT2hpa2Y0Mlc2ZnFXWFRUTDh4S3I3MkZpQm1JMWFlTE1vZV8xR09FcFBya3hQeERydklzN2ZfR0hsVlpZVVI0aVl6TVdNRHFTS1dLb1g3RDNLYnh6c1NMQVlMcEU3U2ZwUQ?oc=5",
-      "id": "e28f60c234707b8a47"
     }
   ],
   "named_asset_examples": [
@@ -463,6 +463,17 @@
       "id": "698ff4299c3bf31628"
     },
     {
+      "published": "2026-10-12T09:28:04+00:00",
+      "title": "OPEC cuts 2026 oil demand growth forecast - Oman Observer",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Oman",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPR240TlpwWEVjVHpBY09QYjJyTmJCaDRITEFlekdFOGN2bmExZ3NIWVV1T2txa0w2enpKcW9ndFVfcVJXWWltUW1mc0N6cm0tSktJN3RjMTJoRFhfcm9GUzc2RWhaX3dUMExUV1FhRTBUYVVoVmo5Q2d4LTR5OHBmVG5nV1pqeURwY29ST25wMk1BMGpFZmFrV2R0NldKaTNkdVNN0gFaQVVfeXFMT3VkWWw5a0pGQWZfMHZibk12b2RTSHplUnVIVWtQTHgzcUs0Mm40RW9pZUo5X3JnVDBGREFGR0YzRmoxQm9HMHcydFdtV1VwWFVOWmVHZUprU0VB?oc=5",
+      "id": "a001420abd5692cd07"
+    },
+    {
       "published": "2026-10-12T02:51:58+00:00",
       "title": "Iran accuses CENTCOM chief of running oil smuggling operations in Strait of Hormuz - Anadolu Ajansı",
       "source": "Archive Hormuz Oil recent",
@@ -604,17 +615,6 @@
       "tier": "Systemic-market candidate",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU3Y0RGFzY3NRTGE3dUVKMXBoUW1KczREQ0lva202bDNPUWFieldnY1BqRGNzWFZEaEU5c2h2VWhYTmNiZzBCRDBWc1NxNzhRS2NmQy1oZi1ESlBwYkNVUmxmS1drem1SeTZWcm5IZkVhRzVZUVFtVmtCOG5jaDdrR0sySW5DZS1hZ3hCamZMTmtMbm9wTGphSUFVVnQ5dVE?oc=5",
       "id": "290bd442e8a1146267"
-    },
-    {
-      "published": "2026-10-11T00:00:23+00:00",
-      "title": "UAE Crude Output Nears Record Following OPEC Exit, Sources Say - EnergyNow.com",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "UAE",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNblh2X29kb1NJdzMxTE9ULXNPWGJSQU9WRnVZRGp2TjFmenVZRVByaUQyOUludU9ad0FhQ2FOMTNRUHFrTWNzYXJpa2ZZOUtDRHhRbGVBZVUwbVB6a3R6R0hPYTRjQ0JnT3o3T0dLR0RVTVVKYWEySV9aNGVyTXdvX0NDblRFNy1JaTlpLWgzTkdtQWtqbUFJ?oc=5",
-      "id": "03e584c841f7163488"
     }
   ],
   "direct_examples": [
@@ -1490,6 +1490,17 @@
         "id": "e5997080db53825e6a"
       },
       {
+        "published": "2026-10-12T10:49:00+00:00",
+        "title": "EU imposes sanctions on almost 1,600 Russians and companies linked to Russian arms industry - News4JAX",
+        "source": "Google News Eurasia",
+        "sector": "Trade",
+        "country": "Unknown",
+        "region": "Russia/Eurasia",
+        "tier": "External shock watch",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUmViTTE3Y21YZUpnVjctWU1pSk5JYWw5eThWMzFTVy11UVFROEhzVkpHY1djVUlLWnNOU2o0R2ZvaUxVTVc2bVdubG5rcGRmeFpMVUNnTElOWm5GYzNZdEN4b0FVS19WRHJSTk0wVzA0YWU5ajhJMjNEeEMyT2d6TGF2X1dwRVRrZDhveGlFVkgwQk5peDFvN3ZEdXVxM1lfdWxnbUs4eGJRZXZzUU03ckthZk0xV0xmZGxyTEVsa3h5SXdSeGhDaWJoU3kzZVJjSHc?oc=5",
+        "id": "e69df3b91f9a8ccd79"
+      },
+      {
         "published": "2026-10-12T10:02:51+00:00",
         "title": "Ukraine accuses Russia of violating Trump's energy ceasefire as EU imposes new sanctions - Reuters",
         "source": "Google News Eurasia",
@@ -1587,24 +1598,13 @@
         "tier": "External shock watch",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcnNCTHFnWWFIVzdVdEE0NEh3alptdkJrRW9rMWl6c2x2SUpQS1RmalUzNVJ3NjA3WHdFZVR2YXVDZXZ2WkMyUURaRzltdmJ3Y2pjWTJISExScXZWMGYwNnVxRTRqeTNhcEhrWHNyeFF2cHZSNnkzdDFFVWdTTVEwUkQybGljRU1OcXlaQzlnWGRUWTM2QzREWmttbzEwSnI3TzJPZ1R5UzBRUQ?oc=5",
         "id": "9ea7d0c4c234e0c699"
-      },
-      {
-        "published": "2026-10-10T15:35:34+00:00",
-        "title": "Trump Waives Russia Sanctions to Flood Global Diesel Markets: What Zelensky Says Comes Next - Latin Times",
-        "source": "Google News Eurasia",
-        "sector": "Trade",
-        "country": "Russia",
-        "region": "Russia/Eurasia",
-        "tier": "External shock watch",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbXhhUVQ5V0RBcXZ0VEF2WW5hSGZCTFI4OWw5Qy1obHVVeU5zVV9MQ3ZyM3BNSHYtYjRucGlEcHgtT2x4bHRRYmp3Q25HWkp5ampmeGRHU3YtS1NUczhOOTFQYmpZdWVqSjhsZko5UDV1bVI5UkNfYmdRQjljYzJmRXJtZVFtVWhEdW10SWdNZkYwSGpyd1dnZ1Brd3ZqQ1BldUREZ2k3V2tEMGJzTUFQMzF0MFhsWWM5T0tyVHV3?oc=5",
-        "id": "1e6ac5720d49ccb558"
       }
     ]
   },
   "possible_duplicates": [
     {
       "title": "eu imposes sanctions on almost 1 600 russians and companies linked to russian arms industry",
-      "count": 2,
+      "count": 3,
       "examples": [
         {
           "published": "2026-10-12T10:53:00+00:00",
@@ -1627,6 +1627,17 @@
           "tier": "External shock watch",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVUZjaUZ6MlNUT2hOcUFmZWZiSnV5dl9xT0tYTTRqNnYxSUlvUTFJa0QyeElsbHlhTnQ5X2N0QzZTa2RhN0FHVXNLU0Y0UWhLcmhSV3JEaVEwY0hZZFh1ZDg5UE10dUVWWUZETVNkaHc0ZkMxLUJJTWtCQXRQTjZMTk52eGhjMUdlWjNNb2I0VzVVY1pjT0szQ2liYzlmelpHU0ZrWDFmTFNQTmdKR21KeU9hcDNnXzQ3MXBTRnRNaUk0UkdieG0wNU9MRnQ?oc=5",
           "id": "e5997080db53825e6a"
+        },
+        {
+          "published": "2026-10-12T10:49:00+00:00",
+          "title": "EU imposes sanctions on almost 1,600 Russians and companies linked to Russian arms industry - News4JAX",
+          "source": "Google News Eurasia",
+          "sector": "Trade",
+          "country": "Unknown",
+          "region": "Russia/Eurasia",
+          "tier": "External shock watch",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUmViTTE3Y21YZUpnVjctWU1pSk5JYWw5eThWMzFTVy11UVFROEhzVkpHY1djVUlLWnNOU2o0R2ZvaUxVTVc2bVdubG5rcGRmeFpMVUNnTElOWm5GYzNZdEN4b0FVS19WRHJSTk0wVzA0YWU5ajhJMjNEeEMyT2d6TGF2X1dwRVRrZDhveGlFVkgwQk5peDFvN3ZEdXVxM1lfdWxnbUs4eGJRZXZzUU03ckthZk0xV0xmZGxyTEVsa3h5SXdSeGhDaWJoU3kzZVJjSHc?oc=5",
+          "id": "e69df3b91f9a8ccd79"
         }
       ]
     },
