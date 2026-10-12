@@ -221,7 +221,7 @@
            pair("Related articles",String(event.article_count||1))]:[]),
       pair("Impact severity",Number.isInteger(event.severity)&&event.severity>=1&&event.severity<=5?event.severity+"/5 — assessed":"Unassessed"),
       pair("Probability","Unassessed · specify outcome & horizon"));
-    const explanation=event.scenario?"Two opposing effects are mapped as conditional scenarios, not observed net benefits or losses.":"A reported event has passed preliminary eventness and Kazakhstan-link screening; factual verification and domestic-impact assessment remain separate.";
+    const explanation=event.scenario?"Two opposing effects are mapped as conditional scenarios, not observed net benefits or losses.":event.hypothesis_not_impact?"International event under observation: a Kazakhstan transmission mechanism is conceivable but not verified. Relevance and impact magnitude require separate research.":"A reported event passed preliminary eventness and Kazakhstan-link screening; independent factual verification and domestic impact measurement are still required.";
     pane.append(make("div","insight warning",explanation));
     sectionTitle(pane,"Event overview");
     pane.append(make("p","profile-text",event.summary||"No article synopsis is available. Open the linked source."));
@@ -254,7 +254,7 @@
     }
     sectionTitle(pane,"Verification & source provenance");
     const report=memory.reports[event.id];
-    const stage=event.investigation_stage||report?.investigation_stage||event.verification||"Unverified reporting";
+    const stage=event.source_status||event.investigation_stage||report?.investigation_stage||event.verification||"Unverified reporting";
     pane.append(make("div","insight","Stage: "+stage+". Repeated or syndicated reporting does not establish independent corroboration. Background sources explain mechanisms, not article-specific impact."));
     const sources=make("div","sources"),all=candidateSources(event);
     if(!all.length)sources.append(make("div","empty","No accessible source link is supplied for this entry."));
