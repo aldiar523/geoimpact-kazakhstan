@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-12T21:16:32.326184+00:00",
-  "lookback_start": "2026-09-12",
-  "lookback_end": "2026-10-12",
+  "generated_at": "2026-10-13T06:46:55.634537+00:00",
+  "lookback_start": "2026-09-13",
+  "lookback_end": "2026-10-13",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
   "events": [
     {
@@ -895,7 +895,7 @@
       "summary": "The ministry states that the EAEU–UAE agreement entered into force on 6 October 2026 and contains preferential customs terms covering over 85% of product nomenclature. This establishes a rule change, not realised changes in Kazakhstan's bilateral exports.",
       "published": "2026-10-06T00:00:00+00:00",
       "source": "Kazakhstan Ministry of Trade and Integration",
-      "detected_at": "2026-10-12T21:16:19.629094+00:00",
+      "detected_at": "2026-10-13T06:46:45.805624+00:00",
       "verification": "Original Kazakhstan government announcement inspected; trade response not measured",
       "sector": "Trade",
       "country": "United Arab Emirates",
@@ -1197,6 +1197,124 @@
       ],
       "article_ids": [
         "24d8925f77d17820b1"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
+    {
+      "id": "c42365f45190c5cfdf",
+      "title": "Here's What Happens To Shipping When The Strait Of Hormuz Reopens - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNckxYV05CakZ2OElsWjJQWm1pUkw1OGxPVzdsRVdsZ21CcHJGeTkxS2NhODYyUVVWV21KR1ZOU1hJdVBCLS0tVUdMaGlfenRjUnp3VnZiLTVGaFRQU0FTWExzMmY4c0g1UnFib1Nlb2R2OVB2S2tUdzlEd1llSXlENEhmYnFMR2UzYjVrSWJwYXZlbVFRQnBHRS1ldnlQNGQwLUlZ?oc=5",
+      "summary": "Here's What Happens To Shipping When The Strait Of Hormuz Reopens Seeking Alpha",
+      "published": "2026-09-26T07:00:00+00:00",
+      "source": "Archive Wheat Fertilizer older",
+      "region": "Global",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-13T06:46:45.805624+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 7,
+        "priority": "high",
+        "reason": "global commodity or infrastructure channel; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-c42365f45190c5cfdf",
+      "article_count": 1,
+      "publisher_names": [
+        "seeking alpha"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Here's What Happens To Shipping When The Strait Of Hormuz Reopens - Seeking Alpha",
+          "source": "Archive Wheat Fertilizer older",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNckxYV05CakZ2OElsWjJQWm1pUkw1OGxPVzdsRVdsZ21CcHJGeTkxS2NhODYyUVVWV21KR1ZOU1hJdVBCLS0tVUdMaGlfenRjUnp3VnZiLTVGaFRQU0FTWExzMmY4c0g1UnFib1Nlb2R2OVB2S2tUdzlEd1llSXlENEhmYnFMR2UzYjVrSWJwYXZlbVFRQnBHRS1ldnlQNGQwLUlZ?oc=5",
+          "published": "2026-09-26T07:00:00+00:00",
+          "publisher_guess": "seeking alpha"
+        }
+      ],
+      "article_ids": [
+        "c42365f45190c5cfdf"
       ],
       "event_status": "Reported event candidate — not independently verified"
     },
