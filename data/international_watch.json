@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-13T19:17:18.622522+00:00",
+  "generated_at": "2026-10-14T04:53:10.605348+00:00",
   "status": "Reported foreign developments for investigator screening; Kazakhstan effects hypothetical",
   "disclaimer": "Watch level is screening attention, not impact magnitude or likelihood",
-  "source_articles": 35,
+  "source_articles": 37,
   "groups": [
     {
       "id": "5a4b6400b6d56cf7ab",
@@ -714,7 +714,7 @@
       "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. The Financial Times reported further tanker attacks near Hormuz and rising Brent prices in early October. The event's effect on Kazakhstan's realised oil-export receipts, household prices and public finances has not been established.",
       "published": "2026-10-08T00:00:00+00:00",
       "source": "Financial Times",
-      "detected_at": "2026-10-13T19:17:08.231345+00:00",
+      "detected_at": "2026-10-14T04:52:58.507324+00:00",
       "verification": "Publisher report inspected; domestic Kazakhstan effects are still hypothetical",
       "sector": "Oil",
       "country": "Strait of Hormuz",
@@ -787,15 +787,23 @@
       },
       "news_group_id": "event-source-7c0bdbfaefc60d0d4b",
       "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 5,
+      "article_count": 6,
       "publisher_names": [
         "al jazeera",
         "anadolu ajansı",
         "bhaskar english",
-        "financial times"
+        "financial times",
+        "the insight international"
       ],
-      "publisher_count_heuristic": 4,
+      "publisher_count_heuristic": 5,
       "related_sources": [
+        {
+          "title": "At least 12 tankers attacked around Strait of Hormuz in a week, shipping reports show - The Insight International",
+          "source": "Archive Red Sea Actual Blockage recent",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzNIeEU0NlUtTDk5bWRwZERzdTVkSURFdzE5Qk9sUGJkWDNaTjhDVFBJVzY4ZWdjUFEyX1o5NkxSekUxOGx0NXdDS3B5NkRUeDVkYl91YUZwZGUzVms1TWNJXzBxVGlLaS1sVmpFb1Vzam1ZNlU1blA2Z0ZxWlBaaVA4ZEdmZEpoWHlNMlBOZXhKRG42T3pURU5rVTNoTmlONWM0cWtVd0dvaVJlLUtNZA?oc=5",
+          "published": "2026-10-13T11:49:03+00:00",
+          "publisher_guess": "the insight international"
+        },
         {
           "title": "Oil tanker reportedly attacked in Strait of Hormuz region - Al Jazeera",
           "source": "Archive Hormuz Oil recent",
@@ -833,6 +841,7 @@
         }
       ],
       "article_ids": [
+        "51da3800cbde854fef",
         "17d709e6863a662904",
         "e7113fc38fb2f822c5",
         "d2e20636cc6292da42",
@@ -2264,6 +2273,74 @@
       ],
       "article_ids": [
         "e9fcb18bf716cd62f2"
+      ],
+      "event_status": "Reported event candidate — not independently verified",
+      "hypothesis_not_impact": true
+    },
+    {
+      "id": "92bf602857148d2b38",
+      "title": "New Algerian tender for Paris wheat backed by Black Sea export disruption - Marine Link",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWmtLRDNjMklfMWVHdldSVEpGeHFuWU5ZVlJVbnlLNW1IaXFkNGV2NTVvMExqbGEwdVRZa0NRYjN2TzMtZ1k5U0xYSENybE1uaGQtRlBMRkt5VlhVUXRDaXFoVmlxd1plZUQzTDdpYUNzRTAxbk5jOXBEeEZKbmhuSXFEQXVWUENTUkhGdTkweGZIeUItcDJaREVqcnZZZW91QmtZbjhVX2JqSHM?oc=5",
+      "summary": "New Algerian tender for Paris wheat backed by Black Sea export disruption Marine Link",
+      "published": "2026-09-14T07:00:00+00:00",
+      "source": "Archive Kazakhstan Wheat Access older",
+      "region": "Global",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-14T04:52:58.507324+00:00",
+      "sector": "Food",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "direction": "Unknown",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "watch_level": "strong candidate",
+      "watch_exposure": "External development, potential KZ transmission not independently established",
+      "exposure_channels": [
+        {
+          "name": "Food and inputs",
+          "sector": "Food",
+          "mechanism": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
+          "evidence_status": "Hypothesis to test"
+        }
+      ],
+      "triage": {
+        "included": true,
+        "kind": "reported international development",
+        "score": 5,
+        "priority": "medium",
+        "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices; no explicit Kazakhstan impact identified",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-92bf602857148d2b38",
+      "article_count": 1,
+      "publisher_names": [
+        "marine link"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "New Algerian tender for Paris wheat backed by Black Sea export disruption - Marine Link",
+          "source": "Archive Kazakhstan Wheat Access older",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWmtLRDNjMklfMWVHdldSVEpGeHFuWU5ZVlJVbnlLNW1IaXFkNGV2NTVvMExqbGEwdVRZa0NRYjN2TzMtZ1k5U0xYSENybE1uaGQtRlBMRkt5VlhVUXRDaXFoVmlxd1plZUQzTDdpYUNzRTAxbk5jOXBEeEZKbmhuSXFEQXVWUENTUkhGdTkweGZIeUItcDJaREVqcnZZZW91QmtZbjhVX2JqSHM?oc=5",
+          "published": "2026-09-14T07:00:00+00:00",
+          "publisher_guess": "marine link"
+        }
+      ],
+      "article_ids": [
+        "92bf602857148d2b38"
       ],
       "event_status": "Reported event candidate — not independently verified",
       "hypothesis_not_impact": true
