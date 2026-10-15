@@ -1,9 +1,214 @@
 {
-  "generated_at": "2026-10-15T04:37:56.490635+00:00",
+  "generated_at": "2026-10-15T17:00:14.872688+00:00",
   "lookback_start": "2026-09-15",
   "lookback_end": "2026-10-15",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
   "events": [
+    {
+      "id": "789044e7bd3d25150e",
+      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWndQbl9nd1lfRzd5cGxja3hZb2pBTDZYRXROYWtnSTZHQXVaWUozVGE0Y09xVUwxU0IydjMyNXRGekxrTmRpQi1mbDYtUE8zblB2b190czdTNjdzWV80TVpCNXhERGU0VXRBTUtOdHRsYlY2M2lUTjh1eWJpUnFNcWh0WVI0aVQwTHZKOWFZc2pDVmxvTmtCY2xnQ19ScXRYcDRUblNnRE1VNkVnQVV1NXZDZG5FYzJHRmRQS2pxT0NJTk9hUWhPYkZESlRkUmtCVG9aeg?oc=5",
+      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Iran says a ship sank after striking a mine in Strait of Hormuz, and other Middle East developments Oregon Public Broadcasting - OPB",
+      "published": "2026-10-15T00:46:30+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-15T17:00:02.848896+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 10,
+        "priority": "high",
+        "reason": "global commodity or infrastructure channel; concrete reported development; global commodity or infrastructure channel; concrete reported development; measured or sharp change",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-789044e7bd3d25150e",
+      "situation_cluster": "hormuz-tanker-incidents",
+      "article_count": 11,
+      "publisher_names": [
+        "anadolu ajansı",
+        "cnn",
+        "haaretz",
+        "opb",
+        "spectrum news",
+        "the times of israel",
+        "www.nationpathindia.com"
+      ],
+      "publisher_count_heuristic": 7,
+      "related_sources": [
+        {
+          "title": "Two cargo ships sunk in Strait of Hormuz as Iran ramps up attacks in run-up to midterms - CNN",
+          "source": "Google News MENA",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTWt5dWE5MFQwOFNCVHdMb3Z2ZHRnMHczOG1QMEIyeW1ycXlFWTJnNUxOT0FTYzhwdTFMMmZhYjN4ZFVJbkNmS0NsdTJieWFLZ1RwQzU4WDg1MmxpdXlNLTNwV3BBZS1Gbk5wUDZ4Qy1mUG9uYU1FNEFyM0V5WlFISVE2a0IzX3U2N29z?oc=5",
+          "published": "2026-10-15T04:06:01+00:00",
+          "publisher_guess": "cnn"
+        },
+        {
+          "title": "Iran says a ship sank after striking a mine in Strait of Hormuz, and other Middle East developments - Oregon Public Broadcasting - OPB",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWndQbl9nd1lfRzd5cGxja3hZb2pBTDZYRXROYWtnSTZHQXVaWUozVGE0Y09xVUwxU0IydjMyNXRGekxrTmRpQi1mbDYtUE8zblB2b190czdTNjdzWV80TVpCNXhERGU0VXRBTUtOdHRsYlY2M2lUTjh1eWJpUnFNcWh0WVI0aVQwTHZKOWFZc2pDVmxvTmtCY2xnQ19ScXRYcDRUblNnRE1VNkVnQVV1NXZDZG5FYzJHRmRQS2pxT0NJTk9hUWhPYkZESlRkUmtCVG9aeg?oc=5",
+          "published": "2026-10-15T00:46:30+00:00",
+          "publisher_guess": "opb"
+        },
+        {
+          "title": "Iran Reports Cargo Ship Sunk After Naval Mine Strike in Strait of Hormuz - www.nationpathindia.com",
+          "source": "Archive Global Freight Cost Spike recent",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTm40NWhTYWt5a1F5eHRSSEtlVFc5NW5QaTVJOWU2dUYwcEotcncwVk80djhQaHNuNmppLTdGWERkSF91VUY1aEZ5U21NenBUSzlLb0lSSXpzYVlGQWhFMng4ZFk3OXlVR0pobHVRa3dCQk4zeHIzZ2ZoeGdidkxYU0hJaFJ5WlhFT2NYUGpfTjBDRTVYUksyVTVWcDZHNXR1aVAyTg?oc=5",
+          "published": "2026-10-14T16:06:38+00:00",
+          "publisher_guess": "www.nationpathindia.com"
+        },
+        {
+          "title": "Iran Reports Cargo Ship Sunk After Naval Mine Strike in Strait of Hormuz - www.nationpathindia.com",
+          "source": "Archive Global Freight Cost Spike recent",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWUFUcG1UYndLRF9JUVhTTzNTR01BNjFaUlhaaVFCUUQzeG9GcnJnUGRQZ25pTFF4TGh0UUxOWFU0akJpaWdJbF83YTkwMHNZeHpiUUpibEhOMDhsTDIwZ0stRWtZVUl2aHJocEhXdV85MEhabVNKUTZnME9oNEhPM3RNUjFKTklMUHRQTnozekd4WnBvYnNQLVpxbnpQVG8?oc=5",
+          "published": "2026-10-14T16:06:38+00:00",
+          "publisher_guess": "www.nationpathindia.com"
+        },
+        {
+          "title": "Iran says cargo ship sank after hitting mine in Strait of Hormuz - Spectrum News",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOHlwVlQ4TWphLVF3bHd4Z0xCbUtNZFhoTXAyb2FkTUN1enJLbjExSGEtSnN0V0o0NHZpNnJqTTN4ZlZRcGJfUDFiOElvVHd2UTYtc2h6NmhGaldDTVNnS0RwR1lLS3A2WTlYQWd2Wlhsd0pqRmlHak9Gc3dYTDBzcW9haEg4UkZqVE84SHIzVFNHbzgzMVdxbVhuMWdrZw?oc=5",
+          "published": "2026-10-14T13:28:00+00:00",
+          "publisher_guess": "spectrum news"
+        },
+        {
+          "title": "Iran says cargo ship sank after hitting mine in Strait of Hormuz - Spectrum News",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQlNHaFZ1bG9WNlpBSjFEc3F5MUpiem9tOU05NEpidDBwRUluN2VtVk1SZkp3dVhjOXFFSUpvTExKVzdJa0o5RUh6UWdVY1lCLWp5bVpIV0xQSTlqSTNFenFlR2FyX3VCWjZVa2w1WTVFMkZTNkVCd2tHcW9SeTJWWnBFVy1DOWhNMDdoYWgxUEN4N0ZoTEVhRHVPanRYQQ?oc=5",
+          "published": "2026-10-14T13:28:00+00:00",
+          "publisher_guess": "spectrum news"
+        },
+        {
+          "title": "Tanker damaged after being hit in Strait of Hormuz, marine agency says - The Times of Israel",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZlN5NFZTZExleVljNVFLSThSTUF2X2tod2QyaEotY3I4d1JmQkRtcFdHdk4xSlZ5UUZpUWdyRmNCbFgxQld4NzZnMkJNNmp1c0lEN3NxR3Rnaml0UjcxZW53NWM5Zy1xUjJBam05QmItMzluRGZrbllreEpBTEJsZjJpZURmd0NGckl3NDJXZ3NjSDdNS3E3ZjZXWnI0c1M1cll3YnZJd1VJREdzeDFrM25FeURuZw?oc=5",
+          "published": "2026-10-11T13:59:42+00:00",
+          "publisher_guess": "the times of israel"
+        },
+        {
+          "title": "Tanker damaged by 'unidentified' projectile in Strait of Hormuz: UK maritime agency - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYlAzVnREMUZ0aTlwMklpMHJBTU5DY3YxamIyQmhhRUdzOF9xZHhMUlJUeHJDZHN6bzQtUmg2WTRSbTdGekwyVWE2dy1vcG1YbVFIZHlydFdKak9mNnZZeUE3NWE0NnMzVlItT1VYU0k0UXh4VWFYYjFObGxfVkdlbWxXVUFEZ0dydGRIdHJQV2YxYlV2c2ZiMTlHZlAyR2VpTTBCNFBuajVyb2kwVzFhekpBbjNCWXNvazBWSm16NVRFejg?oc=5",
+          "published": "2026-10-11T13:58:47+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORWVPUHBLV2F5SnJablI2Vk9adC1JR29uMTBDM2xVM0pDaEtnNDJhUzVrcnF3NHI1a0ZpN0s2QVBWQ3R1b3hZckpCcjkzbDkxRFgzZXRxWC01amZ2YS1TNl9jY2ZTRjNrV1prZDVaRzlZUVBpdERtUG8tcFZielhIbFh3VUtqOFpDSzh0SmphdVlQaTNxSlhFLVRCc1djcTdHblhsODBfNUIzRGd6MmxVd2EtZEZ2RFRRTXpuRXVIc0Z5WmtPS1dfMF9HS21KLUplQUE?oc=5",
+          "published": "2026-10-10T19:52:52+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSGpOcWdmNk5WcmRweGtHa2dFYTRpMWRpSWlfOGtabGFyODZTY2g1R2wySUt0MXFFbEtkQmdkUHFlaDFKNnRnZUdsNThHZms1eTJUSkJzWFRjczNmbmYyTXBwTU1ZeEJVLWJBczI0M1dJOVhpN05ULWdtYzBTUHJ6akNvemJKZkxnY3Bld1ppVWNqdElOQnBwNzhiUW53TnBnaHhpUkg5TmM2MkZjSzEwRjhPRHVER05lWTJwb1Q1cDhJU0VaS0REeTFXZGg?oc=5",
+          "published": "2026-10-10T19:52:52+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Tanker Attacks in Strait of Hormuz Hit Record Weekly High Since War Began - Haaretz",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWXFVREROWXdLUDlZdVN0OF9Tdm5ISUJRMVcyVy1YREE3ZXhOUlFLM3Yya2FQX2xoNWlYcE8xaFZUZk1nV2ZnZUtlSXpPdEJLSVNiVjhKbXFXNkFlRmNvR2JWazJrQkJqTDFyLVhfT2hGM2xRd3JkUGtyUWUyVkVxYW5BYjFBN1JJNmhXWWJrTGRJNGd1Rk5OcTFPS1lRSUp2bWtXUVk2TnZFbzNWblUtZm1UdnhoNjQ1OElqYVBwWGJWT0tnWGZiTl9iSThJa3k5SlJsTFVXaDY0NkdndUFLeF9BeGNqVXFtRF9QbEotdGlGS1B5NWx3WTRlS0RXSVdTem1N?oc=5",
+          "published": "2026-10-08T16:10:00+00:00",
+          "publisher_guess": "haaretz"
+        }
+      ],
+      "article_ids": [
+        "ef94f5ec23c8af3888",
+        "789044e7bd3d25150e",
+        "d92ff1d9cec4b947bc",
+        "92e4fe402afa063ffb",
+        "25f60846d969afc1a4",
+        "2a2006988475c4c8f6",
+        "b4967d9f9533d8679b",
+        "8ccb16eae768f2e414",
+        "058e74e89f5f3647e1",
+        "998986215f6d4f7149",
+        "636a8a9367e35a8ff6"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
     {
       "id": "b50404cf06641e701f",
       "title": "Kazakhstan, energy majors hit by oil shortfalls at three key megafields - Kursiv Media",
@@ -115,185 +320,6 @@
       ],
       "article_ids": [
         "6bafa213f4c686399f"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "058e74e89f5f3647e1",
-      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORWVPUHBLV2F5SnJablI2Vk9adC1JR29uMTBDM2xVM0pDaEtnNDJhUzVrcnF3NHI1a0ZpN0s2QVBWQ3R1b3hZckpCcjkzbDkxRFgzZXRxWC01amZ2YS1TNl9jY2ZTRjNrV1prZDVaRzlZUVBpdERtUG8tcFZielhIbFh3VUtqOFpDSzh0SmphdVlQaTNxSlhFLVRCc1djcTdHblhsODBfNUIzRGd6MmxVd2EtZEZ2RFRRTXpuRXVIc0Z5WmtPS1dfMF9HS21KLUplQUE?oc=5",
-      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say Anadolu Ajansı",
-      "published": "2026-10-10T19:52:52+00:00",
-      "source": "Archive Hormuz Oil recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T08:39:32.268542+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 10,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development; global commodity or infrastructure channel; concrete reported development; measured or sharp change",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-058e74e89f5f3647e1",
-      "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 8,
-      "publisher_names": [
-        "anadolu ajansı",
-        "haaretz",
-        "spectrum news",
-        "the times of israel",
-        "www.nationpathindia.com"
-      ],
-      "publisher_count_heuristic": 5,
-      "related_sources": [
-        {
-          "title": "Iran Reports Cargo Ship Sunk After Naval Mine Strike in Strait of Hormuz - www.nationpathindia.com",
-          "source": "Archive Global Freight Cost Spike recent",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTm40NWhTYWt5a1F5eHRSSEtlVFc5NW5QaTVJOWU2dUYwcEotcncwVk80djhQaHNuNmppLTdGWERkSF91VUY1aEZ5U21NenBUSzlLb0lSSXpzYVlGQWhFMng4ZFk3OXlVR0pobHVRa3dCQk4zeHIzZ2ZoeGdidkxYU0hJaFJ5WlhFT2NYUGpfTjBDRTVYUksyVTVWcDZHNXR1aVAyTg?oc=5",
-          "published": "2026-10-14T16:06:38+00:00",
-          "publisher_guess": "www.nationpathindia.com"
-        },
-        {
-          "title": "Iran Reports Cargo Ship Sunk After Naval Mine Strike in Strait of Hormuz - www.nationpathindia.com",
-          "source": "Archive Global Freight Cost Spike recent",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWUFUcG1UYndLRF9JUVhTTzNTR01BNjFaUlhaaVFCUUQzeG9GcnJnUGRQZ25pTFF4TGh0UUxOWFU0akJpaWdJbF83YTkwMHNZeHpiUUpibEhOMDhsTDIwZ0stRWtZVUl2aHJocEhXdV85MEhabVNKUTZnME9oNEhPM3RNUjFKTklMUHRQTnozekd4WnBvYnNQLVpxbnpQVG8?oc=5",
-          "published": "2026-10-14T16:06:38+00:00",
-          "publisher_guess": "www.nationpathindia.com"
-        },
-        {
-          "title": "Iran says cargo ship sank after hitting mine in Strait of Hormuz - Spectrum News",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOHlwVlQ4TWphLVF3bHd4Z0xCbUtNZFhoTXAyb2FkTUN1enJLbjExSGEtSnN0V0o0NHZpNnJqTTN4ZlZRcGJfUDFiOElvVHd2UTYtc2h6NmhGaldDTVNnS0RwR1lLS3A2WTlYQWd2Wlhsd0pqRmlHak9Gc3dYTDBzcW9haEg4UkZqVE84SHIzVFNHbzgzMVdxbVhuMWdrZw?oc=5",
-          "published": "2026-10-14T13:28:00+00:00",
-          "publisher_guess": "spectrum news"
-        },
-        {
-          "title": "Tanker damaged after being hit in Strait of Hormuz, marine agency says - The Times of Israel",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZlN5NFZTZExleVljNVFLSThSTUF2X2tod2QyaEotY3I4d1JmQkRtcFdHdk4xSlZ5UUZpUWdyRmNCbFgxQld4NzZnMkJNNmp1c0lEN3NxR3Rnaml0UjcxZW53NWM5Zy1xUjJBam05QmItMzluRGZrbllreEpBTEJsZjJpZURmd0NGckl3NDJXZ3NjSDdNS3E3ZjZXWnI0c1M1cll3YnZJd1VJREdzeDFrM25FeURuZw?oc=5",
-          "published": "2026-10-11T13:59:42+00:00",
-          "publisher_guess": "the times of israel"
-        },
-        {
-          "title": "Tanker damaged by 'unidentified' projectile in Strait of Hormuz: UK maritime agency - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYlAzVnREMUZ0aTlwMklpMHJBTU5DY3YxamIyQmhhRUdzOF9xZHhMUlJUeHJDZHN6bzQtUmg2WTRSbTdGekwyVWE2dy1vcG1YbVFIZHlydFdKak9mNnZZeUE3NWE0NnMzVlItT1VYU0k0UXh4VWFYYjFObGxfVkdlbWxXVUFEZ0dydGRIdHJQV2YxYlV2c2ZiMTlHZlAyR2VpTTBCNFBuajVyb2kwVzFhekpBbjNCWXNvazBWSm16NVRFejg?oc=5",
-          "published": "2026-10-11T13:58:47+00:00",
-          "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORWVPUHBLV2F5SnJablI2Vk9adC1JR29uMTBDM2xVM0pDaEtnNDJhUzVrcnF3NHI1a0ZpN0s2QVBWQ3R1b3hZckpCcjkzbDkxRFgzZXRxWC01amZ2YS1TNl9jY2ZTRjNrV1prZDVaRzlZUVBpdERtUG8tcFZielhIbFh3VUtqOFpDSzh0SmphdVlQaTNxSlhFLVRCc1djcTdHblhsODBfNUIzRGd6MmxVd2EtZEZ2RFRRTXpuRXVIc0Z5WmtPS1dfMF9HS21KLUplQUE?oc=5",
-          "published": "2026-10-10T19:52:52+00:00",
-          "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSGpOcWdmNk5WcmRweGtHa2dFYTRpMWRpSWlfOGtabGFyODZTY2g1R2wySUt0MXFFbEtkQmdkUHFlaDFKNnRnZUdsNThHZms1eTJUSkJzWFRjczNmbmYyTXBwTU1ZeEJVLWJBczI0M1dJOVhpN05ULWdtYzBTUHJ6akNvemJKZkxnY3Bld1ppVWNqdElOQnBwNzhiUW53TnBnaHhpUkg5TmM2MkZjSzEwRjhPRHVER05lWTJwb1Q1cDhJU0VaS0REeTFXZGg?oc=5",
-          "published": "2026-10-10T19:52:52+00:00",
-          "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "Tanker Attacks in Strait of Hormuz Hit Record Weekly High Since War Began - Haaretz",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWXFVREROWXdLUDlZdVN0OF9Tdm5ISUJRMVcyVy1YREE3ZXhOUlFLM3Yya2FQX2xoNWlYcE8xaFZUZk1nV2ZnZUtlSXpPdEJLSVNiVjhKbXFXNkFlRmNvR2JWazJrQkJqTDFyLVhfT2hGM2xRd3JkUGtyUWUyVkVxYW5BYjFBN1JJNmhXWWJrTGRJNGd1Rk5OcTFPS1lRSUp2bWtXUVk2TnZFbzNWblUtZm1UdnhoNjQ1OElqYVBwWGJWT0tnWGZiTl9iSThJa3k5SlJsTFVXaDY0NkdndUFLeF9BeGNqVXFtRF9QbEotdGlGS1B5NWx3WTRlS0RXSVdTem1N?oc=5",
-          "published": "2026-10-08T16:10:00+00:00",
-          "publisher_guess": "haaretz"
-        }
-      ],
-      "article_ids": [
-        "d92ff1d9cec4b947bc",
-        "92e4fe402afa063ffb",
-        "25f60846d969afc1a4",
-        "b4967d9f9533d8679b",
-        "8ccb16eae768f2e414",
-        "058e74e89f5f3647e1",
-        "998986215f6d4f7149",
-        "636a8a9367e35a8ff6"
       ],
       "event_status": "Reported event candidate — not independently verified"
     },
@@ -978,7 +1004,7 @@
       "summary": "The ministry states that the EAEU–UAE agreement entered into force on 6 October 2026 and contains preferential customs terms covering over 85% of product nomenclature. This establishes a rule change, not realised changes in Kazakhstan's bilateral exports.",
       "published": "2026-10-06T00:00:00+00:00",
       "source": "Kazakhstan Ministry of Trade and Integration",
-      "detected_at": "2026-10-15T04:37:45.161883+00:00",
+      "detected_at": "2026-10-15T17:00:02.848896+00:00",
       "verification": "Original Kazakhstan government announcement inspected; trade response not measured",
       "sector": "Trade",
       "country": "United Arab Emirates",
