@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-15T17:00:15.017213+00:00",
+  "generated_at": "2026-10-16T04:31:10.644799+00:00",
   "status": "Reported foreign developments for investigator screening; Kazakhstan effects hypothetical",
   "disclaimer": "Watch level is screening attention, not impact magnitude or likelihood",
-  "source_articles": 36,
+  "source_articles": 33,
   "groups": [
     {
       "id": "e958362363c5447e5a",
@@ -289,6 +289,74 @@
       ],
       "article_ids": [
         "de33919411f45589cb"
+      ],
+      "event_status": "Reported event candidate — not independently verified",
+      "hypothesis_not_impact": true
+    },
+    {
+      "id": "be4ea1a12933ae0132",
+      "title": "Explosion on Russian gas pipeline has not affected supplies to Uzbekistan — Energy Ministry - Spot.uz",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCTkNBOXlkemc2Tjg3YklOeW1tZmNqX0k2NnRaQzVrZnFRUDgzYjE5MndLTDEwU2NVUW52UHRvU09keExEWkhQNVdOZUxOb1BQN3VObm1qeDc?oc=5",
+      "summary": "Explosion on Russian gas pipeline has not affected supplies to Uzbekistan — Energy Ministry Spot.uz",
+      "published": "2026-10-14T20:46:23+00:00",
+      "source": "Archive Kazakhstan Russia recent",
+      "region": "Russia/Eurasia",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-16T04:30:59.694358+00:00",
+      "sector": "Electricity",
+      "country": "Uzbekistan",
+      "lat": 41,
+      "lon": 64,
+      "direction": "Unknown",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Regional grid, energy supply or gas input channel",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "watch_level": "strong candidate",
+      "watch_exposure": "External development, potential KZ transmission not independently established",
+      "exposure_channels": [
+        {
+          "name": "Electricity / gas",
+          "sector": "Electricity",
+          "mechanism": "Regional grid, energy supply or gas input channel",
+          "evidence_status": "Hypothesis to test"
+        }
+      ],
+      "triage": {
+        "included": true,
+        "kind": "reported international development",
+        "score": 5,
+        "priority": "medium",
+        "reason": "Regional grid, energy supply or gas input channel; no explicit Kazakhstan impact identified",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-be4ea1a12933ae0132",
+      "article_count": 1,
+      "publisher_names": [
+        "spot.uz"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Explosion on Russian gas pipeline has not affected supplies to Uzbekistan — Energy Ministry - Spot.uz",
+          "source": "Archive Kazakhstan Russia recent",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCTkNBOXlkemc2Tjg3YklOeW1tZmNqX0k2NnRaQzVrZnFRUDgzYjE5MndLTDEwU2NVUW52UHRvU09keExEWkhQNVdOZUxOb1BQN3VObm1qeDc?oc=5",
+          "published": "2026-10-14T20:46:23+00:00",
+          "publisher_guess": "spot.uz"
+        }
+      ],
+      "article_ids": [
+        "be4ea1a12933ae0132"
       ],
       "event_status": "Reported event candidate — not independently verified",
       "hypothesis_not_impact": true
@@ -905,8 +973,8 @@
       "impact_channels": [],
       "market_evidence": [],
       "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
+      "investigation_stage": "Corroborated reporting; primary evidence missing",
+      "evidence_sources_count": 2,
       "human_reviewed": false,
       "watch_level": "plausible candidate",
       "watch_exposure": "External development, potential KZ transmission not independently established",
@@ -1071,7 +1139,7 @@
       "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. The Financial Times reported further tanker attacks near Hormuz and rising Brent prices in early October. The event's effect on Kazakhstan's realised oil-export receipts, household prices and public finances has not been established.",
       "published": "2026-10-08T00:00:00+00:00",
       "source": "Financial Times",
-      "detected_at": "2026-10-15T17:00:02.848896+00:00",
+      "detected_at": "2026-10-16T04:30:59.694358+00:00",
       "verification": "Publisher report inspected; domestic Kazakhstan effects are still hypothetical",
       "sector": "Oil",
       "country": "Strait of Hormuz",
@@ -2177,295 +2245,6 @@
       ],
       "article_ids": [
         "cbc39d9cf0266f76fb"
-      ],
-      "event_status": "Reported event candidate — not independently verified",
-      "hypothesis_not_impact": true
-    },
-    {
-      "id": "09f1fba4a1ba12683d",
-      "title": "Bangladesh turns to India for wheat as Black Sea disruption pushes up prices - Business Today",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWExpVTl5WEM0bmFuN2RaV0pFWEFSMGw2b1RyWkI3M0hfT1Rhd01zeFdBVjNMZUN6NXVYZlYtQUVlUzFMZDcxNVVweFE3aUl6Q1pjYk1xenctNXJ3YS1jN0hIckJ6dWhTenB4N2ZhbFk5ZmJ6VERtUTRhVE4yWWQwelRScTZ0a1A0QWxNYkl3b1JJWGxaZHk5SFl4Wm45V0FaQVV1U3VZWHFGWmZoX2FGb09MQUFKSU0wVUF2TFhYb2dWS2FHZHFrMHltdXhidXRvNFFHQmZrNEFncWcz0gHiAUFVX3lxTE8zdHVQOW95QWF1dlU2aEE2OXpNMXJRTVdVY3ZkWkxaalhuUWoyNkNxRi1pd0JwZmhwdUpjY2ZFZkQ1RklXVDB0eF82LVNlZHVvc3ZNNzJKTEJJaDZoY1JYR0ZMUkxBUklUS1BfOTQ1SnU0Y1hPNGx3RTZ0QzVHYmJwYlpWLWVra2NJM0hvWWl1Y05rdGRQYzZyc3V4RFZIWWJmbDdFajlTRllnX25qbDdvZ3Z3QVRPbEZ4bHVVcnRscXNzUHJJSFhKd1ppa0Z3N045N3hCZm16Sk1nOWNpS1M2ekE?oc=5",
-      "summary": "Bangladesh turns to India for wheat as Black Sea disruption pushes up prices Business Today",
-      "published": "2026-09-23T07:00:00+00:00",
-      "source": "Archive Kazakhstan Wheat Access older",
-      "region": "Global",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T11:23:39.360888+00:00",
-      "sector": "Food",
-      "country": "India",
-      "lat": 21,
-      "lon": 79,
-      "direction": "Unknown",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "watch_level": "strong candidate",
-      "watch_exposure": "External development, potential KZ transmission not independently established",
-      "exposure_channels": [
-        {
-          "name": "Food and inputs",
-          "sector": "Food",
-          "mechanism": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
-          "evidence_status": "Hypothesis to test"
-        }
-      ],
-      "triage": {
-        "included": true,
-        "kind": "reported international development",
-        "score": 5,
-        "priority": "medium",
-        "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices; no explicit Kazakhstan impact identified",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-09f1fba4a1ba12683d",
-      "article_count": 1,
-      "publisher_names": [
-        "business today"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Bangladesh turns to India for wheat as Black Sea disruption pushes up prices - Business Today",
-          "source": "Archive Kazakhstan Wheat Access older",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWExpVTl5WEM0bmFuN2RaV0pFWEFSMGw2b1RyWkI3M0hfT1Rhd01zeFdBVjNMZUN6NXVYZlYtQUVlUzFMZDcxNVVweFE3aUl6Q1pjYk1xenctNXJ3YS1jN0hIckJ6dWhTenB4N2ZhbFk5ZmJ6VERtUTRhVE4yWWQwelRScTZ0a1A0QWxNYkl3b1JJWGxaZHk5SFl4Wm45V0FaQVV1U3VZWHFGWmZoX2FGb09MQUFKSU0wVUF2TFhYb2dWS2FHZHFrMHltdXhidXRvNFFHQmZrNEFncWcz0gHiAUFVX3lxTE8zdHVQOW95QWF1dlU2aEE2OXpNMXJRTVdVY3ZkWkxaalhuUWoyNkNxRi1pd0JwZmhwdUpjY2ZFZkQ1RklXVDB0eF82LVNlZHVvc3ZNNzJKTEJJaDZoY1JYR0ZMUkxBUklUS1BfOTQ1SnU0Y1hPNGx3RTZ0QzVHYmJwYlpWLWVra2NJM0hvWWl1Y05rdGRQYzZyc3V4RFZIWWJmbDdFajlTRllnX25qbDdvZ3Z3QVRPbEZ4bHVVcnRscXNzUHJJSFhKd1ppa0Z3N045N3hCZm16Sk1nOWNpS1M2ekE?oc=5",
-          "published": "2026-09-23T07:00:00+00:00",
-          "publisher_guess": "business today"
-        }
-      ],
-      "article_ids": [
-        "09f1fba4a1ba12683d"
-      ],
-      "event_status": "Reported event candidate — not independently verified",
-      "hypothesis_not_impact": true
-    },
-    {
-      "id": "c725fb39ffd7bc09b3",
-      "title": "EU ambassador links blocked Ukrainian grain exports to Pacific food costs - Solomon Times Online",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN2hhTmU1RGtURnFFUDBxQzNBeW42UERiMVpTUTFrUkpJUEZydE1aNHdYMmpIVWZXeDlnLWIycjRwS0ExYXZWUEZEZ1dxNjI2czNiMy0yS3dmUUMzamFRTU5IRng3bktwTmRjU0xrTlM0bzNlYUZHNDZVVmdvNTNQbEZEWGFNeU1KeWJvVW44cnB4clg4RjJiVVh4cG12bU9hX0tJUXFONDBSSFB0RUNFU28wUFM?oc=5",
-      "summary": "EU ambassador links blocked Ukrainian grain exports to Pacific food costs Solomon Times Online",
-      "published": "2026-09-23T04:51:57+00:00",
-      "source": "Archive Kazakhstan Wheat Access older",
-      "region": "Global",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T11:23:39.360888+00:00",
-      "sector": "Food",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "direction": "Unknown",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "watch_level": "plausible candidate",
-      "watch_exposure": "External development, potential KZ transmission not independently established",
-      "exposure_channels": [
-        {
-          "name": "Food and inputs",
-          "sector": "Food",
-          "mechanism": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
-          "evidence_status": "Hypothesis to test"
-        }
-      ],
-      "triage": {
-        "included": true,
-        "kind": "reported international development",
-        "score": 3,
-        "priority": "review",
-        "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices; no explicit Kazakhstan impact identified",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-c725fb39ffd7bc09b3",
-      "article_count": 1,
-      "publisher_names": [
-        "solomon times online"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "EU ambassador links blocked Ukrainian grain exports to Pacific food costs - Solomon Times Online",
-          "source": "Archive Kazakhstan Wheat Access older",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN2hhTmU1RGtURnFFUDBxQzNBeW42UERiMVpTUTFrUkpJUEZydE1aNHdYMmpIVWZXeDlnLWIycjRwS0ExYXZWUEZEZ1dxNjI2czNiMy0yS3dmUUMzamFRTU5IRng3bktwTmRjU0xrTlM0bzNlYUZHNDZVVmdvNTNQbEZEWGFNeU1KeWJvVW44cnB4clg4RjJiVVh4cG12bU9hX0tJUXFONDBSSFB0RUNFU28wUFM?oc=5",
-          "published": "2026-09-23T04:51:57+00:00",
-          "publisher_guess": "solomon times online"
-        }
-      ],
-      "article_ids": [
-        "c725fb39ffd7bc09b3"
-      ],
-      "event_status": "Reported event candidate — not independently verified",
-      "hypothesis_not_impact": true
-    },
-    {
-      "id": "38dfb7b4b2b50ef4af",
-      "title": "LPG tanker hit by debris in Strait of Hormuz; crew safe: UKMTO - DD India",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOT3p5R3hOTG1CUmh3QW9sbkNLa3BuZjFHdWFnbGd3Vk1Eb0RjRVdrSTNYcEVRbmoybHo0UnZZbzNvbTltQ0FRODBXSWtrQXRTS0JkdDhIb0NDUTNqNWMyWmJndU9lR1NESDNraFlXQ2pKUHhnYUQ4WV9pMVBhV3NaWVB4eno5aExpWHRjWGZfdE9DQWtva2c?oc=5",
-      "summary": "LPG tanker hit by debris in Strait of Hormuz; crew safe: UKMTO DD India",
-      "published": "2026-09-22T07:00:00+00:00",
-      "source": "Archive Hormuz Attacks Shipping older",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T10:08:40.386127+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Unknown",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "unknown",
-      "scenario": true,
-      "impact_channels": [],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "watch_level": "strong candidate",
-      "watch_exposure": "External development, potential KZ transmission not independently established",
-      "exposure_channels": [
-        {
-          "name": "Transport / chokepoints",
-          "sector": "Transport",
-          "mechanism": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
-          "evidence_status": "Hypothesis to test"
-        }
-      ],
-      "triage": {
-        "included": true,
-        "kind": "reported international development",
-        "score": 5,
-        "priority": "medium",
-        "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes; no explicit Kazakhstan impact identified",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-38dfb7b4b2b50ef4af",
-      "article_count": 1,
-      "publisher_names": [
-        "dd india"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "LPG tanker hit by debris in Strait of Hormuz; crew safe: UKMTO - DD India",
-          "source": "Archive Hormuz Attacks Shipping older",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOT3p5R3hOTG1CUmh3QW9sbkNLa3BuZjFHdWFnbGd3Vk1Eb0RjRVdrSTNYcEVRbmoybHo0UnZZbzNvbTltQ0FRODBXSWtrQXRTS0JkdDhIb0NDUTNqNWMyWmJndU9lR1NESDNraFlXQ2pKUHhnYUQ4WV9pMVBhV3NaWVB4eno5aExpWHRjWGZfdE9DQWtva2c?oc=5",
-          "published": "2026-09-22T07:00:00+00:00",
-          "publisher_guess": "dd india"
-        }
-      ],
-      "article_ids": [
-        "38dfb7b4b2b50ef4af"
-      ],
-      "event_status": "Reported event candidate — not independently verified",
-      "hypothesis_not_impact": true
-    },
-    {
-      "id": "d735b12db4b5e82489",
-      "title": "#El_Niño crop losses in #Horn_of_Africa add to global wheat supply squeeze as prices surge 43% El Niño-driven drought and erratic rainfall are worsening crop prospects across parts of the Horn of Africa, including #Ethio",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOcmx3Z0VBZm1JTFVRMjRpTGJNaXd6REU0am5DaWtlUkJEOTlsUWt5MHYzZTdHSWZlVzhYLTFrcW1yVjZEQ0lhZXp6Q0ZCOEtldW8xN1NJeVdTZUREYkswM3lDdjZsWFpMSG1pSmgzaVhfbGNoM1BhVTZpNWJWYVlVdW9lVEhwaFZTT2lqSWc0MkV5dUliZ3o2QVFZMnZEVjFpZFNxOUhUV29nRWkzbHZQVmgyUnQzeTR4YTZpZ2pEWmczLUxuQ1E2NkJ3Rnhob1o0TjlSb25PM0xRVl85YmZUOWJZdDc2dw?oc=5",
-      "summary": "#El_Niño crop losses in #Horn_of_Africa add to global wheat supply squeeze as prices surge 43% El Niño-driven drought and erratic rainfall are worsening crop prospects across parts of the Horn of Africa, including #Ethiopia, as global wheat markets face a s Facebook",
-      "published": "2026-09-22T07:00:00+00:00",
-      "source": "Archive Wheat Fertilizer older",
-      "region": "Global",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T11:23:39.360888+00:00",
-      "sector": "Food",
-      "country": "Ethiopia",
-      "lat": 9,
-      "lon": 40,
-      "direction": "Unknown",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "watch_level": "strong candidate",
-      "watch_exposure": "External development, potential KZ transmission not independently established",
-      "exposure_channels": [
-        {
-          "name": "Food and inputs",
-          "sector": "Food",
-          "mechanism": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
-          "evidence_status": "Hypothesis to test"
-        }
-      ],
-      "triage": {
-        "included": true,
-        "kind": "reported international development",
-        "score": 5,
-        "priority": "medium",
-        "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices; no explicit Kazakhstan impact identified",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-d735b12db4b5e82489",
-      "article_count": 1,
-      "publisher_names": [
-        "archive wheat fertilizer older"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "#El_Niño crop losses in #Horn_of_Africa add to global wheat supply squeeze as prices surge 43% El Niño-driven drought and erratic rainfall are worsening crop prospects across parts of the Horn of Africa, including #Ethio",
-          "source": "Archive Wheat Fertilizer older",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOcmx3Z0VBZm1JTFVRMjRpTGJNaXd6REU0am5DaWtlUkJEOTlsUWt5MHYzZTdHSWZlVzhYLTFrcW1yVjZEQ0lhZXp6Q0ZCOEtldW8xN1NJeVdTZUREYkswM3lDdjZsWFpMSG1pSmgzaVhfbGNoM1BhVTZpNWJWYVlVdW9lVEhwaFZTT2lqSWc0MkV5dUliZ3o2QVFZMnZEVjFpZFNxOUhUV29nRWkzbHZQVmgyUnQzeTR4YTZpZ2pEWmczLUxuQ1E2NkJ3Rnhob1o0TjlSb25PM0xRVl85YmZUOWJZdDc2dw?oc=5",
-          "published": "2026-09-22T07:00:00+00:00",
-          "publisher_guess": "archive wheat fertilizer older"
-        }
-      ],
-      "article_ids": [
-        "d735b12db4b5e82489"
       ],
       "event_status": "Reported event candidate — not independently verified",
       "hypothesis_not_impact": true
