@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T04:32:43.022533+00:00",
+  "generated_at": "2026-10-18T15:52:24.858116+00:00",
   "lookback_start": "2026-09-18",
   "lookback_end": "2026-10-18",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
@@ -1414,7 +1414,7 @@
       "summary": "The ministry states that the EAEU–UAE agreement entered into force on 6 October 2026 and contains preferential customs terms covering over 85% of product nomenclature. This establishes a rule change, not realised changes in Kazakhstan's bilateral exports.",
       "published": "2026-10-06T00:00:00+00:00",
       "source": "Kazakhstan Ministry of Trade and Integration",
-      "detected_at": "2026-10-18T04:32:31.602955+00:00",
+      "detected_at": "2026-10-18T15:52:12.903688+00:00",
       "verification": "Original Kazakhstan government announcement inspected; trade response not measured",
       "sector": "Trade",
       "country": "United Arab Emirates",
@@ -1648,133 +1648,16 @@
       "event_status": "Reported event candidate — not independently verified"
     },
     {
-      "id": "8eaad2f3196de55116",
-      "title": "Brent Crude Holds Near $108 as Saudi Pipeline Resumes - Kalkine India",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSTN1VFg3eWhXVHlwM21ncUp6RldkUWJhRG9hWlJxT3ZMQmRmMEtocFB1Z2NuRXBxZ0tfcS1oYmJKRnpXc0RxY25UdlZmSmZkQ0MxenVodXBYQXJPa0FSUTY5YmJlQmRiZmdGaVVOSjFzYVpkRzZiUVJWS2xrWkk3YmRuX296N3R4SlQtZGNkMWktSzlZaEZHNQ?oc=5",
-      "summary": "Brent Crude Holds Near $108 as Saudi Pipeline Resumes Kalkine India",
-      "published": "2026-10-01T13:57:00+00:00",
-      "source": "Archive Global Brent older",
-      "region": "Global",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-17T04:24:41.901847+00:00",
-      "sector": "Oil",
-      "country": "India",
-      "lat": 21,
-      "lon": 79,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 7,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-8eaad2f3196de55116",
-      "article_count": 1,
-      "publisher_names": [
-        "kalkine india"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Brent Crude Holds Near $108 as Saudi Pipeline Resumes - Kalkine India",
-          "source": "Archive Global Brent older",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSTN1VFg3eWhXVHlwM21ncUp6RldkUWJhRG9hWlJxT3ZMQmRmMEtocFB1Z2NuRXBxZ0tfcS1oYmJKRnpXc0RxY25UdlZmSmZkQ0MxenVodXBYQXJPa0FSUTY5YmJlQmRiZmdGaVVOSjFzYVpkRzZiUVJWS2xrWkk3YmRuX296N3R4SlQtZGNkMWktSzlZaEZHNQ?oc=5",
-          "published": "2026-10-01T13:57:00+00:00",
-          "publisher_guess": "kalkine india"
-        }
-      ],
-      "article_ids": [
-        "8eaad2f3196de55116"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "3e14f01377f87d1c30",
-      "title": "After EU sanctions, the volume of transfers between Russia and Kazakhstan decreased by 12 times - open.kg",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcTB5ajdRMjBmMU9CTGZVSW1xTURDaHhqN3BXWThWZHNzbFIxR1RhaWx1UllZaTNrUnZSMHY0Z2dHR1YwLS1QTnh5bzlDcWVhYWJIcnQyXzRHVzh4TGJ2ZFA5bHRPcXdzMWpjRU9zYWttaC1jY0lXV0I2c2R5ZkNLVU1QMzNBV0tJeW1aVlFjRURZNXhqdnV4WEhhM1I1T291Tll4S09neXl0bVQyZGNObFpNQ080RE9Oem9DRW83Vmc5S01yZXhja01R?oc=5",
-      "summary": "After EU sanctions, the volume of transfers between Russia and Kazakhstan decreased by 12 times open.kg",
-      "published": "2026-10-01T11:25:15+00:00",
+      "id": "b65c1ae998bafd4fb9",
+      "title": "Remittances between Russia and Kazakhstan, Georgia plunge after Zolotaya Korona sanctions - AKIpress News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWGlDak9BTnpVSThVVTVMV05tLUo3X0pFUFMzNUlLLTdlaHZuM3VvY21DaXdreXBZNDR4NzcwR0R0UEpIaGJzRFRZNmJuWUc3RV9uMU9PSHRkNktoR2tfaGdLUkFkbk1QX0ZhSnpTNUdDM0R2MUxrTWl4ZFNVWTZNQU4wYWxja3hwcENDaFNTR2NaeVJDbV8xZnIwWTZuZGFrZjM3ZWdLRVNMT21ySFJGbElJamNDd2JGdVd4blRUYmg?oc=5",
+      "summary": "Remittances between Russia and Kazakhstan, Georgia plunge after Zolotaya Korona sanctions AKIpress News Agency",
+      "published": "2026-10-02T03:35:00+00:00",
       "source": "Archive Kazakhstan Russia recent",
       "region": "Russia/Eurasia",
       "verification": "News candidate — not primary-source verified",
       "detected_at": "2026-10-12T08:39:32.268542+00:00",
-      "sector": "Trade",
+      "sector": "Migration",
       "country": "Russia",
       "lat": 61,
       "lon": 105,
@@ -1801,71 +1684,12 @@
         "reason": "Kazakhstan explicitly exposed; concrete reported development",
         "source_role": "Publication count does not establish independent corroboration"
       },
-      "news_group_id": "event-3e14f01377f87d1c30",
+      "news_group_id": "event-b65c1ae998bafd4fb9",
       "article_count": 1,
       "publisher_names": [
-        "open.kg"
+        "akipress news agency"
       ],
       "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "After EU sanctions, the volume of transfers between Russia and Kazakhstan decreased by 12 times - open.kg",
-          "source": "Archive Kazakhstan Russia recent",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcTB5ajdRMjBmMU9CTGZVSW1xTURDaHhqN3BXWThWZHNzbFIxR1RhaWx1UllZaTNrUnZSMHY0Z2dHR1YwLS1QTnh5bzlDcWVhYWJIcnQyXzRHVzh4TGJ2ZFA5bHRPcXdzMWpjRU9zYWttaC1jY0lXV0I2c2R5ZkNLVU1QMzNBV0tJeW1aVlFjRURZNXhqdnV4WEhhM1I1T291Tll4S09neXl0bVQyZGNObFpNQ080RE9Oem9DRW83Vmc5S01yZXhja01R?oc=5",
-          "published": "2026-10-01T11:25:15+00:00",
-          "publisher_guess": "open.kg"
-        }
-      ],
-      "article_ids": [
-        "3e14f01377f87d1c30"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "1bf46977c2e10d48d1",
-      "title": "Russia–Kazakhstan money transfers fall following payment sanctions",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOcWZ1ZE56WVRabzVnRm9DV0xxc3d3VkRocUY5TmFIdk9Gcl91NDhlU0FMRy04WC16WGNFMl9iUVdTa09heFp4MjAtSFd1MjVoaTRWTXRTcFdBbnZ6VkcySlJlS1o3QzFrRWNiTXJpd08waURQcGl2Q1dNR1ZiMWV0Y0ljLXVLRUNoQ0pqSzlWc0dYUXlYTjlBME1oS3lfQTdyOWdyd3Fyczdzd3hzZlhfVzZGYW9fWW4yRzBCVzhWV0F3ai16NDZrYU1XU1lEMjZBSEdUVm5MQmJXM2J4eENBS2x5bXVvenpVVFhxWtIB8gFBVV95cUxPanZnNUNyQ0N1Q2NQc0pMMmc5S2Ruck12bFlsdGx6Z3lKNEF0SUlSbW9oOFp4dC1FOHY4dHBCc0NUODViZ3pvUjhuWVN2UnJwaVIyZEtNRno5OHJlZ2JqaTFoUjdDS0o0a2l1TTdLZ1diOE55WHpmMEJlTU1rMVNDcVl2by03SU85RnFiYWhkUkZ1cjJZMFM5c0RXa3F3WjhXM0UybnY4aEUtdmxSYmFhMzRuWmljdFRQWjJES3BaRzBpSktmY3A5UnJtaExzSF9NVVVxUG1VX2JpQkUzbFJnVF9WNWRvYmxTNlJpSVhrWDgwdw?oc=5",
-      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Money transfers between Russia and Kazakhstan fall nearly 12-fold after EU sanctions on Zolotaya Korona payment service Meduza",
-      "published": "2026-10-01T07:00:00+00:00",
-      "source": "Archive Kazakhstan Russia recent",
-      "region": "Russia/Eurasia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T08:39:32.268542+00:00",
-      "sector": "Finance",
-      "country": "Russia",
-      "lat": 61,
-      "lon": 105,
-      "direction": "Potential negative",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 6,
-        "priority": "medium",
-        "reason": "Kazakhstan explicitly exposed; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-1bf46977c2e10d48d1",
-      "situation_cluster": "russia-kazakhstan-transfer-fall",
-      "article_count": 2,
-      "publisher_names": [
-        "akipress news agency",
-        "meduza"
-      ],
-      "publisher_count_heuristic": 2,
       "related_sources": [
         {
           "title": "Remittances between Russia and Kazakhstan, Georgia plunge after Zolotaya Korona sanctions - AKIpress News Agency",
@@ -1873,18 +1697,10 @@
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWGlDak9BTnpVSThVVTVMV05tLUo3X0pFUFMzNUlLLTdlaHZuM3VvY21DaXdreXBZNDR4NzcwR0R0UEpIaGJzRFRZNmJuWUc3RV9uMU9PSHRkNktoR2tfaGdLUkFkbk1QX0ZhSnpTNUdDM0R2MUxrTWl4ZFNVWTZNQU4wYWxja3hwcENDaFNTR2NaeVJDbV8xZnIwWTZuZGFrZjM3ZWdLRVNMT21ySFJGbElJamNDd2JGdVd4blRUYmg?oc=5",
           "published": "2026-10-02T03:35:00+00:00",
           "publisher_guess": "akipress news agency"
-        },
-        {
-          "title": "Money transfers between Russia and Kazakhstan fall nearly 12-fold after EU sanctions on Zolotaya Korona payment service - Meduza",
-          "source": "Archive Kazakhstan Russia recent",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOcWZ1ZE56WVRabzVnRm9DV0xxc3d3VkRocUY5TmFIdk9Gcl91NDhlU0FMRy04WC16WGNFMl9iUVdTa09heFp4MjAtSFd1MjVoaTRWTXRTcFdBbnZ6VkcySlJlS1o3QzFrRWNiTXJpd08waURQcGl2Q1dNR1ZiMWV0Y0ljLXVLRUNoQ0pqSzlWc0dYUXlYTjlBME1oS3lfQTdyOWdyd3Fyczdzd3hzZlhfVzZGYW9fWW4yRzBCVzhWV0F3ai16NDZrYU1XU1lEMjZBSEdUVm5MQmJXM2J4eENBS2x5bXVvenpVVFhxWtIB8gFBVV95cUxPanZnNUNyQ0N1Q2NQc0pMMmc5S2Ruck12bFlsdGx6Z3lKNEF0SUlSbW9oOFp4dC1FOHY4dHBCc0NUODViZ3pvUjhuWVN2UnJwaVIyZEtNRno5OHJlZ2JqaTFoUjdDS0o0a2l1TTdLZ1diOE55WHpmMEJlTU1rMVNDcVl2by03SU85RnFiYWhkUkZ1cjJZMFM5c0RXa3F3WjhXM0UybnY4aEUtdmxSYmFhMzRuWmljdFRQWjJES3BaRzBpSktmY3A5UnJtaExzSF9NVVVxUG1VX2JpQkUzbFJnVF9WNWRvYmxTNlJpSVhrWDgwdw?oc=5",
-          "published": "2026-10-01T07:00:00+00:00",
-          "publisher_guess": "meduza"
         }
       ],
       "article_ids": [
-        "b65c1ae998bafd4fb9",
-        "1bf46977c2e10d48d1"
+        "b65c1ae998bafd4fb9"
       ],
       "event_status": "Reported event candidate — not independently verified"
     }
