@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-17T15:34:07.504923+00:00",
-  "lookback_start": "2026-09-17",
-  "lookback_end": "2026-10-17",
+  "generated_at": "2026-10-18T04:32:43.022533+00:00",
+  "lookback_start": "2026-09-18",
+  "lookback_end": "2026-10-18",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
   "events": [
     {
@@ -123,6 +123,124 @@
       "event_status": "Reported event candidate — not independently verified"
     },
     {
+      "id": "76d61ffb81f7fafd3c",
+      "title": "Oil Prices Fall Despite Strait of Hormuz Attacks as US Considers Easing Shipping Sanctions - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNS3kxeWRXakJpQ3pYXzVQYVRUQS1fV3NBMDkwODVmdmZqbXh0QmhPN2VCZ3lLckhGRUxPbHJWYmRfVXJESjBsZ3FFaXhmV0NSUGhkeDFRdVI4aHoxT1NqYVM1ZXBtblUxWjBBWV92VEF1ck1DN0xSQTRVV2IwOUlEM09yTWIwMXppY25lQldycDk?oc=5",
+      "summary": "Oil Prices Fall Despite Strait of Hormuz Attacks as US Considers Easing Shipping Sanctions Yahoo Finance",
+      "published": "2026-10-15T09:40:06+00:00",
+      "source": "Google News MENA",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-18T04:32:31.602955+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "negative",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event contributes to a sustained reduction in Kazakhstan's realized crude export price",
+          "mechanism": "Lower realized oil prices may reduce producers' export receipts and petroleum-related fiscal proceeds, depending on volumes, taxation and price differentials.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "positive",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event contributes to a sustained reduction in Kazakhstan's realized crude export price",
+          "mechanism": "Lower global oil prices may reduce some import, transport and energy-input costs, depending on fuel pricing, FX and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported incident",
+        "score": 7,
+        "priority": "high",
+        "reason": "global commodity or infrastructure channel; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-76d61ffb81f7fafd3c",
+      "article_count": 1,
+      "publisher_names": [
+        "yahoo finance"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Oil Prices Fall Despite Strait of Hormuz Attacks as US Considers Easing Shipping Sanctions - Yahoo Finance",
+          "source": "Google News MENA",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNS3kxeWRXakJpQ3pYXzVQYVRUQS1fV3NBMDkwODVmdmZqbXh0QmhPN2VCZ3lLckhGRUxPbHJWYmRfVXJESjBsZ3FFaXhmV0NSUGhkeDFRdVI4aHoxT1NqYVM1ZXBtblUxWjBBWV92VEF1ck1DN0xSQTRVV2IwOUlEM09yTWIwMXppY25lQldycDk?oc=5",
+          "published": "2026-10-15T09:40:06+00:00",
+          "publisher_guess": "yahoo finance"
+        }
+      ],
+      "article_ids": [
+        "76d61ffb81f7fafd3c"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
+    {
       "id": "789044e7bd3d25150e",
       "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWndQbl9nd1lfRzd5cGxja3hZb2pBTDZYRXROYWtnSTZHQXVaWUozVGE0Y09xVUwxU0IydjMyNXRGekxrTmRpQi1mbDYtUE8zblB2b190czdTNjdzWV80TVpCNXhERGU0VXRBTUtOdHRsYlY2M2lUTjh1eWJpUnFNcWh0WVI0aVQwTHZKOWFZc2pDVmxvTmtCY2xnQ19ScXRYcDRUblNnRE1VNkVnQVV1NXZDZG5FYzJHRmRQS2pxT0NJTk9hUWhPYkZESlRkUmtCVG9aeg?oc=5",
@@ -215,9 +333,9 @@
       "triage": {
         "included": true,
         "kind": "reported action",
-        "score": 7,
+        "score": 10,
         "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development",
+        "reason": "global commodity or infrastructure channel; concrete reported development; global commodity or infrastructure channel; concrete reported development; measured or sharp change",
         "source_role": "Publication count does not establish independent corroboration"
       },
       "news_group_id": "event-789044e7bd3d25150e",
@@ -229,6 +347,8 @@
         "asharq al-awsat english",
         "cnn",
         "hindustan times",
+        "ktvn",
+        "new york post",
         "opb",
         "pbs",
         "spectrum news",
@@ -236,8 +356,22 @@
         "the times of israel",
         "www.nationpathindia.com"
       ],
-      "publisher_count_heuristic": 11,
+      "publisher_count_heuristic": 13,
       "related_sources": [
+        {
+          "title": "Iranian oil tanker explodes after hitting a naval mine in the Strait of Hormuz - KTVN",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPMTNwMldqM3c1RGphWlkzWjQ3RndNaTNMLTJsQWpON01HamFoX3l0Y1JiVHZONU1mOEJIanJZYkNuUXFSM0VPLW1LQ3BWOXpzTVV6LUdJcjE3YWpaVWt1RGNYeDEtVkt5c2VQWXdNOHNseXc0QTNUbXZwMy1XQ1hUcWdNVWEwV3F5U203UUJyaTNFaURXdXJFRWJnb1I5d0ZnWDNZdUN2QTVyS1NETDRGMjZpcVRWSHBfREV2OWhQdzBlS2lsRWxBODhNdHhRVnZDbnJvc2x2MzZEZTk1eU55dHhWamt5RjZ0RFJHNXZPVXQyVFNm?oc=5",
+          "published": "2026-10-18T00:12:00+00:00",
+          "publisher_guess": "ktvn"
+        },
+        {
+          "title": "Ship attacks in Strait of Hormuz hit record high since Iran war began - New York Post",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNlN5TWxmQURRb0JMV1ZUa3JHemxkNEhNQUNDdXFxdUhGSzRvWDBVQll0dHNCZ3lvWTZPQllIaXNxTWFFX0NlT0tSblVONHlRbkhPX2IyZWRxQWx4cDZDT2MyQldENnB2TFNweXdRUVY0WHdzTzdnRzFjRExoT05KRFF0OHBnd3BDZjRQZzI0bVFFanctcWdzS0N0NDEtMnpZZjBLVGN5WFItc2dFREluYQ?oc=5",
+          "published": "2026-10-17T18:42:00+00:00",
+          "publisher_guess": "new york post"
+        },
         {
           "title": "Supertanker carrying 2 million barrels of oil hits naval mine, explodes in Strait of Hormuz | World News - Hindustan Times",
           "source": "Archive Hormuz Oil recent",
@@ -328,23 +462,11 @@
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYlAzVnREMUZ0aTlwMklpMHJBTU5DY3YxamIyQmhhRUdzOF9xZHhMUlJUeHJDZHN6bzQtUmg2WTRSbTdGekwyVWE2dy1vcG1YbVFIZHlydFdKak9mNnZZeUE3NWE0NnMzVlItT1VYU0k0UXh4VWFYYjFObGxfVkdlbWxXVUFEZ0dydGRIdHJQV2YxYlV2c2ZiMTlHZlAyR2VpTTBCNFBuajVyb2kwVzFhekpBbjNCWXNvazBWSm16NVRFejg?oc=5",
           "published": "2026-10-11T13:58:47+00:00",
           "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORWVPUHBLV2F5SnJablI2Vk9adC1JR29uMTBDM2xVM0pDaEtnNDJhUzVrcnF3NHI1a0ZpN0s2QVBWQ3R1b3hZckpCcjkzbDkxRFgzZXRxWC01amZ2YS1TNl9jY2ZTRjNrV1prZDVaRzlZUVBpdERtUG8tcFZielhIbFh3VUtqOFpDSzh0SmphdVlQaTNxSlhFLVRCc1djcTdHblhsODBfNUIzRGd6MmxVd2EtZEZ2RFRRTXpuRXVIc0Z5WmtPS1dfMF9HS21KLUplQUE?oc=5",
-          "published": "2026-10-10T19:52:52+00:00",
-          "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSGpOcWdmNk5WcmRweGtHa2dFYTRpMWRpSWlfOGtabGFyODZTY2g1R2wySUt0MXFFbEtkQmdkUHFlaDFKNnRnZUdsNThHZms1eTJUSkJzWFRjczNmbmYyTXBwTU1ZeEJVLWJBczI0M1dJOVhpN05ULWdtYzBTUHJ6akNvemJKZkxnY3Bld1ppVWNqdElOQnBwNzhiUW53TnBnaHhpUkg5TmM2MkZjSzEwRjhPRHVER05lWTJwb1Q1cDhJU0VaS0REeTFXZGg?oc=5",
-          "published": "2026-10-10T19:52:52+00:00",
-          "publisher_guess": "anadolu ajansı"
         }
       ],
       "article_ids": [
+        "e259b07c40a917b4ab",
+        "2e0cf8dbfa92f43f2d",
         "1000ab7a43d7181d5b",
         "0ef7ae4a6fc4f7ce2f",
         "ef94f5ec23c8af3888",
@@ -357,9 +479,7 @@
         "25f60846d969afc1a4",
         "2a2006988475c4c8f6",
         "b4967d9f9533d8679b",
-        "8ccb16eae768f2e414",
-        "058e74e89f5f3647e1",
-        "998986215f6d4f7149"
+        "8ccb16eae768f2e414"
       ],
       "event_status": "Reported event candidate — not independently verified"
     },
@@ -474,6 +594,142 @@
       ],
       "article_ids": [
         "6bafa213f4c686399f"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
+    {
+      "id": "058e74e89f5f3647e1",
+      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORWVPUHBLV2F5SnJablI2Vk9adC1JR29uMTBDM2xVM0pDaEtnNDJhUzVrcnF3NHI1a0ZpN0s2QVBWQ3R1b3hZckpCcjkzbDkxRFgzZXRxWC01amZ2YS1TNl9jY2ZTRjNrV1prZDVaRzlZUVBpdERtUG8tcFZielhIbFh3VUtqOFpDSzh0SmphdVlQaTNxSlhFLVRCc1djcTdHblhsODBfNUIzRGd6MmxVd2EtZEZ2RFRRTXpuRXVIc0Z5WmtPS1dfMF9HS21KLUplQUE?oc=5",
+      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say Anadolu Ajansı",
+      "published": "2026-10-10T19:52:52+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-12T08:39:32.268542+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 10,
+        "priority": "high",
+        "reason": "global commodity or infrastructure channel; concrete reported development; global commodity or infrastructure channel; concrete reported development; measured or sharp change",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-058e74e89f5f3647e1",
+      "situation_cluster": "hormuz-tanker-incidents",
+      "article_count": 3,
+      "publisher_names": [
+        "anadolu ajansı",
+        "haaretz"
+      ],
+      "publisher_count_heuristic": 2,
+      "related_sources": [
+        {
+          "title": "Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORWVPUHBLV2F5SnJablI2Vk9adC1JR29uMTBDM2xVM0pDaEtnNDJhUzVrcnF3NHI1a0ZpN0s2QVBWQ3R1b3hZckpCcjkzbDkxRFgzZXRxWC01amZ2YS1TNl9jY2ZTRjNrV1prZDVaRzlZUVBpdERtUG8tcFZielhIbFh3VUtqOFpDSzh0SmphdVlQaTNxSlhFLVRCc1djcTdHblhsODBfNUIzRGd6MmxVd2EtZEZ2RFRRTXpuRXVIc0Z5WmtPS1dfMF9HS21KLUplQUE?oc=5",
+          "published": "2026-10-10T19:52:52+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Supertanker explodes after striking mine in Strait of Hormuz, Iran's Revolutionary Guards say - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSGpOcWdmNk5WcmRweGtHa2dFYTRpMWRpSWlfOGtabGFyODZTY2g1R2wySUt0MXFFbEtkQmdkUHFlaDFKNnRnZUdsNThHZms1eTJUSkJzWFRjczNmbmYyTXBwTU1ZeEJVLWJBczI0M1dJOVhpN05ULWdtYzBTUHJ6akNvemJKZkxnY3Bld1ppVWNqdElOQnBwNzhiUW53TnBnaHhpUkg5TmM2MkZjSzEwRjhPRHVER05lWTJwb1Q1cDhJU0VaS0REeTFXZGg?oc=5",
+          "published": "2026-10-10T19:52:52+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Tanker Attacks in Strait of Hormuz Hit Record Weekly High Since War Began - Haaretz",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWXFVREROWXdLUDlZdVN0OF9Tdm5ISUJRMVcyVy1YREE3ZXhOUlFLM3Yya2FQX2xoNWlYcE8xaFZUZk1nV2ZnZUtlSXpPdEJLSVNiVjhKbXFXNkFlRmNvR2JWazJrQkJqTDFyLVhfT2hGM2xRd3JkUGtyUWUyVkVxYW5BYjFBN1JJNmhXWWJrTGRJNGd1Rk5OcTFPS1lRSUp2bWtXUVk2TnZFbzNWblUtZm1UdnhoNjQ1OElqYVBwWGJWT0tnWGZiTl9iSThJa3k5SlJsTFVXaDY0NkdndUFLeF9BeGNqVXFtRF9QbEotdGlGS1B5NWx3WTRlS0RXSVdTem1N?oc=5",
+          "published": "2026-10-08T16:10:00+00:00",
+          "publisher_guess": "haaretz"
+        }
+      ],
+      "article_ids": [
+        "058e74e89f5f3647e1",
+        "998986215f6d4f7149",
+        "636a8a9367e35a8ff6"
       ],
       "event_status": "Reported event candidate — not independently verified"
     },
@@ -714,124 +970,6 @@
       ],
       "article_ids": [
         "862e02bc3c9de1acaf"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "636a8a9367e35a8ff6",
-      "title": "Tanker Attacks in Strait of Hormuz Hit Record Weekly High Since War Began - Haaretz",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWXFVREROWXdLUDlZdVN0OF9Tdm5ISUJRMVcyVy1YREE3ZXhOUlFLM3Yya2FQX2xoNWlYcE8xaFZUZk1nV2ZnZUtlSXpPdEJLSVNiVjhKbXFXNkFlRmNvR2JWazJrQkJqTDFyLVhfT2hGM2xRd3JkUGtyUWUyVkVxYW5BYjFBN1JJNmhXWWJrTGRJNGd1Rk5OcTFPS1lRSUp2bWtXUVk2TnZFbzNWblUtZm1UdnhoNjQ1OElqYVBwWGJWT0tnWGZiTl9iSThJa3k5SlJsTFVXaDY0NkdndUFLeF9BeGNqVXFtRF9QbEotdGlGS1B5NWx3WTRlS0RXSVdTem1N?oc=5",
-      "summary": "Tanker Attacks in Strait of Hormuz Hit Record Weekly High Since War Began Haaretz",
-      "published": "2026-10-08T16:10:00+00:00",
-      "source": "Archive Hormuz Oil recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T08:39:32.268542+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported incident",
-        "score": 10,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development; measured or sharp change",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-636a8a9367e35a8ff6",
-      "article_count": 1,
-      "publisher_names": [
-        "haaretz"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Tanker Attacks in Strait of Hormuz Hit Record Weekly High Since War Began - Haaretz",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWXFVREROWXdLUDlZdVN0OF9Tdm5ISUJRMVcyVy1YREE3ZXhOUlFLM3Yya2FQX2xoNWlYcE8xaFZUZk1nV2ZnZUtlSXpPdEJLSVNiVjhKbXFXNkFlRmNvR2JWazJrQkJqTDFyLVhfT2hGM2xRd3JkUGtyUWUyVkVxYW5BYjFBN1JJNmhXWWJrTGRJNGd1Rk5OcTFPS1lRSUp2bWtXUVk2TnZFbzNWblUtZm1UdnhoNjQ1OElqYVBwWGJWT0tnWGZiTl9iSThJa3k5SlJsTFVXaDY0NkdndUFLeF9BeGNqVXFtRF9QbEotdGlGS1B5NWx3WTRlS0RXSVdTem1N?oc=5",
-          "published": "2026-10-08T16:10:00+00:00",
-          "publisher_guess": "haaretz"
-        }
-      ],
-      "article_ids": [
-        "636a8a9367e35a8ff6"
       ],
       "event_status": "Reported event candidate — not independently verified"
     },
@@ -1276,7 +1414,7 @@
       "summary": "The ministry states that the EAEU–UAE agreement entered into force on 6 October 2026 and contains preferential customs terms covering over 85% of product nomenclature. This establishes a rule change, not realised changes in Kazakhstan's bilateral exports.",
       "published": "2026-10-06T00:00:00+00:00",
       "source": "Kazakhstan Ministry of Trade and Integration",
-      "detected_at": "2026-10-17T15:33:56.028042+00:00",
+      "detected_at": "2026-10-18T04:32:31.602955+00:00",
       "verification": "Original Kazakhstan government announcement inspected; trade response not measured",
       "sector": "Trade",
       "country": "United Arab Emirates",
