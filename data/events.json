@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-18T15:52:24.858116+00:00",
-  "lookback_start": "2026-09-18",
-  "lookback_end": "2026-10-18",
+  "generated_at": "2026-10-19T04:39:58.549954+00:00",
+  "lookback_start": "2026-09-19",
+  "lookback_end": "2026-10-19",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
   "events": [
     {
@@ -1414,7 +1414,7 @@
       "summary": "The ministry states that the EAEU–UAE agreement entered into force on 6 October 2026 and contains preferential customs terms covering over 85% of product nomenclature. This establishes a rule change, not realised changes in Kazakhstan's bilateral exports.",
       "published": "2026-10-06T00:00:00+00:00",
       "source": "Kazakhstan Ministry of Trade and Integration",
-      "detected_at": "2026-10-18T15:52:12.903688+00:00",
+      "detected_at": "2026-10-19T04:39:46.819750+00:00",
       "verification": "Original Kazakhstan government announcement inspected; trade response not measured",
       "sector": "Trade",
       "country": "United Arab Emirates",
@@ -1527,180 +1527,6 @@
       ],
       "article_ids": [
         "9489a94cd928205610"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "0e9123c1ac823aec35",
-      "title": "The war with Iran derailed OPEC+’s oil plans — a review of future quotas has been postponed - Українські Національні Новини (УНН)",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN0dJa0pKdzdEWWFRc2UxUGlULXZCUDFFRHpvemRGTFBFTmphVVVZcGExdDVVRG9fY0RKc3lSZzUxcEdlbmJFRHRzWlRSWnpMNnU0cFpxNlNTc29zNHZSRUJRUWdoV0dTMjlkZTBvejgybkt2WjQ5TGVoOUc1MUVCejFLbVRhbGVObzJLZEltZlI3dnVnMVJVNnpRd09iVnJTZGJfVl9iaGYxdmJJbmRN0gGuAUFVX3lxTE5LbVZWRnZpd2RDeFIxUGpEeWZhU1JTaDhXdUppWWpZaURKVm5RRVA5QUpqZ1pGbEdTdU04bzBxTXFpeGFkZXAwcXZIYkE0ZHd3OE44RUVmNEZ2SGxZelNqbmh2amlLVV9MeFRzYTZvN0ZwMkFSUjZKQ25ubWF5MkQ4TUZUUFBUSXlrQkQxaHRCalJKY3dVU1AzQk5JalNGN2lSQmg4dDlENnhNT2NsZw?oc=5",
-      "summary": "The war with Iran derailed OPEC+’s oil plans — a review of future quotas has been postponed Українські Національні Новини (УНН)",
-      "published": "2026-10-02T07:00:00+00:00",
-      "source": "Archive Oil Market OPEC older",
-      "region": "Global",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-17T04:24:41.901847+00:00",
-      "sector": "Oil",
-      "country": "Iran",
-      "lat": 32,
-      "lon": 54,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported incident",
-        "score": 7,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-0e9123c1ac823aec35",
-      "article_count": 1,
-      "publisher_names": [
-        "українські національні новини (унн)"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "The war with Iran derailed OPEC+’s oil plans — a review of future quotas has been postponed - Українські Національні Новини (УНН)",
-          "source": "Archive Oil Market OPEC older",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN0dJa0pKdzdEWWFRc2UxUGlULXZCUDFFRHpvemRGTFBFTmphVVVZcGExdDVVRG9fY0RKc3lSZzUxcEdlbmJFRHRzWlRSWnpMNnU0cFpxNlNTc29zNHZSRUJRUWdoV0dTMjlkZTBvejgybkt2WjQ5TGVoOUc1MUVCejFLbVRhbGVObzJLZEltZlI3dnVnMVJVNnpRd09iVnJTZGJfVl9iaGYxdmJJbmRN0gGuAUFVX3lxTE5LbVZWRnZpd2RDeFIxUGpEeWZhU1JTaDhXdUppWWpZaURKVm5RRVA5QUpqZ1pGbEdTdU04bzBxTXFpeGFkZXAwcXZIYkE0ZHd3OE44RUVmNEZ2SGxZelNqbmh2amlLVV9MeFRzYTZvN0ZwMkFSUjZKQ25ubWF5MkQ4TUZUUFBUSXlrQkQxaHRCalJKY3dVU1AzQk5JalNGN2lSQmg4dDlENnhNT2NsZw?oc=5",
-          "published": "2026-10-02T07:00:00+00:00",
-          "publisher_guess": "українські національні новини (унн)"
-        }
-      ],
-      "article_ids": [
-        "0e9123c1ac823aec35"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "b65c1ae998bafd4fb9",
-      "title": "Remittances between Russia and Kazakhstan, Georgia plunge after Zolotaya Korona sanctions - AKIpress News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWGlDak9BTnpVSThVVTVMV05tLUo3X0pFUFMzNUlLLTdlaHZuM3VvY21DaXdreXBZNDR4NzcwR0R0UEpIaGJzRFRZNmJuWUc3RV9uMU9PSHRkNktoR2tfaGdLUkFkbk1QX0ZhSnpTNUdDM0R2MUxrTWl4ZFNVWTZNQU4wYWxja3hwcENDaFNTR2NaeVJDbV8xZnIwWTZuZGFrZjM3ZWdLRVNMT21ySFJGbElJamNDd2JGdVd4blRUYmg?oc=5",
-      "summary": "Remittances between Russia and Kazakhstan, Georgia plunge after Zolotaya Korona sanctions AKIpress News Agency",
-      "published": "2026-10-02T03:35:00+00:00",
-      "source": "Archive Kazakhstan Russia recent",
-      "region": "Russia/Eurasia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T08:39:32.268542+00:00",
-      "sector": "Migration",
-      "country": "Russia",
-      "lat": 61,
-      "lon": 105,
-      "direction": "Potential negative",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 6,
-        "priority": "medium",
-        "reason": "Kazakhstan explicitly exposed; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-b65c1ae998bafd4fb9",
-      "article_count": 1,
-      "publisher_names": [
-        "akipress news agency"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Remittances between Russia and Kazakhstan, Georgia plunge after Zolotaya Korona sanctions - AKIpress News Agency",
-          "source": "Archive Kazakhstan Russia recent",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWGlDak9BTnpVSThVVTVMV05tLUo3X0pFUFMzNUlLLTdlaHZuM3VvY21DaXdreXBZNDR4NzcwR0R0UEpIaGJzRFRZNmJuWUc3RV9uMU9PSHRkNktoR2tfaGdLUkFkbk1QX0ZhSnpTNUdDM0R2MUxrTWl4ZFNVWTZNQU4wYWxja3hwcENDaFNTR2NaeVJDbV8xZnIwWTZuZGFrZjM3ZWdLRVNMT21ySFJGbElJamNDd2JGdVd4blRUYmg?oc=5",
-          "published": "2026-10-02T03:35:00+00:00",
-          "publisher_guess": "akipress news agency"
-        }
-      ],
-      "article_ids": [
-        "b65c1ae998bafd4fb9"
       ],
       "event_status": "Reported event candidate — not independently verified"
     }
