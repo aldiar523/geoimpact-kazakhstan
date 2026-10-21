@@ -1,9 +1,145 @@
 {
-  "generated_at": "2026-10-20T17:04:15.107201+00:00",
+  "generated_at": "2026-10-21T04:45:29.882519+00:00",
   "status": "Reported foreign developments for investigator screening; Kazakhstan effects hypothetical",
   "disclaimer": "Watch level is screening attention, not impact magnitude or likelihood",
-  "source_articles": 36,
+  "source_articles": 37,
   "groups": [
+    {
+      "id": "c7e6e0050d90699362",
+      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxORGg4bjh5UThKMHFyNFJZdm5sVEU1bGV1TG5FV0dpdXQxU1dTTkczREZBaTV3ZFlMa09OSXl4Mkx1TTR0a3ZwbFhtWnEyOERDbk9OM25lNEJULU9CZHNyYk1PX19jQjc2bmttdl9aeVBrdi03UVBILTdFZjhQdVJPX29xMFZDOFZwX3FWTXpNeUdyR2tUdDg0aC1VVGZQZDN2VHdxS09aZ0lHLVZWeWR5Mmw5WTlVTjVqZUVQT3dBUjdsdlNxcFJKNTVaVXZKMGNjM20yNjB4SDVPdDdDUGhnMA?oc=5",
+      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. IRGC Navy says super tanker struck sea mine, exploded off Hormuz; Fars reports; tanker carried 2mln barrels of oil Newsquawk",
+      "published": "2026-10-20T17:14:13+00:00",
+      "source": "Archive Hormuz Attacks Shipping recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-21T04:45:19.000942+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Unknown",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "unknown",
+      "scenario": true,
+      "impact_channels": [],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "watch_level": "strong candidate",
+      "watch_exposure": "External development, potential KZ transmission not independently established",
+      "exposure_channels": [
+        {
+          "name": "Transport / chokepoints",
+          "sector": "Transport",
+          "mechanism": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
+          "evidence_status": "Hypothesis to test"
+        }
+      ],
+      "triage": {
+        "included": true,
+        "kind": "reported international development",
+        "score": 5,
+        "priority": "medium",
+        "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes; no explicit Kazakhstan impact identified",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-c7e6e0050d90699362",
+      "situation_cluster": "hormuz-tanker-incidents",
+      "article_count": 7,
+      "publisher_names": [
+        "anadolu ajansı",
+        "newsnation",
+        "newsquawk"
+      ],
+      "publisher_count_heuristic": 3,
+      "related_sources": [
+        {
+          "title": "IRGC Navy says super tanker struck sea mine, exploded off Hormuz; Fars reports; tanker carried 2mln barrels of oil - Newsquawk",
+          "source": "Archive Hormuz Attacks Shipping recent",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxORGg4bjh5UThKMHFyNFJZdm5sVEU1bGV1TG5FV0dpdXQxU1dTTkczREZBaTV3ZFlMa09OSXl4Mkx1TTR0a3ZwbFhtWnEyOERDbk9OM25lNEJULU9CZHNyYk1PX19jQjc2bmttdl9aeVBrdi03UVBILTdFZjhQdVJPX29xMFZDOFZwX3FWTXpNeUdyR2tUdDg0aC1VVGZQZDN2VHdxS09aZ0lHLVZWeWR5Mmw5WTlVTjVqZUVQT3dBUjdsdlNxcFJKNTVaVXZKMGNjM20yNjB4SDVPdDdDUGhnMA?oc=5",
+          "published": "2026-10-20T17:14:13+00:00",
+          "publisher_guess": "newsquawk"
+        },
+        {
+          "title": "Iran’s Revolutionary Guard says oil tanker struck mine and caught fire in Strait of Hormuz - Anadolu Ajansı",
+          "source": "Archive Hormuz Attacks Shipping recent",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSm94UldNeVE1SzdqbFdQWklGeTVpbHZ4eV80MmRPOVRRdFozQjR3eDlFdEEyMkw5VldzUkdNUm01RlB1QU1aVFIxRm5VVWJOYUYya2ZQTjBKOFZlUzgtZXZnZEtLYXkyemZHUUxRZGYwbjh4LU9lUTZnbmc2SnplMXFxTXZnbU1WQ29XLXNraXBMM0dDaEVLRkpwQlZDbkROdzhWUlRIcUc1Z1dWZDVLTWZ6b2NCYWhVWFo5dGVwcmN6MG9QRkhrSDJXVUfSAdQBQVVfeXFMTzgwUHdrNTYzQ2tyOWJ5ZXpEX29udTdxMDY5M3lBazNpNWFjWkpqS19kTC1VLUZOdjNLOWV1RzhkcXVXS2pYZ3B5QTh6dzVDLWJHN1NVdTBZR2JRRFpWbUhVS3dnRjJOVW16d09EN3VCUVVialp4V1JaX29jeUpUeGtsSm5fODZ5YlFwTFpyeWZjZkJIOUZGWHFlVVFmXzBKNjB6UGV5Skt6aDBfMXVJbUlpNHBQZjBrWDNVQjFSUTJnYWtfNHUxS0J4a0F3R0hQbEk3M0M?oc=5",
+          "published": "2026-10-19T08:23:25+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Iran’s Revolutionary Guard says oil tanker struck mine and caught fire in Strait of Hormuz - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM1R4b2tCRlpUdlprUnd1UEJWcFFvVzdqV3g0RXdCM3NxRElsM0NrWVI2ZnY4aDBqM2pIUDQtQS1YZHJKYnN3MUdHX0EySTNFaFp2UkxfZEF0ZC12c3V0WEVvR0E2ZlJiaVJTX200UTF2TmZwR3RnT1RXdmdmc1hpRzFKZ3pJWG9GR3E2dXZ3M1lkYnJ1NDh1eWlPTkh1T2VXb2RoWlBwWDBoaTVDN1k1REtVWDg5WEdqbnVlejdRcGNXckltdm5OTzB3WQ?oc=5",
+          "published": "2026-10-19T01:15:04+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Oil tanker explodes in Strait of Hormuz as Iran vows waterway remains closed - NewsNation",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8zVHd1Ym90WEswQl9KOWJnWi00QkRzWU9xRG9aYjNBWHhITHdoaGJvV2JsdHhvNEFhalBhYTVUd3RoUDY3VFNtZ3NXQlBNT2VkRUdKMzVTeUI4NVh3S1lUTkU3aUZKdlJKdUtPSnhLdkZ0ZDNBRkNNQ3NYMXJOd9IBgwFBVV95cUxOMldlNmxMb0xOS3Qxc19seDczdWM5V19qY1lyaTRNejlJeUpBLUp6UlAwdXZIMTlwOWxEWFVjRGhnRUlobU5JanF2clNfM2EwZEFGbXhSNHJXSDRQUHA1TDN1R004NDU4UUQ4SzVmNkRmM2YxQWhVZXpuWnJNWWEtcEpKVQ?oc=5",
+          "published": "2026-10-18T01:53:32+00:00",
+          "publisher_guess": "newsnation"
+        },
+        {
+          "title": "Oil tanker explodes in Strait of Hormuz as Iran vows waterway remains closed - NewsNation",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMldlNmxMb0xOS3Qxc19seDczdWM5V19qY1lyaTRNejlJeUpBLUp6UlAwdXZIMTlwOWxEWFVjRGhnRUlobU5JanF2clNfM2EwZEFGbXhSNHJXSDRQUHA1TDN1R004NDU4UUQ4SzVmNkRmM2YxQWhVZXpuWnJNWWEtcEpKVdIBgwFBVV95cUxOMldlNmxMb0xOS3Qxc19seDczdWM5V19qY1lyaTRNejlJeUpBLUp6UlAwdXZIMTlwOWxEWFVjRGhnRUlobU5JanF2clNfM2EwZEFGbXhSNHJXSDRQUHA1TDN1R004NDU4UUQ4SzVmNkRmM2YxQWhVZXpuWnJNWWEtcEpKVQ?oc=5",
+          "published": "2026-10-17T08:27:06+00:00",
+          "publisher_guess": "newsnation"
+        },
+        {
+          "title": "Iran reports another oil tanker fire in restricted area east of Strait of Hormuz - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORWFDcUNOWExCQTFIeXh0WWpRelJtcTViSC1MT0U0czVPcHY0QzlKTUtVN05EMzVJQ2UyN2JtX2t0bmkwUkdhcC1DTFNQTWpvTTVXb3QxMUU3blNzUzYwaTRBNEYyMzhOX0o2MmFMa1FHRkR0UHoxSmt1SXlkQmVfTUVIWGlrbkhOcXVtcHRnMFBPOUJ6ZjRiVnY3bzE4RG5CNWRDR1hXVkpFNFA4Y0RPYzVQOE8tZ2NLaTFVTDZwaVNiS0k?oc=5",
+          "published": "2026-10-15T15:40:46+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Container ship, tanker struck by unknown projectiles in Strait of Hormuz: UK maritime agency - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMVo0dnFiZENUc3o0QjZXa2N1MWtsZUM2N3ozbndfLUY5Y0RzZG9HNGtkczN2dGFuZGR2SUg0LWZDcGVCY3JNaEhUbEYxYm9MWnJvU1ZobllDa3VvMmhKNUw5MmY1S2FnZklmMG0wcVJ4TjdJMW10VUgwUTM1RzR4R2ZQdEd3V2JxVTBzbmJ5OW1uZjc3enZrdE8zdXJoMXN5blRfWTF4c2dWQ2drQzBxY1B5SkJQTXJFZWRPSGJIMVNUSXFYME1NNnFEajlGWEJ2?oc=5",
+          "published": "2026-10-13T19:43:58+00:00",
+          "publisher_guess": "anadolu ajansı"
+        }
+      ],
+      "article_ids": [
+        "c7e6e0050d90699362",
+        "a21832670e25e1ee3d",
+        "73c4809d479dfe9069",
+        "a9c4caa4f3e27745ae",
+        "1f686474da6bc9fadb",
+        "c668ff0edd21ef2aa7",
+        "ba687deae09407db68"
+      ],
+      "event_status": "Reported event candidate — not independently verified",
+      "hypothesis_not_impact": true
+    },
     {
       "id": "ba41fce0480c1d850c",
       "title": "China's new export controls on tunnel boring machines: India impact and response - OpIndia",
@@ -731,143 +867,6 @@
       ],
       "article_ids": [
         "be4ea1a12933ae0132"
-      ],
-      "event_status": "Reported event candidate — not independently verified",
-      "hypothesis_not_impact": true
-    },
-    {
-      "id": "51da3800cbde854fef",
-      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzNIeEU0NlUtTDk5bWRwZERzdTVkSURFdzE5Qk9sUGJkWDNaTjhDVFBJVzY4ZWdjUFEyX1o5NkxSekUxOGx0NXdDS3B5NkRUeDVkYl91YUZwZGUzVms1TWNJXzBxVGlLaS1sVmpFb1Vzam1ZNlU1blA2Z0ZxWlBaaVA4ZEdmZEpoWHlNMlBOZXhKRG42T3pURU5rVTNoTmlONWM0cWtVd0dvaVJlLUtNZA?oc=5",
-      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. At least 12 tankers attacked around Strait of Hormuz in a week, shipping reports show The Insight International",
-      "published": "2026-10-13T11:49:03+00:00",
-      "source": "Archive Red Sea Actual Blockage recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-14T04:52:58.507324+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Unknown",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "unknown",
-      "scenario": true,
-      "impact_channels": [],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "watch_level": "strong candidate",
-      "watch_exposure": "External development, potential KZ transmission not independently established",
-      "exposure_channels": [
-        {
-          "name": "Transport / chokepoints",
-          "sector": "Transport",
-          "mechanism": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
-          "evidence_status": "Hypothesis to test"
-        }
-      ],
-      "triage": {
-        "included": true,
-        "kind": "reported international development",
-        "score": 5,
-        "priority": "medium",
-        "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes; no explicit Kazakhstan impact identified",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-51da3800cbde854fef",
-      "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 7,
-      "publisher_names": [
-        "al jazeera",
-        "anadolu ajansı",
-        "newsnation",
-        "the insight international"
-      ],
-      "publisher_count_heuristic": 4,
-      "related_sources": [
-        {
-          "title": "Iran’s Revolutionary Guard says oil tanker struck mine and caught fire in Strait of Hormuz - Anadolu Ajansı",
-          "source": "Archive Hormuz Attacks Shipping recent",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSm94UldNeVE1SzdqbFdQWklGeTVpbHZ4eV80MmRPOVRRdFozQjR3eDlFdEEyMkw5VldzUkdNUm01RlB1QU1aVFIxRm5VVWJOYUYya2ZQTjBKOFZlUzgtZXZnZEtLYXkyemZHUUxRZGYwbjh4LU9lUTZnbmc2SnplMXFxTXZnbU1WQ29XLXNraXBMM0dDaEVLRkpwQlZDbkROdzhWUlRIcUc1Z1dWZDVLTWZ6b2NCYWhVWFo5dGVwcmN6MG9QRkhrSDJXVUfSAdQBQVVfeXFMTzgwUHdrNTYzQ2tyOWJ5ZXpEX29udTdxMDY5M3lBazNpNWFjWkpqS19kTC1VLUZOdjNLOWV1RzhkcXVXS2pYZ3B5QTh6dzVDLWJHN1NVdTBZR2JRRFpWbUhVS3dnRjJOVW16d09EN3VCUVVialp4V1JaX29jeUpUeGtsSm5fODZ5YlFwTFpyeWZjZkJIOUZGWHFlVVFmXzBKNjB6UGV5Skt6aDBfMXVJbUlpNHBQZjBrWDNVQjFSUTJnYWtfNHUxS0J4a0F3R0hQbEk3M0M?oc=5",
-          "published": "2026-10-19T08:23:25+00:00",
-          "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "Iran’s Revolutionary Guard says oil tanker struck mine and caught fire in Strait of Hormuz - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM1R4b2tCRlpUdlprUnd1UEJWcFFvVzdqV3g0RXdCM3NxRElsM0NrWVI2ZnY4aDBqM2pIUDQtQS1YZHJKYnN3MUdHX0EySTNFaFp2UkxfZEF0ZC12c3V0WEVvR0E2ZlJiaVJTX200UTF2TmZwR3RnT1RXdmdmc1hpRzFKZ3pJWG9GR3E2dXZ3M1lkYnJ1NDh1eWlPTkh1T2VXb2RoWlBwWDBoaTVDN1k1REtVWDg5WEdqbnVlejdRcGNXckltdm5OTzB3WQ?oc=5",
-          "published": "2026-10-19T01:15:04+00:00",
-          "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "Oil tanker explodes in Strait of Hormuz as Iran vows waterway remains closed - NewsNation",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8zVHd1Ym90WEswQl9KOWJnWi00QkRzWU9xRG9aYjNBWHhITHdoaGJvV2JsdHhvNEFhalBhYTVUd3RoUDY3VFNtZ3NXQlBNT2VkRUdKMzVTeUI4NVh3S1lUTkU3aUZKdlJKdUtPSnhLdkZ0ZDNBRkNNQ3NYMXJOd9IBgwFBVV95cUxOMldlNmxMb0xOS3Qxc19seDczdWM5V19qY1lyaTRNejlJeUpBLUp6UlAwdXZIMTlwOWxEWFVjRGhnRUlobU5JanF2clNfM2EwZEFGbXhSNHJXSDRQUHA1TDN1R004NDU4UUQ4SzVmNkRmM2YxQWhVZXpuWnJNWWEtcEpKVQ?oc=5",
-          "published": "2026-10-18T01:53:32+00:00",
-          "publisher_guess": "newsnation"
-        },
-        {
-          "title": "Iran reports another oil tanker fire in restricted area east of Strait of Hormuz - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORWFDcUNOWExCQTFIeXh0WWpRelJtcTViSC1MT0U0czVPcHY0QzlKTUtVN05EMzVJQ2UyN2JtX2t0bmkwUkdhcC1DTFNQTWpvTTVXb3QxMUU3blNzUzYwaTRBNEYyMzhOX0o2MmFMa1FHRkR0UHoxSmt1SXlkQmVfTUVIWGlrbkhOcXVtcHRnMFBPOUJ6ZjRiVnY3bzE4RG5CNWRDR1hXVkpFNFA4Y0RPYzVQOE8tZ2NLaTFVTDZwaVNiS0k?oc=5",
-          "published": "2026-10-15T15:40:46+00:00",
-          "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "Container ship, tanker struck by unknown projectiles in Strait of Hormuz: UK maritime agency - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMVo0dnFiZENUc3o0QjZXa2N1MWtsZUM2N3ozbndfLUY5Y0RzZG9HNGtkczN2dGFuZGR2SUg0LWZDcGVCY3JNaEhUbEYxYm9MWnJvU1ZobllDa3VvMmhKNUw5MmY1S2FnZklmMG0wcVJ4TjdJMW10VUgwUTM1RzR4R2ZQdEd3V2JxVTBzbmJ5OW1uZjc3enZrdE8zdXJoMXN5blRfWTF4c2dWQ2drQzBxY1B5SkJQTXJFZWRPSGJIMVNUSXFYME1NNnFEajlGWEJ2?oc=5",
-          "published": "2026-10-13T19:43:58+00:00",
-          "publisher_guess": "anadolu ajansı"
-        },
-        {
-          "title": "At least 12 tankers attacked around Strait of Hormuz in a week, shipping reports show - The Insight International",
-          "source": "Archive Red Sea Actual Blockage recent",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzNIeEU0NlUtTDk5bWRwZERzdTVkSURFdzE5Qk9sUGJkWDNaTjhDVFBJVzY4ZWdjUFEyX1o5NkxSekUxOGx0NXdDS3B5NkRUeDVkYl91YUZwZGUzVms1TWNJXzBxVGlLaS1sVmpFb1Vzam1ZNlU1blA2Z0ZxWlBaaVA4ZEdmZEpoWHlNMlBOZXhKRG42T3pURU5rVTNoTmlONWM0cWtVd0dvaVJlLUtNZA?oc=5",
-          "published": "2026-10-13T11:49:03+00:00",
-          "publisher_guess": "the insight international"
-        },
-        {
-          "title": "Oil tanker reportedly attacked in Strait of Hormuz region - Al Jazeera",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRnFrY0JGWlg5azBkWjdEeHVZQUxtbmhMY0dLRUpHWWRLMXlReGk4TzlETzc4bTc2ZUl0djZfX0dFQmx0OWhlV1EwSHBQcHg0NGJSM3hkWlQxX2ktbkJXNVQxUFBKZXhfN0d4ZFViZkpzRHdtOEM4b2tBLXFzU2JPZFJhU21xM1RGZ2hOQXJrYnMyZnBEMVN4dnJjMEhsMXBETlJsWHdaS2hVcnhqbmfSAbMBQVVfeXFMTUYyQmc1alRQOTdFaWdoSFpBd1c1ZTMxQm41bndua2gxbFBpQ1E5WW02N0ttNGJjZUtMaGdNSFJZcmg2VUtxMUt6UDYtVTdfQTl1amhCTEt4a00yVndkT2JwVTlMMWVJQWNsTEsxZVlxOElvSDBPU1gwMnpIbFhBZzhURGU5bmxPR1VZMzd3RzJMYkRFblh1NzRIZFUwdDR2RXhTeEtxZU5WSzlWeDBQMFZjV28?oc=5",
-          "published": "2026-10-12T15:19:37+00:00",
-          "publisher_guess": "al jazeera"
-        }
-      ],
-      "article_ids": [
-        "a21832670e25e1ee3d",
-        "73c4809d479dfe9069",
-        "a9c4caa4f3e27745ae",
-        "c668ff0edd21ef2aa7",
-        "ba687deae09407db68",
-        "51da3800cbde854fef",
-        "17d709e6863a662904"
       ],
       "event_status": "Reported event candidate — not independently verified",
       "hypothesis_not_impact": true
@@ -1650,7 +1649,7 @@
       "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. The Financial Times reported further tanker attacks near Hormuz and rising Brent prices in early October. The event's effect on Kazakhstan's realised oil-export receipts, household prices and public finances has not been established.",
       "published": "2026-10-08T00:00:00+00:00",
       "source": "Financial Times",
-      "detected_at": "2026-10-20T17:04:00.725845+00:00",
+      "detected_at": "2026-10-21T04:45:19.000942+00:00",
       "verification": "Publisher report inspected; domestic Kazakhstan effects are still hypothetical",
       "sector": "Oil",
       "country": "Strait of Hormuz",
@@ -1723,15 +1722,30 @@
       },
       "news_group_id": "event-source-7c0bdbfaefc60d0d4b",
       "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 4,
+      "article_count": 6,
       "publisher_names": [
         "al jazeera",
         "anadolu ajansı",
         "bhaskar english",
-        "financial times"
+        "financial times",
+        "the insight international"
       ],
-      "publisher_count_heuristic": 4,
+      "publisher_count_heuristic": 5,
       "related_sources": [
+        {
+          "title": "At least 12 tankers attacked around Strait of Hormuz in a week, shipping reports show - The Insight International",
+          "source": "Archive Red Sea Actual Blockage recent",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzNIeEU0NlUtTDk5bWRwZERzdTVkSURFdzE5Qk9sUGJkWDNaTjhDVFBJVzY4ZWdjUFEyX1o5NkxSekUxOGx0NXdDS3B5NkRUeDVkYl91YUZwZGUzVms1TWNJXzBxVGlLaS1sVmpFb1Vzam1ZNlU1blA2Z0ZxWlBaaVA4ZEdmZEpoWHlNMlBOZXhKRG42T3pURU5rVTNoTmlONWM0cWtVd0dvaVJlLUtNZA?oc=5",
+          "published": "2026-10-13T11:49:03+00:00",
+          "publisher_guess": "the insight international"
+        },
+        {
+          "title": "Oil tanker reportedly attacked in Strait of Hormuz region - Al Jazeera",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRnFrY0JGWlg5azBkWjdEeHVZQUxtbmhMY0dLRUpHWWRLMXlReGk4TzlETzc4bTc2ZUl0djZfX0dFQmx0OWhlV1EwSHBQcHg0NGJSM3hkWlQxX2ktbkJXNVQxUFBKZXhfN0d4ZFViZkpzRHdtOEM4b2tBLXFzU2JPZFJhU21xM1RGZ2hOQXJrYnMyZnBEMVN4dnJjMEhsMXBETlJsWHdaS2hVcnhqbmfSAbMBQVVfeXFMTUYyQmc1alRQOTdFaWdoSFpBd1c1ZTMxQm41bndua2gxbFBpQ1E5WW02N0ttNGJjZUtMaGdNSFJZcmg2VUtxMUt6UDYtVTdfQTl1amhCTEt4a00yVndkT2JwVTlMMWVJQWNsTEsxZVlxOElvSDBPU1gwMnpIbFhBZzhURGU5bmxPR1VZMzd3RzJMYkRFblh1NzRIZFUwdDR2RXhTeEtxZU5WSzlWeDBQMFZjV28?oc=5",
+          "published": "2026-10-12T15:19:37+00:00",
+          "publisher_guess": "al jazeera"
+        },
         {
           "title": "Iran’s Revolutionary Guard Navy says oil tanker struck mine in Strait of Hormuz - Anadolu Ajansı",
           "source": "Archive Hormuz Oil recent",
@@ -1762,6 +1776,8 @@
         }
       ],
       "article_ids": [
+        "51da3800cbde854fef",
+        "17d709e6863a662904",
         "e7113fc38fb2f822c5",
         "d2e20636cc6292da42",
         "source-7c0bdbfaefc60d0d4b",
@@ -2204,74 +2220,6 @@
       ],
       "article_ids": [
         "92bd5edeff0c63ab4c"
-      ],
-      "event_status": "Reported event candidate — not independently verified",
-      "hypothesis_not_impact": true
-    },
-    {
-      "id": "cc63946ef960642430",
-      "title": "Product tanker attacked in Red Sea as hostilities escalate - Seatrade Maritime News",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYmx2c215cHk1UnlLanJNZmtmZmViamhDMTczdFlxclhkX2NCLWdrWmVrRnhTWmlMaDhwdFVUSVlXUG9TMGxlRkxGRURBeTVIR2t0X0JRSklSSGtPQ2daRlFLZnpHSldBTTJ3ZHVCeF90UmUwQnlsZXI1MXlNTjlFWTVzQVZrWnhYUDZyYXNabjEzQXFMQmNfbGdFRHlyV2x0V1U4?oc=5",
-      "summary": "Product tanker attacked in Red Sea as hostilities escalate Seatrade Maritime News",
-      "published": "2026-10-05T07:00:00+00:00",
-      "source": "Archive Red Sea Actual Blockage recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-18T04:32:31.602955+00:00",
-      "sector": "Transport",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "direction": "Unknown",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "watch_level": "plausible candidate",
-      "watch_exposure": "External development, potential KZ transmission not independently established",
-      "exposure_channels": [
-        {
-          "name": "Transport / chokepoints",
-          "sector": "Transport",
-          "mechanism": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
-          "evidence_status": "Hypothesis to test"
-        }
-      ],
-      "triage": {
-        "included": true,
-        "kind": "reported international development",
-        "score": 3,
-        "priority": "review",
-        "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes; no explicit Kazakhstan impact identified",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-cc63946ef960642430",
-      "article_count": 1,
-      "publisher_names": [
-        "seatrade maritime news"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Product tanker attacked in Red Sea as hostilities escalate - Seatrade Maritime News",
-          "source": "Archive Red Sea Actual Blockage recent",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYmx2c215cHk1UnlLanJNZmtmZmViamhDMTczdFlxclhkX2NCLWdrWmVrRnhTWmlMaDhwdFVUSVlXUG9TMGxlRkxGRURBeTVIR2t0X0JRSklSSGtPQ2daRlFLZnpHSldBTTJ3ZHVCeF90UmUwQnlsZXI1MXlNTjlFWTVzQVZrWnhYUDZyYXNabjEzQXFMQmNfbGdFRHlyV2x0V1U4?oc=5",
-          "published": "2026-10-05T07:00:00+00:00",
-          "publisher_guess": "seatrade maritime news"
-        }
-      ],
-      "article_ids": [
-        "cc63946ef960642430"
       ],
       "event_status": "Reported event candidate — not independently verified",
       "hypothesis_not_impact": true
