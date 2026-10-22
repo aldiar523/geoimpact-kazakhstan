@@ -1,25 +1,179 @@
 {
-  "generated_at": "2026-10-21T17:11:33.980582+00:00",
-  "lookback_start": "2026-09-21",
-  "lookback_end": "2026-10-21",
+  "generated_at": "2026-10-22T04:43:39.589584+00:00",
+  "lookback_start": "2026-09-22",
+  "lookback_end": "2026-10-22",
   "all_reports": 800,
-  "eligible_reports": 44,
-  "displayed_event_groups": 15,
-  "indicator_groups": 10,
-  "filtered_reports": 756,
+  "eligible_reports": 42,
+  "displayed_event_groups": 14,
+  "indicator_groups": 9,
+  "filtered_reports": 758,
   "excluded_by_kind": {
-    "background": 663,
-    "unlinked": 91,
+    "background": 668,
+    "unlinked": 88,
     "analysis": 2
   },
   "high_priority_event_groups": 7,
   "source_reviewed_groups": 0,
   "decision_log": [
     {
+      "id": "de23c33df8053484e0",
+      "date": "2026-10-22T01:45:48+00:00",
+      "title": "Qatar, France call for opening of Hormuz and Gaza ceasefire implementation",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "5b9ae63c1f313da12b",
+      "date": "2026-10-22T01:44:13+00:00",
+      "title": "NEQSOL Holding’s Digital Silk Way Project Reaches Major Milestone with Official Launch of Trans-Caspian Cable - caspiannews.com",
+      "sector": "Internet",
+      "tier": "Named asset match",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 6,
+      "kind": "background"
+    },
+    {
+      "id": "a88e2a3630469c87eb",
+      "date": "2026-10-21T22:41:05+00:00",
+      "title": "Kazakhstan and Belgium Partner to Boost Potato Processing and Exports - PotatoPro",
+      "sector": "Trade",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "9c5421980393559b60",
+      "date": "2026-10-21T22:05:00+00:00",
+      "title": "Kazakhstan's oil deliveries to IEA members to rise 21.9% in 2026 - Trend News Agency",
+      "sector": "Oil",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "5ce788093fe6cbd7a7",
+      "date": "2026-10-21T21:08:15+00:00",
+      "title": "Kazakhstan Reaffirms Russian Energy Ties as Ukrainian Drones Hit Oil Exports - The Jamestown Foundation",
+      "sector": "Oil",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "3c2508a185b2587edb",
+      "date": "2026-10-21T20:42:00+00:00",
+      "title": "Kazakhstan’s AIFC Regulator Turns to Apple and Google to Enforce Coinbase, HTX Injunctions - Yahoo Finance",
+      "sector": "Cross-sector",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "0fd37751630a0d2c4c",
+      "date": "2026-10-21T20:00:00+00:00",
+      "title": "Kazakhstan's AIFC issues injunction against Coinbase - Yahoo Finance",
+      "sector": "Cross-sector",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "a3fda6bb06bf204973",
+      "date": "2026-10-21T18:17:03+00:00",
+      "title": "Cambodia interested in apple imports from Kazakhstan - FreshPlaza",
+      "sector": "Trade",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "b61e7066148b669059",
+      "date": "2026-10-21T16:43:52+00:00",
+      "title": "Borrowed Time in the Strait of Hormuz - Middle East Institute",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "4aef03f00921784ec8",
+      "date": "2026-10-21T16:41:09+00:00",
+      "title": "IRGC says Saudi and UAE pipelines cannot replace the Strait of Hormuz and Hormuz Strait has no alternative for oil transit, reports SNN - Newsquawk",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "e07bd90f639dae571e",
+      "date": "2026-10-21T16:38:53+00:00",
+      "title": "Sarens targets Kazakhstan renewable energy projects with heavy lift and logistics partnership - Breakbulk.News",
+      "sector": "Transport",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "79d0f32bee97a45bab",
+      "date": "2026-10-21T16:01:54+00:00",
+      "title": "Kazakhstan-EU trade tops $26 billion as investment ties deepen - Qazinform",
+      "sector": "Finance",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
       "id": "dce552ddfed7c9eb99",
       "date": "2026-10-21T16:01:51+00:00",
       "title": "Kazakhstan-EU trade tops $26 billion as investment ties deepen - Qazinform",
       "sector": "Finance",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "92ef4f9bf1666f977b",
+      "date": "2026-10-21T14:33:55+00:00",
+      "title": "Nigeria Sustains OPEC Quota Compliance as Crude Oil Production Holds Above Target - Proshare",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "1ebca0c62ff53b35e1",
+      "date": "2026-10-21T13:36:10+00:00",
+      "title": "Kazakhstan’s Warehouse Market Faces Mismatch Between Supply and Demand - The Times Of Central Asia",
+      "sector": "Cross-sector",
       "tier": "Kazakhstan mentioned",
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
@@ -181,6 +335,28 @@
       "kind": "background"
     },
     {
+      "id": "ca0100e216c647565d",
+      "date": "2026-10-21T10:16:36+00:00",
+      "title": "The closure of the Strait of Hormuz gives Central Asia greater bargaining power - Forbes España",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "8d1c8d5b4307e555d8",
+      "date": "2026-10-21T10:16:00+00:00",
+      "title": "Iran’s Revolutionary Guard says 3 oil tankers hit naval mines in Strait of Hormuz - Middle East Monitor",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
       "id": "ea962402844e74972b",
       "date": "2026-10-21T10:15:18+00:00",
       "title": "Iran Says Mines Set Three Tankers Ablaze in Strait of Hormuz as US Military Calls Tehran's Claims False - International Business Times Australia",
@@ -244,6 +420,17 @@
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
       "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "d85594130789701bfb",
+      "date": "2026-10-21T09:19:07+00:00",
+      "title": "Kazakhstan Confiscates Tanker and Mini Oil Refineries in $100M Smuggling Case - Caspian Post",
+      "sector": "Oil",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
       "kind": "background"
     },
     {
@@ -920,6 +1107,17 @@
       "kind": "background"
     },
     {
+      "id": "a427fadc7fa83fc37a",
+      "date": "2026-10-20T08:51:03+00:00",
+      "title": "Kazakhstan plans to allow road bitumen exports - Qazinform",
+      "sector": "Trade",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": -2,
+      "kind": "background"
+    },
+    {
       "id": "caec8deecb46c648f8",
       "date": "2026-10-20T08:11:48+00:00",
       "title": "Oil transportation via Kazakhstan-China pipeline reaches 14.8 mln tons in 9 months - Qazinform",
@@ -1071,6 +1269,17 @@
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
       "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "65188e985beca6ecfd",
+      "date": "2026-10-20T00:15:23+00:00",
+      "title": "Video of Oil Tanker Being Hit in the Strait of Hormuz Is Old - موقع مسبار",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
       "kind": "background"
     },
     {
@@ -1316,6 +1525,17 @@
       "kind": "background"
     },
     {
+      "id": "fc5440eae6257ae0f7",
+      "date": "2026-10-19T07:41:03+00:00",
+      "title": "Oil slides as Trump delays new Russia measures, OPEC trims demand outlook - Anadolu Ajansı",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": -1,
+      "kind": "background"
+    },
+    {
       "id": "948ff7688ba7f489e0",
       "date": "2026-10-19T07:30:14+00:00",
       "title": "Kazakhstan's Kenkiyak-Atyrau pipeline boosts oil transport 13% - Trend News Agency",
@@ -1525,6 +1745,17 @@
       "reason": "No documented or specific plausible Kazakhstan transmission",
       "score": 4,
       "kind": "unlinked"
+    },
+    {
+      "id": "8a4599f315a61321de",
+      "date": "2026-10-18T22:00:29+00:00",
+      "title": "Borrowed Time in the Strait of Hormuz - Modern Diplomacy",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
     },
     {
       "id": "9f59ac35a9a2e7c562",
@@ -8667,241 +8898,6 @@
       "kind": "reported action",
       "priority": "medium",
       "pathway": "kazakhstan-direct"
-    },
-    {
-      "id": "cb5391fb1a11378da3",
-      "date": "2026-10-07T10:12:01+00:00",
-      "title": "A tanker hit by Ukraine is burning in the Black Sea near Putin's resort: Huge column of smoke visible from dozens of kilometers away (Video) - Spotmedia.ro",
-      "sector": "Transport",
-      "tier": "External shock watch",
-      "included": false,
-      "reason": "No documented or specific plausible Kazakhstan transmission",
-      "score": 4,
-      "kind": "unlinked"
-    },
-    {
-      "id": "76da07e0bf1c5e93b5",
-      "date": "2026-10-07T09:51:44+00:00",
-      "title": "3 ships attacked in 48 hours: How Indian sailors are getting caught in Black Sea and Strait of Hormuz conflicts - Moneycontrol.com",
-      "sector": "Oil",
-      "tier": "External shock watch",
-      "included": false,
-      "reason": "No documented or specific plausible Kazakhstan transmission",
-      "score": 4,
-      "kind": "unlinked"
-    },
-    {
-      "id": "0351f32b7d66ef95c5",
-      "date": "2026-10-07T09:51:44+00:00",
-      "title": "3 ships attacked in 48 hours: How Indian sailors are getting caught in Black Sea and Strait of Hormuz... - Moneycontrol.com",
-      "sector": "Oil",
-      "tier": "External shock watch",
-      "included": false,
-      "reason": "No documented or specific plausible Kazakhstan transmission",
-      "score": 4,
-      "kind": "unlinked"
-    },
-    {
-      "id": "a5f1c3785fffe4e8bb",
-      "date": "2026-10-07T09:38:40+00:00",
-      "title": "Baku, Astana tap Caspian to redraw Eurasia’s digital map - Today.Az",
-      "sector": "Digital",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "507a8212c5951aee09",
-      "date": "2026-10-07T09:33:08+00:00",
-      "title": "Kazakhstan and Global Investors Join Forces to Build AI Ecosystem - Caspian Post",
-      "sector": "Digital",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "eba71ea592a1f58575",
-      "date": "2026-10-07T09:15:00+00:00",
-      "title": "Digital Silk Road: Kazakhstan bets on AI-driven economy - UzDaily.uz",
-      "sector": "Digital",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "b0da79f04b0b52757c",
-      "date": "2026-10-07T08:56:09+00:00",
-      "title": "Baku, Astana tap Caspian to redraw Eurasia’s digital map - Today.Az",
-      "sector": "Digital",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "d542871838d5a9e2d9",
-      "date": "2026-10-07T08:40:38+00:00",
-      "title": "Kazakhstan expands rice exports to Afghanistan and CIS countries - Qazinform",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "3b2c3ab9f9efb1df74",
-      "date": "2026-10-07T08:24:20+00:00",
-      "title": "Kazakhstan and Russia to resume oil supply agreement - Qazinform",
-      "sector": "Oil",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "41d103635540e98324",
-      "date": "2026-10-07T08:17:21+00:00",
-      "title": "EBRD Projects Central Asia’s Strong Growth Despite Energy and Water Risks - The Astana Times",
-      "sector": "Water",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "8ab4b4ca32e2ef9f55",
-      "date": "2026-10-07T07:56:21+00:00",
-      "title": "Kazakhstan and Oman Move to Expand Investment and Economic Ties - 24.kz",
-      "sector": "Finance",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "f7bc472e42ebedeed5",
-      "date": "2026-10-07T07:50:03+00:00",
-      "title": "Kazakhstan Kurultai ratifies protocol on duty-free Russian oil imports - Trend News Agency",
-      "sector": "Oil",
-      "tier": "Kazakhstan mentioned",
-      "included": true,
-      "reason": "Kazakhstan explicitly exposed; concrete reported development",
-      "score": 6,
-      "kind": "reported action",
-      "priority": "medium",
-      "pathway": "kazakhstan-direct"
-    },
-    {
-      "id": "9cffa6614004131370",
-      "date": "2026-10-07T07:23:25+00:00",
-      "title": "Oil prices rise; Brent crude tops $101 amid supply concerns - صوت الإمارات",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "9ebfec7fdc20af6a9d",
-      "date": "2026-10-07T07:22:21+00:00",
-      "title": "Kazakhstan Sets Wheat Export Record as Grain Rail Shipments Rise - The Astana Times",
-      "sector": "Transport",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "b65e36824e862d4660",
-      "date": "2026-10-07T07:01:19+00:00",
-      "title": "Kazakhstan exports a record 8.8 mln tons of wheat in the marketing year - UkrAgroConsult",
-      "sector": "Food",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "60147377b133f0a442",
-      "date": "2026-10-07T07:00:59+00:00",
-      "title": "Kazakhstan to renew agreement with Russia on oil and petroleum product supplies - TengriNews",
-      "sector": "Oil",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "857f17f0242de1fc41",
-      "date": "2026-10-07T07:00:00+00:00",
-      "title": "Kazakhstan Shifts Investment Strategy From Capital Inflows to Economic Value Creation - The Astana Times",
-      "sector": "Finance",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "cf6e6080318e9656e5",
-      "date": "2026-10-07T07:00:00+00:00",
-      "title": "Kazakhstan's rail grain shipments rise 12% in nine months - Trend News Agency",
-      "sector": "Transport",
-      "tier": "Kazakhstan mentioned",
-      "included": true,
-      "reason": "Kazakhstan explicitly exposed; measured or sharp change",
-      "score": 5,
-      "kind": "measured development",
-      "priority": "review",
-      "pathway": "kazakhstan-direct"
-    },
-    {
-      "id": "2be1e48d03c8925cd6",
-      "date": "2026-10-07T06:56:05+00:00",
-      "title": "Kazakhstan, EIB discuss energy projects, investment - Trend News Agency",
-      "sector": "Finance",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "77de44c1b41f1bab8e",
-      "date": "2026-10-07T06:31:00+00:00",
-      "title": "Kazakhstan bets on global tech investors for AI infrastructure as net FDI tops €130 billion - Euronews.com",
-      "sector": "Digital",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "71cc46d54332085f8f",
-      "date": "2026-10-07T06:23:11+00:00",
-      "title": "Sulphur in Kazakhstan Trade - The Observatory of Economic Complexity",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
     }
   ]
 }
