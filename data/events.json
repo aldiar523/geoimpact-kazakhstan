@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T04:48:16.610165+00:00",
+  "generated_at": "2026-10-23T17:06:34.181699+00:00",
   "lookback_start": "2026-09-23",
   "lookback_end": "2026-10-23",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
@@ -104,12 +104,13 @@
       },
       "news_group_id": "event-57e2498e51e04f8054",
       "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 16,
+      "article_count": 17,
       "publisher_names": [
         "ap news",
         "asharq al-awsat english",
         "bozeman daily chronicle",
         "cgtn",
+        "denver gazette",
         "hindustan times",
         "idaho state journal",
         "ktvn",
@@ -122,8 +123,15 @@
         "wral",
         "wtop news"
       ],
-      "publisher_count_heuristic": 15,
+      "publisher_count_heuristic": 16,
       "related_sources": [
+        {
+          "title": "Iran says 7 oil tankers damaged in Strait of Hormuz - Denver Gazette",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOXzljQVpvTVFUUlUzOFM3cFVadi1Wa2ZoajRHdGx2RC0xZ3QyckpRZ0tqS2FlLWNNUkRNU19Yd0k2aDd1c0xzdTZVcE8wQmZqVHRuTFlhSGZPczI0cjBGUFRXM1JyYjlULTh1U3hzWUEzYnJKMjhxZk54elpmbl9iWm1VU09rVnc2bjRrWVpva3QtZ2lZM2FtMQ?oc=5",
+          "published": "2026-10-23T13:05:11+00:00",
+          "publisher_guess": "denver gazette"
+        },
         {
           "title": "Iran says 7 oil tankers damaged in Strait of Hormuz, and other Middle East news - PBS",
           "source": "Archive Hormuz Oil recent",
@@ -238,6 +246,7 @@
         }
       ],
       "article_ids": [
+        "ff3bef06344e2afe81",
         "adf5c0e6da9b5d96cc",
         "8cfbf671cc8f1d103b",
         "0e732398ebe5b366e8",
@@ -884,254 +893,6 @@
       ],
       "article_ids": [
         "6bafa213f4c686399f"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "b1b478cc3bc4b90833",
-      "title": "Strait of Hormuz Shipping Plunges 36% as US Sanctions Target 17 Iranian Vessels - Sada Elbalad English",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMjBXbzNhZzJkWnYzcnVmTlE5NHdCVEgwWU8zbU9nN1ZTRGxBMXlRLXR6Q0xhQjUwUHhDNGJqSDI3d1d2aUJXZ3lpc2QyUktFRDB4cEFNSnFIcEs1S0lZX1RScDlpd3NYQ2dKdGloU29VVkRJOGw1ZVp4MW04T3ZvQWN0UzZkTmVBb243SWk5TWZmR3A3d2ZtOV9OTQ?oc=5",
-      "summary": "Strait of Hormuz Shipping Plunges 36% as US Sanctions Target 17 Iranian Vessels Sada Elbalad English",
-      "published": "2026-10-09T20:39:51+00:00",
-      "source": "Archive Hormuz Attacks Shipping recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T10:08:40.386127+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 7,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-b1b478cc3bc4b90833",
-      "article_count": 1,
-      "publisher_names": [
-        "sada elbalad english"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Strait of Hormuz Shipping Plunges 36% as US Sanctions Target 17 Iranian Vessels - Sada Elbalad English",
-          "source": "Archive Hormuz Attacks Shipping recent",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMjBXbzNhZzJkWnYzcnVmTlE5NHdCVEgwWU8zbU9nN1ZTRGxBMXlRLXR6Q0xhQjUwUHhDNGJqSDI3d1d2aUJXZ3lpc2QyUktFRDB4cEFNSnFIcEs1S0lZX1RScDlpd3NYQ2dKdGloU29VVkRJOGw1ZVp4MW04T3ZvQWN0UzZkTmVBb243SWk5TWZmR3A3d2ZtOV9OTQ?oc=5",
-          "published": "2026-10-09T20:39:51+00:00",
-          "publisher_guess": "sada elbalad english"
-        }
-      ],
-      "article_ids": [
-        "b1b478cc3bc4b90833"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "d7116cf2f497136b92",
-      "title": "Kazatomprom Shareholders Approve Major Chinese Uranium Contract, Reject Deal With Russia - NucNet",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZGhRaXdqb25NLXg3VHl0TjRPWTBDQzY1aldmX2cxYVNMejQ4dHZVR25nOWFLdEprM0FmYXJwdmRHaEZnekhHNGsxVkRidWtYSWdpclhMdzJIR0hrQmVtUXFmTm5hUlRjbTR3MkRYSjVaNW5tUF9lNjkxRzVCMnNMQWluTWhZUEF3T2I5SFB6UTBJLWFZNEJxcE9LZWNJajhqOEswVDJwLTZ5OG5BQkM5RXc2Wm1LRmJoTFVmcjkxY0NsSGM?oc=5",
-      "summary": "Kazatomprom Shareholders Approve Major Chinese Uranium Contract, Reject Deal With Russia NucNet",
-      "published": "2026-10-09T12:27:14+00:00",
-      "source": "Archive Kazakhstan Russia recent",
-      "region": "Russia/Eurasia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T08:39:32.268542+00:00",
-      "sector": "Mining",
-      "country": "Russia",
-      "lat": 61,
-      "lon": 105,
-      "direction": "Unknown",
-      "tier": "Named asset match",
-      "matches": [
-        {
-          "asset": "Kazatomprom parent",
-          "asset_id": "CA-011",
-          "sector": "Mining",
-          "source_url": "https://www.kazatomprom.kz/",
-          "external_counterpart": "International uranium customers"
-        }
-      ],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazatomprom parent",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 10,
-        "priority": "high",
-        "reason": "named Kazakhstan dependency; Kazakhstan explicitly exposed; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-d7116cf2f497136b92",
-      "article_count": 1,
-      "publisher_names": [
-        "nucnet"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Kazatomprom Shareholders Approve Major Chinese Uranium Contract, Reject Deal With Russia - NucNet",
-          "source": "Archive Kazakhstan Russia recent",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZGhRaXdqb25NLXg3VHl0TjRPWTBDQzY1aldmX2cxYVNMejQ4dHZVR25nOWFLdEprM0FmYXJwdmRHaEZnekhHNGsxVkRidWtYSWdpclhMdzJIR0hrQmVtUXFmTm5hUlRjbTR3MkRYSjVaNW5tUF9lNjkxRzVCMnNMQWluTWhZUEF3T2I5SFB6UTBJLWFZNEJxcE9LZWNJajhqOEswVDJwLTZ5OG5BQkM5RXc2Wm1LRmJoTFVmcjkxY0NsSGM?oc=5",
-          "published": "2026-10-09T12:27:14+00:00",
-          "publisher_guess": "nucnet"
-        }
-      ],
-      "article_ids": [
-        "d7116cf2f497136b92"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "0bf1ce2602bca90a7b",
-      "title": "Exxon Blocked Proposal to Settle $5 Billion Kashagan Dispute - Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcXJBQl9UcUF1T0J4TFd4VWRzOVBEVmplS1c4OUpjcEh2Snl3enlPdEdnQW9LcGJlbVY0YkRpWG1uUEY0d1BYaGZqckNjak1pZEgxVHFJU296ckR4NG1aU1FVd2U5RlJfYTNfT2ZLQkJ1Q1JhTU53VEZ5a292djBoSURPUElNY01YbnVEemhWZ2JLTERGdjd5dHB5S296YmQ5Y1J5eExyUnE3S1RwNzE4?oc=5",
-      "summary": "Exxon Blocked Proposal to Settle $5 Billion Kashagan Dispute Bloomberg.com",
-      "published": "2026-10-09T09:19:33+00:00",
-      "source": "Google News Central Asia",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-12T05:52:44.798204+00:00",
-      "sector": "Oil",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "direction": "Unknown",
-      "tier": "Named asset match",
-      "matches": [
-        {
-          "asset": "Kashagan (North Caspian Project)",
-          "asset_id": "CA-009",
-          "sector": "Oil",
-          "source_url": "https://www.ncoc.kz/en/page/our-management",
-          "external_counterpart": "Italy; UK; US; France; China; Japan"
-        }
-      ],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kashagan (North Caspian Project)",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "triage": {
-        "included": true,
-        "kind": "reported incident",
-        "score": 10,
-        "priority": "high",
-        "reason": "named Kazakhstan dependency; Kazakhstan explicitly exposed; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-0bf1ce2602bca90a7b",
-      "article_count": 1,
-      "publisher_names": [
-        "bloomberg.com"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Exxon Blocked Proposal to Settle $5 Billion Kashagan Dispute - Bloomberg.com",
-          "source": "Google News Central Asia",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcXJBQl9UcUF1T0J4TFd4VWRzOVBEVmplS1c4OUpjcEh2Snl3enlPdEdnQW9LcGJlbVY0YkRpWG1uUEY0d1BYaGZqckNjak1pZEgxVHFJU296ckR4NG1aU1FVd2U5RlJfYTNfT2ZLQkJ1Q1JhTU53VEZ5a292djBoSURPUElNY01YbnVEemhWZ2JLTERGdjd5dHB5S296YmQ5Y1J5eExyUnE3S1RwNzE4?oc=5",
-          "published": "2026-10-09T09:19:33+00:00",
-          "publisher_guess": "bloomberg.com"
-        }
-      ],
-      "article_ids": [
-        "0bf1ce2602bca90a7b"
       ],
       "event_status": "Reported event candidate — not independently verified"
     }
