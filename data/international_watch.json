@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-27T18:00:22.437078+00:00",
+  "generated_at": "2026-10-28T05:41:24.025169+00:00",
   "status": "Reported foreign developments for investigator screening; Kazakhstan effects hypothetical",
   "disclaimer": "Watch level is screening attention, not impact magnitude or likelihood",
-  "source_articles": 27,
+  "source_articles": 29,
   "groups": [
     {
       "id": "82f2234de13b1e0b2d",
@@ -141,6 +141,110 @@
       "hypothesis_not_impact": true
     },
     {
+      "id": "786e714001c66a9292",
+      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdGRodHE0VnkzWjdQTHYtUnBoVlBCVHpEU0lFUFJXLWpLRTJQMk1rX3AxTVR0MV9ubXdCRTl6Y3AzSXFtNjdMalhjb01tazNaanl5Tkk2SEJ2OE5rTmduczhMbzRqRzVkYTZ4NVduekJjU0g4R0xGdW1xSlljeENmdGdZM3hEWU9neDhvWUFYOFVHY1o0bkJQYnhiRjI2a2dqUkI2ZmdHN0VuRWNONlhYaFRvUWdFcFo5MzFjcW4yN0JsN2gyUnVZREZB?oc=5",
+      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Kuwait-flagged oil tanker carrying 21 Indian seafarers struck by unknown projectile in Strait of Hormuz Telangana Today",
+      "published": "2026-10-22T03:03:32+00:00",
+      "source": "Archive Hormuz Attacks Shipping recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-22T17:09:42.501717+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Unknown",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "unknown",
+      "scenario": true,
+      "impact_channels": [],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "watch_level": "strong candidate",
+      "watch_exposure": "External development, potential KZ transmission not independently established",
+      "exposure_channels": [
+        {
+          "name": "Transport / chokepoints",
+          "sector": "Transport",
+          "mechanism": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
+          "evidence_status": "Hypothesis to test"
+        }
+      ],
+      "triage": {
+        "included": true,
+        "kind": "reported international development",
+        "score": 5,
+        "priority": "medium",
+        "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes; no explicit Kazakhstan impact identified",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-786e714001c66a9292",
+      "situation_cluster": "hormuz-tanker-incidents",
+      "article_count": 3,
+      "publisher_names": [
+        "roya news",
+        "telangana today",
+        "the times of india"
+      ],
+      "publisher_count_heuristic": 3,
+      "related_sources": [
+        {
+          "title": "IRGC navy says oil tanker struck mine in Strait of Hormuz - Roya News",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSmEzR0tjbmRuTXdJYk0zOUh0d1F5eDFyMGtKS2w3YzB4bGJrdUUwSzdib1NGS0hxb0dzRHJiZW1VSkkySTN0cjFaR2FoaHM2UnhBdDI2d2tVMUh3UE0tazJpMF9tNWJSR1lZNjVaTUU4bFVXRnpUbTdNcndTTDN3N1FHSEtkVHBkVGVuMEV0Zmh2aE5CV3c?oc=5",
+          "published": "2026-10-27T20:20:39+00:00",
+          "publisher_guess": "roya news"
+        },
+        {
+          "title": "Kuwait-flagged oil tanker carrying 21 Indian seafarers struck by unknown projectile in Strait of Hormuz - Telangana Today",
+          "source": "Archive Hormuz Attacks Shipping recent",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdGRodHE0VnkzWjdQTHYtUnBoVlBCVHpEU0lFUFJXLWpLRTJQMk1rX3AxTVR0MV9ubXdCRTl6Y3AzSXFtNjdMalhjb01tazNaanl5Tkk2SEJ2OE5rTmduczhMbzRqRzVkYTZ4NVduekJjU0g4R0xGdW1xSlljeENmdGdZM3hEWU9neDhvWUFYOFVHY1o0bkJQYnhiRjI2a2dqUkI2ZmdHN0VuRWNONlhYaFRvUWdFcFo5MzFjcW4yN0JsN2gyUnVZREZB?oc=5",
+          "published": "2026-10-22T03:03:32+00:00",
+          "publisher_guess": "telangana today"
+        },
+        {
+          "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe - The Times of India",
+          "source": "Archive Hormuz Attacks Shipping recent",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPX25uaW9FcEU2NW1xN2V0cTF3UmxOZ1VHYTBONkhwZTRscTgzeXJzWUpvZV81SHE2ZjFzZXd5VURHY2R1QXlmamZNUURBSWhZNDk4dVduclpOdzd2Q09kSS13ekVOY1lSYURFX0dFTVktNnFMTndvek1BWndSYWNOSmk2ZFhCUmJmS20zVFdHemFzZmlBUmxqMXRObmR4SmhHQWdnc2U3QURRMDAzTi05elpWRERHdTQ2N1dXSG1yMS1YZVRCTlpYQ0ZRTkV5dzNQa0NmN3JDd053b0RsSTd4c1RqakJmOEpWLVp4dlltQkkyaHNmTFlCbNIB_gFBVV95cUxPc2RwQkxTTVBkT2N0bmNPdjJQZy1rT01IYWVKLVpVaVNYM3hnbWhNbWRJR1ZmdVdlWXJUeDd3MHlPTlcwWnFWSDZmTnhGMTBrVk1ENkozS21RLVpINjYyX1NfY1NwYVp2RXdNS2ZGdGFTc1hFLTZNUWd2WUhMVjBEOUlaZDlRLUJCV3hWZ0NHQ0J6LVVNWFNUOHNRVWpqeXlESmJkTXM2UWxRa01PVjd2UlBNVTFhVzd4dV80Q2doaXNZQXBoeHR5YVpHNHlyby14a2FnamRJZHZmNTVZYllHRG5fWmdkZjNLeXJseGRYMUtjZk5GUzBVaENWTFJEUQ?oc=5",
+          "published": "2026-10-22T02:10:00+00:00",
+          "publisher_guess": "the times of india"
+        }
+      ],
+      "article_ids": [
+        "73bc9fe625bbb754cb",
+        "786e714001c66a9292",
+        "3adc3cff239d00c118"
+      ],
+      "event_status": "Reported event candidate — not independently verified",
+      "hypothesis_not_impact": true
+    },
+    {
       "id": "8cb6bb6da351428255",
       "title": "News Airfreight in Africa booming, thanks to disrupted ocean shipping services - The Loadstar",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaXZ1RTBMcHFQS3lrVVNaTi0zbUdLOVI0MTdpNDROek9TLVhBdzNHMnVwNUVraUlYcElVeVVkc3JlTTVjbHcxU0JCM1JoenFmUHNyRTdGczE4STExdVM4U1pCSmFLb3BSODdjN216XzBSSWhqTVJOMk9CQk83em9BRkNzb01JZzJoZUNmNW9Vb3M3eTI3TTFBcDlGRmRlUQ?oc=5",
@@ -274,32 +378,16 @@
       },
       "news_group_id": "event-c7e6e0050d90699362",
       "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 11,
+      "article_count": 9,
       "publisher_names": [
         "anadolu ajansı",
         "latest news from azerbaijan",
         "newsnation",
         "newsquawk",
-        "telangana today",
-        "the times of india",
         "www.thenationalnews.com"
       ],
-      "publisher_count_heuristic": 7,
+      "publisher_count_heuristic": 5,
       "related_sources": [
-        {
-          "title": "Kuwait-flagged oil tanker carrying 21 Indian seafarers struck by unknown projectile in Strait of Hormuz - Telangana Today",
-          "source": "Archive Hormuz Attacks Shipping recent",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdGRodHE0VnkzWjdQTHYtUnBoVlBCVHpEU0lFUFJXLWpLRTJQMk1rX3AxTVR0MV9ubXdCRTl6Y3AzSXFtNjdMalhjb01tazNaanl5Tkk2SEJ2OE5rTmduczhMbzRqRzVkYTZ4NVduekJjU0g4R0xGdW1xSlljeENmdGdZM3hEWU9neDhvWUFYOFVHY1o0bkJQYnhiRjI2a2dqUkI2ZmdHN0VuRWNONlhYaFRvUWdFcFo5MzFjcW4yN0JsN2gyUnVZREZB?oc=5",
-          "published": "2026-10-22T03:03:32+00:00",
-          "publisher_guess": "telangana today"
-        },
-        {
-          "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe - The Times of India",
-          "source": "Archive Hormuz Attacks Shipping recent",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPX25uaW9FcEU2NW1xN2V0cTF3UmxOZ1VHYTBONkhwZTRscTgzeXJzWUpvZV81SHE2ZjFzZXd5VURHY2R1QXlmamZNUURBSWhZNDk4dVduclpOdzd2Q09kSS13ekVOY1lSYURFX0dFTVktNnFMTndvek1BWndSYWNOSmk2ZFhCUmJmS20zVFdHemFzZmlBUmxqMXRObmR4SmhHQWdnc2U3QURRMDAzTi05elpWRERHdTQ2N1dXSG1yMS1YZVRCTlpYQ0ZRTkV5dzNQa0NmN3JDd053b0RsSTd4c1RqakJmOEpWLVp4dlltQkkyaHNmTFlCbNIB_gFBVV95cUxPc2RwQkxTTVBkT2N0bmNPdjJQZy1rT01IYWVKLVpVaVNYM3hnbWhNbWRJR1ZmdVdlWXJUeDd3MHlPTlcwWnFWSDZmTnhGMTBrVk1ENkozS21RLVpINjYyX1NfY1NwYVp2RXdNS2ZGdGFTc1hFLTZNUWd2WUhMVjBEOUlaZDlRLUJCV3hWZ0NHQ0J6LVVNWFNUOHNRVWpqeXlESmJkTXM2UWxRa01PVjd2UlBNVTFhVzd4dV80Q2doaXNZQXBoeHR5YVpHNHlyby14a2FnamRJZHZmNTVZYllHRG5fWmdkZjNLeXJseGRYMUtjZk5GUzBVaENWTFJEUQ?oc=5",
-          "published": "2026-10-22T02:10:00+00:00",
-          "publisher_guess": "the times of india"
-        },
         {
           "title": "IRGC Navy says super tanker struck sea mine, exploded off Hormuz; Fars reports; tanker carried 2mln barrels of oil - Newsquawk",
           "source": "Archive Hormuz Attacks Shipping recent",
@@ -365,8 +453,6 @@
         }
       ],
       "article_ids": [
-        "786e714001c66a9292",
-        "3adc3cff239d00c118",
         "c7e6e0050d90699362",
         "a21832670e25e1ee3d",
         "d60e3fdcd757acb6ce",
@@ -512,6 +598,74 @@
       ],
       "article_ids": [
         "789ad6c245db4968dd"
+      ],
+      "event_status": "Reported event candidate — not independently verified",
+      "hypothesis_not_impact": true
+    },
+    {
+      "id": "a64dd8e909a2ba0cef",
+      "title": "China proposes export controls on solar-manufacturing technologies - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaGtBN1ctcU1NbGFxLXVKb01UVVdDUklxa3Z6Tk1ac05vT2lkd0d2THJqR1Q4VDBDTjJFSUlJYXNCdF83Tko2S0hrbDZSX3NrWWRrWFljNFNHOWhVUnpib3JpdjY3TWZJUEpEQzJKdnFpckZhZTM4X3RXTnhuMzVJWXRxemxoUTdlcDcwckxSUlROQ1pqbHZWdFplOEZUTHh1dDVxb3pfTlN3X2dURk1ETnJzTXJmUFluU0dfck1OSFl4YVlqZHE1NA?oc=5",
+      "summary": "China proposes export controls on solar-manufacturing technologies Reuters",
+      "published": "2026-10-18T07:00:00+00:00",
+      "source": "Archive China Manufacturing Shock recent",
+      "region": "China",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-10-28T05:41:12.914778+00:00",
+      "sector": "Trade",
+      "country": "China",
+      "lat": 35,
+      "lon": 104,
+      "direction": "Unknown",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "watch_level": "plausible candidate",
+      "watch_exposure": "External development, potential KZ transmission not independently established",
+      "exposure_channels": [
+        {
+          "name": "Trade / sanctions",
+          "sector": "Trade",
+          "mechanism": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains",
+          "evidence_status": "Hypothesis to test"
+        }
+      ],
+      "triage": {
+        "included": true,
+        "kind": "reported international development",
+        "score": 3,
+        "priority": "review",
+        "reason": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains; no explicit Kazakhstan impact identified",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-a64dd8e909a2ba0cef",
+      "article_count": 1,
+      "publisher_names": [
+        "reuters"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "China proposes export controls on solar-manufacturing technologies - Reuters",
+          "source": "Archive China Manufacturing Shock recent",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaGtBN1ctcU1NbGFxLXVKb01UVVdDUklxa3Z6Tk1ac05vT2lkd0d2THJqR1Q4VDBDTjJFSUlJYXNCdF83Tko2S0hrbDZSX3NrWWRrWFljNFNHOWhVUnpib3JpdjY3TWZJUEpEQzJKdnFpckZhZTM4X3RXTnhuMzVJWXRxemxoUTdlcDcwckxSUlROQ1pqbHZWdFplOEZUTHh1dDVxb3pfTlN3X2dURk1ETnJzTXJmUFluU0dfck1OSFl4YVlqZHE1NA?oc=5",
+          "published": "2026-10-18T07:00:00+00:00",
+          "publisher_guess": "reuters"
+        }
+      ],
+      "article_ids": [
+        "a64dd8e909a2ba0cef"
       ],
       "event_status": "Reported event candidate — not independently verified",
       "hypothesis_not_impact": true
