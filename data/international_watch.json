@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-03T06:45:58.528570+00:00",
+  "generated_at": "2026-11-03T19:29:39.957164+00:00",
   "status": "Reported foreign developments for investigator screening; Kazakhstan effects hypothetical",
   "disclaimer": "Watch level is screening attention, not impact magnitude or likelihood",
-  "source_articles": 22,
+  "source_articles": 21,
   "groups": [
     {
       "id": "6700331cae00828eba",
@@ -212,18 +212,26 @@
       },
       "news_group_id": "event-23743ad2df690ad7a4",
       "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 7,
+      "article_count": 8,
       "publisher_names": [
         "a news",
         "anadolu ajansı",
         "arab news",
         "dw.com",
+        "https://theins.press/en",
         "latest news from azerbaijan",
         "newsquawk",
         "roya news"
       ],
-      "publisher_count_heuristic": 7,
+      "publisher_count_heuristic": 8,
       "related_sources": [
+        {
+          "title": "Sanctioned Russian “shadow fleet” tanker Louise 1 attacked near Strait of Hormuz, months after being targeted by Ukraine in the Black Sea - https://theins.press/en",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9SdGJmeUVRRFliMHpYWHVYck1FM3g4T2F1TXMtUkYwT2lvdHc4VUxaM0tPYkhoSXNRWnRReVZaTkx1Si1zck10VVJfVQ?oc=5",
+          "published": "2026-11-02T22:39:44+00:00",
+          "publisher_guess": "https://theins.press/en"
+        },
         {
           "title": "India news: Oil tanker carrying 27 Indians attacked with limpet mines in Strait of Hormuz - DW.com",
           "source": "Archive Hormuz Oil recent",
@@ -275,6 +283,7 @@
         }
       ],
       "article_ids": [
+        "eef3210c4635624455",
         "52393e1ef4c594190a",
         "23743ad2df690ad7a4",
         "a3b3e552733c462a14",
@@ -870,101 +879,6 @@
       ],
       "article_ids": [
         "af84e2a034c6476ac2"
-      ],
-      "event_status": "Reported event candidate — not independently verified",
-      "hypothesis_not_impact": true
-    },
-    {
-      "id": "786e714001c66a9292",
-      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdGRodHE0VnkzWjdQTHYtUnBoVlBCVHpEU0lFUFJXLWpLRTJQMk1rX3AxTVR0MV9ubXdCRTl6Y3AzSXFtNjdMalhjb01tazNaanl5Tkk2SEJ2OE5rTmduczhMbzRqRzVkYTZ4NVduekJjU0g4R0xGdW1xSlljeENmdGdZM3hEWU9neDhvWUFYOFVHY1o0bkJQYnhiRjI2a2dqUkI2ZmdHN0VuRWNONlhYaFRvUWdFcFo5MzFjcW4yN0JsN2gyUnVZREZB?oc=5",
-      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Kuwait-flagged oil tanker carrying 21 Indian seafarers struck by unknown projectile in Strait of Hormuz Telangana Today",
-      "published": "2026-10-22T03:03:32+00:00",
-      "source": "Archive Hormuz Attacks Shipping recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-22T17:09:42.501717+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Unknown",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "unknown",
-      "scenario": true,
-      "impact_channels": [],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "watch_level": "strong candidate",
-      "watch_exposure": "External development, potential KZ transmission not independently established",
-      "exposure_channels": [
-        {
-          "name": "Transport / chokepoints",
-          "sector": "Transport",
-          "mechanism": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
-          "evidence_status": "Hypothesis to test"
-        }
-      ],
-      "triage": {
-        "included": true,
-        "kind": "reported international development",
-        "score": 5,
-        "priority": "medium",
-        "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes; no explicit Kazakhstan impact identified",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-786e714001c66a9292",
-      "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 2,
-      "publisher_names": [
-        "telangana today",
-        "the times of india"
-      ],
-      "publisher_count_heuristic": 2,
-      "related_sources": [
-        {
-          "title": "Kuwait-flagged oil tanker carrying 21 Indian seafarers struck by unknown projectile in Strait of Hormuz - Telangana Today",
-          "source": "Archive Hormuz Attacks Shipping recent",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdGRodHE0VnkzWjdQTHYtUnBoVlBCVHpEU0lFUFJXLWpLRTJQMk1rX3AxTVR0MV9ubXdCRTl6Y3AzSXFtNjdMalhjb01tazNaanl5Tkk2SEJ2OE5rTmduczhMbzRqRzVkYTZ4NVduekJjU0g4R0xGdW1xSlljeENmdGdZM3hEWU9neDhvWUFYOFVHY1o0bkJQYnhiRjI2a2dqUkI2ZmdHN0VuRWNONlhYaFRvUWdFcFo5MzFjcW4yN0JsN2gyUnVZREZB?oc=5",
-          "published": "2026-10-22T03:03:32+00:00",
-          "publisher_guess": "telangana today"
-        },
-        {
-          "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe - The Times of India",
-          "source": "Archive Hormuz Attacks Shipping recent",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPX25uaW9FcEU2NW1xN2V0cTF3UmxOZ1VHYTBONkhwZTRscTgzeXJzWUpvZV81SHE2ZjFzZXd5VURHY2R1QXlmamZNUURBSWhZNDk4dVduclpOdzd2Q09kSS13ekVOY1lSYURFX0dFTVktNnFMTndvek1BWndSYWNOSmk2ZFhCUmJmS20zVFdHemFzZmlBUmxqMXRObmR4SmhHQWdnc2U3QURRMDAzTi05elpWRERHdTQ2N1dXSG1yMS1YZVRCTlpYQ0ZRTkV5dzNQa0NmN3JDd053b0RsSTd4c1RqakJmOEpWLVp4dlltQkkyaHNmTFlCbNIB_gFBVV95cUxPc2RwQkxTTVBkT2N0bmNPdjJQZy1rT01IYWVKLVpVaVNYM3hnbWhNbWRJR1ZmdVdlWXJUeDd3MHlPTlcwWnFWSDZmTnhGMTBrVk1ENkozS21RLVpINjYyX1NfY1NwYVp2RXdNS2ZGdGFTc1hFLTZNUWd2WUhMVjBEOUlaZDlRLUJCV3hWZ0NHQ0J6LVVNWFNUOHNRVWpqeXlESmJkTXM2UWxRa01PVjd2UlBNVTFhVzd4dV80Q2doaXNZQXBoeHR5YVpHNHlyby14a2FnamRJZHZmNTVZYllHRG5fWmdkZjNLeXJseGRYMUtjZk5GUzBVaENWTFJEUQ?oc=5",
-          "published": "2026-10-22T02:10:00+00:00",
-          "publisher_guess": "the times of india"
-        }
-      ],
-      "article_ids": [
-        "786e714001c66a9292",
-        "3adc3cff239d00c118"
       ],
       "event_status": "Reported event candidate — not independently verified",
       "hypothesis_not_impact": true
