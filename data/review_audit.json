@@ -1,68 +1,67 @@
 {
-  "generated_at": "2026-11-07T17:44:35.854041+00:00",
+  "generated_at": "2026-11-08T05:59:18.671963+00:00",
   "requested_window": "Rolling prior 30 days (publication timestamps); RSS searches are not exhaustive",
   "window": {
-    "start": "2026-10-08",
-    "end": "2026-11-07"
+    "start": "2026-10-09",
+    "end": "2026-11-08"
   },
   "screened_articles": 800,
   "dated_more_than_14_days": 0,
-  "earliest": "2026-10-28T02:08:00+00:00",
-  "latest": "2026-11-07T17:34:47+00:00",
-  "geolocated": 690,
-  "unlocated": 110,
+  "earliest": "2026-10-28T07:53:00+00:00",
+  "latest": "2026-11-08T05:28:02+00:00",
+  "geolocated": 693,
+  "unlocated": 107,
   "by_tier": {
-    "Kazakhstan mentioned": 338,
-    "Systemic-market candidate": 315,
-    "External shock watch": 130,
+    "Kazakhstan mentioned": 330,
+    "Systemic-market candidate": 322,
+    "External shock watch": 131,
     "Named asset match": 17
   },
   "by_sector": {
-    "Oil": 484,
+    "Oil": 491,
     "Trade": 116,
-    "Cross-sector": 44,
+    "Cross-sector": 40,
     "Finance": 32,
     "Transport": 32,
-    "Food": 29,
-    "Digital": 28,
+    "Digital": 29,
+    "Food": 27,
     "Mining": 23,
-    "Electricity": 7,
-    "Water": 5
+    "Electricity": 6,
+    "Water": 4
   },
   "by_region": {
-    "MENA": 279,
-    "Central Asia": 204,
-    "Global": 125,
-    "Kazakhstan": 94,
+    "MENA": 285,
+    "Central Asia": 199,
+    "Global": 126,
+    "Kazakhstan": 90,
     "Russia/Eurasia": 50,
     "China": 17,
-    "ASEAN": 10,
+    "ASEAN": 11,
     "LATAM": 5,
     "Africa": 5,
     "Europe/UK": 5,
-    "India": 3,
+    "India": 4,
     "US": 3
   },
   "by_country": {
-    "Strait of Hormuz": 287,
-    "Kazakhstan": 209,
-    "Unknown": 110,
-    "Russia": 46,
-    "China": 25,
-    "Kyrgyzstan": 19,
-    "Iran": 13,
+    "Strait of Hormuz": 296,
+    "Kazakhstan": 208,
+    "Unknown": 107,
+    "Russia": 47,
+    "China": 23,
+    "Kyrgyzstan": 18,
+    "Iran": 12,
     "Uzbekistan": 10,
-    "UAE": 9,
+    "UAE": 10,
     "Azerbaijan": 9,
-    "Tajikistan": 8,
-    "Iraq": 5,
+    "Iraq": 6,
+    "Tajikistan": 6,
     "Malaysia": 5,
     "Germany": 4,
     "Qatar": 4,
     "Israel": 4,
     "Pakistan": 4,
     "Vietnam": 4,
-    "India": 3,
     "Japan": 3,
     "Nigeria": 2,
     "Singapore": 2,
@@ -74,14 +73,16 @@
     "Brazil": 1,
     "Saudi Arabia": 1,
     "Switzerland": 1,
+    "India": 1,
     "Oman": 1,
     "Ukraine": 1,
     "South Korea": 1
   },
   "by_week": {
-    "2026-10 / week 4": 55,
+    "2026-10 / week 4": 37,
     "2026-10 / week 5": 249,
-    "2026-11 / week 1": 496
+    "2026-11 / week 1": 511,
+    "2026-11 / week 2": 3
   },
   "unlocated_examples": [
     {
@@ -430,6 +431,61 @@
   ],
   "systemic_examples": [
     {
+      "published": "2026-11-08T05:28:02+00:00",
+      "title": "Iran’s Revolutionary Guards Say Two Oil Tankers Hit Mines, Catch Fire Near Strait Of Hormuz: 17 outlets compared - NewsCord",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT09odmotZ0hocmpxTlhLd3pnSDhSSTBReXd4YW5aMDZsdXIzT25MdjNIWks0NjRBb2VjWG1XSVpTZ2NBcGlxaVBWTzZxR3FhYjFwNDV6LXl2QURVZXVmRFI0VlptWVMzbE4yeXViS0FPQndFVl9nbHRUVDV1UHY1RW1TcEc3czlDZC0wWmtRUF9Xdl9Ld0dXMURtc0VpMThaR2tldi1VeTF0RGk1ZmNOTTczNjhYemwxRUcwclZLZ1dJSUljdWRCQ3VQeFE1ZU1hbGhDSmU3eHYwV09UTzBqUUNISU5tZw?oc=5",
+      "id": "28199f20c47a8e8855"
+    },
+    {
+      "published": "2026-11-08T01:07:51+00:00",
+      "title": "Explosions in Strait of Hormuz as Iran reviews de-escalation proposals",
+      "source": "ABC Asia Pacific",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "ASEAN",
+      "tier": "Systemic-market candidate",
+      "url": "https://www.abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730",
+      "id": "f879db8c73d991e455"
+    },
+    {
+      "published": "2026-11-08T00:00:56+00:00",
+      "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
+      "source": "Al Jazeera",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
+      "id": "2d9c97c6c432a67797"
+    },
+    {
+      "published": "2026-11-07T22:21:57+00:00",
+      "title": "Iran’s Revolutionary Guards say 2 oil tankers hit mines, caught fire near Strait of Hormuz - Anadolu Ajansı",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSjhCUnp2dlpKMnEtMFRhdGxEdVludGg1OXFvN09UMktIVGhENWFMekt5ZnNzdTRRX25wb3NrWTdkektWLW12cmsxRXhudUVMcXRsWG52cEEyMzg4MS12ZXRZdHFySmFkZjFnZjV3WHdnZUQ4bVlZckFEdUZud2tYaE43eVNJTlJzRFpoZndIZEdEcE9ZeFNpcDBINGZmTXc5SlJQVVp0eFlfa1VuQU1nVVZpN3VBejJtR0kyZE9RbW1UdWRsNmI1SWxrU3JzcEE?oc=5",
+      "id": "ebef4ed866dbd9b520"
+    },
+    {
+      "published": "2026-11-07T19:01:14+00:00",
+      "title": "Trump Insists On Strait Of Hormuz Blockade, Claims 'Nothing Is Going To Iran, No Oil Going There' - Sahara Reporters",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMFVpdGozdEFzdG5vQmhFczY1aEk2UWNyTHFKajhPYWtKQTc3VlRvZ2QxRkdKOS1NME96WVFuTVBGQ1lMWTdqaUdWd2k5ZjV1QnFFUHhoeFgta2ZBSHlVN1dJZzFrc1FqeFF5VjNrV0NNYWFSWUtGNGNZYlpFT2RNNE5FRktZRnY4bnBuT1J5Z0xHcU9jUXBVci1uZnBpLVpmQkV3UEt0MXViUmpPRlpHUjB0cjExRFdDOWVvSA?oc=5",
+      "id": "a97cb8da6f0fdad78f"
+    },
+    {
       "published": "2026-11-07T17:34:47+00:00",
       "title": "Iranian navy says tanker catches fire after striking sea mine in Strait of Hormuz - Tehran Times",
       "source": "Archive Hormuz Oil recent",
@@ -463,6 +519,17 @@
       "id": "4164998c0a121e9bfa"
     },
     {
+      "published": "2026-11-07T14:41:36+00:00",
+      "title": "Iraq seeks higher OPEC oil export quota: minister - The New Region",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Iraq",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUEdleEYtM200eFFrSURSa2JRUmUxdnV0WHZoRURPQzZBRS1qNDRYdmZ2LWh6TS1GaWhYU1ZiMXJqdFl3SnFuaFYzLTBza3pVVDhPSE5hLXczRGwyZmhNb2xTMTZrZ0pxbjF6NG5GZHpNQ09BVkFFSXFjZ2FQbzdVOURjNDRjZjhGSEUtWQ?oc=5",
+      "id": "e85497346e55225a19"
+    },
+    {
       "published": "2026-11-07T13:53:00+00:00",
       "title": "Iraq Seeks Higher Oil Production and Exports Through Talks With OPEC - باسنیوز",
       "source": "Archive Oil Market OPEC recent",
@@ -472,6 +539,28 @@
       "tier": "Systemic-market candidate",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1iRkNqRXByRldDbm5ETWxsb253ZFpocmhKbXVrbEhYTGI4aGo2VjhBcXRNVkM4alFpb0VOZ1BUeWQ3ZDFzNVduZF9OTE5tNnpi?oc=5",
       "id": "08a150d315d3b7fc61"
+    },
+    {
+      "published": "2026-11-07T13:47:12+00:00",
+      "title": "Trump confirms new US strikes on Iran near Strait of Hormuz - WJAR",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiiANBVV95cUxOX2c4MnYyZ01QajZ5WEJPTzYxb1pDMDFaZDNPc243RzE1Qk1nLWJYZU5FY3FLN1JfUHBDQWZFM2s3NHo4UFM0eXZVTXRLYUhfcnBSNWdFaEk4VmtRTnBxOXRFdTNsOTFURGZuTU42Qk5OMlJ6Q3RxX2R4Zk5wSU5hd2JidTFETC14MnM5WjdwQWxoLWRMYXo4Rm5JQTI5dkwySlY4VW91MXRDYlh3NHgzR2ZHYW82bjRjX0swS0RDbVQ5NlFtaDhoRkttMEpaWDVjZkVwSFVqVFM3NkRqWWtrWU83VjFySjJkZXVzelByaFppOEliSUNZRGRCTGNaMGVqeDUwakJHYXpQQUJhb1BNZFhUU3pzNWxYenNCVFR2a2FwZ1hMNjgtLVJyUFNhc0Uta0lKbzJ6aEtaeERoanYxTnRxQlYwamNVbzVXa3ZxdG9YRHVXLUhWbkFhZUJhZHhFS2xlQ09mdHkzejVrVEk3UERpN3VFbUFVUFplenNsa05zTHBfam1uYg?oc=5",
+      "id": "381cb5f9077ef2d9f6"
+    },
+    {
+      "published": "2026-11-07T13:46:21+00:00",
+      "title": "CHARTED: Oil Trade Through the Strait of Hormuz by Country – Visual Capitalist - EnergyNow.com",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeU1tdWFDbEwyc2R5ZEFYN3Y4Q3czZEZKX2ZMWUZWUjVDaHljOVZXY1dTX1h1LXFMSlNJcGtad1VURWhBaHFPWm5nNmY5YzJDX1B1RU1ISDFKWEs1US1TNkptS3lIYXVyWUZsdUM4OTFzRk8zOU1abWE5M3IwV0dtX2VqWlhBUW5mbERvOVVoU2EyR25PQk5qbk9PNXBfbmZ3NTFlR1hXVVZNUQ?oc=5",
+      "id": "fee886a92558c52037"
     },
     {
       "published": "2026-11-07T13:40:19+00:00",
@@ -516,94 +605,6 @@
       "tier": "Systemic-market candidate",
       "url": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation?traffic_source=rss",
       "id": "34dea36c995997782e"
-    },
-    {
-      "published": "2026-11-07T12:00:26+00:00",
-      "title": "Oil Minister: Iraq Seeks to Increase Production, Holds Talks with OPEC to Increase Oil Exports » Iraqi News Agency - وكالة الانباء العراقية (واع)",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Iraq",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZmFIRHQ3SXh3SFdpSDlsdUM0ME5BeFhqdW9Wc0JITFN6REt4U1E4QzVMNVlqSE4yTzRDNFhTYTFTdEw1MHdmMXNpeXVYVXFDTjY1Z3lfUVlGTW5Jangwem1URC11ZldlU3ZpcmxULV9zNkFON3BlLVlnckNyTUhXVTdFRHRCUmR3V1RvRkRlV3pIMjktZ1FhdGtCVHR0ZTYxdDZPaFBiaF9QSFlnZEJqaEp3N0pyYzQ4bEFBRXJfWFBqT21tTFE?oc=5",
-      "id": "39f8d1446555c6404f"
-    },
-    {
-      "published": "2026-11-07T11:46:58+00:00",
-      "title": "Army Reports Oil Tanker Fire in Eastern Strait of Hormuz - WANA News Agency",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMHkzMGJoTTB3MkwtYm1scXhzeTVJT0g5dzc5eXVrUU9MUGZwUnBOdkhURkF1emFJbEJKV2xJYUVCTWJiRjVUcGNCRGRkbllTdmtqRGg2NDRVcUhzTm9nUW9fdU9YU1I2alo4VF9LdjNnUHBsWlhMa3p6WGI0UGFyZVZR?oc=5",
-      "id": "115f6011441e9b44a8"
-    },
-    {
-      "published": "2026-11-07T11:31:56+00:00",
-      "title": "Violating Tanker Hits Sea Mine in Strait of Hormuz: Iran’s Navy - تسنیم",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOG5kZVhMTE9DZE5pUG8wUnB2WUM3aWx6LUZ5TTdyTE5SWEJqQndEZlZDRGNYWkdMMWFoU2E1Q2E4cnljbnhVRjAydHlyRFlyd1VILWlLLUV2QmVkZmp3QzJxdnZnTzNYeUNIN3g2SExsQTdEUUFTc0RuelpQczRmWTMycHZENW96TVNWaXdxLVNLOWhQSHVLOGZVdVlMY29Nb25MclV1VzRuTFkybVFMNFpOLUJfd9IBuwFBVV95cUxOYThJQVgtZXpsZU5KWUI1T0s3dHJjLW44N1UyYkgzTVhYcHNONXpJQTBCc1FTNW83TThLYW5PaEdjalBQRHh5TkFMU08wOWpWRkJsWFV0enFZTWFGOEFhSDByTXR5LWlrTmF3eDVid1RmYVI1aURVLWZTUHhJbks2U29LdjBZOWxsQTh4TGFaMXpweDltSTJwVnRlQzZ1NURYVUQtXy1xWExubmY5SFNnY2pvUGNBRWtyT293?oc=5",
-      "id": "bbe17e06b005ae943a"
-    },
-    {
-      "published": "2026-11-07T10:55:59+00:00",
-      "title": "Oil Minister: Our production has reached 5 million barrels per day, and talks are underway with OPEC to increase exports » Iraqi News Agency - وكالة الانباء العراقية (واع)",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQZUdCa1B0aU8wYldEMzFBcC12RjlBNzdEY19zc0pRbkl3R0FyTUhQOHl1STlTQVZnb2FWSlBFWEFVcTE5bnhBNk4wN2htZk5DNkYyZjB4UVJKTUZ1a1kyMVNMeWdScm1aNHVjTUM2dksxc25zTW1oaE5XVThjRVVPTzl5Q3lqaXpUZDlEWTl3Z044T09MTzhBalIwamJ2aVAwVElCenp6U2hJaUZDS2VPd0ZGVERvbmV6VEpMZHAxdzl5RVpGTzYzUWVFVW5tSGJJZFFycWEzQW92U244TDhzRGZhdU5QUENXdEZj?oc=5",
-      "id": "9d2377f9e402bcf589"
-    },
-    {
-      "published": "2026-11-07T10:20:45+00:00",
-      "title": "Iran reports oil tanker blaze in Strait of Hormuz - Latest news from Azerbaijan",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE11eVpWZmFHQTc1TE9aWndNb1BUVEM2VlVGeVRrS0dFczVLWnZ5Zzc2bkhrYWtLai1LTTIydTNGT2VhTEozUE9yZzJsQUJGcHk4MUU5UnpRd3NTTDZkdDNlMXNfclZUOW5mSkJfZk5jekJXNFFoQ1RremhR?oc=5",
-      "id": "dd01248ad84d5055be"
-    },
-    {
-      "published": "2026-11-07T07:02:00+00:00",
-      "title": "Strait of Hormuz could reopen as part of Qatari plan for Iran nuclear inspections - The Guardian",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMFNrLUQ1dG9iaVNVYWYzRjRlbmNnVEFHR29rcWh5NnFpaEx5UWs1RjNTbWZoc3oxd2RQWUdBaXFaNzJENjlUWVdNOHNsQzlWOFVYdDZHVTFvQmpGWEpSSlZFLXRVTUxWX2lQaHl6VjJMVDViVEM2NXF4cnZJcUo1aWJHc3MtdTZFdFRhLTF5cXBTallDMFVZY1dlMkd5RFU?oc=5",
-      "id": "2177fe73eab30ec237"
-    },
-    {
-      "published": "2026-11-07T07:00:04+00:00",
-      "title": "Strait of Hormuz could reopen as part of Qatari plan for Iran nuclear inspections",
-      "source": "Guardian World",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections",
-      "id": "68f798da31acd99fca"
-    },
-    {
-      "published": "2026-11-07T00:57:48+00:00",
-      "title": "Brent crude caps biggest weekly drop since pandemic as war premium begins to unwind - TradingView",
-      "source": "Google News MENA",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZDlCcGRDQ1VUZzRQaDdLRmtmN3RnRmVGWGlLazVzTk5MSDNqWTdvOV9MOHBIVHBMbXhnTzJrMjZGQ3h4U3NNNGwzZWIzNkY1WlNCOEtoYVM1SGd4aWlXUlBSV0hEcElhYTNVanRCcU9rdUhBUWJ1cjR2M0xtTGE3ckhSR0owMHRvVHZ0Z3Z5ZmoyNFluN0FHblpjdEQydzE3WmltaWpoaGlmcUVlV2dhSFhHMlBBQjBPVE1qZXdOWjdGOE9BQkFtNUU2XzVBQUxKRVpRd2FnOHJFUVprZ2Zn?oc=5",
-      "id": "ddfdf9f9fef9634213"
     }
   ],
   "direct_examples": [
@@ -639,6 +640,17 @@
       "tier": "Kazakhstan mentioned",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOW9IdGpxNGN3YngzMGEtUllGTUtDXzFsMGdsZncyY3lvR21UVERFZ1FXWTdTb2RJRWtKaXdNcUlFVzBTVzJmTEVIVmhwLVpReG9SUXNlRDRTSmg1bFhvNGRWZDNHa2tKX2VabEFuTTBTcE93M015N19Sc0tXQjU4Ui1SZFUwcmt0SHppUFEzeUw0UTI2dmxQZ3ZKYXZiVWdUaVRFRlNPQzdTUF91TURr?oc=5",
       "id": "c8c11f6f8c896466ff"
+    },
+    {
+      "published": "2026-11-07T14:19:19+00:00",
+      "title": "Kazakhstan invests in AI, but energy supplies fall short - AsiaNews",
+      "source": "Google News Central Asia",
+      "sector": "Digital",
+      "country": "Kazakhstan",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRW1wWGlCMWN0TXdCSWxOY0FKM3F3ZnZUU1llNFdvOHhjZUhGNlI0Q0cxekVqcGp3cG9pVEdjNllzS1A3VVFaVlZrU2ZvY1AtdXpIUUVkVzY0Qk1RUGs4RXNDZDhJT3Vwcjdfd0JFUTJHTmhlTUYxWnhFMnpwYXV2RVFSLXlZTXpNTDFDWmtUV004X3VfaTBwazVMRXJDTEoxbkNVNlVmVHI2QQ?oc=5",
+      "id": "4e18dcbebe592231eb"
     },
     {
       "published": "2026-11-07T13:41:50+00:00",
@@ -740,6 +752,17 @@
       "id": "297e05debc7e8a6055"
     },
     {
+      "published": "2026-11-06T20:38:35+00:00",
+      "title": "Rauan Tleulin appointed head of Kazakhstan’s Investment Committee - Kazakhstan Today",
+      "source": "Archive Kazakhstan India recent",
+      "sector": "Finance",
+      "country": "Kazakhstan",
+      "region": "India",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOYVlXLVcxeURHZWUtZUZuS3NOZE5GME42Z0lQQnA4R0k5THZYY2VTRlRqaVozOGFST0RqenpJeTBqczVBWFB3T3JxQ3FvYW5BTWd0NzNreEY4SG9SV0R0SzBhQ05iMVBPd1JsdUthLVhqd05OM2ppZ0NyMEJNMWVXZWlaTDFFNjVtZng1elVWdmNEN2JocjdfNzBFSXo3U180dUtZMGZYaw?oc=5",
+      "id": "6aa707ce87f3052119"
+    },
+    {
       "published": "2026-11-06T19:25:00+00:00",
       "title": "Veon closes $81M OLX KZ deal, eyes Kazakh digital bank - Briefs Finance",
       "source": "Google News Central Asia",
@@ -760,28 +783,6 @@
       "tier": "Kazakhstan mentioned",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNHk0eEJkZFIxT0Y4TTNGMEZvNHk0RnhWTlhCQzIxY1JtTlRILTRrLTlCMmlJYUNXMjFBaHdabDVYTzBfWUVRLTNWeVdkNnNOVFA1OHd1VFRyOW9GMTZIeUVYeTFsUWI1clZ4YVktRXBabzc4R01HUlk1dWJuTm5rZXlIbW5hTDhoWjBTVGlKV29CS0t3R2c?oc=5",
       "id": "8d04b9f98bf1279583"
-    },
-    {
-      "published": "2026-11-06T18:10:10+00:00",
-      "title": "Investing in copper foil manufacturing: Kazakhstan set to build new plant - Qazinform",
-      "source": "Google News Central Asia",
-      "sector": "Mining",
-      "country": "Kazakhstan",
-      "region": "Central Asia",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV0EyRVJ5a3F6eUotd2lROTBrUy13M1BnbDJmT2xjRVFUczNjT0YyRWNxc1lHQXpVUjRaeHowajRNMlRscUhfekRocGNVN1NrcjZyRVFxU2xMQVJ0Y2NSSVU0bU9BaGJLV1J3ZlpkcExYMUxtekQxb3FmTHVaYk00VDRHYTVKNEVFTnF4M0oyb3RIM3ZmSVdWWmpLV2MwQlpJZUtwdHA5MElLQdIBqgFBVV95cUxNaTRubXhFY3RsT0RHTGtRRkdScU9VVHVsQUNfalNiaGg0Z2xUM2ZMVnN3RUpDUDk4dzZHbGJBTno3R1JyY05ZcTdhTTNLOGd3Uklja0NOX1FTYTZNMWk2a1I3YmNFSk1sREliRFZoeXBUUElfS3M4b0pPNGk0bmZXYlUxOWx0bGtadVNYM0R0TXVEa2tTbGlXaEFzMU5MaWY0Z3pRTE95SmFVQQ?oc=5",
-      "id": "dbff77ca897251eb00"
-    },
-    {
-      "published": "2026-11-06T17:02:54+00:00",
-      "title": "VEON's 3Q26 Guide Raise Shrinks to Half a Point as Digital Supplies 85% of EBITDA Gain and Kazakhstan Slumps - Quantisnow",
-      "source": "Google News Central Asia",
-      "sector": "Digital",
-      "country": "Kazakhstan",
-      "region": "Central Asia",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdnh6ZGJjcEVIdFNrLTZYRy1NZloxS3g4YnhGUVQ3T0gwVllNX09ELXJUclN4LW9xYlVYOTFVNUdzMG5pWUQxQ3d0emdqbl9uY0NhbG00RklNcXc2Vl8weWZzQUdtVmNyNGhUYXYxc0JEUktKTDg1emIzajdfOURibm1MLVVIMUVHYUc3OUF2TVM5V015bmdYQzVPbGljNUxzakxpR2U4WG9wYUpzUTAtQTZMYTJmVS1oN2VXWmhtQjRLWG95QWgtdnlXUFpyVklP?oc=5",
-      "id": "a80c647995e9993e5e"
     }
   ],
   "weekly_samples": {
@@ -1186,9 +1187,100 @@
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNeWsxSXdiMmZVYTJQNnFsNi1OLXZ5MW1TNmtpUll4ZXVGOTZ0VGpIQkZjN1FiOTM5cm9UNmVLRUpDS3M4bWIwZkYtdkZaU2k0ZHhIaUhxSjhaQ2VveVVSbkJsdVQ0YVk2VGZLM2lESFFOQjVJeFFfSFIxMjBSVHdLd2Z1YlJyOHVxanc?oc=5",
         "id": "7f397087e8c3781139"
       }
+    ],
+    "2026-11 / week 2": [
+      {
+        "published": "2026-11-08T05:28:02+00:00",
+        "title": "Iran’s Revolutionary Guards Say Two Oil Tankers Hit Mines, Catch Fire Near Strait Of Hormuz: 17 outlets compared - NewsCord",
+        "source": "Archive Hormuz Oil recent",
+        "sector": "Oil",
+        "country": "Strait of Hormuz",
+        "region": "MENA",
+        "tier": "Systemic-market candidate",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT09odmotZ0hocmpxTlhLd3pnSDhSSTBReXd4YW5aMDZsdXIzT25MdjNIWks0NjRBb2VjWG1XSVpTZ2NBcGlxaVBWTzZxR3FhYjFwNDV6LXl2QURVZXVmRFI0VlptWVMzbE4yeXViS0FPQndFVl9nbHRUVDV1UHY1RW1TcEc3czlDZC0wWmtRUF9Xdl9Ld0dXMURtc0VpMThaR2tldi1VeTF0RGk1ZmNOTTczNjhYemwxRUcwclZLZ1dJSUljdWRCQ3VQeFE1ZU1hbGhDSmU3eHYwV09UTzBqUUNISU5tZw?oc=5",
+        "id": "28199f20c47a8e8855"
+      },
+      {
+        "published": "2026-11-08T01:07:51+00:00",
+        "title": "Explosions in Strait of Hormuz as Iran reviews de-escalation proposals",
+        "source": "ABC Asia Pacific",
+        "sector": "Oil",
+        "country": "Strait of Hormuz",
+        "region": "ASEAN",
+        "tier": "Systemic-market candidate",
+        "url": "https://www.abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730",
+        "id": "f879db8c73d991e455"
+      },
+      {
+        "published": "2026-11-08T00:00:56+00:00",
+        "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
+        "source": "Al Jazeera",
+        "sector": "Oil",
+        "country": "Strait of Hormuz",
+        "region": "Global",
+        "tier": "Systemic-market candidate",
+        "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
+        "id": "2d9c97c6c432a67797"
+      }
     ]
   },
   "possible_duplicates": [
+    {
+      "title": "iraq seeks higher opec oil export quota minister",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-07T14:41:36+00:00",
+          "title": "Iraq seeks higher OPEC oil export quota: minister - The New Region",
+          "source": "Archive Oil Market OPEC recent",
+          "sector": "Oil",
+          "country": "Iraq",
+          "region": "Global",
+          "tier": "Systemic-market candidate",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5iSm5ma1d1QVA1UXpEeC1VU2RSNUdtVXZKQ0d2dWhvSjM2ZDloQVE5OTFzQWtvT1d2VjN1QWQybW5YcGEzZmdUX3EzNA?oc=5",
+          "id": "4164998c0a121e9bfa"
+        },
+        {
+          "published": "2026-11-07T14:41:36+00:00",
+          "title": "Iraq seeks higher OPEC oil export quota: minister - The New Region",
+          "source": "Archive Oil Market OPEC recent",
+          "sector": "Oil",
+          "country": "Iraq",
+          "region": "Global",
+          "tier": "Systemic-market candidate",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUEdleEYtM200eFFrSURSa2JRUmUxdnV0WHZoRURPQzZBRS1qNDRYdmZ2LWh6TS1GaWhYU1ZiMXJqdFl3SnFuaFYzLTBza3pVVDhPSE5hLXczRGwyZmhNb2xTMTZrZ0pxbjF6NG5GZHpNQ09BVkFFSXFjZ2FQbzdVOURjNDRjZjhGSEUtWQ?oc=5",
+          "id": "e85497346e55225a19"
+        }
+      ]
+    },
+    {
+      "title": "trump confirms new us strikes on iran near strait of hormuz",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-07T13:47:12+00:00",
+          "title": "Trump confirms new US strikes on Iran near Strait of Hormuz - WJAR",
+          "source": "Archive Hormuz Oil recent",
+          "sector": "Oil",
+          "country": "Strait of Hormuz",
+          "region": "MENA",
+          "tier": "Systemic-market candidate",
+          "url": "https://news.google.com/rss/articles/CBMiiANBVV95cUxOX2c4MnYyZ01QajZ5WEJPTzYxb1pDMDFaZDNPc243RzE1Qk1nLWJYZU5FY3FLN1JfUHBDQWZFM2s3NHo4UFM0eXZVTXRLYUhfcnBSNWdFaEk4VmtRTnBxOXRFdTNsOTFURGZuTU42Qk5OMlJ6Q3RxX2R4Zk5wSU5hd2JidTFETC14MnM5WjdwQWxoLWRMYXo4Rm5JQTI5dkwySlY4VW91MXRDYlh3NHgzR2ZHYW82bjRjX0swS0RDbVQ5NlFtaDhoRkttMEpaWDVjZkVwSFVqVFM3NkRqWWtrWU83VjFySjJkZXVzelByaFppOEliSUNZRGRCTGNaMGVqeDUwakJHYXpQQUJhb1BNZFhUU3pzNWxYenNCVFR2a2FwZ1hMNjgtLVJyUFNhc0Uta0lKbzJ6aEtaeERoanYxTnRxQlYwamNVbzVXa3ZxdG9YRHVXLUhWbkFhZUJhZHhFS2xlQ09mdHkzejVrVEk3UERpN3VFbUFVUFplenNsa05zTHBfam1uYg?oc=5",
+          "id": "381cb5f9077ef2d9f6"
+        },
+        {
+          "published": "2026-11-07T13:40:19+00:00",
+          "title": "Trump confirms new US strikes on Iran near Strait of Hormuz - The National News Desk",
+          "source": "Archive Hormuz Oil recent",
+          "sector": "Oil",
+          "country": "Strait of Hormuz",
+          "region": "MENA",
+          "tier": "Systemic-market candidate",
+          "url": "https://news.google.com/rss/articles/CBMimANBVV95cUxQOVY3YmUxNUVBY1hsMk1BLW1aeWw4UThqZVJEb1d6V012VkJ6SU1vcWtKbzdaMFh1TmktdEFVUFRzdDVlU0RlLTFWRDhGMkZiSnY1SG0xb3QxejlCVkZnckVuRHhpZ3R6Z0tEZHN2cURPVXAyRUlhdmtLS21PbkRkejljb3l4OUI4UWlLNGlrQUZyaXdMMW9aX1NTejJHSDhaRlNVaWd1cTdLWTlpMzIwZGV2aHFYTHprY21ZQ0VlZF9OYUllcW1YaTZ0OHQ0cUo3MXFEa1lvNGpqS2Q0RWVJOG9qZ2M0eVFCUjJXc3dsNjk0emFsMzZiMGd0S3lRVE5rbXAzeElwX0VoMVFWWF83RjJFWk1ZRGkwcGQ3UlJRTjA3NFFxTUpUMVVvcndHSURGb1RQVGlySi1ld3hRQ2lWN1d0cmtzbklIN3pTb1EtU0VKNF9qTE1fVTlEZnNmV0pCZDhBWWh1YnR2d3hEWGFKVl9icG1uUnhEeWJXVmJlemhMaFJ3U0d0Tkh4Vklla3dFVEFYQ0cyZUc?oc=5",
+          "id": "bd09151034712778d2"
+        }
+      ]
+    },
     {
       "title": "strait of hormuz could reopen as part of qatari plan for iran nuclear inspections",
       "count": 2,
@@ -1214,6 +1306,34 @@
           "tier": "Systemic-market candidate",
           "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections",
           "id": "68f798da31acd99fca"
+        }
+      ]
+    },
+    {
+      "title": "russia adapts to black sea disruption but wheat market is too optimistic sizov says",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-06T11:54:34+00:00",
+          "title": "Russia adapts to Black Sea disruption but wheat market is too optimistic, Sizov says - Miller Magazine",
+          "source": "Archive Kazakhstan Wheat Access recent",
+          "sector": "Food",
+          "country": "Russia",
+          "region": "Global",
+          "tier": "External shock watch",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX0VINVpKb0dtYmpCT0lTUDZyUi1aZWM5b0kzeXVYSjBCT3NZWEJsOVptOXNtbklUcWE2M29kREtjNE1PMjRVSGQ5NmJJX04wVGc5VWZmalBOTWNhVGs3UlJrUkpfdjNhZ0JWMWpqRFpneVpUQzJEZi1VWDZaNUQzTC1hVElSeEZQQ2dJdXl3T2hsd2FmeUxiOVhmWUp1TjA3YlZXeHVTX0RHRG9YQlpuaG93c1Zfd1VjN2Rfb3lkNEo?oc=5",
+          "id": "cc42dce214ed122578"
+        },
+        {
+          "published": "2026-11-06T11:11:09+00:00",
+          "title": "Russia adapts to Black Sea disruption but wheat market is too optimistic, Sizov says - Miller Magazine",
+          "source": "Archive Kazakhstan Wheat Access recent",
+          "sector": "Food",
+          "country": "Russia",
+          "region": "Global",
+          "tier": "External shock watch",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeGpTT2RhVlczOWlad3piZzItNFk0Smh6TUxBU3NlN2dSYVlHbGRVRWFDVkF2OXhGMHhaekJfWENLOFZDRmt2YzdEbGNadWNOOUMtbHZhZHJUcXJacHhNWklEMTExY2p4dHZMdnl3Xy1EWEtLVUJGV2VTemozdHhvY01mWXhLUTVQamo4RF9kN3o3SEZJbTBTS1pMQ2EzNVQwMENjbjhWNTcxaVBlcGZ0aWtuS0xlc1Y1ZFlmag?oc=5",
+          "id": "c1b1388f430cd77550"
         }
       ]
     },
@@ -1298,6 +1418,34 @@
           "tier": "Systemic-market candidate",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNU1lWam9DOFZMV1U5UU1Ma3hudDNSMFUybFlaSWtkcERWOFdqVzdsZndYWU9oNF9NWkFYRWw4alZZUzVqRllwbDk4OGFPMnBfTU5WYzM0LVg0RmtoWUZCbEdQdnBya1ZzNGItT0t4bWkycVFfeHRBejFWbEdJR3UwWjk1eEhwT3NFbmh6WGM1MlJpUV9YSE5VaEZ0d0kxREZFTHVrSVdrVjBYT3p2aGxNb1ZHbjlTanh2S1E?oc=5",
           "id": "ca97286059204aaad9"
+        }
+      ]
+    },
+    {
+      "title": "kazakhstan to complete investigation into deaths of servicemen during caspian sea exercises soon",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-06T03:25:25+00:00",
+          "title": "Kazakhstan to complete investigation into deaths of servicemen during Caspian Sea exercises soon - AKIpress News Agency",
+          "source": "Archive Kazakhstan Caspian recent",
+          "sector": "Cross-sector",
+          "country": "Kazakhstan",
+          "region": "Central Asia",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaTliVHpkRXlITWlSTG5EdlkyWFR6SWdVWnhYa2k3bFo2akJUVjV5RFktSHUxbzVaX1VjMXNVbjliSXRYV2d2RGhMaDBNeFg4TFljZ3ZQRC1xTlNiaUh0QlBJSlp2dmF4S1RqSWVSTHNpRHd1VTVQenAzeDdNVkRSTVMtTlAxWXRIb2tpczdEZDZ0YldVVDJiRk9RNjJTWEJxUGNKSEFCUjljSm5SWGtnT2c5Y0d1bm1ZM29EdGlFbTQ0XzMyZDhkUXNwTWo?oc=5",
+          "id": "eff2e47489bad1f3bc"
+        },
+        {
+          "published": "2026-11-06T03:21:00+00:00",
+          "title": "Kazakhstan to complete investigation into deaths of servicemen during Caspian Sea exercises soon - AKIpress News Agency",
+          "source": "Archive Kazakhstan Caspian recent",
+          "sector": "Cross-sector",
+          "country": "Kazakhstan",
+          "region": "Central Asia",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSEJyUkplZEVWc19LSFNvbDcwTWRyM2YyMjU4OEF1SHozVm85dkMtYm1hel9YZG81NWFPSWZ4VFpoazJKZFJrdlhNdTVqSFVoRURTem5KVzVBNDA5WE9sUHl5M25Kc3pGLUtocVBUYXV3RlZWTFpnanotSUd3ZFotek1GVWZCQjQ2VW9URVpPaWJWeUtPM19RMVlFYkl2Mlp0RDZOY19wSDNlekZhNHpFZFI4bFFhS3MzWkh1UzFrQ3EzVUlOaFR0X3FB?oc=5",
+          "id": "14c027fe473ce2d7e0"
         }
       ]
     },
@@ -1705,6 +1853,34 @@
       ]
     },
     {
+      "title": "iran says four oil tankers destroyed by mines near strait of hormuz",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-04T10:15:00+00:00",
+          "title": "Iran Says Four Oil Tankers Destroyed by Mines Near Strait of Hormuz - Crude Oil Prices Today | OilPrice.com",
+          "source": "Archive Hormuz Oil recent",
+          "sector": "Oil",
+          "country": "Strait of Hormuz",
+          "region": "MENA",
+          "tier": "External shock watch",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQY1R3S09LbGMzVzJzOUkwbjlhM2dtVU5yTjJ0WTdfV0pBOVk1elFMbFk5VUxnSHhKM3IwWHIwblg1VExwWEtqcjhfMGE0cnRxRGpheklmSkZoMWJWdjNqaDNlSXByWUVISW5SODF6dXh4R2dhTGswekJ5bXdQZVdoczhwUVVOMkRfWUJad0pkRGMtYmtybmRCR2FQNmFuOEZBWkpLZGNUdGs2eVM2WU1EaHBMc1RrQk5DRVBKam45VWfSAcYBQVVfeXFMTXg0QWluM1liWEwtOVhRNDVsMWJEX1J3V3BSMzRVRUttdVpxZGdQQ05kZ1ZKLXE2cmRMNDhTaGVCSWthWTNKMDdJOWEydjBNaFctcFh3NVRhN2Q2STktb3ZQTHliREdhVFJBZUdCeFRkS0lEMFFzcUpneUprUlE2VmRsMEdfa0lLQzhyeFl3c0w5YkdISmRCMnlKc0lRQ19kMUZad3JzbnU2NGk5LVhNMFZPaHpHMGpkVDItTmx6azhGMW13Szl3?oc=5",
+          "id": "a3c4322c5b63c4670d"
+        },
+        {
+          "published": "2026-11-04T10:15:00+00:00",
+          "title": "Iran Says Four Oil Tankers Destroyed by Mines Near Strait of Hormuz - Yahoo Finance",
+          "source": "Archive Hormuz Oil recent",
+          "sector": "Oil",
+          "country": "Strait of Hormuz",
+          "region": "MENA",
+          "tier": "External shock watch",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZDVmT2VMRmV6QUxiTk9lVVotdmJ1SzZWVll6QUwtbXJaODgzMml4d1ZBRVBVMUh2N1hNVTh3czBuX29sY3N0ZThRWGN1RE9KclZGOGdrQnQwTEhja29RN2pqMkw3U2tJeWJSQTNDZ0JPZkFJclp4MGNQeHd6WUdaYTlWeWFXSnN3YktN?oc=5",
+          "id": "a968c5f29c532948ab"
+        }
+      ]
+    },
+    {
       "title": "iran claims 4 oil tankers destroyed by naval mines near strait of hormuz",
       "count": 2,
       "examples": [
@@ -1757,157 +1933,6 @@
           "tier": "Systemic-market candidate",
           "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRlRNSGNacFU4bE80QVUzQkV4U3k2eXlFUXBQZm9mRWw0eGljV19NVkVnMXlCQkdlMFVjbEFyUDZkYjI0S2F1QTJFYXZIOHl2T2tYUFpqem5Jd1M2TFJSSGtWaWtZa3F2RHVjTC11TmRHUjR5VEdBSzVyOWtpVDRrUm85Z1dEUzlkRTREVkVINkpWazl3VFFZa2lmWmJ5WnVrY01BSXMxcHN2WjVGN3R2dkVIRHVjU29vN2FlclYyZnRCUEFHUWdNVjV1TGVwc3BGSkpPbF8yLW1lNWhwZ04yUTJud0F5aFlna1E?oc=5",
           "id": "2549cb781d0cc09252"
-        }
-      ]
-    },
-    {
-      "title": "us strikes iranian targets in the strait of hormuz official says leaving unclear what comes next",
-      "count": 3,
-      "examples": [
-        {
-          "published": "2026-11-03T13:58:03+00:00",
-          "title": "US strikes Iranian targets in the Strait of Hormuz, official says, leaving unclear what comes next - WTOP News",
-          "source": "Archive Hormuz Oil recent",
-          "sector": "Oil",
-          "country": "Strait of Hormuz",
-          "region": "MENA",
-          "tier": "Systemic-market candidate",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOU2ZiQVpPMU5lREVDMzhReDlHNHlZRUVJWVY5X1FxN2tEZjY1RWxFNjBXUGdGMG1DWXUzQUxJREV3X1NGVGlBelczRFNfbURaOTlZaG5zNEtrYWZIdGl2QlZoeE1mVTdTUVd0NmNfaERLVjBHRW1QUzgzSGV1bmxkME40d3RRYXZrMGdBcWlaZVlqNzduNDM1amNvYzVfdTFfUGRFblpNQkJPdDh2M25jbWN1RDhzM1AyeUxfU3pDa2tKVHl2eWl4ai1ydw?oc=5",
-          "id": "476e418f2608fe341a"
-        },
-        {
-          "published": "2026-11-03T10:36:00+00:00",
-          "title": "US strikes Iranian targets in the Strait of Hormuz, official says, leaving unclear what comes next - WPTZ",
-          "source": "Archive Hormuz Oil recent",
-          "sector": "Oil",
-          "country": "Strait of Hormuz",
-          "region": "MENA",
-          "tier": "Systemic-market candidate",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd1RDNVY1eHA1TGNkZVFNUUl3aEYwaFBoeU9jQm95MV9pQTBFVW83aGNrS2JMdldvN3ZYbHdRSFp1U1NzQ2RObzZWekpRUnV4ZTczZHZDRGRpeDlwUmlkQlB2QWhoazl1ejF0cVprYXY4VFVSQUgyNzVyWnVmVTV6VGJsNA?oc=5",
-          "id": "90d8daa8215737c284"
-        },
-        {
-          "published": "2026-11-03T10:36:00+00:00",
-          "title": "US strikes Iranian targets in the Strait of Hormuz, official says, leaving unclear what comes next - WBAL-TV",
-          "source": "Archive Hormuz Oil recent",
-          "sector": "Oil",
-          "country": "Strait of Hormuz",
-          "region": "MENA",
-          "tier": "Systemic-market candidate",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYWptYlZTMTdqX0xQVm9hcHJVRFZLNlg3a3U0RVQ4MVdYam43dy1US2pHLTJKdTM0RjdQc203SElFUkg0RUpudFo1Mmp6V0JCNFk3Zkd3WmgtYkt5eHFGRU1rWEF3MkRKTUdlZUlmNzdoazI5enJtMjFfdlM4ejZHbkhXaklkenc?oc=5",
-          "id": "a63095c04e852dddb5"
-        }
-      ]
-    },
-    {
-      "title": "kazakhstan boosts vegetable oil production by 25 in 2026",
-      "count": 2,
-      "examples": [
-        {
-          "published": "2026-11-03T11:29:09+00:00",
-          "title": "Kazakhstan boosts vegetable oil production by 25% in 2026 - Qazinform",
-          "source": "Archive Kazakhstan Economy recent",
-          "sector": "Oil",
-          "country": "Kazakhstan",
-          "region": "Kazakhstan",
-          "tier": "Kazakhstan mentioned",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOS2lrendKdzNER2xmbGt4WEdhb3lsVWRDWDdJa3RndzF3TnJObXBhLWZtdXN4UE8tZW5OY1pIVVFna0NBLUJqQzFXU1BtcEZGOHAwSWRmRnQ4c1VKdFlKWWZMMHVOLXg2S1hxWmZzd1ZYTGxuZDkwWTB0VmJjeHc2MXo3akdVbUotYTJBMTJfUmZMcFRN0gGUAUFVX3lxTE5LaWt6d0p3M0RHbGZsa3hYR2FveWxVZENYN0lrdGd3MXdOck5tcGEtZm11c3hQTy1lbk5jWkhVUWdrQ0EtQmpDMVdTUG1wRkY4cDBJZGZGdDhzVUp0WUpZZkwwdU4teDZLWHFaZnN3VlhMbG5kOTBZMHRWYmN4dzYxejdqR1VtSi1hMkExMl9SZkxwVE0?oc=5",
-          "id": "78ec2aff851f54214d"
-        },
-        {
-          "published": "2026-11-03T11:29:01+00:00",
-          "title": "Kazakhstan boosts vegetable oil production by 25% in 2026 - Qazinform",
-          "source": "Google News Central Asia",
-          "sector": "Oil",
-          "country": "Kazakhstan",
-          "region": "Central Asia",
-          "tier": "Kazakhstan mentioned",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM01EajYyM1NzaS1iQ0V3bHVINU40UGozOFI1aHh3WVEwMWhRQzloWGZScURQcGJwVDR3X1NaV2hwb3hzQm1mMjZyRFlkeWRHNS1vdnY5TERJNkJDbnZCNy1yQ2NtVld5dUgtMDJNY3JzX0oyTE9mN1lSLWR4MVFaYUxIR2tyM1RfRTFJaWZrakh6cmc00gGUAUFVX3lxTE5LaWt6d0p3M0RHbGZsa3hYR2FveWxVZENYN0lrdGd3MXdOck5tcGEtZm11c3hQTy1lbk5jWkhVUWdrQ0EtQmpDMVdTUG1wRkY4cDBJZGZGdDhzVUp0WUpZZkwwdU4teDZLWHFaZnN3VlhMbG5kOTBZMHRWYmN4dzYxejdqR1VtSi1hMkExMl9SZkxwVE0?oc=5",
-          "id": "4ab73be0ac1988d578"
-        }
-      ]
-    },
-    {
-      "title": "kazakhstan halts oil shipments through russia after drone attack in samara region",
-      "count": 2,
-      "examples": [
-        {
-          "published": "2026-11-03T09:51:00+00:00",
-          "title": "Kazakhstan halts oil shipments through Russia after drone attack in Samara region - Bloomberg - Hromadske",
-          "source": "Google News Eurasia",
-          "sector": "Oil",
-          "country": "Russia",
-          "region": "Russia/Eurasia",
-          "tier": "Kazakhstan mentioned",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQ0JlbHNneFVaWU16MHc4U09aT2d1SHpKVm9TM2tzd2JjSzFHS2F0aUVGdmpKaFR4UU5LekFfdnBiX2NIZm5tUU5WSThJbmxkRjYyNEpLaDRmTE40OGg1VHdrME9wZ0NxMWd3VFpRZUpnLVRsdGZBYWdZd2tpSmRGQ0tUT29aT1FjU2NVM2YtNWpTLTkwd180UllxSUtBUFpWRTVZZE5lZkVyMnNkR05udl80UVFFbVN4b1NNZ256R1N1cXpidG5sZ3Rn0gHPAUFVX3lxTE1oeFhVU0tuejU1MGY3WTlyekxMRmZDbXp3bUN1SWN6Rnp1Q2hNTzdCX3dwWHVLMUgwV3FPSFphaGt5endTclFiREdvRU56cTdVMUVvOUt5em5tbGYtOHdMbGRsVmZxeUlxVUsxUExCUEpRUERpUHhqdnFTQnJrV3VlOXNyNFBXY3RYMWZtc0JtSkN3OHF6UG94TUxkX3pIOEZacHFJMGY1UHRZTXJwWnB2SU9EWWg3TFd6RmJITU90RjhhUEROaWVHUmkwaWxrSQ?oc=5",
-          "id": "4672200e643fedaf56"
-        },
-        {
-          "published": "2026-11-03T09:51:00+00:00",
-          "title": "Kazakhstan halts oil shipments through Russia after drone attack in Samara region - Bloomberg - Hromadske",
-          "source": "Archive Kazakhstan Oil recent",
-          "sector": "Oil",
-          "country": "Russia",
-          "region": "Kazakhstan",
-          "tier": "Kazakhstan mentioned",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNaHhYVVNLbno1NTBmN1k5cnpMTEZmQ216d21DdUljekZ6dUNoTU83Ql93cFh1SzFIMFdxT0haYWhreXp3U3JRYkRHb0VOenE3VTFFbzlLeXpubWxmLTh3TGxkbFZmcXlJcVVLMVBMQlBKUVBEaVB4anZxU0Jya1d1ZTlzcjRQV2N0WDFmbXNCbUpDdzhxelBveE1MZF96SDhGWnBxSTBmNVB0WU1ycFpwdklPRFloN0xXekZiSE1PdEY4YVBETmllR1JpMGlsa0nSAc8BQVVfeXFMTWh4WFVTS256NTUwZjdZOXJ6TExGZkNtendtQ3VJY3pGenVDaE1PN0Jfd3BYdUsxSDBXcU9IWmFoa3l6d1NyUWJER29FTnpxN1UxRW85S3l6bm1sZi04d0xsZGxWZnF5SXFVSzFQTEJQSlFQRGlQeGp2cVNCcmtXdWU5c3I0UFdjdFgxZm1zQm1KQ3c4cXpQb3hNTGRfekg4RlpwcUkwZjVQdFlNcnBacHZJT0RZaDdMV3pGYkhNT3RGOGFQRE5pZUdSaTBpbGtJ?oc=5",
-          "id": "e8ca8881776a60b176"
-        }
-      ]
-    },
-    {
-      "title": "kazakhstan exports over 2 mln tons of newly harvested grain",
-      "count": 2,
-      "examples": [
-        {
-          "published": "2026-11-03T08:32:53+00:00",
-          "title": "Kazakhstan exports over 2 mln tons of newly harvested grain - Qazinform",
-          "source": "Archive Kazakhstan Economy recent",
-          "sector": "Food",
-          "country": "Kazakhstan",
-          "region": "Kazakhstan",
-          "tier": "Kazakhstan mentioned",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWk4xYXdlMXRvZjd0T0NnTk9HTll5cDlHZjdaS25yRmJMWlhrdXk1WWdnT21xM3JRQ3JRYkVqOTZ4LVhJQktGQmJvbWc4TmFVWnF0ZVZPbWhRWDJtWmZiZlJFR2VJMFBydTNOVGNKZmpSTUxOUU9sNWM4LXZtdmFobWprY0x5aHNkU041a2tBcnJadlpfX25DMNIBmAFBVV95cUxPWk4xYXdlMXRvZjd0T0NnTk9HTll5cDlHZjdaS25yRmJMWlhrdXk1WWdnT21xM3JRQ3JRYkVqOTZ4LVhJQktGQmJvbWc4TmFVWnF0ZVZPbWhRWDJtWmZiZlJFR2VJMFBydTNOVGNKZmpSTUxOUU9sNWM4LXZtdmFobWprY0x5aHNkU041a2tBcnJadlpfX25DMA?oc=5",
-          "id": "e15d7ebc392eb6d989"
-        },
-        {
-          "published": "2026-11-03T08:32:50+00:00",
-          "title": "Kazakhstan exports over 2 mln tons of newly harvested grain - Qazinform",
-          "source": "Google News Central Asia",
-          "sector": "Food",
-          "country": "Kazakhstan",
-          "region": "Central Asia",
-          "tier": "Kazakhstan mentioned",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZGdpUkpWT0tKbHUtcVk2STYxUEtuQkxtR3k1Rk84YTZpbkJPN2xFZUdwSTRYbmRfTXY5RUJCQzh4NVpCSTZSbFlWWXZ3LWhUZXZ1NkNVcGg3N0JUV0xJaUhIZENuRWRFeXgwdno2ZGJTa1c3SWdyWXBqNUNKQk13M21LNEpjbllESTB3Q1VhRktSbUNXNkIxRNIBmAFBVV95cUxPWk4xYXdlMXRvZjd0T0NnTk9HTll5cDlHZjdaS25yRmJMWlhrdXk1WWdnT21xM3JRQ3JRYkVqOTZ4LVhJQktGQmJvbWc4TmFVWnF0ZVZPbWhRWDJtWmZiZlJFR2VJMFBydTNOVGNKZmpSTUxOUU9sNWM4LXZtdmFobWprY0x5aHNkU041a2tBcnJadlpfX25DMA?oc=5",
-          "id": "188c831d10adf1d63d"
-        }
-      ]
-    },
-    {
-      "title": "kazakhstan halts oil shipments to russia after drone strike on atyrau samara pipeline",
-      "count": 2,
-      "examples": [
-        {
-          "published": "2026-11-03T08:32:37+00:00",
-          "title": "Kazakhstan Halts Oil Shipments to Russia After Drone Strike on Atyrau–Samara Pipeline - Inkorr",
-          "source": "Archive Kazakhstan Oil recent",
-          "sector": "Oil",
-          "country": "Russia",
-          "region": "Kazakhstan",
-          "tier": "Named asset match",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRTc2X05DcVVzak5Lak5XOUNReFdvM3dvaU9DUXNfbHhjRXl3OE1rOE1rOC1xZXFpVnBPOVVHMlYzRjVQX3hSaGNnelF1Q1MzWHVnX3BqQUZpUE9qWjNzNDJpNHJUclRqR1pEUEpkLVRNaDZhYkdsUTl5Zk1tXzJKZ3JIWUkxbWRnejVFQkVfSEZONlZCWGxpYnVuM0htcTJxQkxnTGtGZU9DSFJUWjBpdDl6QkQ5bVdyT3lXWjAzZ1RlSWdSak54UkFMVEJBV3o50gHWAUFVX3lxTE1NaU4xUzBUUngwS3NKbTZKVTl1QURlczQxMjJieWR4VkxqV0hZMTk3d1ZlNVZEakhYeEpqVEFrR0YyR1d5R3lSbW1hR2FnX09VX1pIZ1Fhc2JZaVJNaF84Z0M4TVVDQktubFlmd09WYmlYZkRuSUdQVzZZNXJtTjJiNmlXM1JSekp5VGs0VEJxRDFqSW1PZ2oxNmhzUjBQaklzMkVFQ1R6WUtEdkh0V1ZyWlpVR0ZwZnNJcV9aYW8yLXNxRUhsRGFaUVRTS2pycnkzUlJqVUE?oc=5",
-          "id": "4128f544fd3fb3da05"
-        },
-        {
-          "published": "2026-11-03T08:32:37+00:00",
-          "title": "Kazakhstan Halts Oil Shipments to Russia After Drone Strike on Atyrau–Samara Pipeline - Inkorr",
-          "source": "Archive Kazakhstan Oil recent",
-          "sector": "Oil",
-          "country": "Russia",
-          "region": "Kazakhstan",
-          "tier": "Named asset match",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTWlOMVMwVFJ4MEtzSm02SlU5dUFEZXM0MTIyYnlkeFZMaldIWTE5N3dWZTVWRGpIWHhKalRBa0dGMkdXeUd5Um1tYUdhZ19PVV9aSGdRYXNiWWlSTWhfOGdDOE1VQ0JLbmxZZndPVmJpWGZEbklHUFc2WTVybU4yYjZpVzNSUnpKeVRrNFRCcUQxakltT2dqMTZoc1IwUGpJczJFRUNUellLRHZIdFdWclpaVUdGcGZzSXFfWmFvMi1zcUVIbERhWlFUU0tqcnJ5M1JSalVB0gHWAUFVX3lxTE1NaU4xUzBUUngwS3NKbTZKVTl1QURlczQxMjJieWR4VkxqV0hZMTk3d1ZlNVZEakhYeEpqVEFrR0YyR1d5R3lSbW1hR2FnX09VX1pIZ1Fhc2JZaVJNaF84Z0M4TVVDQktubFlmd09WYmlYZkRuSUdQVzZZNXJtTjJiNmlXM1JSekp5VGs0VEJxRDFqSW1PZ2oxNmhzUjBQaklzMkVFQ1R6WUtEdkh0V1ZyWlpVR0ZwZnNJcV9aYW8yLXNxRUhsRGFaUVRTS2pycnkzUlJqVUE?oc=5",
-          "id": "16642915aadba5f804"
         }
       ]
     }
