@@ -1,9 +1,583 @@
 {
-  "generated_at": "2026-11-08T17:55:43.541772+00:00",
-  "lookback_start": "2026-10-09",
-  "lookback_end": "2026-11-08",
+  "generated_at": "2026-11-09T06:25:27.241462+00:00",
+  "lookback_start": "2026-10-10",
+  "lookback_end": "2026-11-09",
   "classification": "Screened reporting; automatic search leads are NOT verification",
   "events": [
+    {
+      "id": "558534eeb2b3dd5b89",
+      "title": "IRGC Navy: Illegal Oil Smuggling Through Strait of Hormuz Route Halted - WANA News Agency",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQ3ZMNGY0UHNlTVRnSzlqSnVGdVh2dXVHUmkwc0ZuWHI5VlVJcGJIS3BCVVVxc1FCZVNIT0ZCVFFmbFk2OW55MDV1YTB0QnlnMjdOQ2RZbXU3LTVFMmY2TVZjLVRybXRXV3FCSzk0XzNyNlptZHgxM0NtLVZXOTlKQlJ4VXNzTTgzbTZwc1lmV3I3RFU?oc=5",
+      "summary": "IRGC Navy: Illegal Oil Smuggling Through Strait of Hormuz Route Halted WANA News Agency",
+      "published": "2026-11-09T06:18:59+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Global oil supply/price or export-transit channel may change Kazakhstan oil receipts and import costs",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "f7977618581dc36389",
+      "title": "iraq oil production claims challenge opec quota limits - NewzTodays",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNC0tSkpNNmI5by1DOVV5MlVxRWJTUGpNMi0wOEM2b0NSV25feWp1MmtEekpDdlFDY2cyU3VkU3FlSVFzcC1SZ3NMU3FMT0tVcFg4RlpNdUkwZXljcGNlNHRuZlR5ZkdpM1dwTGhxa0QyV3NxazgxUVVWYnR2bHROWER3WDdMeVFP?oc=5",
+      "summary": "iraq oil production claims challenge opec quota limits NewzTodays",
+      "published": "2026-11-09T05:39:03+00:00",
+      "source": "Archive Oil Market OPEC recent",
+      "region": "Global",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Iraq",
+      "lat": 33,
+      "lon": 44,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "2ff25d71e7c72f2a7d",
+      "title": "Iranian Navy Says Tanker Caught Fire East of Strait of Hormuz - www.tokenpost.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9QWFlTZVlFcGdaY2VUc1dlYmJpeW1EZjBMOUdsQXphbGloUHlqbGpaLXZHNXJyT3hGaUhYUEJleERHcEViZzgxSUk4dnFfMmFyc3ZrVGJmaVc?oc=5",
+      "summary": "Iranian Navy Says Tanker Caught Fire East of Strait of Hormuz www.tokenpost.com",
+      "published": "2026-11-09T03:38:00+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "a7e88c1be1e744557b",
+      "title": "US-Iran war news: Donald Trump says renewed Iran attacks 'unlikely' if nuclear program, Strait of Hormuz talks show progress - ABC11 News",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdG9JVExZNmh2ZGl4ZUNUV0o4V2h3UjN6U1ZmODcxWm1YeVIzSTdXM21sTVlVQXFGUG9ueVBobnlRYk9xbmRJTVBuR0QwWHRNd2UzMHpZZHdhX0tOblV2a0JfTGZIZkZGVXZyY1RET1d0TXVHN0prTFZnUVg0ZGFYd1F3azNndmljV1F6aVdIRDZ5Y1NWQWNjU3NpOVk3SnFCMUpOV0Y4UW5mMFl4VEFYbG1MemRIc2FmSXRwTjdWRWRUWFFlNUJHZ3NhaDRjUdIB0wFBVV95cUxPUTdaMGpkbkYtbWtrWUVtNWFJYlFZZmlJUy1fSk53d2p1aU9HQkFIR2pXSU9QQlFrSkI4Vm1kSkt3X1lyX0ZqbUo3d0tZOU5NLTB3X1FYRHh3eVVodWNVelJweW4xUm5ycVJISmV0UWl0UEZtYVpsZzJDcUo1dklJaFFFVXEtdUVTeXp2VjJwTUdLZEZiTGsyUFplcnUzY2VDV0lIdldKNWxvMFpsTjQ1V1hPZS1vOUozdWJ5MFVNQkhENTRJdTFyMXU2aWhyaUNYZ3ZZ?oc=5",
+      "summary": "US-Iran war news: Donald Trump says renewed Iran attacks 'unlikely' if nuclear program, Strait of Hormuz talks show progress ABC11 News",
+      "published": "2026-11-09T00:07:25+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "89527984768ba23b83",
+      "title": "Iraq's 5 Million Bpd Oil Claim Complicates Its OPEC Quota Push - Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNFprSG5xNk41d0hBYm1zMUJzWVcyMVRMWHpoNU1hV2cwVWl1a0h3RkxZa05SSGdnb3hfSnBlVTJCWU9KaS1mNEFUYmVTZklxVDRZSUFHVktudzN3Z3RTbnV2RlQ1Z19DbHk0a3ZyUFF5dGN1bkFTWk13bnB4em9uRVZwRjVxUlRkMUp1YWtnSFdVZ2tReTFMdXNwLXY3ZHAwZ0xBZTRmSdIBrAFBVV95cUxNM0k3X2kybEUyc0RXdFZiUTM4YXpLRzd5UHJlUUF3QUlMQzdKckRQVWNnQTVFeDJxb3hWWEFJQ2NOMlUwTkhxZ2tnSmdNSUtYaW9rc2FJdmEwYXVUMTBkS1ZQRHM0NTZjSU80eENYdFdZMDdhVWhzZHNCc1Nra0w0T3YyN1dyakpUUDRyZm1Jdm5CTFRlcFFSX1pCUWxaLWY2R0k2YmpjXzVFYTAt?oc=5",
+      "summary": "Iraq's 5 Million Bpd Oil Claim Complicates Its OPEC Quota Push Crude Oil Prices Today | OilPrice.com",
+      "published": "2026-11-09T00:00:00+00:00",
+      "source": "Archive Oil Market OPEC recent",
+      "region": "Global",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Iraq",
+      "lat": 33,
+      "lon": 44,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "57f06477bb9c7bd783",
+      "title": "Tanker Burns After Strike in Strait of Hormuz - The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWF9NWndDNnhDVnU1N2lTTm9JY3BFbGFMUXRNZUI1eVgyempsb1V3QkhUandBRlpjY214RlhvMFlCQmVWc2VsdzNJVVk4Nmk2Si1UVExUS2lPcmhrSHZLaE81QWVWT2dTR3VRcklSbVgwcG5ZOXNnSHIzXzBNYXBpdmM5VEV5UjVlVGY5YQ?oc=5",
+      "summary": "Tanker Burns After Strike in Strait of Hormuz The Maritime Executive",
+      "published": "2026-11-08T20:37:23+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "adbc66ee539fa9bb88",
+      "title": "Kazakhstan’s oil exports to Germany fall 12% in January-August - Trend News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZLUxvM095N3FrYTN6ZWw2U2RZQjNzRE53eXlWdlBSTFRXOEJVVi1hcm1SbjRmWFZFWXkxdjhMdDh2SkdFM21lcm9wRG5QcnRCeEU4UGhwNjVMTXJ0bGV3?oc=5",
+      "summary": "Kazakhstan’s oil exports to Germany fall 12% in January-August Trend News Agency",
+      "published": "2026-11-08T19:17:00+00:00",
+      "source": "Archive Kazakhstan Economy recent",
+      "region": "Kazakhstan",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Germany",
+      "lat": 51,
+      "lon": 10,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
     {
       "id": "a18dd5ae8a38be9877",
       "title": "IRGC Spokesperson Hossein Mohebbi Says Mines Are Ready, Strait of Hormuz Under IRGC Navy Control - NewsCord",
@@ -14,6 +588,97 @@
       "region": "MENA",
       "verification": "News candidate — not primary-source verified",
       "detected_at": "2026-11-08T17:55:43.541772+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "012bd5338f9ae91b37",
+      "title": "Iran reports oil tanker fire after mine strike near Strait of Hormuz - Latest news from Azerbaijan",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYjRhYUdLakFqNjY2MjB4TWt6MzBrcDVnWFlWVnVuNmdNdEszeVlFUUx0OV96Ym9INHVuRGp2WEQxYlh0WDBkOWozcUlhc1VJODhXLWlxVVQ0VjFkTWRzZEg1VG84RUIyczVYbHNNb2ZKN3E4VjEzN2E3ZWFrbkFPTjFlUEx6ZEE0RDY1b0d1RlRWS1E?oc=5",
+      "summary": "Iran reports oil tanker fire after mine strike near Strait of Hormuz Latest news from Azerbaijan",
+      "published": "2026-11-08T17:09:40+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
       "sector": "Oil",
       "country": "Strait of Hormuz",
       "lat": 26.6,
@@ -490,6 +1155,66 @@
       "human_reviewed": false
     },
     {
+      "id": "9956ede44fb9cf35cb",
+      "title": "Oil Traders In Talks With US To Get Sanctioned Ships Back To Sea - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbXZlQnVJaTRNaTVBY3NtT2RnRWFFNDBidnV6MmJ6OGI3VkJqeWRxajJBSkFLSnpfRE5xeHJXd0RaNlpwMG5IUVl5Zkhvcm1yOEJGWXN3TVRERk11cW95UjJOejR3SjJFektXcF8xZi0xQ3BRazNmc1paelJFV0dCaUJINUMyM2N0enBERGdUOA?oc=5",
+      "summary": "Oil Traders In Talks With US To Get Sanctioned Ships Back To Sea gCaptain",
+      "published": "2026-11-08T13:40:32+00:00",
+      "source": "Google News LATAM",
+      "region": "LATAM",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Trade",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "direction": "Potential negative",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Corroborated reporting; primary evidence missing",
+      "evidence_sources_count": 2,
+      "human_reviewed": false
+    },
+    {
+      "id": "687638734655a7b77b",
+      "title": "Kazakhstan’s steel market faces weaker domestic demand as exports rise and new capacity investments accelerate - SteelRadar",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcVpheTlCUjgyRTlfeW9FLUJJQUJfZGFxeno4dTJqcWkyOW9yaThCQUZPTmxqVFVRQ3VYUnV2WnRzSGh2cEcySE9TcVh1TFNrNl9ZQUljN2w0dVFyLUdHOG9zX08zZFRhelpBU0R4VHFaWk9lcjlMZWJlb3pPWWxDRXZHZWtaLXkybU9VVFpMV1hVc3I1czJfY3EtQndMeGFHd1hOQWVKYUs1UlYtMkhjUm03dVRUSHRCN1o3aDdrMDdTc1NqckE4NzViS3kzbjRSQ0x4emdiQ3JKVUZ2cDkw?oc=5",
+      "summary": "Kazakhstan’s steel market faces weaker domestic demand as exports rise and new capacity investments accelerate SteelRadar",
+      "published": "2026-11-08T13:10:25+00:00",
+      "source": "Archive Kazakhstan Economy recent",
+      "region": "Kazakhstan",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Trade",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Potential positive",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
       "id": "e159377016f2406b45",
       "title": "Iran says three tankers caught fire in Strait of Hormuz - Al Arabiya English",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTkktRFZfTFk5UDR1THdxSDU1aThxMlNuZldPVkR6SHNVOHpJYVdWbjFTSTlLaDVMLU5iUmlfTjJTWE4wSTM1cW5yd0VXM3RCMXQ2NEhTanZHWlFSWG8tN3djRC1tRlVMblJtWmFpQ21uMkRZODNnTTZVYTVkTGZoblhWc2ZMR2JPR25kdTFiMGl6QzYwNmQxb0NRZHNvdUdZQjJGcWRmS3J3VV9pZHhyRG9HSdIBuAFBVV95cUxQOWZRU2NLN2IyT2dPLXE2SFdxNHpRdHlrVGZaYmtsaHZmaTVLQXRXQkVCdExHci1hUS0wUy1mbmxGN1VMT2JUdk5CbFRpTUFmSk9CX0lqZGQ3VTFWc3p4U0RMM09YNWwxb0M5VGFjMDZiaTZYbm51c01KOGgwTzVaWm9JUDVOOURaTlVHeEp3Y0F3RGlLM2NQMW5Ec0Z5TS1fNkxuQzNVdUd3Z0R6eVlHVnVPTUc0QnBz?oc=5",
@@ -499,6 +1224,97 @@
       "region": "MENA",
       "verification": "News candidate — not primary-source verified",
       "detected_at": "2026-11-08T17:55:43.541772+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "8d6ae0301a3efd53f7",
+      "title": "Iran says 3 tankers caught fire in Strait of Hormuz - Inquirer.net",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbHVjWGRLRlU4MGRaZ3YxVHFHVDktdGw1YjBGTHFqV1g5MEZoVVl5OHBHNnY1TmRIbHgtVk9WdldCUGlVbnE2OFBOeDJLODYyVXppSkhyUllQVTBoTlV2cUs0OW9MNllEVnJHSk5XUTRTTHc1UFIzT3B4Yy1IRGpsZ24yd1Z5ZV9NWl9MWjRvNG5ZRURGdE1z0gGcAUFVX3lxTE9XdEhqYnJYcS00cldqVnlWS0xhNF82ZUVyQ0tGNjQ4NG1SVkFxTjlEa0tTWEhTMGpYUW1WWGF2bE1KYlR0SnltYjJ6akpTNXU2cUl5Ry1sbmNhNW5RT2pDQ192bk41S1A1QzNBcUlSWW5ZMnNVbVBXNVEyM1dYRHpERXQtLXRCdUF6VEdUUmpqT0FqQlZ5SVVTV0VGNw?oc=5",
+      "summary": "Iran says 3 tankers caught fire in Strait of Hormuz Inquirer.net",
+      "published": "2026-11-08T11:54:00+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
       "sector": "Oil",
       "country": "Strait of Hormuz",
       "lat": 26.6,
@@ -864,6 +1680,97 @@
       "impact_channels": [],
       "market_evidence": [],
       "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "d8db39018292fb0932",
+      "title": "Iran’s Revolutionary Guards say 2 oil tankers hit mines, caught fire near Strait of Hormuz - Middle East Monitor",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOelpoejRmZWppOG5pZlEwVG9ZUUVNejRKbEcxMHMyTkhRMWluTFJxN0tiLUhRNnJESk56RHpVMXEzZDJPejllNHVkSHJTMGhWcEJtbGYxalBzNUlfOXpmTk95N1JGd3AzbXhKaWhlWnNRcDl4akxiVmhBZnJjbm5GTVl2WDRiS2NiNEtMcUliaTEzcWYzdjBLT3ZKV2tBX0UtY3JTV00wdUJ0Vm14LV9yd3dzZXV6X3FDT0FGUndOOEM2LVhmZFNsMXh5SWzSAdIBQVVfeXFMUDZScUQ0clo5bnVCaUxqdEwwUmwwc0MzZFNEMHgyMnFQRWUwNDFZcmxJMDFmeXVocTBUY05HQzhiUjJEN1VyOXYxTmVwR1V1U2dkRlB2eUEwZm1DUTNldUZIblBmMk9oOG9TcnBReGZxcENkWlI3djl2c3RMOHhOeU5zZFR4b01BcFRJVmgxNHdPdEtDckx6WEhZLV95WVE1NDlFZVlKcFhZSS0zRDhCLXdmYThPVHhac0lBRi1waHJKbzdKN1JhT1lqaWdnMnpReWl3?oc=5",
+      "summary": "Iran’s Revolutionary Guards say 2 oil tankers hit mines, caught fire near Strait of Hormuz Middle East Monitor",
+      "published": "2026-11-08T10:55:00+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
       "investigation_stage": "Single news candidate; primary evidence missing",
       "evidence_sources_count": 1,
       "human_reviewed": false
@@ -2110,6 +3017,97 @@
       "impact_channels": [],
       "market_evidence": [],
       "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "76d51eed83c8d61eb6",
+      "title": "How Would Trump’s Blockade of the Strait of Hormuz Work? - EnergyNow",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQelVxaUhDcWoyTkREOU9MUEJxbXpOczRlNFdXOXc0WG56ajZHelBNbFFsdjkyRG1Fcnl2dXRRUEllb3otaWhSZFpVSmFvTDhSYmhOTmljX2xPMnJUYXVrY0lGaFVqbzZ6THNTRmVwajh2Mk55UVo1aktMcHI2dXh4aFdfaXJhSldtZ25oWQ?oc=5",
+      "summary": "How Would Trump’s Blockade of the Strait of Hormuz Work? EnergyNow",
+      "published": "2026-11-07T13:59:26+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
       "investigation_stage": "Single news candidate; primary evidence missing",
       "evidence_sources_count": 1,
       "human_reviewed": false
@@ -4018,6 +5016,97 @@
       "human_reviewed": false
     },
     {
+      "id": "e726589060fe237c10",
+      "title": "Vessels Crossing Strait of Hormuz rop to 5 Per Day Over Weekend - EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWDVVc3NmUUgyRnhCMkE5UXQyaC1mTTI0cWdxemRZc25ha0o0NldQRmVNWThBeFF6X29KQ3ZmaUN3RDlUZHVGUlMybF9PZjBtSFFEUmdmVFltTXlRY0NJYjdla3FYSkkzSFp3MU1YTDJYRUNWWHNWOW00T0x5X0ZZQkZfOS04bjBKbDg0RDJGS2psT24tRnJybTJR?oc=5",
+      "summary": "Vessels Crossing Strait of Hormuz rop to 5 Per Day Over Weekend EnergyNow.com",
+      "published": "2026-11-07T03:37:03+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
       "id": "3f0360204a64972567",
       "title": "UKMTO says 11 ships attacked in week to 4 Nov in Hormuz, Arabian Gulf - Middle East Eye",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUHVyQ19HZ1F6UmpoRDY5Z0x5M3IxaVhuMDY0NXpoanRBcmFEODluM2l1VVRnc01WOGVHZjJiV3NlSFFRYkRYZXpuQ3JYa1pjSjVpblB2N1ZpQTRDYU0zQ1NZdHVFTll3dV9IQlotRGhGZ2lILXp2a0ZVbXZqN04tZmJWblRiUkIzZFRjM2lvZEdBTFkxNHkxTUs3UXM5by1SNEx3dUFxai04dG5ISWFuMDJhM2hDRTQ?oc=5",
@@ -4118,6 +5207,96 @@
       "region": "MENA",
       "verification": "News candidate — not primary-source verified",
       "detected_at": "2026-11-07T05:57:05.439068+00:00",
+      "sector": "Oil",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "9c8179e86f7aa35d23",
+      "title": "Brent crude caps biggest weekly drop since pandemic as war premium begins to unwind - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQREN3UTB6ZjJlS3JWT0RTSjExRy1lejZmSWJhTmFPblc0bFRFdGExXzd1TXViU0VmQUdBbVBGMmlRcENaNXdiR2pHanJXWmxqejhKSV9vR3luMEVzSHltQ2U5LXhvUmlzVW9yLXR5eG8zU0dMc3NqWHp2ZXhET052S2Qyd1dHSHVtTTFBZGVuYk53Q1kwTUJwSUx6YTRqUW56Q2RpeG0zbDUyS3hack1xUnVKc21NR3pSUGZ0aUxrZnhzc3hjanhMcGJ0X0pyYXpXdmJtaWpNMFplN245SGp6Q19xajJlelY0R3ZORU9Jbi1ueDdrcXdtbg?oc=5",
+      "summary": "Brent crude caps biggest weekly drop since pandemic as war premium begins to unwind TradingView",
+      "published": "2026-11-07T00:57:48+00:00",
+      "source": "Google News MENA",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
       "sector": "Oil",
       "country": "Unknown",
       "lat": null,
@@ -4435,8 +5614,8 @@
       "impact_channels": [],
       "market_evidence": [],
       "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
+      "investigation_stage": "Corroborated reporting; primary evidence missing",
+      "evidence_sources_count": 2,
       "human_reviewed": false
     },
     {
@@ -5063,6 +6242,36 @@
       "country": "Kazakhstan",
       "lat": 48,
       "lon": 67,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "9393c97f5cd320413c",
+      "title": "Armenia and Kazakhstan discuss development of transport hubs and regional connectivity - Armenpress",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zemx1SkdUbFFnczZOQ1RDNk45eUJLRUdmam8zZ1hUbjlCM25VVVpOa2VKV3Y1b0c2cXg4aFVybDNrZ1JZMFRScHFQbzFZVmtqVEHSAVdBVV95cUxNdE85aTFQODJveVc1MTAtMV85b01vMzgxcE9MTDJITkduSzAtVjE0SWVnNzd0MnBtVWR3MzFiMDdKMmZnNkwzbHEwU3JvQmtZUkZOdEQzOTA?oc=5",
+      "summary": "Armenia and Kazakhstan discuss development of transport hubs and regional connectivity Armenpress",
+      "published": "2026-11-06T14:24:00+00:00",
+      "source": "Google News Central Asia",
+      "region": "Central Asia",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Cross-sector",
+      "country": "Armenia",
+      "lat": 40,
+      "lon": 45,
       "direction": "Unknown",
       "tier": "Kazakhstan mentioned",
       "matches": [],
@@ -6115,6 +7324,36 @@
       "human_reviewed": false
     },
     {
+      "id": "58fbd11d5bd333e7e8",
+      "title": "Kazakhstan’s Oil Output Plummets After Drone Attacks Forced Exporting Terminal Closure, Sources Say - EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUEN3X1RsX3VzbUFYalIxUExOdi1DaVBsNnVkTV9LS0F4dm9XS2xxc0p5UmxzWWVzblYzZzlRMnBHMVNqX1pQeFhmcnFxX0ROQmo2TWRWYUlFZC1xdlcyUzJfT0VOMWhoaUxOZWx3OVc2M2JYQzkxeHZuakxVc2NjZ25GaGNzQjF4aThHR1lydWdXZ2NJM0ZpWERqdTN3VUxNbW01UnVwV3BPd25IZDV4d002U0RyZ0djZFVPSGdUUEZiTDIzaWp3?oc=5",
+      "summary": "Kazakhstan’s Oil Output Plummets After Drone Attacks Forced Exporting Terminal Closure, Sources Say EnergyNow.com",
+      "published": "2026-11-06T11:18:02+00:00",
+      "source": "Archive Kazakhstan Economy recent",
+      "region": "Kazakhstan",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Oil",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
       "id": "c1b1388f430cd77550",
       "title": "Russia adapts to Black Sea disruption but wheat market is too optimistic, Sizov says - Miller Magazine",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeGpTT2RhVlczOWlad3piZzItNFk0Smh6TUxBU3NlN2dSYVlHbGRVRWFDVkF2OXhGMHhaekJfWENLOFZDRmt2YzdEbGNadWNOOUMtbHZhZHJUcXJacHhNWklEMTExY2p4dHZMdnl3Xy1EWEtLVUJGV2VTemozdHhvY01mWXhLUTVQamo4RF9kN3o3SEZJbTBTS1pMQ2EzNVQwMENjbjhWNTcxaVBlcGZ0aWtuS0xlc1Y1ZFlmag?oc=5",
@@ -6305,6 +7544,36 @@
       "region": "Central Asia",
       "verification": "News candidate — not primary-source verified",
       "detected_at": "2026-11-08T17:55:43.541772+00:00",
+      "sector": "Digital",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Corroborated reporting; primary evidence missing",
+      "evidence_sources_count": 2,
+      "human_reviewed": false
+    },
+    {
+      "id": "53007f950f07ac81c2",
+      "title": "VEON Expands its Digital Commerce Footprint with Acquisition of OLX in Kazakhstan - FinancialContent",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNaC1MUU5fc1BxSlZidDlwWmNLUnJzX19pSU9FV2QzWjBsZzZCMTBqUEtYanRRaHFqeEZ3X2V3TjEzY2R1VGtLdTU0eW0xV0g4MjFyR3F3Mm1iVXUxMUJySUVDOFMtMEtWd1hrUlB5N250dk80VGtSZGV2VWo4QkI2Z3poY3p1OXpvQzA0TVdUTVlza2xjVWNHOFZXNEV3YjU2V05hdDVPc0sycGRCbVlsWUVVLUZzSWdoNlktNXJ1VVY0Uzl0aWY2SFVsbHB6NUM5ZGxPRw?oc=5",
+      "summary": "VEON Expands its Digital Commerce Footprint with Acquisition of OLX in Kazakhstan FinancialContent",
+      "published": "2026-11-06T11:03:00+00:00",
+      "source": "Archive Kazakhstan Internet recent",
+      "region": "Central Asia",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
       "sector": "Digital",
       "country": "Kazakhstan",
       "lat": 48,
@@ -7030,6 +8299,97 @@
       "region": "MENA",
       "verification": "News candidate — not primary-source verified",
       "detected_at": "2026-11-06T19:23:47.394614+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "8a86b40ffb140d19c6",
+      "title": "Trump pressed on Iran endgame as US naval blockade begins in Strait of Hormuz - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRE96aFNMX25fd1oydDhSOV9lSWZ3Wng1Nm9SX2N0MGJNNGZNQ3NkZHJmXzlfOU9mOF9WRVE1dkMxQ1BqeFpHNExENjRlcEJUakp5Q3VZYTY0SVZXRjhZY0pOUlRkT3RZMllOLTVvUFVJMkNXa2FrNlVKME80ajFRbzdETDI3S3o3b1cxTnI2NDRmYTdjV0ozbWdUd1Bhbkpv0gGmAUFVX3lxTFA1WHFTeDBUdDhtd0ZOaXFiOGRJaGtTa3dGNENLVHlkYlBDa1ZVbUtHRml6cW5GX2R0UU1IRDJCQXRfbTNyMXFlbjZ5UzNJcUpjODR4Z1V2SlBBX2w2RWl1WGZoaFl2cFZJVVlmNHhVcHZILTZNWlZzdlhvTXFtaDR2TFljUEpDYVFXbktCeUZ2RDhPMGF1Ty1FLWttaklFOTZOc0E3QWc?oc=5",
+      "summary": "Trump pressed on Iran endgame as US naval blockade begins in Strait of Hormuz ABC News - Breaking News, Latest News and Videos",
+      "published": "2026-11-06T08:00:00+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
       "sector": "Oil",
       "country": "Strait of Hormuz",
       "lat": 26.6,
@@ -14584,6 +15944,36 @@
       "region": "Central Asia",
       "verification": "News candidate — not primary-source verified",
       "detected_at": "2026-11-05T19:56:05.928083+00:00",
+      "sector": "Cross-sector",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
+      "id": "fad036383227e3827e",
+      "title": "Interview with H.E. A. Sainov, Ambassador of Kazakhstan: Our objective for the coming years is to complement - Ziarul Financiar",
+      "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxQcUExakhOZVQ1d2JkNzd1cS1uODVYbXQwak9RdHFLdVZOY3F1cm9KVko2RDZPb2NNRGJja0dLQUFJSG9KdnM1UkwxY2gwc3h2a1pUTkpyenNTQlhoVVRibVZfREJsbWJJVW9vcnB5YXRYcGdMZDlTckdVbEw4LU5ORi1obmUxejBQV29adEszWGRZRFdPZlJfUWs5UzJURTJ0dnYxdTBjRnhqY2pqMFNDZHROekNRaVV0Q21LM1RWVDJrbjZJbVQxOVJlT3Rfem5FNFFjdUR2aWZjd3RQZEtUS3lhNmlhaVlXRHdLVFBfZjUxQXZBYUVOSnA5M29QdEN4VjRRTGZUUWJnSEFiMnRsNDk3Q0ZRcmotc2IycnEtM1otcGFlNlVMbkZrQlo0RW81UHRUZGZYMkVfQUFkTG1iaE1qMnhqalRlUW5TbHBlZ291ZUZXZWh1ZnJkV2lCZ9IB4AJBVV95cUxQMEc1X05WeHE4UXRRUk51RHZvRk5LTDU1cU9ydWgtZElnYW9uUDVVQ21zc25iT1V4d24zRjBOY0JOTHZJekxBTnNmRE93Y00wMXZYRWh5SWF5YjhaVlVYSkpKQnRyNm1QZld1ckxfOWVCZ3dnRVdmMzJTZ05DRy00WFB1azMwM090ME1XcU9ZeDF5VTVzX2RhOTQ5SXJtWk5JRU5oNFBqMGpkaE5fcC1kS01PVFJkNnhWTVBqZzRyZlp1RlhqTmxvTDh0V016VzhpNGxjbHFsS0kzVE5jeEFkSmUyb3lsRjY5Q0RRX2FaYmtkOHNxbEZpWTYyRXowQWItUWp3S0pvbGNGQ0t3eEhpVE5NQ3Y4aWNKZG96Tlh4TFM0b2JDWjUtaGQ0cUNqdjFoUGNyLUxVODYzUmpiaGQ3X29VT3FlcUNOMXdpdE14V1ZNX01Vb3JJb3ZHUVEyZHRG?oc=5",
+      "summary": "Interview with H.E. A. Sainov, Ambassador of Kazakhstan: Our objective for the coming years is to complement Ziarul Financiar",
+      "published": "2026-11-04T12:15:00+00:00",
+      "source": "Archive Kazakhstan Caspian recent",
+      "region": "Central Asia",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
       "sector": "Cross-sector",
       "country": "Kazakhstan",
       "lat": 48,
@@ -42189,6 +43579,36 @@
       "human_reviewed": false
     },
     {
+      "id": "66275af6c153187a39",
+      "title": "Raw sugar, beet in Kazakhstan Trade - The Observatory of Economic Complexity",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VeDdLZnpmLUgzbHVSOFJsYko4bTQ3aEYtbHIyeG9veEpCSFNxWUpuLU54aXdjM0VEbkpqRnBCbVZrb1RmZzFvLXJQNjBpYTYtWE5rT0RzWmVCVlMwNFU0MExhYWl0ZEFIVnQ4cDE3dTJQLVVBdFJTeDM3VmR1cE0?oc=5",
+      "summary": "Raw sugar, beet in Kazakhstan Trade The Observatory of Economic Complexity",
+      "published": "2026-10-30T08:08:56+00:00",
+      "source": "Archive Kazakhstan Economy recent",
+      "region": "Kazakhstan",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-09T06:25:27.241462+00:00",
+      "sector": "Trade",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false
+    },
+    {
       "id": "56bae9aa7f9352f1ec",
       "title": "Kazakhstan, Texas discuss trade, investment, economic cooperation - Trend News Agency",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ibzhmS0piYTZiTThQWUJoMUZLQ0UzbEtTT25HT2NVb3plUGFMWWwzR2g1WGdTTF95ZldKUk5SQmxrV1JhTmdxOTZsTjJ0TjhQaTlpdHRWdGJFelJnTXZN?oc=5",
@@ -44695,8 +46115,8 @@
       ],
       "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
       "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Corroborated reporting; primary evidence missing",
-      "evidence_sources_count": 2,
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
       "human_reviewed": false
     },
     {
@@ -44998,8 +46418,8 @@
       ],
       "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
       "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Corroborated reporting; primary evidence missing",
-      "evidence_sources_count": 2,
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
       "human_reviewed": false
     },
     {
@@ -48122,897 +49542,7 @@
       "investigation_stage": "Single news candidate; primary evidence missing",
       "evidence_sources_count": 1,
       "human_reviewed": false
-    },
-    {
-      "id": "96f871c0847a249eb4",
-      "title": "Kazakhstan’s Food Import Bill Rises 6.2% to $5 Billion - Dairynews.today",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUHB3N0FxSmpzUkFILU1jTHR2d0tWNXBENUlYVzNQMVlvTHdMUE53QVhIVjRfSG5iM3V6VHd0Y0lXNzd1SUNXTFhMbWxNcDk3R3lob0R4N0VnM3lzcWkxR042eF9QUFBPY1YwSzV1MXRRSVZjN0lsU010akNSMDZEX1NMUnRuMjhZdWdXNVVzNVdHM3pXUlh4TkhER1ktOTNGejJ6ZTl4bDNpSHVPRFhBSlBXNHNlMXFsbnVoemxwMGI?oc=5",
-      "summary": "Kazakhstan’s Food Import Bill Rises 6.2% to $5 Billion Dairynews.today",
-      "published": "2026-10-29T06:37:00+00:00",
-      "source": "Google News Central Asia",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T18:28:23.803563+00:00",
-      "sector": "Food",
-      "country": "Kazakhstan",
-      "lat": 48,
-      "lon": 67,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "ea373baf7c8d8f4b83",
-      "title": "All reservoirs in Kazakhstan to get digital twins by 2027 - Qazinform",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUlBfa1Z4Z29MTGhlQ3lsNmpyVXhfNW8zSW5ZOVc5RnVhWXhsVzZHSkNCTlFBbDRtclBWYUpja2xadFQwY1pic3llT3p4bWRqRU5xaEJlZDhRUjNlYnFSOUQ4V01vWFRZQ05fNUdtcE5ybXBXT2JfR005QWJ2OElPNkNXbnRGUmJxMDcwVkYtTHlwMWg5bVHSAZYBQVVfeXFMUFpvY2dudlJTeS1zLVVTLURacHYwVkMySC1CX0ZhbmM1LVh6QUw5YXctclFiQmxiaHF0T0lQWGh5S0gyTzY4WTBhTWVJeTNjaEhUUWVuQ3JVcy00Q0NKbmtVUDdqVUYwdnVoUFFrNTZOMl8tYVNVTXJIM3FJSHhIXzFLODZ3Nnh6MjYwTG5CWS1iT1dYRlh3?oc=5",
-      "summary": "All reservoirs in Kazakhstan to get digital twins by 2027 Qazinform",
-      "published": "2026-10-29T05:54:36+00:00",
-      "source": "Google News Central Asia",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T18:28:23.803563+00:00",
-      "sector": "Digital",
-      "country": "Kazakhstan",
-      "lat": 48,
-      "lon": 67,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "15f5d352a349a79533",
-      "title": "Kazakhstan plans to digitize all water reservoirs by end of 2027 - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9sN3BRakZWamV4bnJuN1NjbUc1UFg3azBIX253U1gwRkUtLXNPMTZuVEFLMU14VUJuRE85cVlzVFRzbTFldDJoVG9WVDhKN3JuZGpqSE5ZcmlLVlVPTWc4?oc=5",
-      "summary": "Kazakhstan plans to digitize all water reservoirs by end of 2027 Trend News Agency",
-      "published": "2026-10-29T05:34:43+00:00",
-      "source": "Archive Kazakhstan Central Asia recent",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T05:47:01.275641+00:00",
-      "sector": "Water",
-      "country": "Kazakhstan",
-      "lat": 48,
-      "lon": 67,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "54855ba27bd31316d9",
-      "title": "Kazakhstan to complete Aral-Caspian highway construction by late 2028 - Transport Ministry - Qazinform",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUEhKMGVJMGhzUUhoSVhoS1JIWW5SUkU2TjhnYXdjbVFZMVhYcm9rZXZHMzZpZlVXR19kZUFVQkt0VXJIby1uY2plYUc1YVFDTTB4VzhscFM5SlN1aTNjR1BXTlhLazJBOUpkZjlPSUxTRy1xaDE4WFBLQUNUUzlRSGVPbmc2c2I0QkhtalNtVC1pNXItLW1zdHVQYkx4Q1NqOXZWak53WGhUQW9FX2ZQWXR2dVdvaGZlU0pWd25BY9IBvwFBVV95cUxQUEhKMGVJMGhzUUhoSVhoS1JIWW5SUkU2TjhnYXdjbVFZMVhYcm9rZXZHMzZpZlVXR19kZUFVQkt0VXJIby1uY2plYUc1YVFDTTB4VzhscFM5SlN1aTNjR1BXTlhLazJBOUpkZjlPSUxTRy1xaDE4WFBLQUNUUzlRSGVPbmc2c2I0QkhtalNtVC1pNXItLW1zdHVQYkx4Q1NqOXZWak53WGhUQW9FX2ZQWXR2dVdvaGZlU0pWd25BYw?oc=5",
-      "summary": "Kazakhstan to complete Aral-Caspian highway construction by late 2028 - Transport Ministry Qazinform",
-      "published": "2026-10-29T05:25:46+00:00",
-      "source": "Archive Kazakhstan Caspian recent",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-31T05:39:07.330011+00:00",
-      "sector": "Cross-sector",
-      "country": "Kazakhstan",
-      "lat": 48,
-      "lon": 67,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "b7bc557f0e86f5ee8b",
-      "title": "Kazakhstan to complete Aral-Caspian highway construction by late 2028 - Transport Ministry - Qazinform",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORTd2Ti1aYkFkaV9Qb1BuMUJsODNiMHRCOTlsdEdlcE5lMGhWSXdoaEpQSm1Gd0xJM29nVmxxaGRGSEFUcVJ2VG1tVFNlaVp4ZG1oeTlQTHdqMGhSaVJWbGp4OGxQREc1UW9SQ0ZZa2NkWnpNbkVjMFNPUFdoT0ladnpoV3EwdXcxajh3NVNwVHctV1I2eHN2V0l1cHBxc3NUUjN3bmxSS1VmeVhFaTNDZDFnUUpVS2t0WmhKS0pOUdIBvwFBVV95cUxQUEhKMGVJMGhzUUhoSVhoS1JIWW5SUkU2TjhnYXdjbVFZMVhYcm9rZXZHMzZpZlVXR19kZUFVQkt0VXJIby1uY2plYUc1YVFDTTB4VzhscFM5SlN1aTNjR1BXTlhLazJBOUpkZjlPSUxTRy1xaDE4WFBLQUNUUzlRSGVPbmc2c2I0QkhtalNtVC1pNXItLW1zdHVQYkx4Q1NqOXZWak53WGhUQW9FX2ZQWXR2dVdvaGZlU0pWd25BYw?oc=5",
-      "summary": "Kazakhstan to complete Aral-Caspian highway construction by late 2028 - Transport Ministry Qazinform",
-      "published": "2026-10-29T05:25:42+00:00",
-      "source": "Archive Kazakhstan Caspian recent",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T05:47:01.275641+00:00",
-      "sector": "Cross-sector",
-      "country": "Kazakhstan",
-      "lat": 48,
-      "lon": 67,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "10c38b970c08330f96",
-      "title": "Kazakhstan military drill falsely linked to India-China border tensions - AFP Fact Check",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5PQXRxSnVDSzlweDA1dmU2TGpqak95UVNwOFByeHMyNzFTZDBVSVlBOTg2TTdpMWlBVHc5Mm1ESHNHNjdSVWtpcFltREhDb1c2Y2dnM3pMR3M?oc=5",
-      "summary": "Kazakhstan military drill falsely linked to India-China border tensions AFP Fact Check",
-      "published": "2026-10-29T05:22:19+00:00",
-      "source": "Google News Central Asia",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T18:28:23.803563+00:00",
-      "sector": "Cross-sector",
-      "country": "China",
-      "lat": 35,
-      "lon": 104,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "591ad559a54600554a",
-      "title": "Indonesia, Kazakhstan seek to expand trade ahead of Prabowos visit - ANTARA News",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRjNRNHp0WjIwS1pIbXBZVG05OWR5X2FtMWRCOWJxMUdBYW9VTzh6bTZLRTRoT2NWR2s2LUg1c2ZWMXF4T0FwZWUwRG82YjdDX1RvNHVmTXBON0pkYjIwWFYtTHRaaTRYOUJLZEZjV2ZFWjRFSWVNUWlSS3pxakszVE1UV0dTWk4zcG1sbU8xWC1FbDlVV1A0NnhyWk9wNm1QTkJHcG930gGrAUFVX3lxTE1peXI5cXBWOXBuS2hFWXd1cl9UbkM4S0tkeFJieDdqTjRWdi1lWHBPbmFCdnZmWjFZTXpPOVpDdG9zTkQ3bk9iY0VDeUlOb0k4SnhKQ1VrOTlsaEtDQVJ1VExvMW00Vjl2QUliSjlzbkg1LVF4V3A3NU1QdHF2VzBvYXZOR05lTjRaZExnbG10U0VuQkxGU2dGOC1zM2xYUlNwbkl6U2JRYk1xTQ?oc=5",
-      "summary": "Indonesia, Kazakhstan seek to expand trade ahead of Prabowos visit ANTARA News",
-      "published": "2026-10-29T05:12:30+00:00",
-      "source": "Archive Kazakhstan ASEAN recent",
-      "region": "ASEAN",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T05:47:01.275641+00:00",
-      "sector": "Trade",
-      "country": "Indonesia",
-      "lat": -2,
-      "lon": 118,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "a61e998dc5777233dd",
-      "title": "Indonesia’s Wealth Fund CIO Owns Stake in Sanctioned Brokerage - Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQVNCdFFCV0dPeXFKZjFoaUJyOWp0cERVb2dXbU8yR0VDMmFOaHM5VVVxOUVzMTRNeW9IeENRXzdRMl9SdmNaNl9oNTlnQldxb1dOc2pIUnN5bktza0MtTnNuMW0yeGZjSnNGZF9uUktuaTNwU2ZzalRJRTFfWnhJd09xUTJnbXpOblpBcmJBM2JXdGJBRVJEb1d0RFNhc1dTY3lNMHktRkV0RnVMRDQ4MHVUMA?oc=5",
-      "summary": "Indonesia’s Wealth Fund CIO Owns Stake in Sanctioned Brokerage Bloomberg.com",
-      "published": "2026-10-29T02:30:00+00:00",
-      "source": "Google News ASEAN",
-      "region": "ASEAN",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T05:47:01.275641+00:00",
-      "sector": "Trade",
-      "country": "Indonesia",
-      "lat": -2,
-      "lon": 118,
-      "direction": "Potential negative",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "416631624808bf42fa",
-      "title": "Kazakhstan’s ferroalloy exports to South Korea fall 54% in Jan-Aug - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9uRVhPV3drTkYyRWtwTTZTUDZ6bnZ1Tmc2NUR2OVRCQjQ5Z1lJYTlERDRTS0hKZ0JRZVhIa3lBSFI1S01rSVBsWTgwTHFiNVhmQThkcmgyN0MxV3MwNWpR?oc=5",
-      "summary": "Kazakhstan’s ferroalloy exports to South Korea fall 54% in Jan-Aug Trend News Agency",
-      "published": "2026-10-29T02:11:00+00:00",
-      "source": "Archive Kazakhstan Economy recent",
-      "region": "Kazakhstan",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T18:28:23.803563+00:00",
-      "sector": "Trade",
-      "country": "South Korea",
-      "lat": 36,
-      "lon": 128,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "07dc41dd48b5b90cb6",
-      "title": "New Report of Attack on Strait of Hormuz Shipping Fans fears of Threats to Oil Supplies - EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVzRLRi1zMVhKaWpLdDZLOTlMN3pvWXF0Z0p5ZnVEWkdNOUs0NXZseHE0UXNxcVFEM0Z4RU1DOG51a2diRmdyX3pSYU13MWpVVUtwdng0RVh4OFZ2NnZZRm8zb04wS1hWTFRxMm03UFdpV0RnTnZTUFU2djVzM3FjajVJSUt4SmlLYTdJUVhCTmFXMEJjcGFoWXl5b1dnTFhzdWFCeE5uRmIwS0dST2wzNEtLZExDbVMwNVE?oc=5",
-      "summary": "New Report of Attack on Strait of Hormuz Shipping Fans fears of Threats to Oil Supplies EnergyNow.com",
-      "published": "2026-10-29T01:38:32+00:00",
-      "source": "Google News MENA",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T05:47:01.275641+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "e5ba03191d1b39704e",
-      "title": "EDB highlights Kazakhstan-Russia link’s role in Central Asian energy stability (Exclusive) - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9PM0VTcjM5YTQxOHVKOWJpa2sxRGhma21yTEpYUXJaem9taUQ0OTRpRlcxTVZYTmk5cHJFblpLT04xZEUtN1BKSF9YSk1pWkkwZHZ1RzNsZjhzRXBPRWRv?oc=5",
-      "summary": "EDB highlights Kazakhstan-Russia link’s role in Central Asian energy stability (Exclusive) Trend News Agency",
-      "published": "2026-10-28T23:59:00+00:00",
-      "source": "Archive Kazakhstan Russia recent",
-      "region": "Russia/Eurasia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T05:47:01.275641+00:00",
-      "sector": "Cross-sector",
-      "country": "Russia",
-      "lat": 61,
-      "lon": 105,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "4e88c8e0cc4f731daf",
-      "title": "Company Linked to Darline Graham’s Husband Was Sanctioned for Arming Russia Against Ukraine - Drop Site News",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNT0ViYkJuaXVBR1dOandYZXBjcUFLb3AxLUFlamNwNG5mWWhmQmRMNTFvVTEyX0dhRHY0b3B4OF95NEY4MWFWYlJKNVpiRGZZRllyVUVMMUhaWmVrbXk2RllrUE1TcFNrS2EycHBIa0U0WW9jUnVXX250RHl2UGJJc0xMQVBJLWlocWJwV2ZkMA?oc=5",
-      "summary": "Company Linked to Darline Graham’s Husband Was Sanctioned for Arming Russia Against Ukraine Drop Site News",
-      "published": "2026-10-28T20:24:39+00:00",
-      "source": "Google News Eurasia",
-      "region": "Russia/Eurasia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T05:47:01.275641+00:00",
-      "sector": "Trade",
-      "country": "Russia",
-      "lat": 61,
-      "lon": 105,
-      "direction": "Potential negative",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "9fa228adeec508a3ae",
-      "title": "Strait of Hormuz Tensions Keep Oil Prices Elevated: 3 Canadian Energy Stocks to Watch - The Motley Fool Canada",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTUhCY0diaGZzR0xfQnl2d0ZxWU90T2VXRTB3V3UzU19vRV9MaXpWNDJteElCVmZ1bHdQV29tSmR5RGZiYnFLdUtJRG5sVFdXZjc0dzdmTkYtLWxoN2tBY3JLaFdRb3JMVHdQTVpJaEZpLThtRjZlNmJsVW1IazkwRk92V3Bka0NvS19pTU14VWFyc2lWa1Y1dDN1RDRMZHNHeVBPZnlUajYyd2ZpckR2djZ0NjJfbnM?oc=5",
-      "summary": "Strait of Hormuz Tensions Keep Oil Prices Elevated: 3 Canadian Energy Stocks to Watch The Motley Fool Canada",
-      "published": "2026-10-28T20:20:00+00:00",
-      "source": "Archive Hormuz Oil recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T18:28:23.803563+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "e38f23ee22ac4df981",
-      "title": "Strait of Hormuz Tensions Keep Oil Prices Elevated: 3 Canadian Energy Stocks to Watch - Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUGk4THJ6MEtjN0RKck42ZzdfQm9VRzF0Uko1d0l1YWpuSXhFT0x2dVhHaEtWZThHQU1wRndDVkE5WkMtMWJ6dU1vS0p0dWVMTkdLOUxhWHVDR25WTmxOMVhTOHYxYjhGRUtNX1N6MkQwcFJwd0hnVFJSeVlvbkdoLXFwbjhIdWs?oc=5",
-      "summary": "Strait of Hormuz Tensions Keep Oil Prices Elevated: 3 Canadian Energy Stocks to Watch Yahoo! Finance Canada",
-      "published": "2026-10-28T20:20:00+00:00",
-      "source": "Archive Hormuz Oil recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-31T05:39:07.330011+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "00a26ecf9d329f8404",
-      "title": "Tanker struck by unknown projectile in Strait of Hormuz, UKMTO reports no injuries - Business Upturn",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQX2gzMF9MUU14VFE2TXNRbFdiTHlUaE1leEc2RmNva1kyekVwXzJhWmJJYk80czBMQVpYeUdGWThmc3NfamlKMHBGTy1oYzdBVmNnLUVaZi15NGNDSTBtQUdyVmZYaUV3cWRtVmZLLTNpM2I4czhqeGQtdEJFWEYxdGNtZ0V2eEdXdjlmVWQxTjRpWG1VTkk3UEpUYWpXWE1NZVpBNDhUdjZSUGxuZHJ6RVRhd2NrMWlNMVc4?oc=5",
-      "summary": "Tanker struck by unknown projectile in Strait of Hormuz, UKMTO reports no injuries Business Upturn",
-      "published": "2026-10-28T19:40:00+00:00",
-      "source": "Archive Hormuz Attacks Shipping recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-31T17:14:57.398102+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Global oil supply/price or export-transit channel may change Kazakhstan oil receipts and import costs",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Corroborated reporting; primary evidence missing",
-      "evidence_sources_count": 2,
-      "human_reviewed": false
-    },
-    {
-      "id": "e18478f1bd168f8a38",
-      "title": "Kazakhstan Plans to Extend LPG Export Ban - Caspian Post",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNc0lFOEZTMmxrU2QxOXVyY2V6a3pHa3ZJQnMxN25xOGl5VnFHcmxLakVWcG9OTW9yNHVxd1BKMDQ4V3Z3ZlJGT2kzanBkeldmNU1VdldYV1NjQTJmbEJJdUlaZ2E3S20xYnVtd1lHRGpVcTFSYkNpM3dRUkJSS2ZnSG5R?oc=5",
-      "summary": "Kazakhstan Plans to Extend LPG Export Ban Caspian Post",
-      "published": "2026-10-28T17:35:47+00:00",
-      "source": "Google News Central Asia",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-28T18:20:39.506971+00:00",
-      "sector": "Trade",
-      "country": "Kazakhstan",
-      "lat": 48,
-      "lon": 67,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "b274c444a9f3fbd452",
-      "title": "Caspian Pipeline Consortium to trim November crude exports - Baird Maritime",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUUJNc29ldkNUSXp2eTRKQUZOU3BNZW5iai0tZUtPcDl2eWZFbjhYMlVFejdpMXp0SUpiLXhERDFwZXRfQnFlQXlHbUh0WnAwMkxBYTZfTnRwYkNLTHJwM2NEcVpCX0NvUGI5OXZ2R056TExKNk1aTlh1eG5lY2kwRDBDWDFkcVlQVHZodHhQdWZodVBTQk5rTkhhN2RVUzdvU1FBZ2hoNUwyRzg1SXJoSWlKSl9xQdIBtgFBVV95cUxOUUJNc29ldkNUSXp2eTRKQUZOU3BNZW5iai0tZUtPcDl2eWZFbjhYMlVFejdpMXp0SUpiLXhERDFwZXRfQnFlQXlHbUh0WnAwMkxBYTZfTnRwYkNLTHJwM2NEcVpCX0NvUGI5OXZ2R056TExKNk1aTlh1eG5lY2kwRDBDWDFkcVlQVHZodHhQdWZodVBTQk5rTkhhN2RVUzdvU1FBZ2hoNUwyRzg1SXJoSWlKSl9xQQ?oc=5",
-      "summary": "Caspian Pipeline Consortium to trim November crude exports Baird Maritime",
-      "published": "2026-10-28T17:35:26+00:00",
-      "source": "Archive Kazakhstan Oil recent",
-      "region": "Kazakhstan",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-29T05:47:01.275641+00:00",
-      "sector": "Oil",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "direction": "Unknown",
-      "tier": "Named asset match",
-      "matches": [
-        {
-          "asset": "Caspian Pipeline Consortium (CPC)",
-          "asset_id": "CA-001",
-          "sector": "Oil",
-          "source_url": "https://www.cpc.ru/en/about/pages/shareholders.aspx",
-          "external_counterpart": "Russia; global markets"
-        }
-      ],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Caspian Pipeline Consortium (CPC)",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "0f1cc7807c6a07f8a4",
-      "title": "Caspian Pipeline Consortium to trim November crude exports - Baird Maritime",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcXhMUHZIN3g5VDdkbTRacWluejFObmxMRWVfSXN4eW5XeHFHTkpiSms3NVNXRkllV1ZIaVAydzJWRjB2YUVpb2w3b2ZMNDlkRG5kcHBSLVZEX2hHVGdqUDN2VjFVNElzLVA0TnFWTW53WUtxQmVKYXVBSGI5MUZVS053bWM4cjlYM254bmJqU3dCQXlnOGtLS2lfeDBURFZwcF9fNVFUUzDSAbYBQVVfeXFMTlFCTXNvZXZDVEl6dnk0SkFGTlNwTWVuYmotLWVLT3A5dnlmRW44WDJVRXo3aTF6dElKYi14REQxcGV0X0JxZUF5R21IdFpwMDJMQWE2X050cGJDS0xycDNjRHFaQl9Db1BiOTl2dkdOekxMSjZNWk5YdXhuZWNpMEQwQ1gxZHFZUFR2aHR4UHVmaHVQU0JOa05IYTdkVVM3b1NRQWdoaDVMMkc4NUlyaElpSkpfcUE?oc=5",
-      "summary": "Caspian Pipeline Consortium to trim November crude exports Baird Maritime",
-      "published": "2026-10-28T17:29:58+00:00",
-      "source": "Archive Kazakhstan Oil recent",
-      "region": "Kazakhstan",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-28T18:20:39.506971+00:00",
-      "sector": "Oil",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "direction": "Unknown",
-      "tier": "Named asset match",
-      "matches": [
-        {
-          "asset": "Caspian Pipeline Consortium (CPC)",
-          "asset_id": "CA-001",
-          "sector": "Oil",
-          "source_url": "https://www.cpc.ru/en/about/pages/shareholders.aspx",
-          "external_counterpart": "Russia; global markets"
-        }
-      ],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Caspian Pipeline Consortium (CPC)",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "ecf56deb0a13985b99",
-      "title": "Russia Exports Grain via Arctic WW2 Route Amid Black Sea Disruption - Global Banking & Finance Review",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSXFVN0NMN2M3Tk5KdDA1NXZERUR4bWlGWGhHMHRhdUNPUTNTVzAxN0QwXzM2V3JoTDJjek1mbXd1blZhMlBELUxRTUNBTVlxTUc4RHVrZk94MFBSZGVZSEY4RnhlUHZsMDFHX0VwT2ptRGJzbTVDS0hFa002eUlwWlNjY3ZsdlVJTnVr?oc=5",
-      "summary": "Russia Exports Grain via Arctic WW2 Route Amid Black Sea Disruption Global Banking & Finance Review",
-      "published": "2026-10-28T16:28:42+00:00",
-      "source": "Archive Kazakhstan Wheat Access recent",
-      "region": "Global",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-28T18:20:39.506971+00:00",
-      "sector": "Food",
-      "country": "Russia",
-      "lat": 61,
-      "lon": 105,
-      "direction": "Potential negative",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Food and chemical input disruptions could affect Kazakhstan export markets or import prices",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "9efbd909ac749736c9",
-      "title": "U.S. imposes new North Korea sanctions amid stalled diplomatic talks - NBC News",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVUp3MTYtWkhjR0NvVndNRlFvQmNMdG9Sczc0TF9uUnh1NEJ4aWRiaHBLUDZ3SkNWbDAtR1pGSVprN0hsbUFCdXJyQ0g1WWlmNVI0QnZVMlBmZWNkVnpwbG52UWJBQkZBX0p2MXBoNWpQTG80bWRzYklCcWhGWFdPdHdMSXFnMElOY21CSnUxRjRMTUpRQzYzaHRzdEFhVTZ0YlQ0U3JDZTdnT09rQnlzSG9QbFE4MmFvRUE?oc=5",
-      "summary": "U.S. imposes new North Korea sanctions amid stalled diplomatic talks NBC News",
-      "published": "2026-10-28T16:23:29+00:00",
-      "source": "Google News Eurasia",
-      "region": "Russia/Eurasia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-28T18:20:39.506971+00:00",
-      "sector": "Trade",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "direction": "Potential negative",
-      "tier": "External shock watch",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
-    },
-    {
-      "id": "883a5ab04a1862fce4",
-      "title": "Kazakhstan proposes six-month LPG export ban from Nov. 14 - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Dck5ZTGtQaTJpanFtTDd5c2pSMk9qcWhFSzFucU1ZZnRqYWRmeVdOdGotclBZXzFaM0MxNEVMZ0dUYlFqcmhWMVVZU3ljbDljT1IyV2lwejFvck1SbU1n?oc=5",
-      "summary": "Kazakhstan proposes six-month LPG export ban from Nov. 14 Trend News Agency",
-      "published": "2026-10-28T14:03:45+00:00",
-      "source": "Archive Kazakhstan Caspian recent",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-28T18:20:39.506971+00:00",
-      "sector": "Trade",
-      "country": "Kazakhstan",
-      "lat": 48,
-      "lon": 67,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false
     }
   ],
-  "investigation_generated_at": "2026-11-08T17:55:54.904817+00:00"
+  "investigation_generated_at": "2026-11-09T06:25:37.480743+00:00"
 }
