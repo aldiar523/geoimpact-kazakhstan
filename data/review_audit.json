@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T07:16:19.733013+00:00",
+  "generated_at": "2026-11-10T19:43:09.860810+00:00",
   "requested_window": "Rolling prior 30 days (publication timestamps); RSS searches are not exhaustive",
   "window": {
     "start": "2026-10-11",
@@ -7,69 +7,70 @@
   },
   "screened_articles": 800,
   "dated_more_than_14_days": 0,
-  "earliest": "2026-10-30T04:38:00+00:00",
-  "latest": "2026-11-10T06:51:56+00:00",
-  "geolocated": 700,
-  "unlocated": 100,
+  "earliest": "2026-10-30T12:17:00+00:00",
+  "latest": "2026-11-10T19:05:00+00:00",
+  "geolocated": 691,
+  "unlocated": 109,
   "by_tier": {
-    "Systemic-market candidate": 336,
-    "Kazakhstan mentioned": 329,
-    "External shock watch": 117,
-    "Named asset match": 18
+    "Systemic-market candidate": 343,
+    "Kazakhstan mentioned": 326,
+    "External shock watch": 110,
+    "Named asset match": 21
   },
   "by_sector": {
-    "Oil": 503,
-    "Trade": 105,
+    "Oil": 514,
+    "Trade": 89,
     "Cross-sector": 40,
-    "Transport": 33,
-    "Finance": 30,
+    "Transport": 34,
+    "Finance": 32,
     "Digital": 29,
     "Mining": 25,
-    "Food": 23,
-    "Electricity": 10,
-    "Water": 2
+    "Food": 21,
+    "Electricity": 13,
+    "Water": 3
   },
   "by_region": {
-    "MENA": 285,
-    "Central Asia": 199,
-    "Global": 127,
-    "Kazakhstan": 93,
-    "Russia/Eurasia": 49,
+    "MENA": 284,
+    "Central Asia": 195,
+    "Global": 131,
+    "Kazakhstan": 96,
+    "Russia/Eurasia": 48,
     "China": 17,
     "LATAM": 8,
-    "Europe/UK": 6,
+    "Europe/UK": 5,
     "ASEAN": 5,
     "Africa": 4,
     "India": 4,
     "US": 3
   },
   "by_country": {
-    "Strait of Hormuz": 294,
-    "Kazakhstan": 203,
-    "Unknown": 100,
-    "Russia": 46,
-    "China": 25,
-    "Kyrgyzstan": 19,
-    "Iran": 14,
+    "Strait of Hormuz": 288,
+    "Kazakhstan": 206,
+    "Unknown": 109,
+    "Russia": 44,
+    "China": 26,
+    "Iran": 18,
     "UAE": 11,
+    "Uzbekistan": 10,
     "Tajikistan": 10,
     "Iraq": 9,
-    "Uzbekistan": 9,
     "Azerbaijan": 8,
+    "Israel": 6,
+    "Germany": 6,
+    "Kyrgyzstan": 6,
     "Qatar": 6,
-    "Israel": 5,
     "Pakistan": 4,
-    "Germany": 4,
-    "Vietnam": 4,
+    "Nigeria": 3,
     "Japan": 3,
+    "Vietnam": 3,
     "Australia": 2,
     "Egypt": 2,
     "Saudi Arabia": 2,
     "South Korea": 2,
     "Armenia": 2,
-    "Nigeria": 2,
     "Singapore": 2,
     "Turkmenistan": 2,
+    "Ukraine": 1,
     "Argentina": 1,
     "Romania": 1,
     "Brazil": 1,
@@ -78,15 +79,124 @@
     "India": 1,
     "Oman": 1,
     "Malaysia": 1,
-    "Netherlands": 1,
-    "Ukraine": 1
+    "Netherlands": 1
   },
   "by_week": {
-    "2026-10 / week 5": 170,
-    "2026-11 / week 1": 535,
-    "2026-11 / week 2": 95
+    "2026-10 / week 5": 116,
+    "2026-11 / week 1": 536,
+    "2026-11 / week 2": 148
   },
   "unlocated_examples": [
+    {
+      "published": "2026-11-10T19:05:00+00:00",
+      "title": "EIA Raises Oil Price Forecast: Brent Crude Expected to Hold Above $100 for Rest of Year, 2027 Average Seen at $86 - BigGo Finance",
+      "source": "Archive Global Brent recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGQ2dyZzdSTUhrNEN5SUVsQ1VBNFlCc3d3R0M3NlhwOU85WGZhcHJqZGdqQ3BaaThDOTBnTnZjYUxIQnZCY3JLdGhTQ2xZTW1NZnJpaW9CMjdFV005MTN5UFpJSVRHOFlnZFRWNURPX0NXRTdiSmc?oc=5",
+      "id": "d0a0557bbc6efe077f"
+    },
+    {
+      "published": "2026-11-10T16:55:30+00:00",
+      "title": "Brent Crude Falls Below $90: Will US Inflation Data and Fed Rate Bets Drive Oil Lower? - Cryptonews.net",
+      "source": "Archive Global Brent recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40eXB2T2VkZ2VYd09TaTdqN2RTS2lyT3pBRVhkUXp5TlFMejNTa3BTMTRaVjN4U1dUVXpvbmoxNlpFb3k1Rnd3VnlsYXpVT09wNnV2YU5lZVE?oc=5",
+      "id": "5ff9537845cbc47031"
+    },
+    {
+      "published": "2026-11-10T16:47:49+00:00",
+      "title": "KazTransOil Completes Multi-Year Pipeline Control Modernization - Pipeline Technology Journal",
+      "source": "Archive Kazakhstan Oil recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Kazakhstan",
+      "tier": "Named asset match",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOU0lxZUlrRkhpZG5OTzc4TTQtaVg2LVpHOWloX3JJQlQ1dlM0aEV4elNWMDh0akNuNWE0OU1XWWROUHd4UTdFSDRNWUdjUXB3R1c2T0g0elI5VFM2Sk53WG1VOF9WT0pnRmpuZEJOZXNpTW9NVHFHWkk2Szd2S1UxUG53b2sxYW04SU5OVGtVc0U1Ql9KRW1BYnFDQTdOMm9yeXY4?oc=5",
+      "id": "56cef06a401b26f71f"
+    },
+    {
+      "published": "2026-11-10T14:46:50+00:00",
+      "title": "Reuters Survey: OPEC Production Rose in October to 90% of Pre-War Levels - صحيفة مال",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9xUWQySEhMZ2ZYZGhZYVMyUG9oRmZPNDh3Y1A2UUx1dTVNMk9fLTBXeHBaMk9rbXVtUTU3TUtUTU0wQkZyTDhYZTJheGhpUjZacFNHNWhjNGs3ODdxdlNjRXpyZHpzaXZDSWhR?oc=5",
+      "id": "19051ed83bf33356c7"
+    },
+    {
+      "published": "2026-11-10T11:07:13+00:00",
+      "title": "OPEC production around 90% of pre-conflict levels in Oct: surveys - Quantum Commodity Intelligence",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdWstWk41aW85cTdWNnJpdHFpNkFGVWVnV3ZhTlZEY2lQSkFac2huankxZ25lZ2t3b1JJc2N0RDI1d1JvNzdOMzAtSnJ0TmNZZS1tSTZXXzM5enNKVUJzekYxYWZfblVmd3c5dXVCNXJCUU95NHpQWV9fRV9SZjVxNXJhMHVqTlpjY2lpdXUtTTRPOWRSd3NrVW9mbml1TFduS0FJejJNTWhpUQ?oc=5",
+      "id": "ed965c46709001d7a0"
+    },
+    {
+      "published": "2026-11-10T10:01:34+00:00",
+      "title": "Opec output rises as Saudi pipeline attacked - NewzTodays",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "External shock watch",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeFFpS1loVmxBeFRZRU5sVldoZGpYeXNNc213QUJEXy1KTkxpZDV3WHR2clZBcUQtY3N6ZlJHVEVXZGlwYWFQbndOOExLbERLd3c4S0hnX01sTnVRZHYzVlVBWHFPUUQ0aUtrMktOMEhqRjhMWm55Mm5RVDJobWdfczcwRVVZSXpaNUlB?oc=5",
+      "id": "afced066f1354c379f"
+    },
+    {
+      "published": "2026-11-10T08:36:00+00:00",
+      "title": "KazMunayGas, ExxonMobil discuss progress on Tengiz and Kashagan projects - Trend News Agency",
+      "source": "Archive Kazakhstan Caspian recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Central Asia",
+      "tier": "Named asset match",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51Y0ZOdi1TWTcyckRPSGV3bmphdl9tdjJOUnlfYnh1TTg1a0dwMkVIWVRnakxhYkh2NkxmVXF3T0dxQXZabVVQdnVaaU9kS0FCUWJvbTlDc3lyajN1dWI4?oc=5",
+      "id": "37bcbbdcb1ef2cb2c6"
+    },
+    {
+      "published": "2026-11-10T08:29:51+00:00",
+      "title": "OPEC oil output returns to 90% of pre-war levels: Report - ارقام : اخبار ومعلومات سوق الأسهم السعودي - تاسي",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vR0tJME01NjF4eElqalJ5YjlGd1lWZ1h5T3R6Si02TURuRldRV1g5bE15UmxxRUlrSnZYZmJzNDJ4UnNtbW5lR01vT05fcFBZTk9BVHF4a0stN1Nsbi1hZG9hN3FDWDV6YVE?oc=5",
+      "id": "0ea7e744abcc654969"
+    },
+    {
+      "published": "2026-11-10T07:52:21+00:00",
+      "title": "Oil prices continue to fall as OPEC production rises - صوت الإمارات",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOR2VUZUJxR0xmZlg3SjNad21uMkIwcWxrbDhhNWczVzllZ3NUeGNtdmJSSEswSW92U2xTLU5xNjFFbldHeG53MEw1cVRSeDRvLTV3OElWa0d6YnNUVHpmbGN0d3VJSWtnSEJheWtuWWJzb1ZwbXlBUlFKTlZqYW96dEJnTjBJZWZyU0RnMThuOWE5eDFwX2FZRkV0N1p2c3dKR0pWaWgyb2p3X0NE?oc=5",
+      "id": "a0f30306fd95500dc2"
+    },
+    {
+      "published": "2026-11-10T04:42:08+00:00",
+      "title": "Global oil prices plunge sharply - TengriNews",
+      "source": "Archive Kazakhstan MENA recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcW1sMFpFcXJrRng5anpvQWdQRUJRZEhlRXRzVVE4cVJCd0dJWlJ5Ui12SlI0Tk42cGdwYkFnRzRGb2ljRDRnSXRlRHBTRzh4cFJORU1iQm9xN0VYNHg4WHNLNWVTdU5XZ0xfN3BHVzRkcTE5V0dXeDBVZnViQ3M0TzlR?oc=5",
+      "id": "9728ffd6d1daca69f3"
+    },
     {
       "published": "2026-11-09T22:38:34+00:00",
       "title": "OPEC+ Agrees to Keep November Oil Output Targets Steady - EnergyNow.com",
@@ -141,119 +251,42 @@
       "tier": "Named asset match",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1DOE5WWEx0LV9YeHc3MjAyazBHV3lzWWpoV2xDQ0JFdldYdHNYZlFGOHBGSk5XSjU0QmdMMHhPT1JtckZvYUZMa0VQYUc4bjFhdnVpREw2Nl8zVGVmUUJR?oc=5",
       "id": "ca31f0d8a872316e22"
-    },
-    {
-      "published": "2026-11-09T08:32:08+00:00",
-      "title": "Astana Hub members generate $6.7B in revenue since 2019, exports hit $2.4B - Trend News Agency",
-      "source": "Archive Kazakhstan Economy recent",
-      "sector": "Trade",
-      "country": "Unknown",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ERXpGaDZ5cW8xVlREc201S3pIN2twNzZBbFQ0aU1JZ1gyR3FMaVBFeTBjQjU5ZXZia2o1cUVSWHFfWmVhQXFhb3pDalpXWWJZYWZLdTRlcElESWM0eldF?oc=5",
-      "id": "1ae0735913fac4a531"
-    },
-    {
-      "published": "2026-11-09T08:32:04+00:00",
-      "title": "OPEC Sees No Peak Oil Demand as Energy Security Beats Climate - EnergyNow.com",
-      "source": "Google News LATAM",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "LATAM",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZ1FFeG5nSXJ1cXN6N3drQ3RPZFRsUFd6VzlJNXltT204bW9obVlQWEFvOHQ4WDBhSC02NXUtS29CNlZzS2lNRWh6WGM1TFBpUS1MS3hjYVRuMFVaRkZxclFEbmtiaHdYZV9MUHNfVmFpNUtYX3N3R3ZqR3c2Vlc4ZFE5TENWQjBGcnFaLUZjU29VeVNYcU1v?oc=5",
-      "id": "cab6429141e5991df2"
-    },
-    {
-      "published": "2026-11-09T05:33:58+00:00",
-      "title": "Fact Check: Did Chuck Schumer coordinate with OPEC to blame Trump for rising gas prices? - MEAWW News",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT2xMYmx3XzJiUW9zaE50X3V1bEdUQlBZNmxkSGlFd05JdnBKUXBkOWdfb1NDQm12anFNU1lmbl90U3B0ZW5HTDZHN3VOT2szeHhibnBpOWgyQjNoZEVleW5CSnNIMGlHUkh0U1dnZUdFc1pWMWlkOU5NajNjaHlxTHZxWlk2YTMtUmJ5N1FWTHhZREdjYl9Ya2YwT3gySV9GWXUzNldGWXVEclNRR1E?oc=5",
-      "id": "f28ed8963c896fa731"
-    },
-    {
-      "published": "2026-11-08T13:40:32+00:00",
-      "title": "Oil Traders In Talks With US To Get Sanctioned Ships Back To Sea - gCaptain",
-      "source": "Google News LATAM",
-      "sector": "Trade",
-      "country": "Unknown",
-      "region": "LATAM",
-      "tier": "External shock watch",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbXZlQnVJaTRNaTVBY3NtT2RnRWFFNDBidnV6MmJ6OGI3VkJqeWRxajJBSkFLSnpfRE5xeHJXd0RaNlpwMG5IUVl5Zkhvcm1yOEJGWXN3TVRERk11cW95UjJOejR3SjJFektXcF8xZi0xQ3BRazNmc1paelJFV0dCaUJINUMyM2N0enBERGdUOA?oc=5",
-      "id": "9956ede44fb9cf35cb"
-    },
-    {
-      "published": "2026-11-08T06:59:01+00:00",
-      "title": "Tajik minister visits KEGOC to learn about digital energy projects - Trend News Agency",
-      "source": "Archive Central Asia Power Failure recent",
-      "sector": "Electricity",
-      "country": "Unknown",
-      "region": "Central Asia",
-      "tier": "Named asset match",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ka29BS1l2OVBaY3RQTE13bXBFbU10Sm5wVFc0T29fT0w1STN0T05IUzA5NGtSSnl3MkNMZmg1YkFKQWtEaHVjU1dkSm1ITmtTTVk3MzFXQmxsNE83WGx3?oc=5",
-      "id": "2d7afb67b2210da803"
-    },
-    {
-      "published": "2026-11-07T12:00:00+00:00",
-      "title": "Survey Shows OPEC Output Neared Pre-War Levels - Rigzone",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbWVSWlFCU1RQVDZBVmJIbGJmbGxFZGFMZVJMYnpNaWJQamRlQWI2dVdqaElnOHpkcTNHRmxQSHdaUHNzRzR3Z2o5ZHh0VUFyYjZacE9oSm9ZOVRmaVNCR1Z5c3c2dDdXQWJYazVvcjFXU0gyTFdaQUdzT0FFSk9YVHhXSnVJd0lxTzlUQTlxN1kwYVh1bkxjZ2JvOXhtX1p4SU9VN0dJYkl3Q1E?oc=5",
-      "id": "7c9cb5d03953863599"
-    },
-    {
-      "published": "2026-11-07T10:55:59+00:00",
-      "title": "Oil Minister: Our production has reached 5 million barrels per day, and talks are underway with OPEC to increase exports » Iraqi News Agency - وكالة الانباء العراقية (واع)",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQZUdCa1B0aU8wYldEMzFBcC12RjlBNzdEY19zc0pRbkl3R0FyTUhQOHl1STlTQVZnb2FWSlBFWEFVcTE5bnhBNk4wN2htZk5DNkYyZjB4UVJKTUZ1a1kyMVNMeWdScm1aNHVjTUM2dksxc25zTW1oaE5XVThjRVVPTzl5Q3lqaXpUZDlEWTl3Z044T09MTzhBalIwamJ2aVAwVElCenp6U2hJaUZDS2VPd0ZGVERvbmV6VEpMZHAxdzl5RVpGTzYzUWVFVW5tSGJJZFFycWEzQW92U244TDhzRGZhdU5QUENXdEZj?oc=5",
-      "id": "9d2377f9e402bcf589"
-    },
-    {
-      "published": "2026-11-07T09:15:00+00:00",
-      "title": "Tokayev and Rahmon discuss trade and strategic ties in Astana - DKNews.kz",
-      "source": "Archive Kazakhstan Central Asia recent",
-      "sector": "Trade",
-      "country": "Unknown",
-      "region": "Central Asia",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOXEzV1V2NGY3ZTZ2QndrVnlXR1lBWFVKNDBMQnBPNzVObkNhWnI2aVJUYm5xbERSZHFRZHltRGpveG54SHpMY0NtUGstVWV1N1FKTnNOMzhBOFN4UUk4WmZFb3RSRnpzTDRDc1dkbzBDM0s0MnpBNTZOX19MblZQb1hWM2VuUlJUU3RzQWpjVXlsb1Azc1N1Q1F2N1ExRGU4?oc=5",
-      "id": "71ec63f1aa1e09dc2e"
-    },
-    {
-      "published": "2026-11-07T05:31:57+00:00",
-      "title": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking News, Latest News and Videos",
-      "source": "Archive Kazakhstan Latin America recent",
-      "sector": "Trade",
-      "country": "Unknown",
-      "region": "LATAM",
-      "tier": "External shock watch",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa1BDcjdFRHFWaGlkYlMzZi1ZY2hCaVR5dGRpalctVTI1Q2poOGxFcXZqdmZfX2lqaVZxRmo3MWZIZ2ZUU0xCMm44OFdibDRCNF9BOVNmT1VHNURxR0tabkNtaVdoNTRaTW81cVIyVUdvanhBUS1rX3pEZFdyQmNSbDVDa0VMM2tPVGhYbDkwR1VhcUJJTDJXVmhNZVVVNi1L0gGmAUFVX3lxTE5UdFo2TDl4c1R2ZWRuX1ZxbTA3UmdwQnlrbVh1OXUyd1pucVlQS2dqY2VsbnRNSGt3WWljNkZ3V2kySmZNUzJ4WVBaT2NXSGRuUFlqRmx1UXNzSlEwZkV1MGRWVWxNbHdBcnY3Vm9CMVFqSWZxdnI3TkZqbWxValByNzBMRWxBR3BraFBtbEVuUFBvNDNpUVNBdWVkN3V6enc1YjlIWXc?oc=5",
-      "id": "c2209b520a4523cc19"
-    },
-    {
-      "published": "2026-11-07T00:57:48+00:00",
-      "title": "Brent crude caps biggest weekly drop since pandemic as war premium begins to unwind - TradingView",
-      "source": "Google News MENA",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZDlCcGRDQ1VUZzRQaDdLRmtmN3RnRmVGWGlLazVzTk5MSDNqWTdvOV9MOHBIVHBMbXhnTzJrMjZGQ3h4U3NNNGwzZWIzNkY1WlNCOEtoYVM1SGd4aWlXUlBSV0hEcElhYTNVanRCcU9rdUhBUWJ1cjR2M0xtTGE3ckhSR0owMHRvVHZ0Z3Z5ZmoyNFluN0FHblpjdEQydzE3WmltaWpoaGlmcUVlV2dhSFhHMlBBQjBPVE1qZXdOWjdGOE9BQkFtNUU2XzVBQUxKRVpRd2FnOHJFUVprZ2Zn?oc=5",
-      "id": "ddfdf9f9fef9634213"
     }
   ],
   "named_asset_examples": [
+    {
+      "published": "2026-11-10T16:47:49+00:00",
+      "title": "KazTransOil Completes Multi-Year Pipeline Control Modernization - Pipeline Technology Journal",
+      "source": "Archive Kazakhstan Oil recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Kazakhstan",
+      "tier": "Named asset match",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOU0lxZUlrRkhpZG5OTzc4TTQtaVg2LVpHOWloX3JJQlQ1dlM0aEV4elNWMDh0akNuNWE0OU1XWWROUHd4UTdFSDRNWUdjUXB3R1c2T0g0elI5VFM2Sk53WG1VOF9WT0pnRmpuZEJOZXNpTW9NVHFHWkk2Szd2S1UxUG53b2sxYW04SU5OVGtVc0U1Ql9KRW1BYnFDQTdOMm9yeXY4?oc=5",
+      "id": "56cef06a401b26f71f"
+    },
+    {
+      "published": "2026-11-10T14:19:00+00:00",
+      "title": "Kazakhstan more than doubles power generation over 25 years - KEGOC's data - Trend News Agency",
+      "source": "Archive Kazakhstan Caspian recent",
+      "sector": "Electricity",
+      "country": "Kazakhstan",
+      "region": "Central Asia",
+      "tier": "Named asset match",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBCRFRUSWZTeDJkam9hZllGQmdMU05ZUFF1MFNJYzBBUnFiUVJobUpEV3IzalQzd3FsMTdSZ2M2WUJOOHE0Zmw5MWFDa1lBejhFVXRBYW93ZHVuNUo5Ukpr?oc=5",
+      "id": "e0d38c9b25c34679fa"
+    },
+    {
+      "published": "2026-11-10T08:36:00+00:00",
+      "title": "KazMunayGas, ExxonMobil discuss progress on Tengiz and Kashagan projects - Trend News Agency",
+      "source": "Archive Kazakhstan Caspian recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Central Asia",
+      "tier": "Named asset match",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51Y0ZOdi1TWTcyckRPSGV3bmphdl9tdjJOUnlfYnh1TTg1a0dwMkVIWVRnakxhYkh2NkxmVXF3T0dxQXZabVVQdnVaaU9kS0FCUWJvbTlDc3lyajN1dWI4?oc=5",
+      "id": "37bcbbdcb1ef2cb2c6"
+    },
     {
       "published": "2026-11-09T11:54:36+00:00",
       "title": "KazTransOil, Chevron discuss expanding oil exports via BTC pipeline - Trend News Agency",
@@ -396,395 +429,362 @@
       "tier": "Named asset match",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RU3R1d2JuR1Q5eE5FX2lHOUNDNmxuNmVoY1lqSzR6YTlUU1pyRi16SlM4ZlhlM3FIbEw5MTBXQTlrR1JCeXpJbEtYZEdzWFRURHRIQ1pZdU5hRm9idng0?oc=5",
       "id": "01c8b35e7641669801"
-    },
-    {
-      "published": "2026-11-03T08:56:05+00:00",
-      "title": "Kazakhstan to commission gas processing plant at Kashagan in Q3 2027 - Qazinform",
-      "source": "Google News Central Asia",
-      "sector": "Oil",
-      "country": "Kazakhstan",
-      "region": "Central Asia",
-      "tier": "Named asset match",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT01qaC0xVUM5QXBOY0hPUVo5TFZ3N2VncmRQZ0Fzd29oNzZMMEp6dG0wWExacjctV1FVM1pFSnRNNXhZRzl0WVptVnJqdjdPb3dRSUNZRzh4RTF0akl2Y0RJWm5yTV94Ukw1ZkZtMWMtVmFING82clRuZzRlaG5FWU4xLTAzZ0tEdTNOSmhvZ2hrT29aOGRPLUNsQ0hCbldJdE43RNIBpAFBVV95cUxNeUFNY0pOcTlvRFJtaTRwS3kxZVhtX2thR1VmVmllaWprYktzVGNvSk95SWhJYUNSQXZseE5DWGFkazBYOVZBbVY4ZDlHYWdQRjlualdqVHhfN1luM3BNZVlkREFVQ0lpdFIxbFhSc0c4c05FbHppTXFqamo5RFMtdlNhcktnWFdUTTZaYjdZSjdxS2FGakptRW90VFY3bUoteHNrSA?oc=5",
-      "id": "f5e1818d0b4a0f7c73"
-    },
-    {
-      "published": "2026-11-03T08:32:37+00:00",
-      "title": "Kazakhstan Halts Oil Shipments to Russia After Drone Strike on Atyrau–Samara Pipeline - Inkorr",
-      "source": "Archive Kazakhstan Oil recent",
-      "sector": "Oil",
-      "country": "Russia",
-      "region": "Kazakhstan",
-      "tier": "Named asset match",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRTc2X05DcVVzak5Lak5XOUNReFdvM3dvaU9DUXNfbHhjRXl3OE1rOE1rOC1xZXFpVnBPOVVHMlYzRjVQX3hSaGNnelF1Q1MzWHVnX3BqQUZpUE9qWjNzNDJpNHJUclRqR1pEUEpkLVRNaDZhYkdsUTl5Zk1tXzJKZ3JIWUkxbWRnejVFQkVfSEZONlZCWGxpYnVuM0htcTJxQkxnTGtGZU9DSFJUWjBpdDl6QkQ5bVdyT3lXWjAzZ1RlSWdSak54UkFMVEJBV3o50gHWAUFVX3lxTE1NaU4xUzBUUngwS3NKbTZKVTl1QURlczQxMjJieWR4VkxqV0hZMTk3d1ZlNVZEakhYeEpqVEFrR0YyR1d5R3lSbW1hR2FnX09VX1pIZ1Fhc2JZaVJNaF84Z0M4TVVDQktubFlmd09WYmlYZkRuSUdQVzZZNXJtTjJiNmlXM1JSekp5VGs0VEJxRDFqSW1PZ2oxNmhzUjBQaklzMkVFQ1R6WUtEdkh0V1ZyWlpVR0ZwZnNJcV9aYW8yLXNxRUhsRGFaUVRTS2pycnkzUlJqVUE?oc=5",
-      "id": "4128f544fd3fb3da05"
-    },
-    {
-      "published": "2026-11-03T08:32:37+00:00",
-      "title": "Kazakhstan Halts Oil Shipments to Russia After Drone Strike on Atyrau–Samara Pipeline - Inkorr",
-      "source": "Archive Kazakhstan Oil recent",
-      "sector": "Oil",
-      "country": "Russia",
-      "region": "Kazakhstan",
-      "tier": "Named asset match",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTWlOMVMwVFJ4MEtzSm02SlU5dUFEZXM0MTIyYnlkeFZMaldIWTE5N3dWZTVWRGpIWHhKalRBa0dGMkdXeUd5Um1tYUdhZ19PVV9aSGdRYXNiWWlSTWhfOGdDOE1VQ0JLbmxZZndPVmJpWGZEbklHUFc2WTVybU4yYjZpVzNSUnpKeVRrNFRCcUQxakltT2dqMTZoc1IwUGpJczJFRUNUellLRHZIdFdWclpaVUdGcGZzSXFfWmFvMi1zcUVIbERhWlFUU0tqcnJ5M1JSalVB0gHWAUFVX3lxTE1NaU4xUzBUUngwS3NKbTZKVTl1QURlczQxMjJieWR4VkxqV0hZMTk3d1ZlNVZEakhYeEpqVEFrR0YyR1d5R3lSbW1hR2FnX09VX1pIZ1Fhc2JZaVJNaF84Z0M4TVVDQktubFlmd09WYmlYZkRuSUdQVzZZNXJtTjJiNmlXM1JSekp5VGs0VEJxRDFqSW1PZ2oxNmhzUjBQaklzMkVFQ1R6WUtEdkh0V1ZyWlpVR0ZwZnNJcV9aYW8yLXNxRUhsRGFaUVRTS2pycnkzUlJqVUE?oc=5",
-      "id": "16642915aadba5f804"
     }
   ],
   "systemic_examples": [
     {
-      "published": "2026-11-10T05:23:37+00:00",
-      "title": "OPEC+ keeps December targets amid Gulf supply uncertainty - Petroleum Australia",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Australia",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWlg2VkNIOXREbzVYTEpGNFZ2U3B4c1J4VWpvSU5rR0d5ZHBTR1JLSkI4WmNuQjluYzZ3V0dwRDNieHhMY1RWUTBrOWZRYzgzRlJybU9yb1NiZk1JaWlYWXNRWl9JeUFTeEhqNXBDN3lyY3NzdDVPYzJiYWNJdHNjcDA4N25odFVFazdiSnJxVUJ2QkFUTVZfOW50VUJxcVJoUHBXbm9QRQ?oc=5",
-      "id": "90e50b7168770c1759"
-    },
-    {
-      "published": "2026-11-10T04:25:22+00:00",
-      "title": "Oil prices fall as US eases Iran strike threats and OPEC boosts output, but Middle East risks linger. - Pluang",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Iran",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbDI1bkpndFdGTTZDSWs0QzdOaUNhdVRRdFE1aDNTR1lQVnNESEZVNmNVTzBBS09UemxhTFEtbmhjbGVIcWFLeGx4WExxYTBXREE4VHMyX1h1b2xsWmY0cWh4a2NHbjY2ZU52OWdLbjhzMkN6cTQxejMtRWxCQ0tLY2o5N2tJZ0pYbEROdHhEUFlBcXl0RkdKdnBMQVFTOUJhY3g1MWF3Zw?oc=5",
-      "id": "4f8bb480e784c7f056"
-    },
-    {
-      "published": "2026-11-10T01:43:00+00:00",
-      "title": "Trump holds off fresh Iran strikes but keeps Strait of Hormuz blockade - Nation Thailand",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9EajRJTG9LM3BUUGFOZHpaOVppUEMySWNKMGFBb24wb2lWSDFud0M4bS1PZDlHeVBuQVhGY0k1aGVPd3lGamJNUk5tTlhQNDV1UDg2QnpKUWFEUE1saWxJ?oc=5",
-      "id": "ed925d77151b9c8501"
-    },
-    {
-      "published": "2026-11-09T23:17:51+00:00",
-      "title": "The UAE’s Departure from OPEC: A Shift in Strategic Priorities for MENA Economies - International Relations Review",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "UAE",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZ1kxQUxOME01OWxJV0FjbGJUWXdtMHlMTFF6S1RxeWRKUG1MLXk4OWZlQ3lhX0RySmJLN2VLLWczMW9VTGZVVHFrNDhSNlNLVkd5Z2FudEgxYXB6bWp4d2F0UjZTRUVGTTJMZHhMNGpzQWxmU1hHUm5VaEZCZUo1RzlvcWk0eHo5RUhLdWF5TXNLdjQzeGMyV1dtTjM4SjJhV0Jvdk1MM1dKVmFSaFZjd2ppWm1fODF5TVV0akJBYVM?oc=5",
-      "id": "d57a2436884ee96aaf"
-    },
-    {
-      "published": "2026-11-09T22:38:34+00:00",
-      "title": "OPEC+ Agrees to Keep November Oil Output Targets Steady - EnergyNow.com",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaWIzaV9QMGF4MDZQT0pHT3FRbTRDN0pzNkVBTVI0eDhPQ00yRjNCTUxBS3B6MWFTU3BHcjdqUlpQYzBpbWN2QTJWUFB5VlFCUDU0Ulg2bEdMTkxzTzFjN1pyX3FnX0dUWHpJaWFyNEtxS1ZheTVTU2pzTVROX2tZeGROTU5qRmozYV8xVk5n?oc=5",
-      "id": "775dbb9b9ad2dfc764"
-    },
-    {
-      "published": "2026-11-09T19:39:10+00:00",
-      "title": "At Least Five Explosions Reported in Strait of Hormuz - WANA News Agency",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sWVJKVDFGQk1DRXJ3RVFKY3Z5MDFxVGNJVFI5akZBaGNhWGwxSHlZakN2UG04enZoNjVKcjFXVnZUOHgyN0FMeTh4TVMzd2JaNldLaFZ3TzZUNTNXc1VYRUQzeTRJbGtQNWt2QVRPaFFjSDVsb1RRTW5XX2xOdw?oc=5",
-      "id": "f41ade99d995382593"
-    },
-    {
-      "published": "2026-11-09T18:28:46+00:00",
-      "title": "OPEC oil output rises in October to 90% of pre-war rate, Reuters survey shows - Reuters",
-      "source": "Archive Oil Market OPEC recent",
-      "sector": "Oil",
-      "country": "Unknown",
-      "region": "Global",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcGJ3LUpzaXpKMGVQTkVDUmxmck5BRE9ycmRsR2ljV2x5ZmpoOW5UbW1WSE9XUnd5XzJsano5X0hPMU1DZW5Za2lsQ05Sa2NzWWNnTkpHdVc4ZmFvRnZ1WDRGVnVLaFNJVVdNSGhhYmRBaXZSSVNjc29qT2dUbnEtZ3JBNXdyQ01IaWxJRDJsZThnT29yUmxnSTh2dHFidnZBd2R6QU5nS182LUFjV1U0RXJqSVR2VXpicTBjalNR?oc=5",
-      "id": "0df3ad4211cc7c8d20"
-    },
-    {
-      "published": "2026-11-09T16:50:00+00:00",
-      "title": "Trump calls Strait of Hormuz blockade ‘history’s greatest’ - The Hill",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNX1EwcGhxVzFLQ2xYSG83alZmVUVTZ2RLcmt3MWJnQ3ZJUGlaVlY5R3J5MXc5V2dDNXpiellVM2FUc0pxREhwN21YVThZcGtDNXlLWjJGY1YwQkxwRkRnM0ViaXh6LW5SN2Nic2FFSG4yYlN5Y1BtRFhDUEwtVDY0TzZBRTBNaVdfbFhZUHJyZ1rSAZYBQVVfeXFMTVFjZFhFSVFPbU10STk2TWFhRnIyRVdERllEWEt0eXpiMUdfLWpNUzllcXY3TVh0bnlPb3BIYnJXRThXZWgxcTJVd0JZMWIwX21CZmMwRldZQVB5Q3VNRXpBd25LQU05UHVmMW8xVkNTWGkyd0xlOWpVUDZtaXFiaW9SVzdCM2QtZEEyeVZBWXF3bGlrVFRB?oc=5",
-      "id": "ca8ecaa4d3c60645cd"
-    },
-    {
-      "published": "2026-11-09T16:37:38+00:00",
-      "title": "Trump Says US Can Take Strait of Hormuz With More Time, Take the Oil and Make a Fortune - EnergyNow.com",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTXBIc0wxNURmN1dyUXpQcmhhVWRsWFFpNTRNTnZxbm1peXplWF8waEJ6QzdUMjZ5MDFTVTRlZmRTcTRZRWFpMXZCbm9MMDY0c1ZDUEpDTXBIdm1HbFY1ZGp1Tnp5ZFphOW9LOHA1VDkyazdETEZDR3BGdGw4OVdLVUIzY1haeVFSUE5Hb1Rn?oc=5",
-      "id": "62929db6b234bb79df"
-    },
-    {
-      "published": "2026-11-09T16:17:30+00:00",
-      "title": "Strait of Hormuz Tanker Traffic Is the Test for Normal Oil Supply - StoneX",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPc3VtaFZpZDJERnNRNlBYUGVQdzUtSWVDMEtPRHBMLTd6VnNLTjhVeWh4RlFYQ29PNExrM1lHSkpGbDlOQU1PTmU1WE91SGdsV3drdXlsVkVJNzRWSi1qcDdRdDhUSmVJeEVjV1Z4TWZnUUtkcVppYURVdUlub2NmdmNTdWZaNC1aYUMxSlQxNVAteVpUcjNKbS12R2l1ckVpa0xj?oc=5",
-      "id": "89c5bfaf0eb9610a7e"
-    },
-    {
-      "published": "2026-11-09T12:21:21+00:00",
-      "title": "Oil prices today: Brent crude, WTI fall as Trump rules out fresh Iran strikes amid Strait of Hormuz concerns | Hindustan Times - Hindustan Times",
+      "published": "2026-11-10T19:05:00+00:00",
+      "title": "EIA Raises Oil Price Forecast: Brent Crude Expected to Hold Above $100 for Rest of Year, 2027 Average Seen at $86 - BigGo Finance",
       "source": "Archive Global Brent recent",
       "sector": "Oil",
-      "country": "Strait of Hormuz",
+      "country": "Unknown",
       "region": "Global",
       "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPNG95cjJXTy1lNF9yUHJTMm1QdTg5Uk83Ym5oa05DbTEtMkZjYmlxdXJsdE1hbXFBZWV6S3ZoV0VudGdfdkxuWUZRWTUwWWdLalVjc0J2Vjh5MFFUNTV2VkN6c1pBVGJLNHUtdUpIVEhCZHREenVsSkJHeWZBMFRfUHVzaW9QS2pXbnQzTXE4ZkREamFmdzJhYzFaOXl2VzgxYVVvVERqbWdJQVQ2RTFGYUx1NWdTcnVpRG1Kc09GeEhFR3JJQWpQcmg1SDNEM21KbS1YX01STXFrU1cwN3M5VTU0RnJNWkhpYnZNaVVaSUtSYXpGbTk1WkFKSEpQaWJlSC1TT3NMTnbSAY4CQVVfeXFMTXlCZVI3OW9XT0tpOW9WUnFFTkFYVVdRT0FHUnhCbmd4bEdJS0tBWDROcV9La3BmSlpoTTh1cTRyUV9IYWtjN1dqUXBfTEdEcWpvR3pFWFJUTVlXQV9EM3AzeENpdDEtdW1fWmRxb2RYQjdCd25wdDFKTzVUc2VNa2ZZcnRHQ0ZRMFVXR2JuQmZwNGwyV3J5eFFOSThzZ3VDN3JPM09XMTRuYWFPU25DNFE4bUxrUnV1YWpCMmlMM1lxVmlrZms2UEttRmtNNDA1am83TnpwYUc1SVhOcGV2SXJuTkFjbThEWHRwWmdDY3hXeGxfMzB1dy1wU1J4SktwdVpKRmRPbV9GT19IcHl3?oc=5",
-      "id": "a0e0f48df2207d07ec"
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGQ2dyZzdSTUhrNEN5SUVsQ1VBNFlCc3d3R0M3NlhwOU85WGZhcHJqZGdqQ3BaaThDOTBnTnZjYUxIQnZCY3JLdGhTQ2xZTW1NZnJpaW9CMjdFV005MTN5UFpJSVRHOFlnZFRWNURPX0NXRTdiSmc?oc=5",
+      "id": "d0a0557bbc6efe077f"
     },
     {
-      "published": "2026-11-09T10:16:05+00:00",
-      "title": "US disables bulk carrier as tanker attacks continue near Strait of Hormuz - safety4sea",
+      "published": "2026-11-10T17:45:43+00:00",
+      "title": "Iran says 3rd oil tanker explodes after hitting naval mine in Strait of Hormuz - Anadolu Ajansı",
       "source": "Archive Hormuz Oil recent",
       "sector": "Oil",
       "country": "Strait of Hormuz",
       "region": "MENA",
       "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdGk2cXk2a294aDl0Qk9OeUt0Y01XbHlGTjQtVV9GZjNqdnQ4MFpIdFhRZ1JJX01JVnBfQ2E4dDd0aVZnbUZfbV8xTm90WkEwVXU1UjYtYkpQa241UzM4R1Y5cVJwSy1xMU5MckR5bXMxZ3ZORVRCZUNDWGdTNDYyOUtxdDZlbUMtVi1JWG1nV0dvelRpNnZKcFVJRW8tZw?oc=5",
-      "id": "73a1b3b7bb65af1bba"
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNa0RqOGh1cE43N0dYeENWSFY2QURKVVFfX1dibG5BTmE0WDg5VS0zTEtGRVRnWGpjR2dkMzEtUXZQVDlkOTNvSkNJZGRpY2tNdWtZSE1GNDVSMHFNeGdxRFA0VjBVNGN1cTlNcjkwLUlZalV6RTJ0bFY3ZW9jMVVaU05SeFY3aDc2dXpmUDItcUoxakZGYlJETnA4b0FJNHZsRXpOSnNqQlZQTWV6bGdfeDdoOWFSS2NXa2dr?oc=5",
+      "id": "3b5713147714461523"
     },
     {
-      "published": "2026-11-09T08:32:04+00:00",
-      "title": "OPEC Sees No Peak Oil Demand as Energy Security Beats Climate - EnergyNow.com",
-      "source": "Google News LATAM",
+      "published": "2026-11-10T16:55:30+00:00",
+      "title": "Brent Crude Falls Below $90: Will US Inflation Data and Fed Rate Bets Drive Oil Lower? - Cryptonews.net",
+      "source": "Archive Global Brent recent",
       "sector": "Oil",
       "country": "Unknown",
-      "region": "LATAM",
+      "region": "Global",
       "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZ1FFeG5nSXJ1cXN6N3drQ3RPZFRsUFd6VzlJNXltT204bW9obVlQWEFvOHQ4WDBhSC02NXUtS29CNlZzS2lNRWh6WGM1TFBpUS1MS3hjYVRuMFVaRkZxclFEbmtiaHdYZV9MUHNfVmFpNUtYX3N3R3ZqR3c2Vlc4ZFE5TENWQjBGcnFaLUZjU29VeVNYcU1v?oc=5",
-      "id": "cab6429141e5991df2"
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40eXB2T2VkZ2VYd09TaTdqN2RTS2lyT3pBRVhkUXp5TlFMejNTa3BTMTRaVjN4U1dUVXpvbmoxNlpFb3k1Rnd3VnlsYXpVT09wNnV2YU5lZVE?oc=5",
+      "id": "5ff9537845cbc47031"
     },
     {
-      "published": "2026-11-09T07:55:22+00:00",
-      "title": "Global oil prices fall as Trump signals reluctance to launch news strikes on Iran - The Citizen",
-      "source": "Google News Africa",
-      "sector": "Oil",
-      "country": "Iran",
-      "region": "Africa",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVldNSTBMMnYxWU9hWWpWZzRMUjI1eEREeHd1T2pyUlpjRjIxcHkweDZLcjVUUHRVbGVWRFBDeDdzcW9PX2xzc3Y0aEJuemdmUmo4dmpscnJrYUpZLXRvWWh0c0I4Ny11aHhfZEdvYXppNkdoTFhsWndNcGVBNmIyU20zYi1xblhRRURPaTRBSkxZLVFCSkpuWEVoM3hNOU5tdE9KbXpvUlRMRnl6RnV4dUpwMEVGZDhlYlY5Y2Z5dlByWmgzYXh1dUIyMGZmbXdiTjJNVEN3?oc=5",
-      "id": "1d7941d5b083d2aa1d"
-    },
-    {
-      "published": "2026-11-09T05:58:00+00:00",
-      "title": "Third violating oil tanker explodes in Strait of Hormuz in 24 hours - Pars Today",
+      "published": "2026-11-10T16:23:20+00:00",
+      "title": "Iran's IRGC Says Two Oil Tankers Explode in Strait of Hormuz - Caspian Post",
       "source": "Archive Hormuz Oil recent",
       "sector": "Oil",
       "country": "Strait of Hormuz",
       "region": "MENA",
       "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUVdNN3l0bUJjWVhqdXJ5cGZKYWIxTFpZdGZNVVZmbWU1OXNkc3paQ29iWWYwdlBsT3RLd292aXBTMWtJMGxrNmxOaFJIa3pleUtXaEpfdGpMNlpxaVdFUmQ5YzMwcGRMVVNiR01abEQtbklmXzJZdG1fa0xaWFBoUFVjZGNoYVR1a0V3bzhNVm02dm8yM21NMG01RnE0M1B4R1d3TlR3Ni1rbkpuVVE?oc=5",
-      "id": "4f4c194dcd6d95998d"
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQ295WFFHaVZfWWVtWjhGSFZFT24yTnBnVUQxdlJFWWg5LWQ0bkxRUmozcVdYOUx2SU01SWdYTzlRUk5aWWxmUzI4cUoweWpaalFETzlRSlZaMTkwMmVWcXM1UHNCejBJYWdZbkVuYS04NWY5X1VCQ0lCVzZ5VHFWdU1aMmlVSFh1N1BwY2M4UnNId0k?oc=5",
+      "id": "3c4ebc58a649c38a5f"
     },
     {
-      "published": "2026-11-09T05:39:03+00:00",
-      "title": "iraq oil production claims challenge opec quota limits - NewzTodays",
+      "published": "2026-11-10T15:27:19+00:00",
+      "title": "Iran Guards Say 2 Oil Tankers On Fire In Strait Of Hormuz - NDTV",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeVVsVHhYOE1tOWYzWmJVYzFlMmxrX2QzSnVTV0FJaTFmX2pFblFubVNlWWVWS0s4dllub2JVSEJla08wQkR2NVV1Tjh2czJPdFEtRW1SSmJ6bkZGQVdMS3k4djVVMnFoZk5ZY2hjZk5iU1d1dFJzQmg4VERDZExFR1Vpc3BmQjc2SDhZZ09IWWJLVThXczRPSW50WnlFaFXSAacBQVVfeXFMUE1XTGNFNDV5N1d1VHBVSWNabzByX2x6SmVJNnlZaWN6UGZHN3U2Ymd3NENSWklnY1YtZDh2dUp4TVJ6UDVEcC0wWXh6LVRYcFRCLW5sY2FRZVZyY1Z4VWVGMWctelZKZGt6VWtMc1RLeDBFUV8zMGppWl95OFNOdlZpTm5JMVM0VzFaZzYwX1V2ZDRTbVY4cG1YSlJUY21Cb2MxUTlkUDA?oc=5",
+      "id": "5eec2509564f251280"
+    },
+    {
+      "published": "2026-11-10T14:49:44+00:00",
+      "title": "Iran claims two oil tankers are burning in Strait of Hormuz - Container News",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUEMyWXVVdk5meXhScjNnckROUWh6Skx2RlNackZSZS1LMUxRLWhHU0ZfTS1tb19CRkVCNzZJeTR4Nmh3dFRTd1lYT0QwcU94bXA4MnJ2YktlS0FXa3pKVDExVWI1NFc0V29jS094cVRjUXdncnVweldjOUFLdnJvc2pNeUZXZUhDZ1o1ZkhZT1I?oc=5",
+      "id": "dcdc112d9ccab84460"
+    },
+    {
+      "published": "2026-11-10T14:46:50+00:00",
+      "title": "Reuters Survey: OPEC Production Rose in October to 90% of Pre-War Levels - صحيفة مال",
       "source": "Archive Oil Market OPEC recent",
       "sector": "Oil",
-      "country": "Iraq",
+      "country": "Unknown",
       "region": "Global",
       "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNC0tSkpNNmI5by1DOVV5MlVxRWJTUGpNMi0wOEM2b0NSV25feWp1MmtEekpDdlFDY2cyU3VkU3FlSVFzcC1SZ3NMU3FMT0tVcFg4RlpNdUkwZXljcGNlNHRuZlR5ZkdpM1dwTGhxa0QyV3NxazgxUVVWYnR2bHROWER3WDdMeVFP?oc=5",
-      "id": "f7977618581dc36389"
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9xUWQySEhMZ2ZYZGhZYVMyUG9oRmZPNDh3Y1A2UUx1dTVNMk9fLTBXeHBaMk9rbXVtUTU3TUtUTU0wQkZyTDhYZTJheGhpUjZacFNHNWhjNGs3ODdxdlNjRXpyZHpzaXZDSWhR?oc=5",
+      "id": "19051ed83bf33356c7"
+    },
+    {
+      "published": "2026-11-10T14:37:17+00:00",
+      "title": "Two oil tankers catch fire after explosions in Strait of Hormuz - Tehran Times",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZWd0TGJ1bWFSckM3WFpXdjNGaFZsOHVBUmlNcWQwN1AxYl9BZzJUVW1Ka0RDMmpMVHFqXzN1bmpLazZZdUh1OVZ0V3V2aFpzTWotMW5NYXlCR1pvR0hnYUs5T05LUnJmTXYyZW1HVmdtOUFvNFpFbXlVQy1JZy11NnlNYS05amhEUnppME9CQ1VzbzduQ1JvWUNDbmF2Q3JyZjB1Z2p3?oc=5",
+      "id": "84d29cd2a4d801cd07"
+    },
+    {
+      "published": "2026-11-10T13:58:00+00:00",
+      "title": "Rubio claims Strait of Hormuz oil flows near pre-war levels on some nights - Middle East Eye",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRWx6ZldLRzhfQm12RzJoT1NpYy12LVhRclg4ZHRDUjA1VkI5QnV5VjBidlZCd1ljZ01xRmd1MllSSGo2Qk9McWlLTUpVQWM1T1BtMkpqT2p5bzkwVHRUSzU1WVFYVkRybnpYQ01rdmpTTmpCSXBlUHYyNGtRZmNmc0tCNkdPZEJQU0c4R2tSRW1pSnhtWWVBai1ZbVZ5ZFowUmtxVElSWTFUUkdHaUpnaDA0QmZJLUJZc192a0syaFJvaFE?oc=5",
+      "id": "3d5396993998ad7141"
+    },
+    {
+      "published": "2026-11-10T13:57:00+00:00",
+      "title": "Two violating oil tankers catch fire in Strait of Hormuz - Mehr News Agency",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR25nY3ZHTXFYaDJMU2VkeGpyMUoySXdoZGJOR2FlZ2FKZFVhRFZNRVNvX0VpYVQ1UzNfa2VFeTJ1X2c0LWNBX2VpZFlMdnVkNGR1VHlaVC1tNmRqcmdxa1g1eVNvTXFsQWJNbUhZamxncTl3MFlGTHhBZTBPR2tUakVtcHhJRGhSOUhCbmxuSHpvMVRBNzNv?oc=5",
+      "id": "677891ec8c99ac9b93"
+    },
+    {
+      "published": "2026-11-10T11:29:40+00:00",
+      "title": "Iran says 2 oil tankers explode, catch fire in Strait of Hormuz - Anadolu Ajansı",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ1VoSFdSRFJXX0hfWHh3RWxpaG1qZnZoeExJd0h4eG56M0FTcVM5cDRKSkJ1eG5DRUotNVZ3X0toTWQtdEVRTnVNV29XdUkxMmhldXlrV0FDTHliR0VGM0hIajJRYXMtNjVKdXJCSVZneTgxNGZIWjhFU2FaUGtRcFpSVmJ1NE16b19vOFlkT1hBQnZac1k5WF93czRQZmFDNWZVNG9sa3NTUnJv?oc=5",
+      "id": "4176cd9d8c8d3cfa36"
+    },
+    {
+      "published": "2026-11-10T11:08:00+00:00",
+      "title": "Iran’s IRGC says two oil tankers catch fire in Strait of Hormuz - Middle East Eye",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRzNreURadlNsMEp1WXFmSEhRTmNOVHJxUHRRazV0d2xpVk5GWUljc0h2R3hMQmNuemRkclFmdzIwMlpjemxOTENhMW9EVHBIc0dvaURralNfd2dEUmVpVWRGWEhWWC1xSFRPSWJJeDZoWmFscnlEV05sX2ZsRTFTRElaaTNaU0t4VHBUNUFSalpFWkZORjhKbFRaeTJZM1lkVTI3VDJnOGRTcnNCY0RFN3cyUQ?oc=5",
+      "id": "82368138d2e78756a8"
+    },
+    {
+      "published": "2026-11-10T11:07:13+00:00",
+      "title": "OPEC production around 90% of pre-conflict levels in Oct: surveys - Quantum Commodity Intelligence",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdWstWk41aW85cTdWNnJpdHFpNkFGVWVnV3ZhTlZEY2lQSkFac2huankxZ25lZ2t3b1JJc2N0RDI1d1JvNzdOMzAtSnJ0TmNZZS1tSTZXXzM5enNKVUJzekYxYWZfblVmd3c5dXVCNXJCUU95NHpQWV9fRV9SZjVxNXJhMHVqTlpjY2lpdXUtTTRPOWRSd3NrVW9mbml1TFduS0FJejJNTWhpUQ?oc=5",
+      "id": "ed965c46709001d7a0"
+    },
+    {
+      "published": "2026-11-10T10:38:49+00:00",
+      "title": "Brent crude dips below $90 for first time since August on Iran war de-escalation hopes - CNBC",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Iran",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51Y2hNRTN0UVJqLWY0eVd0dWp2T3RWWC1UTXRXUUNnem9BY09QT3FfdUxDdktQX2ZVd195a3Bpd3NGV3ZmQU05Mk9uUllGZlRmYnR5NXVycGJQMmVnSnc3cVpVNGhzRmN6dlE?oc=5",
+      "id": "9d745dd28105d2ce78"
+    },
+    {
+      "published": "2026-11-10T09:12:00+00:00",
+      "title": "Exclusive | Adnoc Gas Still Evaluating Options to Bypass Strait of Hormuz - WSJ",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORG91VTJTNXRTOHYxUUFWUkI1M2kybDhNUW5NVmY5VGF1TXY2TUpuTlI4UTJFUjlWQUJzNU0wOTk3R0dQM2ZSLVFxSE9LZnkyYncxZXNLNjZ1c1lsLWpNMG1nQUdZbkxHZ1RDUnpxejEtbXd4cWZabkgwRC1FUTVBZHA4NFNCUXF4N0RMQzRoODh6UjRPOGdKWFVDcEQyeTFaVVNlbkhHd09nTGFiQUd3?oc=5",
+      "id": "d9e94633e34a1dc973"
+    },
+    {
+      "published": "2026-11-10T08:29:51+00:00",
+      "title": "OPEC oil output returns to 90% of pre-war levels: Report - ارقام : اخبار ومعلومات سوق الأسهم السعودي - تاسي",
+      "source": "Archive Oil Market OPEC recent",
+      "sector": "Oil",
+      "country": "Unknown",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vR0tJME01NjF4eElqalJ5YjlGd1lWZ1h5T3R6Si02TURuRldRV1g5bE15UmxxRUlrSnZYZmJzNDJ4UnNtbW5lR01vT05fcFBZTk9BVHF4a0stN1Nsbi1hZG9hN3FDWDV6YVE?oc=5",
+      "id": "0ea7e744abcc654969"
     }
   ],
   "direct_examples": [
     {
-      "published": "2026-11-10T06:51:56+00:00",
-      "title": "Kazakhstan Emerges as Key Destination for International Financial Institutions’ Investment in Q3 2026 - The Astana Times",
+      "published": "2026-11-10T19:01:38+00:00",
+      "title": "Kazakhstan Central Bank Invests $190M in Crypto Funds and Bitcoin ETFs - Cryptonews.net",
       "source": "Google News Central Asia",
       "sector": "Finance",
       "country": "Kazakhstan",
       "region": "Central Asia",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUWpUNlQ2cUhYT1BoRUppd1VJMEFkZGNUUWNQb003ZllBa3B2MnVLLWZSX2VWNVNDbndiUENSWFBmaEp4WWFYc1Y3TU5iYzVzbFpXcjhVaUNtWldIdjBnLVA3ck90MEZIN0UyVFQzLW85cHJEUUl2N0JkYzFscEdWSUZkWXJvcHNwVnFCNGNsXzIxdXFiTjVVNUxlQVpUVU1jZnNMbUM2bGJaaHEtcXlpUDFHb1VXUlpxajRJeVR3aWdheGFacW5hZFdBOHF6dw?oc=5",
-      "id": "2f08f3091989d6da0d"
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBSOWRXUExlSlBvT2l1cjNuaktBWDV4d3k5SVF6Q1REekpubnpRc2lmMklOTXBjMV9YZy1ZNklkalRwcFFaQm1XMWJLVXE5ckVpOUYxcWZtWjk?oc=5",
+      "id": "e623e0f07b215a9ea8"
     },
     {
-      "published": "2026-11-10T06:16:22+00:00",
-      "title": "China and Central Asia Emerge as Key Markets for Kazakhstan’s Growing Processed Exports - The Astana Times",
-      "source": "Google News Central Asia",
-      "sector": "Trade",
-      "country": "China",
+      "published": "2026-11-10T17:11:00+00:00",
+      "title": "Kazakhstan invests $2.1B in renewable energy over 12 years - Kazenergy - Trend News Agency",
+      "source": "Archive Kazakhstan Caspian recent",
+      "sector": "Cross-sector",
+      "country": "Kazakhstan",
       "region": "Central Asia",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLUFhQVNjNmlxd01DRFJ1NVJ4THZldEZtcVUtdVlyX0lZZW02UVFYdHVQTGxuUVJfZFdyRDJZR3pRSzBSM0xYbFJCZlNIeGVrZEU5UDh0SUEyd1Z1aDdlUER2cXJnN0hXRHJ1NzEzZjNLNXZuYWx0RG1fUFVCMVA2RGktbUpwVlYzZzBiNFJEblIxOU9hRmhVYVpZS01PZVdUY2g4cldxQlpydEdfcnF0bHF3dGEwT3N5ZUtj?oc=5",
-      "id": "04918fb615bed16fcf"
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5EQ2ZBTExYLXFuU3dTVnozanRROTh1a1lNUTMtbXlwczRVZnhlZmE0aFIzcWxKUnZtMGl5TkwyZ3FUZTYxM1E3VUt1c3J1WS1Td21hQmRYclhmVFdDdVRr?oc=5",
+      "id": "151ef02e92ddac2728"
     },
     {
-      "published": "2026-11-10T05:44:36+00:00",
-      "title": "Kazakhstan plans to increase 2027 oil exports by around 4%, Interfax cites energy ministry - marketscreener.com",
+      "published": "2026-11-10T17:08:36+00:00",
+      "title": "Kazakhstan invests $190M from its $700M crypto reserve - Crypto News",
+      "source": "Google News Central Asia",
+      "sector": "Cross-sector",
+      "country": "Kazakhstan",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4WVllTjBuc2VGbmFHUjVXeW1FSHZKRjZuUm1WRFZNUVR0XzUzQmtxX2dLd0NMMll0V3JWSXJYSGdVN2o5STBxdjdvUktBcGJjWXRwR05pcDR3c0dPX19KTGFZWjlaNDQwUHJVZFF2RnFyRzdlOG14Rg?oc=5",
+      "id": "a31a0264855755b689"
+    },
+    {
+      "published": "2026-11-10T16:16:10+00:00",
+      "title": "Israel’s Mekorot expands water infrastructure operations in Kazakhstan - The Jerusalem Post",
+      "source": "Google News Central Asia",
+      "sector": "Water",
+      "country": "Israel",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcjJuNDZTNzAyTXNSNVFoVXVHbmFiSEtReHNyVDExQ20zNURXR3JibzJUZ20xR1k5cWdKa3o4ZXBnMFE0cW83dnlkZFUzZGs2QzNCV1FGRzJMb1oyTzlVb2pPZS0xU1hKaWltY2pESXpGM01fM0l6bmtLc19WRHc2TDRmdDlobFRHem5GSmw0MA?oc=5",
+      "id": "0ec351a1660a708204"
+    },
+    {
+      "published": "2026-11-10T14:57:48+00:00",
+      "title": "Kazakhstan's National Bank issues first digital securities worth KZT 10 billion - Qazinform",
+      "source": "Google News Central Asia",
+      "sector": "Finance",
+      "country": "Kazakhstan",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQks1dUxabTMzLTdpWmNtb1pldnh3RmFUMGxWR3o4dHFwT0tmbFd5UVB0YXhiWjdSWWNwLWdQVmgwd1I5Rm9yMEluOXh3VHNjSE44UmxZTEtLM0UyR1lRay1LYkNXQS1hUHQ5T3N4WFliRE1NaGtxdUVSajFkRFVnOWQ2YnNKTTkzamhKei1xNkdKMkVraEcwSVBhVWlERC1nYWZSdlp1OTBId0Q2Rm9CTHpn0gGyAUFVX3lxTFB6NXdueE9xZi1WZnkzQnFvWmpyUEFhNllNMUZOYlVBN3BVdzBYUnZPcnhzclFRQmhCU3hhWDhwT1VrZ0RFaTNVV3c0U1BYbDhrTUpKNzhiTkVzTDJ0ZHpZLWVoblZCLU9OcFRNczdjMkIycFNOdU0zdnJkZWhIVTJGaUo3T1JmR1R0b0Zja28yZFJadEIzbUg3OHJNLUZ1QnlzdGtLQ1NVWUl0SV9DUjdMbEE?oc=5",
+      "id": "64ba76f73750d1a9e1"
+    },
+    {
+      "published": "2026-11-10T14:20:00+00:00",
+      "title": "Kazakhstan extends ban on petrol and diesel exports - UzDaily.uz",
       "source": "Archive Kazakhstan Economy recent",
       "sector": "Oil",
       "country": "Kazakhstan",
       "region": "Kazakhstan",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZWY0RVVWOG1zU2VaelQ1dXpGeW1hWVAxNWJ4YUR3Y3JCcHhjSWFYeTEwQTFKS2JEUnpzNUMwYnVHSGNOOXVld3lrMWgyZkhQX3ZkUzBIaTAxUnBOZXRfcWEyZnBCalhqN3pQSnVvLS00S2tSYmJ6QVNPUEtGWXpyNGlINHpZc0ROVGU4WFVzU3J2YWx4eWhDZDVOMWc4ZHQxV1gtcjN2WXFsY0lPTnhsVzlDZWs5LUF2NllKbzB0dkU5TzdPVHJEb3IxbTNsRTczNXdSNjgzYTA?oc=5",
-      "id": "cc06e792dc43f5ada3"
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTVoyN2VrZWN1dmthQkJhLWJJWW5WcWplM1NybnRMVWdiOVJIelNFblNzVHUzdmRMOVg0ZF9BUlNURERqTVFERGNNTzVfRUFud25TcnNnZGlGTTEzeXk1TXZQX0pTdVRHa2xwNDBtNEFWVGhxRHQwUzBPS2EzcS1aMmdqNU0?oc=5",
+      "id": "3670507b84560c76d9"
     },
     {
-      "published": "2026-11-10T02:50:44+00:00",
-      "title": "Kazakhstan inks new deals to supply Uranium to Indian companies - ET EnergyWorld",
-      "source": "Archive Kazakhstan Mining recent",
-      "sector": "Mining",
-      "country": "Kazakhstan",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM2gxYmZieXdmY1VnQndSTmRtT3hGeGd5QURGd3NRLVVtODlyMjFEaklqR3hGaWhZQUZZdmoxaUgyYm1aUGFzMXk4VmhObVdRYWt6VnhkaFpLbktEd3hlNzlFRmYwMWRqYnBGSXdLU3ZoakZXdWR1Q1NEYWJxaVpNaU5oWHh6WktPbTRYVzIzbmEwQlV2RXFaTE5JeGxhdk8ySmQxcC1NMU5XdDh0aGJQbDdWQUl6cUptMTJxdmpITdIBxAFBVV95cUxPOW9QeGdrUEVSMnJJOHRvSG5RamNvbGtlbEtIRXdGSnZocmp0TFllNkhHVDlKaXlfTXI1V2dYX1hJVXVTT2x1ckd3TTNwdEYxeE83WENieUx6ZWd1cHpDVlhEZGpRNzNIWG15Zi1WV0p3MHFhUGxMemc2UUhqZWY0QW1zWV85YnpPZlpwNWNBZnI3dFRfOUtxUkprcGptMkZ0S2dRdF9GcEN6cHZCTkFKMnBzajYwVHg5LXVfOFduekYxZEZZ?oc=5",
-      "id": "900b5dca0614ce7735"
-    },
-    {
-      "published": "2026-11-10T02:12:07+00:00",
-      "title": "VEON Acquires OLX Kazakhstan to Expand Its Digital Ecosystem - The Fast Mode",
+      "published": "2026-11-10T14:07:11+00:00",
+      "title": "Kazakhstan Expects Electricity Surplus Despite Data Center Valley Project, Officials Say - The Astana Times",
       "source": "Google News Central Asia",
-      "sector": "Digital",
+      "sector": "Electricity",
       "country": "Kazakhstan",
       "region": "Central Asia",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYjc1MTdYckUxSlZIY2M0STBoTENXU1hsS2ZDSGxWQmFWOTlBNWJEQVBocWJJNVgzWTV5YjJyZ2Uya2wtcDVlWDNXamIxT3oxRUxRc1ZhRFQwUlpjT0oxaG9Lako0cE9wSTJIVkxMTFB5OHNkWEFUVUFJS0l5QnlNUi1ZcW5UY0p6SGtGMXFoWTVCX3dqR05rTWMxRDNkVUFncVNUcFBxMXRnT3FGREJNaFNKU3VDZw?oc=5",
-      "id": "c2284b839e918ae2c2"
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM0hSUzlDbWJBZGtsbG9LZi0wMXltc2NCSFlvNVlDaHJiUm5MZ2FoWWNnRUhxMk5JYml1ZHFLMWdIWDRzM3dMQ2tEbXhiZUxkS2NVMWtpcXR5djNnR0E3elA1OUh3azdZdkdvSi1RS3cwdGc0V0lSYy04ZDVVVk05WWF0ZkNLSnBfMFNhNW0wcXNmSWxrYnJQalZOdUNfU0VwRWFSV0hRaGhTMEFHTWxGUm1qSXZjZ01UQmtoeQ?oc=5",
+      "id": "434a1aca071444e804"
     },
     {
-      "published": "2026-11-10T00:23:00+00:00",
-      "title": "Kazakhstan’s oil shipments to Egypt jump 327% in January-August - Trend News Agency",
-      "source": "Archive Kazakhstan Economy recent",
-      "sector": "Oil",
-      "country": "Egypt",
-      "region": "Kazakhstan",
+      "published": "2026-11-10T13:33:14+00:00",
+      "title": "Iran, Turkmenistan, Kazakhstan reach initial agreement on joint digital corridor - Trend News Agency",
+      "source": "Archive Kazakhstan Caspian recent",
+      "sector": "Transport",
+      "country": "Iran",
+      "region": "Central Asia",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wdkkxLU8zcFE3WDdPZHBuWVN5N0t0YjRKZjlVZVFhMlV2WjkxUUU5emlGWGtkX2JpaVVKbERTa2p3eE84WjFTZ3Y2RGNtb1JPTUZXbFdKU25NYTNvYkdR?oc=5",
-      "id": "f58f9d115995a2e201"
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBSTEQ5b21zWGtwSUk1VFlfUUh5Wk03bnY2d2hJaFFzbGdlRFJQR1hNc0hkb05CeXVRQnBUeVlGM1pocHdHNERtVkZhbnZtVzUw?oc=5",
+      "id": "7c26616b9286bb8112"
     },
     {
-      "published": "2026-11-09T18:45:36+00:00",
-      "title": "Kazakhstan inks new deals to supply Uranium to Indian cos - The Economic Times",
-      "source": "Archive Kazakhstan Mining recent",
-      "sector": "Mining",
-      "country": "Kazakhstan",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeGI3VHQzTlJkM2hvYTJaVlRLUjBFOE5GX1VycHRHVlQ0M0laMDhRbFVMbnluNDlBTWM5TUR1cHJnYUNadVBZenNsbHlJbDRDVks0TWhzN0lua0Y3Q3haVGlrYnJNeENQV210ZlB1THRQTjJxOW82LXJobkhpdFU2Q0VxbENhN0JrNXYyQ1N6eFJ0eFNzc054LWhCYzBpYkxNeWxxeDNNS3dmU05OZGhPY254Yi1KbVh0YkdqaHdpay0taURyanpMMXhlQWZwclhQRU1rQXU1UVFCMmw2aVVnMdIB2gFBVV95cUxNUTR6WkhMdERUTHlBM2RzQXNfTXBqVXZyMjN0NzRZSmNheF9yWTdUMDhJZ0F1VzhjSWZseHJIdVhVeHdGdWdqS0x5VjZTNUJFV08zMHJaUVcxejZ0LWgxcW9IY01XSjdTcWprdUF5bzMwUmY4Q0JsVWVMaHdiWmlqZ0pUbFh5ZTNsaDJhT2h0U2JEN2tFY25Qdmh2VkhrS0ZvMUFhUXk0dUtBRWl1ZnpSM2t2OG5walQ3bThvai1EamYtNDFQTEgwLU9HOG9JTzJONDg3N0dtakhjUQ?oc=5",
-      "id": "573aac065803fb3c82"
-    },
-    {
-      "published": "2026-11-09T18:45:36+00:00",
-      "title": "Kazakhstan inks new deals to supply Uranium to Indian cos - The Economic Times",
-      "source": "Archive Kazakhstan EU recent",
-      "sector": "Mining",
-      "country": "Kazakhstan",
-      "region": "Europe/UK",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPN3RaSXdnc3hmcFZleEpVWmN6Nk00bF9zVlAzX3dQSGdTeG1ZalpkVkZhTHpfOHo2R0dyWWVydS12ODFpckdjVHFCeFZmVkxNZDNHVnh6czRXXzhPTVFoanpUSXE3SGZtSUdBTW1HRHhHbDR0WWRTV2RpdlIwR1hIZkJBMWVISW9Pd2lOVGZZMmVtOHF6akhBbnJSa2xnNnNITTVTSE1uUDdlbno1LVV2dEdaWHM0b05zeENTWEo0TG93V1dCeXVTVk1aRWVSSWd6OXNPedIB2gFBVV95cUxNUTR6WkhMdERUTHlBM2RzQXNfTXBqVXZyMjN0NzRZSmNheF9yWTdUMDhJZ0F1VzhjSWZseHJIdVhVeHdGdWdqS0x5VjZTNUJFV08zMHJaUVcxejZ0LWgxcW9IY01XSjdTcWprdUF5bzMwUmY4Q0JsVWVMaHdiWmlqZ0pUbFh5ZTNsaDJhT2h0U2JEN2tFY25Qdmh2VkhrS0ZvMUFhUXk0dUtBRWl1ZnpSM2t2OG5walQ3bThvai1EamYtNDFQTEgwLU9HOG9JTzJONDg3N0dtakhjUQ?oc=5",
-      "id": "8530762438bbd4fc64"
-    },
-    {
-      "published": "2026-11-09T15:56:15+00:00",
-      "title": "Vegetable and potato rail exports from Kazakhstan rise 55% - FreshPlaza",
-      "source": "Archive Kazakhstan Economy recent",
+      "published": "2026-11-10T13:21:22+00:00",
+      "title": "Kazakhstan Presents Priorities for Europe-Asia Digital Corridor at Meeting in Chisinau - The Astana Times",
+      "source": "Google News Central Asia",
       "sector": "Transport",
       "country": "Kazakhstan",
-      "region": "Kazakhstan",
+      "region": "Central Asia",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZW9NNHdqUUllTG9ONUlkb2prd0JpcXRsWDNiM1Rndk9NZDVKVzZLem1oUUI5c05Kdlg5SEtibUs2ZUJGRTUwa2pNa0NEZjJXZ3ZLN3dFZmRzVGRMb1hmbWhOUFZsR3preF9KTm9nNkhqUDJqay1iRGZWbDFLVncwajhZa3RRUlhBVzRBaC1mdW5xM01iWkRzcXdEZ3NlOS1LMEhLQkttX0IxejNK?oc=5",
-      "id": "8f38d2f23405e2f0bf"
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRHFuOGNpZ2I3VUI4MHJmLThpRXQteC1UR01BckI0ajMyWlpXdXhMamtKMnEwMTd2eXdCLVF0YnRqM2x6VzlZZzRXWGtPbmNNRDdTa29ULVRyaGh4Q1c1YW1mbGRXM0VlZjl1YzhIeUI4cU5sdk5MdTF1Vm1NZl80X1FXUXROOUU0dzRlT2F3eVVlY29ua053WkpPX1FJSmpQRTk3ZXJ3YWg0VWR2RHRUa2p4WFg4SGgtX1dr?oc=5",
+      "id": "104e9e9451261b39c1"
     },
     {
-      "published": "2026-11-09T13:39:21+00:00",
-      "title": "Export prices for feed barley continue to rise in Kazakhstan – APK-Inform Asia - АПК-Інформ",
+      "published": "2026-11-10T12:58:00+00:00",
+      "title": "Kazakhstan's Oil Exports to Germany Halt Despite Full Production Capacity - PravdaReport",
       "source": "Archive Kazakhstan Economy recent",
-      "sector": "Trade",
-      "country": "Kazakhstan",
+      "sector": "Oil",
+      "country": "Germany",
       "region": "Kazakhstan",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1QeWRXZWdsTEZZNVJCM2xKRUNsVXN1MTVMS0JhT0d2VFhxcVo2dWEyT0h3bDhxdVBSYU5hYlkzNnBDZGxZR0ZMUGtoLUkwWlVvcm9RWA?oc=5",
-      "id": "c6831728da47b47d3e"
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcldDUUVQaXhOalluRmdfaWd6TXBwS21jME4yRDUyM19GZjNTUUc1aDBwYy1NcTkxR1JicDg0UUhuT3BuM0FvUnRjdzRXdzQxSkpxUFRXWkdHdk9GNTNZc1RaTjNZMHNZRHVOSzFFdU1RaVJVaFpvS2lYWWtBemR6bjhVdHZGaEE?oc=5",
+      "id": "411cb68bbc217c6f46"
     },
     {
-      "published": "2026-11-09T13:37:49+00:00",
-      "title": "Kazakhstan's National Bank reveals first projects for digital tokenization - Qazinform",
+      "published": "2026-11-10T12:25:06+00:00",
+      "title": "Iran, Turkmenistan, Kazakhstan Consider Regional Digital Corridor - تسنیم",
+      "source": "Google News Central Asia",
+      "sector": "Transport",
+      "country": "Iran",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaGJmaVhORWZIOEtMZ3ZqOVM4UE9RNHk2NlpoMFlZV0tBalNobTVyUDEyZ2MtYVBQTGFRWGdEM2R2cTNWb1M5MVBaNV9wdzVDVWdKeUxNMF85SXNCa2QwMTNtQm90YWU5Y0hUQ0hJT0tNc213N2x6UVdFS1ZlX1hHTGw3dV9INGpocHpsVnhxQ2VBSmFyM00yYUVIZzV6a3RjWXJRYlhKRjkxUmFVN2RVS255ZmRjanPSAbwBQVVfeXFMTjJKaDN6MGNzeXUyUi16VFVDQzVoQ1duUDNlLVU5NGluQzR3cGxVVGVoS0NPR0FYUC1laEliQWdZNVRWcTdoR2RxUm85OWVHZFM5RXc2QjM2NlJ6dDI5MXNTWmJiU01iUEZ3T09rV1V6TVhOTnVSSDlaM0N4NnVkX2VYUWZOSVljbklGU0xZNmVLb1VxSGs2eVlyRTNZd2ZkMHI5RXVFZHNyOGN3c1l5d18wd2Eta212SW10dzM?oc=5",
+      "id": "fe11a7a6cb924e0bc9"
+    },
+    {
+      "published": "2026-11-10T12:20:32+00:00",
+      "title": "Kazakhstan Telecom Investment Tops $2.2 Billion, but Rural Fiber Gaps Persist - The Times Of Central Asia",
       "source": "Google News Central Asia",
       "sector": "Finance",
       "country": "Kazakhstan",
       "region": "Central Asia",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaWZCazA3MlBacFV2Z0M3RkoyeXU3WThtVHJ4RW5vQkNaV0JJVVhISnF2aXBsMERpNzVvNUZseHY5SUVieW5fUnMxeFkzdDk4LWRzZUFjOGtsQzNkVzNXSXZINmRORjBZbkhIdm9nOTNZd2lHMzd5cVV2cVJHb3dHZm1fOXJ0SUVEb1Y4QWNTVmxYWFprbUxiUUpHUlNYYnJ1cC1UWlhqcWwxZ2_SAasBQVVfeXFMT0RFN1pwZUVCaEwyMEVGM3VuU2tPS2RKVUs3eFZxcEpWbmIyTTBPYjQxLUp4SjJZZjNxQWIxRnZOT01BUzEtQkdlXzhoaHBwWHhCUFFYUEYzSnFuN1poYmV1VlhHOFUtQk9zRTR3ZEV6VlFma2pTLXJOLU9seTkzcnF5OG1NUHNlOU9PTHFtRWo3Unh3emMyQVJHcWlHZkNmc0YycGREWHdxR3VJ?oc=5",
-      "id": "6bbebc5bbc72afa1c4"
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAzOGV6am43VHZYbkdnR3RvOG9kYUVhNHBWRFNyZlNzb09pRUs2MWJHOUZObmJldmdGdHRNLWNoNHhNSkRVSDY3bmI3LVVqTjQwR1VLSDR0YVN3cW13clY1VGpZaHhvM203dUNSVHpxaERrT3lfRUE?oc=5",
+      "id": "dc0fe65cc707b26ddf"
     },
     {
-      "published": "2026-11-09T12:55:00+00:00",
-      "title": "Kazakhstan targets boosted oil flows via Baku–Tbilisi–Ceyhan pipeline, Azerbaijani media reports - 1TV.GE",
+      "published": "2026-11-10T12:13:25+00:00",
+      "title": "Kazakhstan – Uzbekistan freight railway opens to relieve border crossing - Railway Gazette International",
+      "source": "Google News Central Asia",
+      "sector": "Transport",
+      "country": "Uzbekistan",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSWdLWW93cVlBRkh6MFFHejZ1elNCaXBaaTFzQTFod3Z5YXdVQVNaZnBTaFVQbkF5Xy1jVjRZbWRWdGtPTDJEU1N4ZUsxcFFqQktVTzg3bTJyaDFXMDVSN2JGUExLQzdxWEdiU2VrWWszUlF5WHhrMFAyQWNxZWlZUzhtNkR6ODJyNjAzWGZhMDltaVlCSlZCaGpWT1p2RE9jeEZpQTE3QzQteFpGSFFFaEh3LTl4bTN6UThqY19ncGc0Zw?oc=5",
+      "id": "7482237935a8cb466c"
+    },
+    {
+      "published": "2026-11-10T11:44:47+00:00",
+      "title": "Kazakhstan seeks to resume oil shipments via Druzhba pipeline - Kazakhstan Today",
       "source": "Archive Kazakhstan Oil recent",
       "sector": "Oil",
       "country": "Kazakhstan",
       "region": "Kazakhstan",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUWpIWHNVYWUtOFl3cnBKbUQ3YXJfWEhETU1NS3hxbEQxaW1XZXFRYk5yS1o2Z2wtcDFqU2lBTno5THlCb1laeTlueXNqX0hJSnVuRVZwN3Z4YVY0cnh1dC1iMk55cWEzeUQ4cnE0V2YyNlBmZlIwOVIxYjZWMzlUOVh0SGNwRjV5RjJxMGhEUEFyaEIzWWtiMWU2dVl0T0w4UmFuZ1V5cFA2V2hvRHE0X19IN3dPekVGRDBRRVNFYlBtQQ?oc=5",
-      "id": "50b81cdacdba26ef77"
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVDBVQzBTaXh5dENFbDExTzRfNGZUaTBDMVJxTWFjNkRPNWxyXzhXRnRVMnhJa2w5emxnTTNlR3VLczJucHZQOUYwYmhpN1lUZVFQUE5yaWNfZUFLR2JEUlhuYlhHV2lyZXJ4WW4yb1NoT0dIZkIyakRBSTk3NVNrSmlMREdSN0kyWmdYUnlxVURheFFrUWRGNmIyVFA1amM?oc=5",
+      "id": "f3336a575588863ea6"
     },
     {
-      "published": "2026-11-09T12:10:26+00:00",
-      "title": "Opinion: Kazakhstan and South Korea Need Investment, Not More Memoranda, for Alatau City - The Times Of Central Asia",
-      "source": "Google News Central Asia",
-      "sector": "Finance",
-      "country": "South Korea",
-      "region": "Central Asia",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdEl1QzZmM2FNU25JTGZrLWRsbGd1Y1pET3dXZlF1RGdoMHVGRXlUMk1pQzNjY2p2Y0hXQThGX1FLWUJqYVpFTkc4MVB4UVRIOUFqTTlRWHRRM1dHYnRkYXR0WDBXdEt0WG5tak1Gd1hxREFXN1hUSzQtYTNlUHFyQXNSSzJaRUJQNFk3NzkyRmJBVFZkWHhyNlhIU0RJYll4elpxYVNFS2xsQQ?oc=5",
-      "id": "2d65abae1db251c930"
-    },
-    {
-      "published": "2026-11-09T12:03:38+00:00",
-      "title": "Shrinking Caspian Sea Challenges Kazakhstan’s Transport Ambitions, Environmentalist Warns - The Times Of Central Asia",
-      "source": "Google News Central Asia",
-      "sector": "Cross-sector",
-      "country": "Kazakhstan",
-      "region": "Central Asia",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMFJwZVluam4waDhsZEdDSjJBdFd6YVJwTkpCbk9vX0s1Rld0Y2c4MmxQeEVIVjFIRFFsMm1ET1BnRXJOdzBfczl5NVc1WUlRSW5FT1NORWltSU1RMU9pMFJOaEJQV0YzSGhDTEZiOTczaHh1TG52TjIzNlRaMEo2UWM5TW9FYUhjVjRZaU5Yd0NKWDFTaDJGNVNIRFpsWEt6UG90dE4tMndrQkpu?oc=5",
-      "id": "e9d6f47ffd266ad567"
-    },
-    {
-      "published": "2026-11-09T11:59:30+00:00",
-      "title": "Kazakhstan Tajikistan Sign Fuel Supply and Mining Agreements - The Times Of Central Asia",
+      "published": "2026-11-10T11:31:08+00:00",
+      "title": "Kazakhstan to Extend Petroleum Product Export Ban for Another Six Months - caspiannews.com",
       "source": "Google News Central Asia",
       "sector": "Oil",
-      "country": "Tajikistan",
-      "region": "Central Asia",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0tdEY5VnJoMFR4cUtLbEFwTmJSSFQ4c055NkZROGJRd05RN0FTaW5BMHppVXQ2dUFuVWtVSFYwRU9OQW4ybXRlOVNTaVB0dGducTZPZlFJa0xHSXZrWC1WVkQyQWE1VnAyQ0hnQkpFWWNQMkVsWDNwNjJKR1Y?oc=5",
-      "id": "3281a05be528d10737"
-    },
-    {
-      "published": "2026-11-09T11:41:22+00:00",
-      "title": "Kazakhstan Maps Out New Opportunities for International Investors - The Astana Times",
-      "source": "Google News Central Asia",
-      "sector": "Cross-sector",
       "country": "Kazakhstan",
       "region": "Central Asia",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMTZNbDBZd2VFQmYxWDF3a3Q4anBfQUM2Y3p4ekhqOTd3b3RpdHV1ZUFFbnRLZkItcXdJdkRDTzRnMDRFRlBBRXBPNFU4MU1vSWQ0QnMxU19pTDljR2FLVG5icDhFQUptZjBlSG5GbXRNS09QMU1qdk1YOU5jWGs3blBOdnN1TVI1ZlhsOG5vNVdGaE9JcmFrSWN3T2k4RjA?oc=5",
-      "id": "cfc32b4e748307e8c9"
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdkFzbGZhbjNVMGdaNVRNbHdOTFU4NENVcjhEdUxOSzdtaEtJSEh5RmJ4eDJIOGNzWTI4Y0lGOWgtTjR1b2VDWC1waUdUblpUQmxCVEhqNXBvUXBQRkFSYjhaVmVZajVuUTNOUWhRbEcwTkctQndNTWx1SnM2aGxCMTNWVFQxblhDR1ZRSzliQUNveWIwTU85anVXXzBhV0ltelV5Y29ZUzc1cGxadUY0M3Z0c1NXSjNkVzR5YTVyaw?oc=5",
+      "id": "5388ce8781077cd2b6"
+    },
+    {
+      "published": "2026-11-10T09:28:04+00:00",
+      "title": "Kazakhstan Seeks Russia's Approval to Resume Oil Transit via Druzhba Pipeline - Caspian Post",
+      "source": "Google News Eurasia",
+      "sector": "Oil",
+      "country": "Russia",
+      "region": "Russia/Eurasia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSXc3ME0welVMTUh2MUpOems3ZGJHcl9MSmZwREZHNVBtM1RHb2V4ZjJSZFhFNGE3dEhQRU9TZWtiZHRQRzR3R1FwQmduUElIVXQyOUhmXzhiZUp1THZ6U2JPUXJMRVE3Mm1hVUJOQnBJRmhPRjgyU3J0SHo0UTA5OHVpSV9NMDZvcUYtOFp3TzFPTUk2aUpETzdNWEJRT045cDNWYTFva3UtOHhBR1dtNy1R?oc=5",
+      "id": "972326a41ccd803628"
     }
   ],
   "weekly_samples": {
@@ -1058,6 +1058,72 @@
     ],
     "2026-11 / week 2": [
       {
+        "published": "2026-11-10T18:00:03+00:00",
+        "title": "Third oil tanker hit by mine in Strait of Hormuz, Iran says - Latest news from Azerbaijan",
+        "source": "Archive Hormuz Oil recent",
+        "sector": "Oil",
+        "country": "Strait of Hormuz",
+        "region": "MENA",
+        "tier": "External shock watch",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObGZRdDBhaTlreEVkYWdIOFZXUUdSUW1GODdZTHdkYUJHWVUzLTFpQnhBYmJnRTdHMkQtRlFRZTZoSjdwX0taMGRJOUJBMTlkUEQxZVdoMFc4eFAtM1BoaUpLbTdTV1hDY0NNRVhMSUZqTHdoYVRURHcwaTlsWWFCQ3hKQ3doZw?oc=5",
+        "id": "7d005eea9e58a24b90"
+      },
+      {
+        "published": "2026-11-10T16:51:28+00:00",
+        "title": "Ukraine imposes sanctions on Russian ballistic missile manufacturers - Ukrinform",
+        "source": "Google News Eurasia",
+        "sector": "Trade",
+        "country": "Ukraine",
+        "region": "Russia/Eurasia",
+        "tier": "External shock watch",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSG5od0JlczFuMUNkOWRqNWM5ejJIMEFGZnA3UGpEbzJ1VG1vdkd6LU13NGRIRmRtRnQ0QmNJWEdtX2V3YVdkUlYweFN4VVMzOEl6ZERaTV9CcEJ4U3p1aWpPcUJsMHhyaDllLTMzeTlVQjZHYVpFVDZTYlhIc1VNa0pQVDBGZ054eVdDRnQzV1VHVkdOODY2S29Bb2xJdTBtU2NrQno5UEVxTmVSQWlwX29oUGg1YzhRYms0bzBkYjjSAcYBQVVfeXFMTjdCblpnMGdoVXdsUnpBX0tnMmpPdVdSRGk5UEc4YkFVYVFmYmxSUFU4WC0tT25vV1lOQy05ajZNQ3F3eWZCdGF3cS1Kc3gyclFvYlUteUp4WDc3TUFCeV9rRlNiUE9faXEyekluU1F2dmhreGNOWVBOOVNyVjlSYktqNE9FQzhKdnptYmNabGh2dEtqcVdDRFp5YUFsNTYySm5pOFg5d2xEOENZeW9ybURmd3JWbWVoT0JLM0VERUd3d2tEek1B?oc=5",
+        "id": "3d0ca3cc1ed904239a"
+      },
+      {
+        "published": "2026-11-10T11:17:20+00:00",
+        "title": "China's October 16 solar export controls threaten India's clean energy - NewsBytes",
+        "source": "Archive China Manufacturing Shock recent",
+        "sector": "Trade",
+        "country": "China",
+        "region": "China",
+        "tier": "External shock watch",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOVI0aVR1SmxIc0J4Z0wwWWhCSklmaFJ6ekNlWXJoekhXU25JcHBJdTZ6U0JlamFVejgxWkNsS0JoX29CbE96RTlheDY1TlVjX2R1bk1nZzFSWnYzTHhKYm1Ccmo1NG9NR0MtLUhOTy1wdEYxbzZWN2daRUdKZ2EzVE5lb2dZM1d0Vi00bmpjbGp2M25sOC1MQVE3VGRWMEhpWVd3ekF1VUphZHJDZ0d5R29MNTRKM0k?oc=5",
+        "id": "7eac213fee143cbe9b"
+      },
+      {
+        "published": "2026-11-10T10:09:51+00:00",
+        "title": "Canada imposes new sanctions on Russia over Ukraine war - İlke Haber Ajansı",
+        "source": "Google News Eurasia",
+        "sector": "Trade",
+        "country": "Russia",
+        "region": "Russia/Eurasia",
+        "tier": "External shock watch",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWmE0eGdWcUd0MkVJR094UElpMTdyVW1HR2tRTktjaEs5OHJNN2lBZEc5T3JaaTJ5cm8tc0xIMlJpZWFfblo2Umx1RlYxYjFQVUlPZktDZ3hhdHNQeDZ4ZGVlT3d0YmVhelBMc1g3WllJRUhPNGtQWWs5V1E2T0QwOF9CY2E0U2hHdTVTc0UxZWpRRXBPT1kxbWxB?oc=5",
+        "id": "79052960b67e4d1fd7"
+      },
+      {
+        "published": "2026-11-10T10:01:34+00:00",
+        "title": "Opec output rises as Saudi pipeline attacked - NewzTodays",
+        "source": "Archive Oil Market OPEC recent",
+        "sector": "Oil",
+        "country": "Unknown",
+        "region": "Global",
+        "tier": "External shock watch",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeFFpS1loVmxBeFRZRU5sVldoZGpYeXNNc213QUJEXy1KTkxpZDV3WHR2clZBcUQtY3N6ZlJHVEVXZGlwYWFQbndOOExLbERLd3c4S0hnX01sTnVRZHYzVlVBWHFPUUQ0aUtrMktOMEhqRjhMWm55Mm5RVDJobWdfczcwRVVZSXpaNUlB?oc=5",
+        "id": "afced066f1354c379f"
+      },
+      {
+        "published": "2026-11-10T07:11:00+00:00",
+        "title": "ADNOC Gas studying potential new export routes amid Hormuz disruption - Reuters",
+        "source": "Archive Hormuz Oil recent",
+        "sector": "Oil",
+        "country": "Strait of Hormuz",
+        "region": "MENA",
+        "tier": "External shock watch",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbTVGS2RyTXNjdkZfWVhDVzdLSEZ6Z3RvMDVvM3laaTU3c3ZhRUZnb2lZVl92UjBiQWJjbjlVaFFjbXVFMnlrVjBIZzFxM2VsNzVXVmhVdzNCcS0xeDJPYng0YWpUMVZOWmU2dTlSaXFlTWU5d2oydzRyQ1htVHpKSVV1c3NKbUZWWWc2QUd5UmR4RTIzNDdsOTZTdkpfWjFfTDRhTUM4VjFkalEtNE55elJMenBjUUVST0RnV3pn?oc=5",
+        "id": "46ce7e37df34327d3a"
+      },
+      {
         "published": "2026-11-09T20:48:24+00:00",
         "title": "Canada imposes new sanctions on Russia / Defense industry and actors involved in missile production targeted - Informat.ro",
         "source": "Google News Eurasia",
@@ -1122,72 +1188,6 @@
         "tier": "External shock watch",
         "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9UN2ptWGE5R0R6ZDMtQkZhOVM3eXd0N0hUc0toWjBQZTB4T2ZoY3FNNm00aHNRNkwycVJKX2QxczdrRmUxM09QOTBxS2NXQ1AydTBmTk5SM1R0NVBvdS1FVEt6YWZIdFRramE5SW0tblhyTDZPc3Z3cVVB0gF4QVVfeXFMT09IQXVWWXh0NXB6eDBJcjFNNWF2cktfdnhkdmlyamFxcjVkd29nMEFObVVhQ192dDJkS2JLd1VNVHgtV0dmLThRR2w2eFlzWENQWkJ2b0dxSGh5QWxyOXVJb2tZLWlWOFZWeHJfWmF2ZjlwaEdqVGZw?oc=5",
         "id": "46ca99e71cb0c64642"
-      },
-      {
-        "published": "2026-11-09T14:09:27+00:00",
-        "title": "Shipping disruption alone is not enough to drive a grain futures rally - Miller Magazine",
-        "source": "Archive Kazakhstan Wheat Access recent",
-        "sector": "Food",
-        "country": "Unknown",
-        "region": "Global",
-        "tier": "External shock watch",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcHdkQUVvbDhSUXpqVlo3VmxTU2otMnNxUzUxeXFmSTNxdFpDWUF2VEYxQnJBLWpwZy0wa2tGZDQ5Q0VuZDl4dUFDdkxITWp1cVVhdmwtOFNwRHgxOWhCWi1lbjVYV3c0Y001eU1kclhOLUVObjJJQTFpSU56ajlFc294QzBOaWxOSkZHOVdoc21zWDhYUXgzU1ZwaXNQZGMtNHFQdndVU19TaXM?oc=5",
-        "id": "44fd7cb86984f2acc3"
-      },
-      {
-        "published": "2026-11-09T13:49:00+00:00",
-        "title": "Europe is off-limits to much of Russia’s elite. Now sanctioned oligarchs, government officials, and hackers are spending millions at a luxury ski resort in the Altai Mountains. - Meduza",
-        "source": "Google News Eurasia",
-        "sector": "Trade",
-        "country": "Russia",
-        "region": "Russia/Eurasia",
-        "tier": "External shock watch",
-        "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNdDRRelNtOGhjR2hHYUpaanVpQkk0UWRjT3phX3dpQnJhZUxrbXoyUElIbVphZl9JcVBEd211V2ZNZ3dZcWF1RGZVUmstVURPVWl5ak1sa0NfQllwN3RlQm5IMFdRRWx5WGRFcXZ4cnFZZTZlYUVZdUNRYmhndVlseEJpUXlHMm43R0VwbG1sZk03LXN4Z2kwWGxfWFdVQ1V4QzhWVTBrdGxnQjBWdXRFR0dfR0ROSEtZeGpyMUNDRFk2Q3Q3YktJNHE0TkhVZTVVdUhQb0Q1R0llczBReThaSC16ektNYmcwZDNwSU9WLTRpRWNIcW9CNmtmbVpsWVZGeWVDdS05d0s2djM4QWNmdm9Ma0JRVzhtQjZjT042SkhFWmpDWUZ0VUFrZjM5aXNDU0tTaVdlWQ?oc=5",
-        "id": "5bff773fd4b498390c"
-      },
-      {
-        "published": "2026-11-09T12:43:42+00:00",
-        "title": "IRGC Says Tanker Transit Halted in Southern Strait of Hormuz - IranWire",
-        "source": "Archive Hormuz Oil recent",
-        "sector": "Oil",
-        "country": "Strait of Hormuz",
-        "region": "MENA",
-        "tier": "External shock watch",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLVc5ZkJhM3Rzc0g0alJORmNNTThoVDNBNmI4ZjU4b25MWEJCck5tY3VYSDRuTDJOanhYQXZ4QW40U1AzNXFjaGU0akpwZkhXb1prV0R3N2xINS14cEhrY3d3ajIySjVZTmVBSnRDSkU2RE80cUQ0MzBqZHQ1QjQ1WHI1b0tld1dvLUREVUhMNG1RdldURmxLUEtQOFNoUQ?oc=5",
-        "id": "edd70e560307c2b678"
-      },
-      {
-        "published": "2026-11-09T06:18:59+00:00",
-        "title": "IRGC Navy: Illegal Oil Smuggling Through Strait of Hormuz Route Halted - WANA News Agency",
-        "source": "Archive Hormuz Oil recent",
-        "sector": "Oil",
-        "country": "Strait of Hormuz",
-        "region": "MENA",
-        "tier": "External shock watch",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQ3ZMNGY0UHNlTVRnSzlqSnVGdVh2dXVHUmkwc0ZuWHI5VlVJcGJIS3BCVVVxc1FCZVNIT0ZCVFFmbFk2OW55MDV1YTB0QnlnMjdOQ2RZbXU3LTVFMmY2TVZjLVRybXRXV3FCSzk0XzNyNlptZHgxM0NtLVZXOTlKQlJ4VXNzTTgzbTZwc1lmV3I3RFU?oc=5",
-        "id": "558534eeb2b3dd5b89"
-      },
-      {
-        "published": "2026-11-09T06:13:41+00:00",
-        "title": "Sanctioned Russian military aircraft lands at Ben-Gurion Airport in Israel - The Jerusalem Post",
-        "source": "Google News Eurasia",
-        "sector": "Trade",
-        "country": "Israel",
-        "region": "Russia/Eurasia",
-        "tier": "External shock watch",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8yTC1QRGNqcmxwNnplb3Y0TURKQVlKVHNyVk9tQTFlQ01ZU3ZtdGFvaWxMd1JCVmQ0ZFpRREZZYWRkanFhT2Y5LWFXSnBPV0hUX3YzcWNyS2twcHNa?oc=5",
-        "id": "bcb5d5768030be8e51"
-      },
-      {
-        "published": "2026-11-08T13:40:32+00:00",
-        "title": "Oil Traders In Talks With US To Get Sanctioned Ships Back To Sea - gCaptain",
-        "source": "Google News LATAM",
-        "sector": "Trade",
-        "country": "Unknown",
-        "region": "LATAM",
-        "tier": "External shock watch",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbXZlQnVJaTRNaTVBY3NtT2RnRWFFNDBidnV6MmJ6OGI3VkJqeWRxajJBSkFLSnpfRE5xeHJXd0RaNlpwMG5IUVl5Zkhvcm1yOEJGWXN3TVRERk11cW95UjJOejR3SjJFektXcF8xZi0xQ3BRazNmc1paelJFV0dCaUJINUMyM2N0enBERGdUOA?oc=5",
-        "id": "9956ede44fb9cf35cb"
       }
     ]
   },
@@ -1217,6 +1217,34 @@
           "tier": "Kazakhstan mentioned",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02cDNEN0VQMFFsNXdGUnFwTEhORW9qcmo1bWtfUV9ocXY1N3dkQmlkdmFEazQ1ZjV3MDZJWFJiNGRoSWpjQWlwNUNWX0NOaktyN1RuSUdLNTNDNjlrN1pR?oc=5",
           "id": "4979bea9ceef474d8b"
+        }
+      ]
+    },
+    {
+      "title": "kazakhstan s oil exports to germany fall 12 in january august",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-09T22:03:14+00:00",
+          "title": "Kazakhstan’s oil exports to Germany fall 12% in January-August - Trend News Agency",
+          "source": "Archive Kazakhstan Caspian recent",
+          "sector": "Oil",
+          "country": "Germany",
+          "region": "Central Asia",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sX1R5THlBSWVJM05QV2MxMTExdmJ6azhzNWkyQVRTSllWOUR3cFV6d2E3REVlRms4RnM4RENDWTRtTm9wdkRaYmtURlhiQU8yME5Ud1JRVHRZX1Y1YTVJ?oc=5",
+          "id": "76f3b5a3876e1faf01"
+        },
+        {
+          "published": "2026-11-08T19:17:00+00:00",
+          "title": "Kazakhstan’s oil exports to Germany fall 12% in January-August - Trend News Agency",
+          "source": "Archive Kazakhstan Economy recent",
+          "sector": "Oil",
+          "country": "Germany",
+          "region": "Kazakhstan",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZLUxvM095N3FrYTN6ZWw2U2RZQjNzRE53eXlWdlBSTFRXOEJVVi1hcm1SbjRmWFZFWXkxdjhMdDh2SkdFM21lcm9wRG5QcnRCeEU4UGhwNjVMTXJ0bGV3?oc=5",
+          "id": "adbc66ee539fa9bb88"
         }
       ]
     },
@@ -1905,34 +1933,6 @@
           "tier": "External shock watch",
           "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss",
           "id": "a144d6de7c06272c95"
-        }
-      ]
-    },
-    {
-      "title": "kazakhstan charts tricky path to export 79 million tonnes of crude next year",
-      "count": 2,
-      "examples": [
-        {
-          "published": "2026-11-05T17:57:39+00:00",
-          "title": "Kazakhstan charts tricky path to export 79 million tonnes of crude next year - Baird Maritime",
-          "source": "Archive Russia Oil Transit recent",
-          "sector": "Oil",
-          "country": "Kazakhstan",
-          "region": "Russia/Eurasia",
-          "tier": "Kazakhstan mentioned",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQamZjdkVDcHJzdlBZNGNxcEJXbWNhX0h4Z2pLNTVCcEFrZFVzdEh0UnFEMVRWcWhYWUFmSUwzUWwyNkdyT3FnYV93bTJNc3NRMzA1b21WWU4tc2dUWGxzZWgtNmNBUFZ5RVRzZzFKRUhadFB2aWFTWkRkcXdEX19jaWZ4b0xVMzlGeUZtZGtlM0RkWXRxQ3RHTmtYNWtvdm0taV9vQXpjVXFfR1huUHZVSENlT0hPZjMwMDN5QzlWeTFYSGdQWVBsNi1BVEE5UdIBzgFBVV95cUxQamZjdkVDcHJzdlBZNGNxcEJXbWNhX0h4Z2pLNTVCcEFrZFVzdEh0UnFEMVRWcWhYWUFmSUwzUWwyNkdyT3FnYV93bTJNc3NRMzA1b21WWU4tc2dUWGxzZWgtNmNBUFZ5RVRzZzFKRUhadFB2aWFTWkRkcXdEX19jaWZ4b0xVMzlGeUZtZGtlM0RkWXRxQ3RHTmtYNWtvdm0taV9vQXpjVXFfR1huUHZVSENlT0hPZjMwMDN5QzlWeTFYSGdQWVBsNi1BVEE5UQ?oc=5",
-          "id": "88a6a956166f4564fb"
-        },
-        {
-          "published": "2026-11-05T17:45:36+00:00",
-          "title": "Kazakhstan charts tricky path to export 79 million tonnes of crude next year - Baird Maritime",
-          "source": "Google News Central Asia",
-          "sector": "Oil",
-          "country": "Kazakhstan",
-          "region": "Central Asia",
-          "tier": "Kazakhstan mentioned",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPN2REUkxGQUhqbUZGanBFYnRnYUpkZk1EanBjTWZtOVdYdlkwdFpTYndCaklQRy1Kc3d5ZXYwNUZVSFMyUFN1OF9tcFBuWV9EMmJrRkNjMk9qcnhDVFBFNXM2dE5aN21aLXQzSmtfYWpOZlpMZEo3NWc5T1VVS0d4RHdQbTZ2Q3hhaXE4NUgyWHp4QW5aeGdfNzdESWdDR0dFZkN6N1VYVVdaUkoyLXhfSlJvakh6YXNtcnRrXzVUQkvSAc4BQVVfeXFMUGpmY3ZFQ3Byc3ZQWTRjcXBCV21jYV9IeGdqSzU1QnBBa2RVc3RIdFJxRDFUVnFoWFlBZklMM1FsMjZHck9xZ2Ffd20yTXNzUTMwNW9tVllOLXNnVFhsc2VoLTZjQVBWeUVUc2cxSkVIWnRQdmlhU1pEZHF3RF9fY2lmeG9MVTM5RnlGbWRrZTNEZFl0cUN0R05rWDVrb3ZtLWlfb0F6Y1VxX0dYblB2VUhDZU9IT2YzMDAzeUM5VnkxWEhnUFlQbDYtQVRBOVE?oc=5",
-          "id": "08202eac8330dd3743"
         }
       ]
     }

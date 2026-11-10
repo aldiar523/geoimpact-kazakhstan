@@ -1,9 +1,181 @@
 {
-  "generated_at": "2026-11-10T07:16:23.450231+00:00",
+  "generated_at": "2026-11-10T19:43:13.891735+00:00",
   "status": "Reported foreign developments for investigator screening; Kazakhstan effects hypothetical",
   "disclaimer": "Watch level is screening attention, not impact magnitude or likelihood",
-  "source_articles": 16,
+  "source_articles": 18,
   "groups": [
+    {
+      "id": "7d005eea9e58a24b90",
+      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObGZRdDBhaTlreEVkYWdIOFZXUUdSUW1GODdZTHdkYUJHWVUzLTFpQnhBYmJnRTdHMkQtRlFRZTZoSjdwX0taMGRJOUJBMTlkUEQxZVdoMFc4eFAtM1BoaUpLbTdTV1hDY0NNRVhMSUZqTHdoYVRURHcwaTlsWWFCQ3hKQ3doZw?oc=5",
+      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Third oil tanker hit by mine in Strait of Hormuz, Iran says Latest news from Azerbaijan",
+      "published": "2026-11-10T18:00:03+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-10T19:43:02.108461+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Unknown",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "unknown",
+      "scenario": true,
+      "impact_channels": [],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "watch_level": "strong candidate",
+      "watch_exposure": "External development, potential KZ transmission not independently established",
+      "exposure_channels": [
+        {
+          "name": "Transport / chokepoints",
+          "sector": "Transport",
+          "mechanism": "Transit, freight and insurance costs can affect Kazakhstan trade routes",
+          "evidence_status": "Hypothesis to test"
+        }
+      ],
+      "triage": {
+        "included": true,
+        "kind": "reported international development",
+        "score": 5,
+        "priority": "medium",
+        "reason": "Transit, freight and insurance costs can affect Kazakhstan trade routes; no explicit Kazakhstan impact identified",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-7d005eea9e58a24b90",
+      "situation_cluster": "hormuz-tanker-incidents",
+      "article_count": 3,
+      "publisher_names": [
+        "iran international",
+        "latest news from azerbaijan",
+        "seatrade maritime news"
+      ],
+      "publisher_count_heuristic": 3,
+      "related_sources": [
+        {
+          "title": "Third oil tanker hit by mine in Strait of Hormuz, Iran says - Latest news from Azerbaijan",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObGZRdDBhaTlreEVkYWdIOFZXUUdSUW1GODdZTHdkYUJHWVUzLTFpQnhBYmJnRTdHMkQtRlFRZTZoSjdwX0taMGRJOUJBMTlkUEQxZVdoMFc4eFAtM1BoaUpLbTdTV1hDY0NNRVhMSUZqTHdoYVRURHcwaTlsWWFCQ3hKQ3doZw?oc=5",
+          "published": "2026-11-10T18:00:03+00:00",
+          "publisher_guess": "latest news from azerbaijan"
+        },
+        {
+          "title": "Seafarer fatality in Gulf tanker attack, VLCC struck in Hormuz - Seatrade Maritime News",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNUgtMHVHSlAxRHp5VkJ2ZUJQa1FQTnRqVmpyNG1DVHZjSWJFQkhiMGpBc0F0bTJmbkluX3M2OU5VWDE0bkJXY0cyWUlnb0RxaEJ6akJJRXFiZEh6WU52cVRReVJqTDFTN2tRNGNzLU1ReDdVX0p1dm5uRlZaZkd5Z3U4SFdWWTVleFJZX0pzYTN2Q0xnOXZlcmZ3cw?oc=5",
+          "published": "2026-11-06T15:11:41+00:00",
+          "publisher_guess": "seatrade maritime news"
+        },
+        {
+          "title": "Iran's navy says tanker struck mine, caught fire in Strait of Hormuz - Iran International",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WbE1sR215ZWdEMmpBRXhucEJKMFVseXFnZDdpRE1CekoyLVRsS1d2S2tVTHBfanJlVjc5WHNvWDFLT3RlMTNkWFktOWhTWXNaLUE?oc=5",
+          "published": "2026-11-05T10:33:09+00:00",
+          "publisher_guess": "iran international"
+        }
+      ],
+      "article_ids": [
+        "7d005eea9e58a24b90",
+        "b3e0904e2a67ab7bb1",
+        "c176ddfb33da52ee13"
+      ],
+      "event_status": "Reported event candidate — not independently verified",
+      "hypothesis_not_impact": true
+    },
+    {
+      "id": "7eac213fee143cbe9b",
+      "title": "China's October 16 solar export controls threaten India's clean energy - NewsBytes",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOVI0aVR1SmxIc0J4Z0wwWWhCSklmaFJ6ekNlWXJoekhXU25JcHBJdTZ6U0JlamFVejgxWkNsS0JoX29CbE96RTlheDY1TlVjX2R1bk1nZzFSWnYzTHhKYm1Ccmo1NG9NR0MtLUhOTy1wdEYxbzZWN2daRUdKZ2EzVE5lb2dZM1d0Vi00bmpjbGp2M25sOC1MQVE3VGRWMEhpWVd3ekF1VUphZHJDZ0d5R29MNTRKM0k?oc=5",
+      "summary": "China's October 16 solar export controls threaten India's clean energy NewsBytes",
+      "published": "2026-11-10T11:17:20+00:00",
+      "source": "Archive China Manufacturing Shock recent",
+      "region": "China",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-10T19:43:02.108461+00:00",
+      "sector": "Trade",
+      "country": "China",
+      "lat": 35,
+      "lon": 104,
+      "direction": "Unknown",
+      "tier": "External shock watch",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "watch_level": "plausible candidate",
+      "watch_exposure": "External development, potential KZ transmission not independently established",
+      "exposure_channels": [
+        {
+          "name": "Trade / sanctions",
+          "sector": "Trade",
+          "mechanism": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains",
+          "evidence_status": "Hypothesis to test"
+        }
+      ],
+      "triage": {
+        "included": true,
+        "kind": "reported international development",
+        "score": 3,
+        "priority": "review",
+        "reason": "Institutional change or export access may alter Kazakhstan trading conditions or supply chains; no explicit Kazakhstan impact identified",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-7eac213fee143cbe9b",
+      "article_count": 1,
+      "publisher_names": [
+        "newsbytes"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "China's October 16 solar export controls threaten India's clean energy - NewsBytes",
+          "source": "Archive China Manufacturing Shock recent",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOVI0aVR1SmxIc0J4Z0wwWWhCSklmaFJ6ekNlWXJoekhXU25JcHBJdTZ6U0JlamFVejgxWkNsS0JoX29CbE96RTlheDY1TlVjX2R1bk1nZzFSWnYzTHhKYm1Ccmo1NG9NR0MtLUhOTy1wdEYxbzZWN2daRUdKZ2EzVE5lb2dZM1d0Vi00bmpjbGp2M25sOC1MQVE3VGRWMEhpWVd3ekF1VUphZHJDZ0d5R29MNTRKM0k?oc=5",
+          "published": "2026-11-10T11:17:20+00:00",
+          "publisher_guess": "newsbytes"
+        }
+      ],
+      "article_ids": [
+        "7eac213fee143cbe9b"
+      ],
+      "event_status": "Reported event candidate — not independently verified",
+      "hypothesis_not_impact": true
+    },
     {
       "id": "88fe76f68fa9e91f52",
       "title": "Saudi Arabia's East-West oil pipeline is attacked near Medina as OPEC output recovers to 90% of pre-war levels - MLQ.ai",
@@ -661,30 +833,14 @@
       },
       "news_group_id": "event-23743ad2df690ad7a4",
       "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 5,
+      "article_count": 3,
       "publisher_names": [
         "dw.com",
         "https://theins.press/en",
-        "iran international",
-        "newsquawk",
-        "seatrade maritime news"
+        "newsquawk"
       ],
-      "publisher_count_heuristic": 5,
+      "publisher_count_heuristic": 3,
       "related_sources": [
-        {
-          "title": "Seafarer fatality in Gulf tanker attack, VLCC struck in Hormuz - Seatrade Maritime News",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNUgtMHVHSlAxRHp5VkJ2ZUJQa1FQTnRqVmpyNG1DVHZjSWJFQkhiMGpBc0F0bTJmbkluX3M2OU5VWDE0bkJXY0cyWUlnb0RxaEJ6akJJRXFiZEh6WU52cVRReVJqTDFTN2tRNGNzLU1ReDdVX0p1dm5uRlZaZkd5Z3U4SFdWWTVleFJZX0pzYTN2Q0xnOXZlcmZ3cw?oc=5",
-          "published": "2026-11-06T15:11:41+00:00",
-          "publisher_guess": "seatrade maritime news"
-        },
-        {
-          "title": "Iran's navy says tanker struck mine, caught fire in Strait of Hormuz - Iran International",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WbE1sR215ZWdEMmpBRXhucEJKMFVseXFnZDdpRE1CekoyLVRsS1d2S2tVTHBfanJlVjc5WHNvWDFLT3RlMTNkWFktOWhTWXNaLUE?oc=5",
-          "published": "2026-11-05T10:33:09+00:00",
-          "publisher_guess": "iran international"
-        },
         {
           "title": "Sanctioned Russian “shadow fleet” tanker Louise 1 attacked near Strait of Hormuz, months after being targeted by Ukraine in the Black Sea - https://theins.press/en",
           "source": "Archive Hormuz Oil recent",
@@ -708,8 +864,6 @@
         }
       ],
       "article_ids": [
-        "b3e0904e2a67ab7bb1",
-        "c176ddfb33da52ee13",
         "eef3210c4635624455",
         "52393e1ef4c594190a",
         "23743ad2df690ad7a4"

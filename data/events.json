@@ -1,9 +1,212 @@
 {
-  "generated_at": "2026-11-10T07:16:23.305538+00:00",
+  "generated_at": "2026-11-10T19:43:13.722875+00:00",
   "lookback_start": "2026-10-11",
   "lookback_end": "2026-11-10",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
   "events": [
+    {
+      "id": "3b5713147714461523",
+      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNa0RqOGh1cE43N0dYeENWSFY2QURKVVFfX1dibG5BTmE0WDg5VS0zTEtGRVRnWGpjR2dkMzEtUXZQVDlkOTNvSkNJZGRpY2tNdWtZSE1GNDVSMHFNeGdxRFA0VjBVNGN1cTlNcjkwLUlZalV6RTJ0bFY3ZW9jMVVaU05SeFY3aDc2dXpmUDItcUoxakZGYlJETnA4b0FJNHZsRXpOSnNqQlZQTWV6bGdfeDdoOWFSS2NXa2dr?oc=5",
+      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Iran says 3rd oil tanker explodes after hitting naval mine in Strait of Hormuz Anadolu Ajansı",
+      "published": "2026-11-10T17:45:43+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-10T19:43:02.108461+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 7,
+        "priority": "high",
+        "reason": "global commodity or infrastructure channel; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-3b5713147714461523",
+      "situation_cluster": "hormuz-tanker-incidents",
+      "article_count": 4,
+      "publisher_names": [
+        "anadolu ajansı",
+        "dainik jagran mp cg",
+        "pars today",
+        "wana news agency"
+      ],
+      "publisher_count_heuristic": 4,
+      "related_sources": [
+        {
+          "title": "Iran says 3rd oil tanker explodes after hitting naval mine in Strait of Hormuz - Anadolu Ajansı",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNa0RqOGh1cE43N0dYeENWSFY2QURKVVFfX1dibG5BTmE0WDg5VS0zTEtGRVRnWGpjR2dkMzEtUXZQVDlkOTNvSkNJZGRpY2tNdWtZSE1GNDVSMHFNeGdxRFA0VjBVNGN1cTlNcjkwLUlZalV6RTJ0bFY3ZW9jMVVaU05SeFY3aDc2dXpmUDItcUoxakZGYlJETnA4b0FJNHZsRXpOSnNqQlZQTWV6bGdfeDdoOWFSS2NXa2dr?oc=5",
+          "published": "2026-11-10T17:45:43+00:00",
+          "publisher_guess": "anadolu ajansı"
+        },
+        {
+          "title": "Third violating oil tanker explodes in Strait of Hormuz in 24 hours - Pars Today",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUVdNN3l0bUJjWVhqdXJ5cGZKYWIxTFpZdGZNVVZmbWU1OXNkc3paQ29iWWYwdlBsT3RLd292aXBTMWtJMGxrNmxOaFJIa3pleUtXaEpfdGpMNlpxaVdFUmQ5YzMwcGRMVVNiR01abEQtbklmXzJZdG1fa0xaWFBoUFVjZGNoYVR1a0V3bzhNVm02dm8yM21NMG01RnE0M1B4R1d3TlR3Ni1rbkpuVVE?oc=5",
+          "published": "2026-11-09T05:58:00+00:00",
+          "publisher_guess": "pars today"
+        },
+        {
+          "title": "Third Oil Tanker Explodes in Strait of Hormuz - WANA News Agency",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5GWERtYnQ0OUlQTTBjNzFQeXlYMzBKV0FYQXV2Mm93NDRSa3kyXzdzS0xIWms4UWJsWkdJYVZMV0xCQ0R5eEg1RzJSNWhHbmtIeUoxTUdDUkhoYWZnTXA4MDlQVFNfdWVLM09RRE9vRG1tZ0U?oc=5",
+          "published": "2026-11-08T11:28:51+00:00",
+          "publisher_guess": "wana news agency"
+        },
+        {
+          "title": "Iran Reports Three More Tankers Damaged in Strait of Hormuz - Dainik Jagran MP CG",
+          "source": "Archive Hormuz Attacks Shipping recent",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYnhPR2xfVU5yMGNMb0ZUUEVLVUs0STZpSVNaVFY1ZW9DeXVSWUxZTzd1dkEwMktZczN1YlhOOV85VW9aX29xUVIwNjdpUTA4am4yRjFFQ2RMWkpxZzFodU1USHdSd3k3c19ReVY1LUNCR0cxTFJmNmI3Zkl5c0lpMmFHdE9pXy1fcjdGTGZRUGZYN0x1Y3ZjS3ljX3lna2dlcGdLVFhDb253ODhzZTlvTjNSWjZ2dVRsdFluVWc0bWp2dw?oc=5",
+          "published": "2026-11-06T08:10:24+00:00",
+          "publisher_guess": "dainik jagran mp cg"
+        }
+      ],
+      "article_ids": [
+        "3b5713147714461523",
+        "4f4c194dcd6d95998d",
+        "c1cd2a16b1a48780fc",
+        "25022532ac09579b9c"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
+    {
+      "id": "3670507b84560c76d9",
+      "title": "Kazakhstan extends ban on petrol and diesel exports - UzDaily.uz",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTVoyN2VrZWN1dmthQkJhLWJJWW5WcWplM1NybnRMVWdiOVJIelNFblNzVHUzdmRMOVg0ZF9BUlNURERqTVFERGNNTzVfRUFud25TcnNnZGlGTTEzeXk1TXZQX0pTdVRHa2xwNDBtNEFWVGhxRHQwUzBPS2EzcS1aMmdqNU0?oc=5",
+      "summary": "Kazakhstan extends ban on petrol and diesel exports UzDaily.uz",
+      "published": "2026-11-10T14:20:00+00:00",
+      "source": "Archive Kazakhstan Economy recent",
+      "region": "Kazakhstan",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-10T19:43:02.108461+00:00",
+      "sector": "Oil",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 6,
+        "priority": "medium",
+        "reason": "Kazakhstan explicitly exposed; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-3670507b84560c76d9",
+      "article_count": 1,
+      "publisher_names": [
+        "uzdaily.uz"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Kazakhstan extends ban on petrol and diesel exports - UzDaily.uz",
+          "source": "Archive Kazakhstan Economy recent",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTVoyN2VrZWN1dmthQkJhLWJJWW5WcWplM1NybnRMVWdiOVJIelNFblNzVHUzdmRMOVg0ZF9BUlNURERqTVFERGNNTzVfRUFud25TcnNnZGlGTTEzeXk1TXZQX0pTdVRHa2xwNDBtNEFWVGhxRHQwUzBPS2EzcS1aMmdqNU0?oc=5",
+          "published": "2026-11-10T14:20:00+00:00",
+          "publisher_guess": "uzdaily.uz"
+        }
+      ],
+      "article_ids": [
+        "3670507b84560c76d9"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
     {
       "id": "7e751318363864e08a",
       "title": "UNDP launches project to improve electricity grid efficiency in Kazakhstan - United Nations Development Programme",
@@ -1426,36 +1629,15 @@
       "situation_cluster": "hormuz-tanker-incidents",
       "article_count": 6,
       "publisher_names": [
-        "dainik jagran mp cg",
+        "iranwire",
         "marine news magazine",
         "muslim network tv",
         "newscord",
-        "pars today",
-        "wana news agency"
+        "wana news agency",
+        "تسنیم"
       ],
       "publisher_count_heuristic": 6,
       "related_sources": [
-        {
-          "title": "Third violating oil tanker explodes in Strait of Hormuz in 24 hours - Pars Today",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUVdNN3l0bUJjWVhqdXJ5cGZKYWIxTFpZdGZNVVZmbWU1OXNkc3paQ29iWWYwdlBsT3RLd292aXBTMWtJMGxrNmxOaFJIa3pleUtXaEpfdGpMNlpxaVdFUmQ5YzMwcGRMVVNiR01abEQtbklmXzJZdG1fa0xaWFBoUFVjZGNoYVR1a0V3bzhNVm02dm8yM21NMG01RnE0M1B4R1d3TlR3Ni1rbkpuVVE?oc=5",
-          "published": "2026-11-09T05:58:00+00:00",
-          "publisher_guess": "pars today"
-        },
-        {
-          "title": "Third Oil Tanker Explodes in Strait of Hormuz - WANA News Agency",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5GWERtYnQ0OUlQTTBjNzFQeXlYMzBKV0FYQXV2Mm93NDRSa3kyXzdzS0xIWms4UWJsWkdJYVZMV0xCQ0R5eEg1RzJSNWhHbmtIeUoxTUdDUkhoYWZnTXA4MDlQVFNfdWVLM09RRE9vRG1tZ0U?oc=5",
-          "published": "2026-11-08T11:28:51+00:00",
-          "publisher_guess": "wana news agency"
-        },
-        {
-          "title": "Iran Reports Three More Tankers Damaged in Strait of Hormuz - Dainik Jagran MP CG",
-          "source": "Archive Hormuz Attacks Shipping recent",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYnhPR2xfVU5yMGNMb0ZUUEVLVUs0STZpSVNaVFY1ZW9DeXVSWUxZTzd1dkEwMktZczN1YlhOOV85VW9aX29xUVIwNjdpUTA4am4yRjFFQ2RMWkpxZzFodU1USHdSd3k3c19ReVY1LUNCR0cxTFJmNmI3Zkl5c0lpMmFHdE9pXy1fcjdGTGZRUGZYN0x1Y3ZjS3ljX3lna2dlcGdLVFhDb253ODhzZTlvTjNSWjZ2dVRsdFluVWc0bWp2dw?oc=5",
-          "published": "2026-11-06T08:10:24+00:00",
-          "publisher_guess": "dainik jagran mp cg"
-        },
         {
           "title": "IRGC Navy Says Two Oil Tankers Exploded After Striking Mines in Strait of Hormuz: 12 outlets compared - NewsCord",
           "source": "Archive Hormuz Oil recent",
@@ -1476,126 +1658,7 @@
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNVNqOE82NXpYYTNwVlo4NnE5ZkFVZ3Rsa1ZLc1AwZmdiZHhRSF9TeFU2QXhDRlRacV9FTDlMNGFBM2xwUUVSQWNGSWpacEgwT3ZsNG1PMkgzc2FqQWlvSkE3b2hlUmQ0TTBQXzdtc1dNZWFNSENsVWtxV1Baa2FDV08yNnktVlNOeW9TRDZrZEQ4cnR4RU9tajQ1eFlZNHQxSFJtTXNsQkFOR2RQR09Zb0VzSmc3dURfTmE5R0VVZHAwREgwYmFr?oc=5",
           "published": "2026-11-02T09:00:13+00:00",
           "publisher_guess": "muslim network tv"
-        }
-      ],
-      "article_ids": [
-        "4f4c194dcd6d95998d",
-        "c1cd2a16b1a48780fc",
-        "25022532ac09579b9c",
-        "83be006b1c175090db",
-        "5465e9fb0aa482b81f",
-        "82520fa4cfb0d89c23"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "0c060dc09ebbfa3b65",
-      "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQejh3QTFuRjVLVVdnQUtrWDcyanNDRlVEbG1xTVZQb0lDMzVkRVExcjNENk1ySGhQRXBZYzVHU2RNRGF4QWZ2YUZ0MDZOem5pamRPUlJFZ2dpYW1uckUyZEdzSlpoVTB5a19fdi1IT3RSSzlaalFjU3QxdzJVb3hjVks4ak9iUnJ0ako5STdobEZBTXdXS3BUTVJaeDd4ZlpXNTdib1FxVUZ2ZXFsOXc4Vm50bUR2Zng5YVBURWRJNHRzdGJw0gHKAUFVX3lxTE5GTWpuVDAzcGJiMU5CWDVpQ2pfdXdJck5tT01EQnNLWkFaQk13VUNCUzBzb01DTlZWWlJvaFdkSmg1bWpncEpfdGJFci0yQTZ4WTZ2ek1yVnRONkVsYk1Dd0RpUjRsTXU1cXl2UzV1NHJXMlhVbTdkXzZKeGY3X3U2QjlRcmYwR3hfVFdPUmJwQ3NBRHBnVngwVTI5RHAwWkRqZ2h3SWFqLV9pQnNGUmZkX3dSTUNZZTFSTjZmeXlneVJfTk5qdWJwVGc?oc=5",
-      "summary": "Related reporting grouped as one continuing situation. Individual incidents, dates and evidence remain in the linked articles. Third Oil Tanker Explodes after Hitting Sea Mine in Strait of Hormuz: IRGC تسنیم",
-      "published": "2026-10-30T13:23:49+00:00",
-      "source": "Archive Hormuz Oil recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-10-31T05:39:07.330011+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
         },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 7,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-0c060dc09ebbfa3b65",
-      "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 3,
-      "publisher_names": [
-        "iranwire",
-        "wana news agency",
-        "تسنیم"
-      ],
-      "publisher_count_heuristic": 3,
-      "related_sources": [
         {
           "title": "IRGC Navy: Fourth Oil Tanker Explodes in Strait of Hormuz - WANA News Agency",
           "source": "Archive Hormuz Oil recent",
@@ -1619,6 +1682,9 @@
         }
       ],
       "article_ids": [
+        "83be006b1c175090db",
+        "5465e9fb0aa482b81f",
+        "82520fa4cfb0d89c23",
         "667245cba2edb24e2f",
         "5a87bb74c3211168ed",
         "0c060dc09ebbfa3b65"
