@@ -1,9 +1,184 @@
 {
-  "generated_at": "2026-11-15T18:50:47.239505+00:00",
-  "lookback_start": "2026-10-16",
-  "lookback_end": "2026-11-15",
+  "generated_at": "2026-11-16T06:27:18.865576+00:00",
+  "lookback_start": "2026-10-17",
+  "lookback_end": "2026-11-16",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
   "events": [
+    {
+      "id": "1e9cf7e0e8cfec5ff5",
+      "title": "Kazakhstan extends ban on chicken egg imports for two months - Trend News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KVnJtcmtIazRiZHA2dWFsdXJYM0NpQ25xUWI2OGs1RWZPMWVRc0swT21RSW5OekhOd0MwdnRpbGhOQUE0MVRvV2RwX3ZieUxYbGlhWXdVY3dsMFg1dkc4?oc=5",
+      "summary": "Kazakhstan extends ban on chicken egg imports for two months Trend News Agency",
+      "published": "2026-11-16T06:00:15+00:00",
+      "source": "Archive Kazakhstan Caspian recent",
+      "region": "Central Asia",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-16T06:27:09.791988+00:00",
+      "sector": "Trade",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 6,
+        "priority": "medium",
+        "reason": "Kazakhstan explicitly exposed; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-1e9cf7e0e8cfec5ff5",
+      "article_count": 1,
+      "publisher_names": [
+        "trend news agency"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Kazakhstan extends ban on chicken egg imports for two months - Trend News Agency",
+          "source": "Archive Kazakhstan Caspian recent",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KVnJtcmtIazRiZHA2dWFsdXJYM0NpQ25xUWI2OGs1RWZPMWVRc0swT21RSW5OekhOd0MwdnRpbGhOQUE0MVRvV2RwX3ZieUxYbGlhWXdVY3dsMFg1dkc4?oc=5",
+          "published": "2026-11-16T06:00:15+00:00",
+          "publisher_guess": "trend news agency"
+        }
+      ],
+      "article_ids": [
+        "1e9cf7e0e8cfec5ff5"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
+    {
+      "id": "dbe3844baa4ea42f52",
+      "title": "Iran says supertanker carrying oil sank in Strait of Hormuz - Around Prague",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWmZ4UnVxSnhfUzBrSDNDSGY4YU1uZWh4SWd4dEVqc05nVXAzczFLTlhrZnZnc1VJR2JhOFVmeDMtZGUySGR3LVZJZjF5aWZXaHh4cWNWd19YNVVnWER6VFd4NU4zd1U2bE9JRXpsd1JYcmlQd056eDNYZ09uQm5PSVByUEY1UUx4Y1FMWEh3dE8zOFFFSXlPUUhn?oc=5",
+      "summary": "Iran says supertanker carrying oil sank in Strait of Hormuz Around Prague",
+      "published": "2026-11-15T20:11:13+00:00",
+      "source": "Archive Hormuz Oil recent",
+      "region": "MENA",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-16T06:27:09.791988+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 7,
+        "priority": "high",
+        "reason": "global commodity or infrastructure channel; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-dbe3844baa4ea42f52",
+      "article_count": 1,
+      "publisher_names": [
+        "around prague"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Iran says supertanker carrying oil sank in Strait of Hormuz - Around Prague",
+          "source": "Archive Hormuz Oil recent",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWmZ4UnVxSnhfUzBrSDNDSGY4YU1uZWh4SWd4dEVqc05nVXAzczFLTlhrZnZnc1VJR2JhOFVmeDMtZGUySGR3LVZJZjF5aWZXaHh4cWNWd19YNVVnWER6VFd4NU4zd1U2bE9JRXpsd1JYcmlQd056eDNYZ09uQm5PSVByUEY1UUx4Y1FMWEh3dE8zOFFFSXlPUUhn?oc=5",
+          "published": "2026-11-15T20:11:13+00:00",
+          "publisher_guess": "around prague"
+        }
+      ],
+      "article_ids": [
+        "dbe3844baa4ea42f52"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
     {
       "id": "9ff18d30a1d4b9117e",
       "title": "UK imposes sanctions on Russia’s SIBUR; Kazakhstan could feel the impact - Kursiv Media",
@@ -525,6 +700,63 @@
       ],
       "article_ids": [
         "3670507b84560c76d9"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
+    {
+      "id": "363e10ea9ae8a614fe",
+      "title": "Kazakhstan Resumes Oil Exports Through Russian Pipeline After Drone Attack - The Times Of Central Asia",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNUlSdkd5UExZNnB0T1c5M2d3SGNRbmU3ZVRIcWFTeHdFRFNna1RxeTJoOTNvOVdpbS1Fd0VDU2lTNDRCSGxncVpGYm9sYjhqT2VIOTNNcUxwdGc1SEtDNGFwMm1CaHVNR0pNUm96a2FZblk2MXItWGt2RXQ4YVhVRlZZYUlhdDRlQ1gtMU1HYXJnLWpuM0pTQm9hcw?oc=5",
+      "summary": "Kazakhstan Resumes Oil Exports Through Russian Pipeline After Drone Attack The Times Of Central Asia",
+      "published": "2026-11-06T12:31:44+00:00",
+      "source": "Archive Kazakhstan Economy recent",
+      "region": "Kazakhstan",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-16T06:27:09.791988+00:00",
+      "sector": "Oil",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Potential negative",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported incident",
+        "score": 6,
+        "priority": "medium",
+        "reason": "Kazakhstan explicitly exposed; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-363e10ea9ae8a614fe",
+      "article_count": 1,
+      "publisher_names": [
+        "the times of central asia"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Kazakhstan Resumes Oil Exports Through Russian Pipeline After Drone Attack - The Times Of Central Asia",
+          "source": "Archive Kazakhstan Economy recent",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNUlSdkd5UExZNnB0T1c5M2d3SGNRbmU3ZVRIcWFTeHdFRFNna1RxeTJoOTNvOVdpbS1Fd0VDU2lTNDRCSGxncVpGYm9sYjhqT2VIOTNNcUxwdGc1SEtDNGFwMm1CaHVNR0pNUm96a2FZblk2MXItWGt2RXQ4YVhVRlZZYUlhdDRlQ1gtMU1HYXJnLWpuM0pTQm9hcw?oc=5",
+          "published": "2026-11-06T12:31:44+00:00",
+          "publisher_guess": "the times of central asia"
+        }
+      ],
+      "article_ids": [
+        "363e10ea9ae8a614fe"
       ],
       "event_status": "Reported event candidate — not independently verified"
     },
