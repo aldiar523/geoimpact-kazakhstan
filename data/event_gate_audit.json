@@ -1,20 +1,341 @@
 {
-  "generated_at": "2026-11-19T07:24:02.342908+00:00",
+  "generated_at": "2026-11-19T20:35:45.812346+00:00",
   "lookback_start": "2026-10-20",
   "lookback_end": "2026-11-19",
   "all_reports": 800,
-  "eligible_reports": 34,
-  "displayed_event_groups": 15,
-  "indicator_groups": 8,
-  "filtered_reports": 766,
+  "eligible_reports": 36,
+  "displayed_event_groups": 16,
+  "indicator_groups": 9,
+  "filtered_reports": 764,
   "excluded_by_kind": {
-    "background": 661,
-    "unlinked": 103,
+    "background": 653,
+    "unlinked": 109,
     "analysis": 2
   },
-  "high_priority_event_groups": 4,
+  "high_priority_event_groups": 5,
   "source_reviewed_groups": 0,
   "decision_log": [
+    {
+      "id": "50ea3aff9e8a591612",
+      "date": "2026-11-19T19:45:34+00:00",
+      "title": "Iran grows more aggressive in Strait of Hormuz despite surge in oil traffic - The Jerusalem Post",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "a1ab0cb9be2a1837d4",
+      "date": "2026-11-19T19:45:19+00:00",
+      "title": "How have Kazakhstan’s relations with Russia remained important since independence? - Britannica",
+      "sector": "Trade",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": -4,
+      "kind": "background"
+    },
+    {
+      "id": "0b09948217e0323e81",
+      "date": "2026-11-19T19:40:41+00:00",
+      "title": "Oil Tanker Catches Fire in Eastern Strait of Hormuz - WANA News Agency",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "0f777e6ae8a7caea9f",
+      "date": "2026-11-19T19:07:33+00:00",
+      "title": "Strait of Hormuz Watch: Peace Negotiations Stall, Vessel Attacks Persist - IndustryWeek",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "d40d71ccddc42b91c1",
+      "date": "2026-11-19T16:45:08+00:00",
+      "title": "Kazakhstan Received Chinese Y-9E Military Transport Aircraft With Ukrainian Roots - Мілітарний",
+      "sector": "Cross-sector",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "8d9de566d7382c97ef",
+      "date": "2026-11-19T15:32:51+00:00",
+      "title": "Iran Keeps Up Unrelenting Attacks on Ships in the Strait of Hormuz - The New York Times",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "24e125bf97628fe44c",
+      "date": "2026-11-19T15:26:18+00:00",
+      "title": "Why Oil Prices Are Falling Despite Strait Of Hormuz Risks - Forbes",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "0d4d08fad5b09a73e9",
+      "date": "2026-11-19T15:03:07+00:00",
+      "title": "Kazakhstan, Slovakia Discuss Trade, Energy and Transport Cooperation - The Astana Times",
+      "sector": "Trade",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "49959d3527cc31023c",
+      "date": "2026-11-19T12:49:35+00:00",
+      "title": "Kazakhstan Receives Y-9E Military Transport Aircraft to Modernize Air Fleet - Caspian Post",
+      "sector": "Cross-sector",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "86b53751787be2d366",
+      "date": "2026-11-19T12:40:34+00:00",
+      "title": "Iraq Turns North: Major Oil Pipeline to Turkey Reopens as Strait of Hormuz Shipping Stalls - Pipeline Technology Journal",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": true,
+      "reason": "global commodity or infrastructure channel; concrete reported development",
+      "score": 7,
+      "kind": "reported action",
+      "priority": "high",
+      "pathway": "systemic-market"
+    },
+    {
+      "id": "13d9eaada8fa5212d2",
+      "date": "2026-11-19T12:24:57+00:00",
+      "title": "IMF calls for more restrictive policy mix in Kazakhstan to curb inflation - Trend News Agency",
+      "sector": "Finance",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "3f73c5feaae972ee62",
+      "date": "2026-11-19T12:24:08+00:00",
+      "title": "IRGC Claims Two Oil Supertankers Hit Sea Mines in Strait of Hormuz - Caspian Post",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "712b6e0616132eb1c8",
+      "date": "2026-11-19T12:09:13+00:00",
+      "title": "OPEC Again Lowers 2026 Global Oil Demand Growth Forecast - EnergyNow",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": -1,
+      "kind": "background"
+    },
+    {
+      "id": "7a69cb33957f98bd10",
+      "date": "2026-11-19T12:03:00+00:00",
+      "title": "Three oil tankers hit naval mines in Strait of Hormuz, Iran says - AzerNews",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "6d6d0232395e8eaa40",
+      "date": "2026-11-19T11:39:04+00:00",
+      "title": "Sanctioned Russian Payments Firm A7 Opens Offices in Nigeria and Zimbabwe - The Moscow Times",
+      "sector": "Trade",
+      "tier": "External shock watch",
+      "included": false,
+      "reason": "No documented or specific plausible Kazakhstan transmission",
+      "score": 4,
+      "kind": "unlinked"
+    },
+    {
+      "id": "77a72b378f804cd75f",
+      "date": "2026-11-19T11:24:12+00:00",
+      "title": "Explosion of Two Supertankers Carrying 4 Million Barrels of Oil in Hormuz Strait - تسنیم",
+      "sector": "Oil",
+      "tier": "External shock watch",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 0,
+      "kind": "background"
+    },
+    {
+      "id": "050a7424d92c4651ae",
+      "date": "2026-11-19T11:20:31+00:00",
+      "title": "Iran's IRGC Navy says 2 oil supertankers strike naval mines in Strait of Hormuz - Anadolu Ajansı",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "b617c2952e12e0b34b",
+      "date": "2026-11-19T11:18:32+00:00",
+      "title": "Two oil supertankers hit mines in Strait of Hormuz, Iran reports - Yahoo",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "ab25c18631fd49bbdd",
+      "date": "2026-11-19T11:03:48+00:00",
+      "title": "Kazakhstan Armed Forces receive Y-9E military transport aircraft - Qazinform",
+      "sector": "Cross-sector",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "03eb526affee27acd2",
+      "date": "2026-11-19T10:49:32+00:00",
+      "title": "Two supertankers carrying 4 million oil barrels hit by naval mines in Hormuz Strait: IRGC - The New Region",
+      "sector": "Oil",
+      "tier": "External shock watch",
+      "included": false,
+      "reason": "No documented or specific plausible Kazakhstan transmission",
+      "score": 4,
+      "kind": "unlinked"
+    },
+    {
+      "id": "8622c3070941a245b1",
+      "date": "2026-11-19T10:48:16+00:00",
+      "title": "‘Economic Outcast’: US Pressure on Iran Tests Central Asia’s Trade and Transit Ambitions - The Astana Times",
+      "sector": "Transport",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "54100bc0840dc3a520",
+      "date": "2026-11-19T10:35:32+00:00",
+      "title": "IRGC: Two Oil Tankers Explode in Strait of Hormuz - WANA News Agency",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "b8dddec4c307b46b12",
+      "date": "2026-11-19T10:07:14+00:00",
+      "title": "Uzbekistan and Iran Agree to Expand Transport and Logistics Cooperation - The Astana Times",
+      "sector": "Transport",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "a92c1f71ad4261895f",
+      "date": "2026-11-19T10:03:23+00:00",
+      "title": "Europe tightens sanctions on Russia. America loosens them - The Economist",
+      "sector": "Trade",
+      "tier": "External shock watch",
+      "included": false,
+      "reason": "No documented or specific plausible Kazakhstan transmission",
+      "score": 4,
+      "kind": "unlinked"
+    },
+    {
+      "id": "b16463a937c9a2b047",
+      "date": "2026-11-19T09:54:29+00:00",
+      "title": "The European Union tightens its grip on Russia’s \"shadow fleet\" with sanctions targeting 150 entities and individuals - صوت الإمارات",
+      "sector": "Trade",
+      "tier": "External shock watch",
+      "included": false,
+      "reason": "No documented or specific plausible Kazakhstan transmission",
+      "score": 4,
+      "kind": "unlinked"
+    },
+    {
+      "id": "09f3cdd935a91da45a",
+      "date": "2026-11-19T09:46:24+00:00",
+      "title": "Iran's attacks on ships in the Strait of Hormuz escalate - NPR",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "9b2a1c6aa5cecc5140",
+      "date": "2026-11-19T09:12:17+00:00",
+      "title": "Turla deploys Cereal spyware on Kazakhstan and Romania government Exchange servers - Digital Watch Observatory",
+      "sector": "Digital",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "f6c5fb28f364914b13",
+      "date": "2026-11-19T08:36:08+00:00",
+      "title": "Tokayev says Kazakhstan has drawn $155 billion in foreign investment since 2019 - Trend News Agency",
+      "sector": "Finance",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "5fb717398a98111029",
+      "date": "2026-11-19T07:41:19+00:00",
+      "title": "Kyrgyzstan, Kazakhstan look to upgrade border checkpoints to ease transit flows - Trend News Agency",
+      "sector": "Transport",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
     {
       "id": "748499460bb6b82700",
       "date": "2026-11-19T06:59:12+00:00",
@@ -24,6 +345,17 @@
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
       "score": -1,
+      "kind": "background"
+    },
+    {
+      "id": "3475975015ca8f7fbc",
+      "date": "2026-11-19T06:36:15+00:00",
+      "title": "Financial Statements under IFRS 2026 - Moore Kazakhstan",
+      "sector": "Cross-sector",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
       "kind": "background"
     },
     {
@@ -104,6 +436,17 @@
       "kind": "background"
     },
     {
+      "id": "4ebfbab898cf465616",
+      "date": "2026-11-19T00:00:00+00:00",
+      "title": "Kazakhstan’s 150 ktU uranium reserve could deepen a looming uranium deficit - Benchmark Mineral Intelligence",
+      "sector": "Mining",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": -2,
+      "kind": "background"
+    },
+    {
       "id": "f174a32c2125e536c2",
       "date": "2026-11-18T23:50:29+00:00",
       "title": "3 Oil Tankers Catch Fire After Hitting Mines East Of Strait Of Hormuz: Iran - NDTV",
@@ -115,9 +458,42 @@
       "kind": "background"
     },
     {
+      "id": "7838fd7981ebb74457",
+      "date": "2026-11-18T23:48:16+00:00",
+      "title": "Tanker hit by unknown projectile near Strait of Hormuz, UK maritime agency says - Anadolu Ajansı",
+      "sector": "Oil",
+      "tier": "External shock watch",
+      "included": false,
+      "reason": "No documented or specific plausible Kazakhstan transmission",
+      "score": 4,
+      "kind": "unlinked"
+    },
+    {
       "id": "3f22a62e2a009385be",
       "date": "2026-11-18T23:36:15+00:00",
       "title": "3 oil tankers disabled by mine blasts in Strait of Hormuz: Iranian army - Anadolu Ajansı",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "6930d3922f411b00dc",
+      "date": "2026-11-18T23:25:52+00:00",
+      "title": "Tankers Pass Strait of Hormuz on First Day of US Blockade, Data Shows - EnergyNow.com",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "021deef9a3631ca8d4",
+      "date": "2026-11-18T23:07:36+00:00",
+      "title": "Iranian Oil Flows Through Strait of Hormuz Even as Gulf Neighbors’ Exports Shut - EnergyNow.com",
       "sector": "Oil",
       "tier": "Systemic-market candidate",
       "included": false,
@@ -724,6 +1100,17 @@
       "kind": "background"
     },
     {
+      "id": "5934986f19c2cf46d9",
+      "date": "2026-11-17T20:56:20+00:00",
+      "title": "Guinea's miners stockpile gold after refinery rules halted exports, sources say - Reuters",
+      "sector": "Oil",
+      "tier": "External shock watch",
+      "included": false,
+      "reason": "No documented or specific plausible Kazakhstan transmission",
+      "score": 4,
+      "kind": "unlinked"
+    },
+    {
       "id": "455c7272e25c474d28",
       "date": "2026-11-17T20:36:53+00:00",
       "title": "Kazakhstan discusses investment, trade and transport with eight European countries - Kazakhstan Today",
@@ -917,6 +1304,17 @@
       "kind": "background"
     },
     {
+      "id": "c95fb42780b6f36d00",
+      "date": "2026-11-17T15:02:00+00:00",
+      "title": "Eurasian Resources Group Prepares to Split Domestic and International Divisions - PravdaReport",
+      "sector": "Mining",
+      "tier": "Named asset match",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 6,
+      "kind": "background"
+    },
+    {
       "id": "4ea9f7b3d0d111c56d",
       "date": "2026-11-17T15:00:21+00:00",
       "title": "Second Strike on LPG Tanker in Strait of Hormuz Leaves One Missing, Two Injured - gCaptain",
@@ -980,6 +1378,17 @@
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
       "score": 3,
+      "kind": "background"
+    },
+    {
+      "id": "68f79aba5c485821f6",
+      "date": "2026-11-17T14:07:58+00:00",
+      "title": "Turkmenistan fruit and tomato exporters seek to expand sales in Kazakhstan - FreshPlaza",
+      "sector": "Trade",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": -2,
       "kind": "background"
     },
     {
@@ -1313,6 +1722,17 @@
       "kind": "background"
     },
     {
+      "id": "8747b10d11866821e6",
+      "date": "2026-11-17T09:48:00+00:00",
+      "title": "Kazakhstan prepares exporters for EU CBAM compliance - Shanghai Metals Market",
+      "sector": "Trade",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
       "id": "8ca1272724a4edae1b",
       "date": "2026-11-17T09:22:19+00:00",
       "title": "Kazakhstan Moves Beyond Grain Exports With Six New Projects - Caspian Post",
@@ -1403,6 +1823,17 @@
       "kind": "background"
     },
     {
+      "id": "4dc01522cd607b4901",
+      "date": "2026-11-17T06:59:19+00:00",
+      "title": "Brent Crude Oil Falls To $92 As Global Oil Surplus Threatens Nigeria's Export Revenue - Investors King",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
+      "kind": "background"
+    },
+    {
       "id": "87fbb7ee68d81ad037",
       "date": "2026-11-17T06:50:18+00:00",
       "title": "Kazakhstan-Azerbaijan Trade Reaches $306.1 Million in First Nine Months of 2026 - UrduPoint",
@@ -1429,6 +1860,17 @@
       "date": "2026-11-17T06:42:18+00:00",
       "title": "Kazakhstan, EU Discuss Strengthening Interregional Connectivity and Transport Cooperation - The Astana Times",
       "sector": "Cross-sector",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "98506e7840fe00de63",
+      "date": "2026-11-17T06:38:21+00:00",
+      "title": "Kazakhstan and Belgium discuss investment in Middle Corridor logistics - Kazakhstan Today",
+      "sector": "Transport",
       "tier": "Kazakhstan mentioned",
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
@@ -2889,6 +3331,17 @@
       "kind": "unlinked"
     },
     {
+      "id": "faa19579d8c11606ff",
+      "date": "2026-11-15T14:25:00+00:00",
+      "title": "Three ships struck by drones in Black Sea near Romanian shipping canal, PM says - CNA",
+      "sector": "Transport",
+      "tier": "External shock watch",
+      "included": false,
+      "reason": "No documented or specific plausible Kazakhstan transmission",
+      "score": 4,
+      "kind": "unlinked"
+    },
+    {
       "id": "84cfd09b3ad87b4c3d",
       "date": "2026-11-15T14:18:43+00:00",
       "title": "Oil Tanker Catches Fire After Hitting Naval Mine In Strait Of Hormuz, Iran Says - Marine Insight",
@@ -3656,6 +4109,17 @@
       "kind": "background"
     },
     {
+      "id": "7e59313de7c100c071",
+      "date": "2026-11-13T15:57:55+00:00",
+      "title": "Kazakhstan’s Ministry of Finance Celebrates National Currency Day and Finance Professionals’ Day - GOV.KZ",
+      "sector": "Finance",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
       "id": "22829391ec7faa1e17",
       "date": "2026-11-13T15:45:59+00:00",
       "title": "OPEC+ oil output rebounds by 2.04 million barrels per day in October: Implications for India’s chemical se.. - Indiatimes",
@@ -4000,6 +4464,17 @@
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
       "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "6abcc4eb636aea73ce",
+      "date": "2026-11-13T08:00:00+00:00",
+      "title": "OPEC crude oil output is nearing pre-war levels as Saudi Arabia rebounds - Quartz",
+      "sector": "Oil",
+      "tier": "Systemic-market candidate",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 3,
       "kind": "background"
     },
     {
@@ -5095,6 +5570,17 @@
       "kind": "background"
     },
     {
+      "id": "547fa61579e058edda",
+      "date": "2026-11-12T08:00:00+00:00",
+      "title": "Oman and Kazakhstan Underscore Importance of Increasing Trade Volume, Expanding Range of Exchanged Goods - وكالة الأنباء العمانية (العمانية)",
+      "sector": "Trade",
+      "tier": "Kazakhstan mentioned",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 2,
+      "kind": "background"
+    },
+    {
       "id": "6d0105ead79bc3986d",
       "date": "2026-11-12T07:59:44+00:00",
       "title": "IRGC Reports Explosions, Halt of Two Tankers in Strait of Hormuz - WANA News Agency",
@@ -5138,6 +5624,17 @@
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
       "score": 2,
+      "kind": "background"
+    },
+    {
+      "id": "acf0479e65470dba53",
+      "date": "2026-11-12T07:51:04+00:00",
+      "title": "KazTransOil increases oil transportation by 1.3 million tons in 10 months of 2026 - Qazinform",
+      "sector": "Oil",
+      "tier": "Named asset match",
+      "included": false,
+      "reason": "No discrete incident, implemented decision, or material measurable change",
+      "score": 6,
       "kind": "background"
     },
     {
@@ -6219,6 +6716,19 @@
       "reason": "No discrete incident, implemented decision, or material measurable change",
       "score": 3,
       "kind": "background"
+    },
+    {
+      "id": "83949e0e373934b93e",
+      "date": "2026-11-11T08:00:00+00:00",
+      "title": "Oil exports via MunaiTas pipeline system rise by 29% in 10 months of 2026 - Qazinform",
+      "sector": "Oil",
+      "tier": "Named asset match",
+      "included": true,
+      "reason": "named Kazakhstan dependency; Kazakhstan explicitly exposed; measured or sharp change",
+      "score": 9,
+      "kind": "measured development",
+      "priority": "high",
+      "pathway": "asset-linked"
     },
     {
       "id": "b1cd1cd19ce893c5d2",
@@ -8375,512 +8885,6 @@
       "included": false,
       "reason": "No discrete incident, implemented decision, or material measurable change",
       "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "a97cb8da6f0fdad78f",
-      "date": "2026-11-07T19:01:14+00:00",
-      "title": "Trump Insists On Strait Of Hormuz Blockade, Claims 'Nothing Is Going To Iran, No Oil Going There' - Sahara Reporters",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "a1fa37b3115d00b5e6",
-      "date": "2026-11-07T17:34:47+00:00",
-      "title": "Iranian navy says tanker catches fire after striking sea mine in Strait of Hormuz - Tehran Times",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "7895b47c3c8bc0925a",
-      "date": "2026-11-07T16:44:22+00:00",
-      "title": "Kazakhstan to establish new special economic zone with 1.4 trillion tenge in project investments - Qazinform",
-      "sector": "Finance",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "61ec9f646b6eac3706",
-      "date": "2026-11-07T15:58:56+00:00",
-      "title": "Kazakhstan, ITU agree on new initiatives to boost digital competencies - Qazinform",
-      "sector": "Digital",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "c4c4e429c810a0230e",
-      "date": "2026-11-07T15:00:29+00:00",
-      "title": "Shafaq News..Iraq seeks higher OPEC+ oil quota for 2027 - شفق نيوز",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "c8c11f6f8c896466ff",
-      "date": "2026-11-07T14:48:18+00:00",
-      "title": "Kazakhstan-Tajikistan Trade Nears $2 Billion as Leaders Agree on New Roadmap - Caspian Post",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "4164998c0a121e9bfa",
-      "date": "2026-11-07T14:41:36+00:00",
-      "title": "Iraq seeks higher OPEC oil export quota: minister - The New Region",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "e85497346e55225a19",
-      "date": "2026-11-07T14:41:36+00:00",
-      "title": "Iraq seeks higher OPEC oil export quota: minister - The New Region",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "4e18dcbebe592231eb",
-      "date": "2026-11-07T14:19:19+00:00",
-      "title": "Kazakhstan invests in AI, but energy supplies fall short - AsiaNews",
-      "sector": "Digital",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "ed8ab2d8edd8fd32f6",
-      "date": "2026-11-07T14:13:00+00:00",
-      "title": "Banks and crypto services in Kyrgyzstan to be linked to automated system for blocking sanctioned assets - AKIpress News Agency",
-      "sector": "Trade",
-      "tier": "External shock watch",
-      "included": false,
-      "reason": "No documented or specific plausible Kazakhstan transmission",
-      "score": 4,
-      "kind": "unlinked"
-    },
-    {
-      "id": "76d51eed83c8d61eb6",
-      "date": "2026-11-07T13:59:26+00:00",
-      "title": "How Would Trump’s Blockade of the Strait of Hormuz Work? - EnergyNow",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -7,
-      "kind": "background"
-    },
-    {
-      "id": "08a150d315d3b7fc61",
-      "date": "2026-11-07T13:53:00+00:00",
-      "title": "Iraq Seeks Higher Oil Production and Exports Through Talks With OPEC - باسنیوز",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "381cb5f9077ef2d9f6",
-      "date": "2026-11-07T13:47:12+00:00",
-      "title": "Trump confirms new US strikes on Iran near Strait of Hormuz - WJAR",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "fee886a92558c52037",
-      "date": "2026-11-07T13:46:21+00:00",
-      "title": "CHARTED: Oil Trade Through the Strait of Hormuz by Country – Visual Capitalist - EnergyNow.com",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "b171b95671751c2d62",
-      "date": "2026-11-07T13:41:50+00:00",
-      "title": "Kazakhstan-Tajikistan agricultural trade exceeds $564mln in first nine months of 2026 - Qazinform",
-      "sector": "Food",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "bd09151034712778d2",
-      "date": "2026-11-07T13:40:19+00:00",
-      "title": "Trump confirms new US strikes on Iran near Strait of Hormuz - The National News Desk",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "72bef6e3ccf43dbd3d",
-      "date": "2026-11-07T13:35:30+00:00",
-      "title": "Oil Prices Settle Slightly Higher as Optimism Around US Inflation Data Outweighs OPEC Supply Concerns - EnergyNow.com",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "c26898f2e30ce8c99c",
-      "date": "2026-11-07T13:25:51+00:00",
-      "title": "Iran’s Army Says Oil Tanker on Fire in the Strait of Hormuz - EnergyNow.com",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "ad43b01d92b9ba4784",
-      "date": "2026-11-07T13:20:00+00:00",
-      "title": "Oil tanker on fire in Strait of Hormuz after mine collision - Middle East Eye",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "7725cc9540fbe6676c",
-      "date": "2026-11-07T13:10:00+00:00",
-      "title": "Strait of Hormuz could reopen under Qatari plan to end US war with Iran - The Independent",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "07dc41dd48b5b90cb6",
-      "date": "2026-11-07T13:06:48+00:00",
-      "title": "New Report of Attack on Strait of Hormuz Shipping Fans fears of Threats to Oil Supplies - EnergyNow.com",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "2b0eb11869f34e06ab",
-      "date": "2026-11-07T13:02:32+00:00",
-      "title": "Saudi Aramco Seeks to Reroute Crude Away From Strait of Hormuz, Sources Say - EnergyNow.com",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "94e94b3b6c550a2be4",
-      "date": "2026-11-07T12:39:16+00:00",
-      "title": "Iraq in talks with OPEC to increase oil export quota - Report.az",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "34dea36c995997782e",
-      "date": "2026-11-07T12:22:18+00:00",
-      "title": "Qeshm island and Hormuz hit, as mediators try to prevent US-Iran escalation",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "6b54c86b42e4af784e",
-      "date": "2026-11-07T12:10:58+00:00",
-      "title": "Tajikistan, Kazakhstan Trade Exceeds $1 Billion As Leaders Seek Stronger Partnership - UrduPoint",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -2,
-      "kind": "background"
-    },
-    {
-      "id": "09c135b06a6d75e341",
-      "date": "2026-11-07T12:10:44+00:00",
-      "title": "Tokayev: Kazakhstan-Tajikistan Trade Turnover Exceeds $1 Billion Annually - UrduPoint",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "39f8d1446555c6404f",
-      "date": "2026-11-07T12:00:26+00:00",
-      "title": "Oil Minister: Iraq Seeks to Increase Production, Holds Talks with OPEC to Increase Oil Exports » Iraqi News Agency - وكالة الانباء العراقية (واع)",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "7c9cb5d03953863599",
-      "date": "2026-11-07T12:00:00+00:00",
-      "title": "Survey Shows OPEC Output Neared Pre-War Levels - Rigzone",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "55bd32b245b89ba2cf",
-      "date": "2026-11-07T11:56:45+00:00",
-      "title": "An oil tanker has caught fire east of the Strait of Hormuz after striking a naval mine, amid rising regional tensions - صوت الإمارات",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "2dfc181db77f11a63f",
-      "date": "2026-11-07T11:48:55+00:00",
-      "title": "Kazakhstan, Tajikistan adopt roadmap to boost trade by 2030 - Qazinform",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "115f6011441e9b44a8",
-      "date": "2026-11-07T11:46:58+00:00",
-      "title": "Army Reports Oil Tanker Fire in Eastern Strait of Hormuz - WANA News Agency",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "bbe17e06b005ae943a",
-      "date": "2026-11-07T11:31:56+00:00",
-      "title": "Violating Tanker Hits Sea Mine in Strait of Hormuz: Iran’s Navy - تسنیم",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "9d2377f9e402bcf589",
-      "date": "2026-11-07T10:55:59+00:00",
-      "title": "Oil Minister: Our production has reached 5 million barrels per day, and talks are underway with OPEC to increase exports » Iraqi News Agency - وكالة الانباء العراقية (واع)",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "b0094797150073fced",
-      "date": "2026-11-07T10:31:20+00:00",
-      "title": "Oil tanker catches fire after striking mine in Strait of Hormuz, Iranian navy says - L'Orient Today",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "dd01248ad84d5055be",
-      "date": "2026-11-07T10:20:45+00:00",
-      "title": "Iran reports oil tanker blaze in Strait of Hormuz - Latest news from Azerbaijan",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "e15816e372392898f8",
-      "date": "2026-11-07T09:36:37+00:00",
-      "title": "Kazakhstan, Tajikistan Expand Trade and Economic Cooperation - The Astana Times",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "71ec63f1aa1e09dc2e",
-      "date": "2026-11-07T09:15:00+00:00",
-      "title": "Tokayev and Rahmon discuss trade and strategic ties in Astana - DKNews.kz",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "fa733a663583acaf36",
-      "date": "2026-11-07T08:30:00+00:00",
-      "title": "Kazakhstan Remains Among Tajikistan’s Top Three Trade Partners - Caspian Post",
-      "sector": "Trade",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "07c9e542c0fca9130c",
-      "date": "2026-11-07T08:18:31+00:00",
-      "title": "Kazakhstan Increases Rail Exports of Vegetables and Potatoes by 55% - EastFruit",
-      "sector": "Transport",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "3e82524c3688371a8a",
-      "date": "2026-11-07T08:00:00+00:00",
-      "title": "Crude Oil Market Slips as Strait of Hormuz Shipping Outlook Improves | - Business Post Nigeria",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "519fdd3e1829809294",
-      "date": "2026-11-07T07:32:51+00:00",
-      "title": "Armenia and Kazakhstan Explore New Logistics Routes to Boost Trade - Caspian Post",
-      "sector": "Transport",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
-      "kind": "background"
-    },
-    {
-      "id": "2177fe73eab30ec237",
-      "date": "2026-11-07T07:02:00+00:00",
-      "title": "Strait of Hormuz could reopen as part of Qatari plan for Iran nuclear inspections - The Guardian",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "68f798da31acd99fca",
-      "date": "2026-11-07T07:00:04+00:00",
-      "title": "Strait of Hormuz could reopen as part of Qatari plan for Iran nuclear inspections",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -1,
-      "kind": "background"
-    },
-    {
-      "id": "c2209b520a4523cc19",
-      "date": "2026-11-07T05:31:57+00:00",
-      "title": "Trump set to impose sweeping tariffs on 60 trade partners - ABC News - Breaking News, Latest News and Videos",
-      "sector": "Trade",
-      "tier": "External shock watch",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": -4,
-      "kind": "background"
-    },
-    {
-      "id": "e726589060fe237c10",
-      "date": "2026-11-07T03:37:03+00:00",
-      "title": "Vessels Crossing Strait of Hormuz rop to 5 Per Day Over Weekend - EnergyNow.com",
-      "sector": "Oil",
-      "tier": "Systemic-market candidate",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 3,
-      "kind": "background"
-    },
-    {
-      "id": "a80a60887a6f87f4b5",
-      "date": "2026-11-07T02:52:34+00:00",
-      "title": "Kazakhstan’s Oil Output Plummets After Drone Attacks Forced Exporting Terminal Closure, Sources Say - EnergyNow",
-      "sector": "Oil",
-      "tier": "Kazakhstan mentioned",
-      "included": false,
-      "reason": "No discrete incident, implemented decision, or material measurable change",
-      "score": 2,
       "kind": "background"
     }
   ]
