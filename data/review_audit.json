@@ -1,76 +1,76 @@
 {
-  "generated_at": "2026-11-20T20:17:40.723929+00:00",
+  "generated_at": "2026-11-21T07:05:37.886194+00:00",
   "requested_window": "Rolling prior 30 days (publication timestamps); RSS searches are not exhaustive",
   "window": {
-    "start": "2026-10-21",
-    "end": "2026-11-20"
+    "start": "2026-10-22",
+    "end": "2026-11-21"
   },
   "screened_articles": 800,
   "dated_more_than_14_days": 0,
-  "earliest": "2026-11-09T12:21:21+00:00",
-  "latest": "2026-11-20T17:43:53+00:00",
-  "geolocated": 702,
-  "unlocated": 98,
+  "earliest": "2026-11-09T18:45:36+00:00",
+  "latest": "2026-11-21T06:48:48+00:00",
+  "geolocated": 706,
+  "unlocated": 94,
   "by_tier": {
-    "Systemic-market candidate": 331,
-    "Kazakhstan mentioned": 297,
-    "External shock watch": 145,
+    "Systemic-market candidate": 327,
+    "Kazakhstan mentioned": 308,
+    "External shock watch": 138,
     "Named asset match": 27
   },
   "by_sector": {
-    "Oil": 474,
-    "Trade": 113,
-    "Transport": 52,
-    "Cross-sector": 46,
+    "Oil": 466,
+    "Trade": 115,
+    "Cross-sector": 51,
+    "Transport": 49,
     "Finance": 35,
-    "Food": 23,
-    "Mining": 23,
+    "Food": 26,
+    "Mining": 24,
     "Water": 14,
     "Digital": 11,
     "Electricity": 7,
     "Migration": 2
   },
   "by_region": {
-    "MENA": 309,
-    "Central Asia": 173,
-    "Global": 107,
+    "MENA": 305,
+    "Central Asia": 181,
+    "Global": 103,
     "Kazakhstan": 103,
-    "Russia/Eurasia": 57,
-    "Africa": 16,
-    "China": 10,
+    "Russia/Eurasia": 55,
+    "Africa": 17,
+    "China": 11,
     "ASEAN": 9,
-    "Europe/UK": 6,
+    "Europe/UK": 5,
+    "India": 4,
     "LATAM": 4,
-    "US": 3,
-    "India": 3
+    "US": 3
   },
   "by_country": {
-    "Strait of Hormuz": 303,
-    "Kazakhstan": 211,
-    "Unknown": 98,
-    "Russia": 48,
-    "China": 21,
+    "Strait of Hormuz": 300,
+    "Kazakhstan": 217,
+    "Unknown": 94,
+    "Russia": 45,
+    "China": 24,
     "Iran": 19,
     "Uzbekistan": 15,
     "Nigeria": 12,
     "Saudi Arabia": 12,
     "Switzerland": 6,
     "Germany": 5,
+    "Afghanistan": 4,
     "Kyrgyzstan": 4,
     "Singapore": 4,
     "Azerbaijan": 4,
     "Tajikistan": 4,
     "Turkmenistan": 3,
-    "Afghanistan": 3,
     "Romania": 3,
     "Australia": 3,
     "Indonesia": 3,
+    "France": 2,
     "Italy": 2,
     "Belgium": 2,
     "India": 2,
     "Ukraine": 2,
     "Netherlands": 1,
-    "France": 1,
     "Zambia": 1,
     "Malaysia": 1,
     "Oman": 1,
@@ -78,12 +78,11 @@
     "Taiwan": 1,
     "Israel": 1,
     "Egypt": 1,
-    "UAE": 1,
-    "Pakistan": 1
+    "UAE": 1
   },
   "by_week": {
-    "2026-11 / week 2": 410,
-    "2026-11 / week 3": 390
+    "2026-11 / week 2": 393,
+    "2026-11 / week 3": 407
   },
   "unlocated_examples": [
     {
@@ -432,6 +431,28 @@
   ],
   "systemic_examples": [
     {
+      "published": "2026-11-21T00:00:06+00:00",
+      "title": "Iran war live: Saudi-led coalition downs Houthi missiles",
+      "source": "Al Jazeera",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "Global",
+      "tier": "Systemic-market candidate",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles?traffic_source=rss",
+      "id": "6a5522861bf1e7a1f7"
+    },
+    {
+      "published": "2026-11-20T21:47:58+00:00",
+      "title": "Two Violating Supertankers Explode in Strait of Hormuz - Orinoco Tribune",
+      "source": "Archive Hormuz Oil recent",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "region": "MENA",
+      "tier": "Systemic-market candidate",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRFZFckd0T2lNV3JYVVhOaWVNVXpvRldQcFpQT29JbFk3ZjdXSk9iNHJjZzQxZFI3MHF2aFlnY0NNS1E1a2ZXbHcyYU84YzRveXNOc1VQREEwYXI3R1kzN21Da29QZmFRNEppenFLZGEtRGhET1pPd2ZnM1YtZG9jd2pDQU5tVXRxWEE?oc=5",
+      "id": "750912d0d695f1d8af"
+    },
+    {
       "published": "2026-11-20T17:43:53+00:00",
       "title": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide - gCaptain",
       "source": "Google News MENA",
@@ -584,31 +605,42 @@
       "tier": "Systemic-market candidate",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTU8xTURDaWtPMEtkQ3pvMlNRU1hYVndlbjAyTm51QUV1X1hBSldnMmpGRkRrQVRkZFlFaURvUHVoOHRSdVN3TDVPbFkxMGZnalc1eGpTNG5STVJ4SVk0MmdVZGE5aWt0QlNXVXhnY3RTbHVXd2w5VWR4dUUteEZ6YjBVSDdHZjJqMGw3MzRWaFdncVRncktkNEthWmkzY2tMSlNrRjZPWGhQTjUxb291WURaMmk3ZnVxd3dYNFNB?oc=5",
       "id": "24e125bf97628fe44c"
-    },
-    {
-      "published": "2026-11-19T12:40:34+00:00",
-      "title": "Iraq Turns North: Major Oil Pipeline to Turkey Reopens as Strait of Hormuz Shipping Stalls - Pipeline Technology Journal",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRXAwTGZ6NnY3clJsZ0hCbjVwMmQ5NDdQbXM3VWVtMHVoOFR0aHBtOWY2S3VXUjVZRXIyWVE0bTFHZVVaSnhOdEdDdUhSR2ZKSG4zWGdoQ0JXTU9fYTlrREluMzRiSWNCZXZlZllTS25IbGxaLWZwQm8zVVp0MWpPVDlPeDl6RFZqeV9pUFNKNkhXZy1ybUh4akJzclBOWmh0cmR1R1E4OE55cnpUcUdmTXowT3lMZ3JFZ1E?oc=5",
-      "id": "86b53751787be2d366"
-    },
-    {
-      "published": "2026-11-19T12:24:08+00:00",
-      "title": "IRGC Claims Two Oil Supertankers Hit Sea Mines in Strait of Hormuz - Caspian Post",
-      "source": "Archive Hormuz Oil recent",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "region": "MENA",
-      "tier": "Systemic-market candidate",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMGlNWEhla2V4dXV3dVk0QnpKSmlBeUpYVVlVZUZoZGstMVFIWlJtUGdkekZzWlJTRzVtc0RuZ0loYU1teHBsSlpwU2pHaEY5R29RU042TUp5UjFodnU2X1VONVI1WGE0eFBVbGpBVnJTeG02cVMwV1l6U3lmdHVuQjV3UktveUMtT1NJUzRRLUdDWktsODRtdnFmQQ?oc=5",
-      "id": "3f73c5feaae972ee62"
     }
   ],
   "direct_examples": [
+    {
+      "published": "2026-11-21T06:48:48+00:00",
+      "title": "Kazakhstan-France trade rises 39% in nine months - Trend News Agency",
+      "source": "Archive Kazakhstan China recent",
+      "sector": "Trade",
+      "country": "France",
+      "region": "China",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5NeHZyaVM4OTdzX2s1NGQza3o0dWViVTlUOVRQeTFUOUlIRkhUWndmNHdkbi1TZTBaNHVCek0yV3hxRGlfbjNsMHFwWVNTN3FjaVU3LTQ4Nk15V0c0c2Mw?oc=5",
+      "id": "79d6ccaec32db68779"
+    },
+    {
+      "published": "2026-11-21T05:25:24+00:00",
+      "title": "Chinese Investor Plans $150 Million Coal Project in Kazakhstan - Caspian Post",
+      "source": "Google News Central Asia",
+      "sector": "Cross-sector",
+      "country": "Kazakhstan",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPREI0RWFIRXpRTW12Z0E2V1h0ejZUWW5Sam1TdHZoMDdzcUxfRlBfcVJmdmE2ZVJzRzdTcjFmRjNuQ25LaklZR0VkSnlCZFBiTksxdlNjZlNtUXJiQzUxem1jOUZIMVFCeUhCcGgwTWg2bG82NHJ4ekpWcV8wdDItYlpsTVlzN0VlcFY5YWJ4QTR4MWIyZXdQcFZSZWQ?oc=5",
+      "id": "4dd714263f97c5af79"
+    },
+    {
+      "published": "2026-11-21T04:26:00+00:00",
+      "title": "Chinese investor eyes major coal project in Kazakhstan’s Zhambyl region - Qazinform",
+      "source": "Google News Central Asia",
+      "sector": "Cross-sector",
+      "country": "Kazakhstan",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNenYwX0dYWUVTeThPNmRrM1Ria2hDaTRTSDE5enVCRjJ3Nk5panJuLU5QV1lRam1sN1lhQThWZzdFNDJGUnF1ZUZwUjZ5SWFCNm0tTnJFRi1oQlhVdUt2alNVX0RHV2NMT2dnblJfa0R5cXlESHotZEtpeFE2bVBXMnFnYlFZMHBodkN4OHg1cURIdWxISFJvM05MczFJUUI0SS1jbDByc9IBpwFBVV95cUxOeF9MTEJpN2t2M3AzY0I3WmU3d29OTTNzYUs4d3NiLXZUaW9KZ2ZlNkpMRVJtbXMzeVBqZHUySGVtWHZPVXNWYWRsY2tfS3FIUGJxVU5UUEJZWnYwRmJmcEdGel9VZEpNcURQRzZNcm5acGNMOERha3VOMmxWYlZsM0s2MlNpLWNkN0Y1OVIwZmZBdXd0dzA0Mk9NVmVXaWtaMjJRcGNCWQ?oc=5",
+      "id": "879cb5189eecfd1e35"
+    },
     {
       "published": "2026-11-20T16:12:51+00:00",
       "title": "Kazakhstan presents new investor protection mechanism to Chinese Ambassador - Qazinform",
@@ -619,6 +651,28 @@
       "tier": "Kazakhstan mentioned",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSDd1Nk44Z3IycEhpOHdVaWZUcllqaEdvWlZ6c2hjUWExQnBjb3hReXdKR2RxcXRwVGRqUmRGS3NLakthQVFKSFZFZ2FlTHZLbmtnZ0J3SFBtaU5JTzg2OE9OZ2RuYk5fcDU2SDVqWUxraWpxeUtNRVlIbjVkZndqazZ2MkIxaUxlUEhZYTg2N251ZHVHbENyTjl3bVhTRllNVElEdTNvY2lRdEc3Z3fSAa4BQVVfeXFMT0g3dTZOOGdyMnBIaTh3VWlmVHJZamhHb1pWenNoY1FhMUJwY294UXl3SkdkcXF0cFRkalJkRktzS2pLYUFRSkhWRWdhZUx2S25rZ2dCd0hQbWlOSU84NjhPTmdkbmJOX3A1Nkg1allMa2lqcXlLTUVZSG41ZGZ3ams2djJCMWlMZVBIWWE4NjdudWR1R2xDck45d21YU0ZZTVRJRHUzb2NpUXRHN2d3?oc=5",
       "id": "8d6bd864c09f13581f"
+    },
+    {
+      "published": "2026-11-20T16:12:48+00:00",
+      "title": "Kazakhstan presents new investor protection mechanism to Chinese Ambassador - Qazinform",
+      "source": "Google News Central Asia",
+      "sector": "Cross-sector",
+      "country": "Kazakhstan",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOT2NNOVdpc3dsQml6TUx6aERXOUhYeHVLQkw5bzFqeDROQjNJNUpvNnpVQWFyQnVXeXRxWWtIaHZBQUZxMWZQNWx0eXZOdDdsZ3dTTkFmZnNCY3ZhSmhLMmlKRkRSWU16bUd4LVNvaElCeWNUblMwRUNfdmJoWHgzZk1ETEZWQnp3aXZMMmZJM2hYTGRwMnFKclBnOGxLUmZkMmFoSTN1NTlpLXd0NHfSAa4BQVVfeXFMT0g3dTZOOGdyMnBIaTh3VWlmVHJZamhHb1pWenNoY1FhMUJwY294UXl3SkdkcXF0cFRkalJkRktzS2pLYUFRSkhWRWdhZUx2S25rZ2dCd0hQbWlOSU84NjhPTmdkbmJOX3A1Nkg1allMa2lqcXlLTUVZSG41ZGZ3ams2djJCMWlMZVBIWWE4NjdudWR1R2xDck45d21YU0ZZTVRJRHUzb2NpUXRHN2d3?oc=5",
+      "id": "e1b1193ce0af33caea"
+    },
+    {
+      "published": "2026-11-20T15:41:49+00:00",
+      "title": "Kazakhstan Grain Exports Rise 7% as Shipments to China and Afghanistan Grow - News and Statistics - IndexBox",
+      "source": "Archive Kazakhstan Economy recent",
+      "sector": "Food",
+      "country": "China",
+      "region": "Kazakhstan",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNck1CdFY4X1ZLSExYSi13eU9tQ1BsX096bXdObVF6bnFhcmNCUU5GLXo4XzZEYUtjbVVDZFhTa28xTXM4S0phVFhIb3VFMDJ4WUk4QzJ2a0FJZ2tmZ2hGYW9LR01BS3VuWXFLZkRMRTBHbXVZRU05LWpiMklXclYwY2lEU3JtUFBDaVNhZXRNaHQzejdaNkVRTExCcmd6YjZfdmJDVkh1RW4?oc=5",
+      "id": "b6429b96e86b451dbb"
     },
     {
       "published": "2026-11-20T14:34:05+00:00",
@@ -665,6 +719,17 @@
       "id": "14f5371d969fa996bd"
     },
     {
+      "published": "2026-11-20T13:11:49+00:00",
+      "title": "Kazakhstan’s Constitutional Reform: Importance of Strong Institutions and Rule of Law - The Astana Times",
+      "source": "Google News Central Asia",
+      "sector": "Trade",
+      "country": "Kazakhstan",
+      "region": "Central Asia",
+      "tier": "Kazakhstan mentioned",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQY1NRX2Y4bTFCbXJqd3kwZGRUQS05OTBabmdWOTNoTkgwY0FzbFNjakZsd2U5M2c3c1ZlQnZoVlREaGhhd0R1UjFLYTBFZ2tZRFJBMUNyQjBnUWxRRmVQUmVIMk5JbllUQW42Z3l3UWYzdFo5SUszMjJ3N1NWT3hESFRmeThzazJQU1FXSjBPcldKdE9QTnh6ZVRmNElvTzMxeFd4VjBRdjVJYVZKb25ZbEJxblJweDg?oc=5",
+      "id": "7c66d775fbbd18932d"
+    },
+    {
       "published": "2026-11-20T12:58:41+00:00",
       "title": "Kazakhstan increases grain exports to China and Afghanistan - УкрАгроКонсалт",
       "source": "Archive Kazakhstan Economy recent",
@@ -709,81 +774,15 @@
       "id": "3290948aa94f18ddaf"
     },
     {
-      "published": "2026-11-20T12:10:01+00:00",
-      "title": "Kazakhstan-Italy trade turnover reaches $13bn in nine months - Trend News Agency",
-      "source": "Archive Kazakhstan Economy recent",
+      "published": "2026-11-20T12:13:00+00:00",
+      "title": "Kazakhstan receives Y-9E transport aircraft from China, with expert seeing wider export potential - Global Times",
+      "source": "Google News Central Asia",
       "sector": "Trade",
-      "country": "Italy",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdG1xSkhQMHFZVW8xZVNVdlVjemJUdGtScE4yM3BfRHZIMWEzelh2Wm84MGdZd2lkZTkySm9ZMDN0NU9jcVlNb0RVbWdMQWZSeE9ndVdyUHJyVGNWTFdZ?oc=5",
-      "id": "d04fca30d517367a4d"
-    },
-    {
-      "published": "2026-11-20T11:59:33+00:00",
-      "title": "Kazakhstan’s oil exports to Italy fall 16.9% in January-September - Trend News Agency",
-      "source": "Archive Kazakhstan Economy recent",
-      "sector": "Oil",
-      "country": "Italy",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBQNHVQdGt2VXh3TG4zZklvVUE5YTN5cE01U1kwdzMyNWR4RFdDa1E0d25yMF84WmhaVDVzRGwxNE8xb3Y3NUtMZmFISGw3bVAycUt4SUg4ZEk2UWh4X1dZ?oc=5",
-      "id": "a52a6107dc170b4ef5"
-    },
-    {
-      "published": "2026-11-20T11:40:00+00:00",
-      "title": "Kazakhstan’s crude oil, oil product exports fall 5.4% in nine months - Trend News Agency",
-      "source": "Archive Kazakhstan Economy recent",
-      "sector": "Oil",
-      "country": "Kazakhstan",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9WV1J0Szd1Z3h5S3U5Qm96dDRtY1BpbVpNZWJPTFVha1hrYmJRdE1nYTNKdmtfRWt4UGxCc3liNXFNM0x5YWlfTGlLWTF3X2o2NTVMME00TnZySGVtMEgw?oc=5",
-      "id": "ad835a9d3aaebd716a"
-    },
-    {
-      "published": "2026-11-20T10:24:58+00:00",
-      "title": "Kazakhstan Boosts Grain Exports to China, Afghanistan and Central Asia - Caspian Post",
-      "source": "Archive Kazakhstan Economy recent",
-      "sector": "Food",
       "country": "China",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb19KczE0ZXVCbzFPS1Axb0RFRnV3QmZxOEpwV1ctSlhENGhicHRRMGctZkc3TzNZVVN0RW5oMlFKT0RFYzBoa0cySEtkNmo5QWpWTmx6LTVXOUdYc1ltV0VhQ0FUTHhEZENocHpybFoxcTdpV003dGZEZ3JodUFUbEhiaUZsejhVSFpVMUhQdVBvZW5JdjZVX3hfcVZ0b0pWem40T2EzVQ?oc=5",
-      "id": "88b922163e6a3272d2"
-    },
-    {
-      "published": "2026-11-20T10:11:01+00:00",
-      "title": "Tokayev urges affordable long-term financing for Kazakhstan's farms - Trend News Agency",
-      "source": "Archive Kazakhstan Caspian recent",
-      "sector": "Cross-sector",
-      "country": "Kazakhstan",
       "region": "Central Asia",
       "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBmQ01zNzhRRWRLaUVrVTI2ZjNwaEhQZGtzdzZ3YS1hVjB6TTFraVJKbGNhTHJUNDZjOVgwSzEwRzUtTHBJX1NuUlQ3MVBpSDV1ZlV6LWJEODFYZFc3TlZV?oc=5",
-      "id": "7edf8298aca3646659"
-    },
-    {
-      "published": "2026-11-20T10:09:43+00:00",
-      "title": "Kazakhstan's agricultural exports double, nearing $7B in seven years - Trend News Agency",
-      "source": "Archive Kazakhstan Economy recent",
-      "sector": "Food",
-      "country": "Kazakhstan",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBjbzNXbTJqdWRDUl9ZQ19zazFnZmc2SndNd0FKakN0VGlBM09oRHVTakFIbGVJYkV1Q3I2T1VHWElmTjRQOElFTkRLeFFHM3NFTHUyY3k3aHcwX1ZnTkgw?oc=5",
-      "id": "642c79bceb20a30e85"
-    },
-    {
-      "published": "2026-11-20T10:08:14+00:00",
-      "title": "Kazakhstan’s agro-industrial output exports double, Tokayev - Qazinform",
-      "source": "Archive Kazakhstan Economy recent",
-      "sector": "Trade",
-      "country": "Kazakhstan",
-      "region": "Kazakhstan",
-      "tier": "Kazakhstan mentioned",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORGk4anBZYm02c0duZnBoSTZobURBNjI1UWs1Vm9DMnJSV1lVVW16YnVWQjMwS01yclR6Sm5oNExFZ1NHdWg5TFoxRDdQZjRjY3hsR1JnM2ZsWHpQcUZDUUs5Z0l6VDdYSFZfX1hJMlVwRmt2MlN1OWxCOUVqdHNaX09IblJQWC1aRnRGZkZ2VlR2dExKUHfSAZYBQVVfeXFMUFFWRGdDZ1ppOHVFTGhXaUctZjBFUl91X0pHQnNWTTRQRVhhbHVyTWlRanNwa20tSEN3Uy1IV1AwR01qR2poNGhSemdraXVMcnQ0U2ZYUUkzZV9wMEt2Z2dpRXkyd1RrV2FaTjAyV0x6WDZKTEtGLXBSd3ZCTkw3OTR5eHRQckhJY05WcUxORDBIMy16RGNR?oc=5",
-      "id": "d71c53d8ed2b836c9f"
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE05ZzNlSnIzQUtYQ2p0LVVUMmp4WEpmbU1wVzJhSTZEa3pTRHlneG9aYXE3bmY2ZHFYSGtNUWlPUjdHbjNlRk56VkxSd1htY0NKbVdDNWFPelktWklxUVVWTmNB?oc=5",
+      "id": "f40eb0da6ced1d737b"
     }
   ],
   "weekly_samples": {
@@ -1058,6 +1057,90 @@
   },
   "possible_duplicates": [
     {
+      "title": "kazakhstan presents new investor protection mechanism to chinese ambassador",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-20T16:12:51+00:00",
+          "title": "Kazakhstan presents new investor protection mechanism to Chinese Ambassador - Qazinform",
+          "source": "Archive Kazakhstan China recent",
+          "sector": "Cross-sector",
+          "country": "Kazakhstan",
+          "region": "China",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSDd1Nk44Z3IycEhpOHdVaWZUcllqaEdvWlZ6c2hjUWExQnBjb3hReXdKR2RxcXRwVGRqUmRGS3NLakthQVFKSFZFZ2FlTHZLbmtnZ0J3SFBtaU5JTzg2OE9OZ2RuYk5fcDU2SDVqWUxraWpxeUtNRVlIbjVkZndqazZ2MkIxaUxlUEhZYTg2N251ZHVHbENyTjl3bVhTRllNVElEdTNvY2lRdEc3Z3fSAa4BQVVfeXFMT0g3dTZOOGdyMnBIaTh3VWlmVHJZamhHb1pWenNoY1FhMUJwY294UXl3SkdkcXF0cFRkalJkRktzS2pLYUFRSkhWRWdhZUx2S25rZ2dCd0hQbWlOSU84NjhPTmdkbmJOX3A1Nkg1allMa2lqcXlLTUVZSG41ZGZ3ams2djJCMWlMZVBIWWE4NjdudWR1R2xDck45d21YU0ZZTVRJRHUzb2NpUXRHN2d3?oc=5",
+          "id": "8d6bd864c09f13581f"
+        },
+        {
+          "published": "2026-11-20T16:12:48+00:00",
+          "title": "Kazakhstan presents new investor protection mechanism to Chinese Ambassador - Qazinform",
+          "source": "Google News Central Asia",
+          "sector": "Cross-sector",
+          "country": "Kazakhstan",
+          "region": "Central Asia",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOT2NNOVdpc3dsQml6TUx6aERXOUhYeHVLQkw5bzFqeDROQjNJNUpvNnpVQWFyQnVXeXRxWWtIaHZBQUZxMWZQNWx0eXZOdDdsZ3dTTkFmZnNCY3ZhSmhLMmlKRkRSWU16bUd4LVNvaElCeWNUblMwRUNfdmJoWHgzZk1ETEZWQnp3aXZMMmZJM2hYTGRwMnFKclBnOGxLUmZkMmFoSTN1NTlpLXd0NHfSAa4BQVVfeXFMT0g3dTZOOGdyMnBIaTh3VWlmVHJZamhHb1pWenNoY1FhMUJwY294UXl3SkdkcXF0cFRkalJkRktzS2pLYUFRSkhWRWdhZUx2S25rZ2dCd0hQbWlOSU84NjhPTmdkbmJOX3A1Nkg1allMa2lqcXlLTUVZSG41ZGZ3ams2djJCMWlMZVBIWWE4NjdudWR1R2xDck45d21YU0ZZTVRJRHUzb2NpUXRHN2d3?oc=5",
+          "id": "e1b1193ce0af33caea"
+        }
+      ]
+    },
+    {
+      "title": "kazakhstan boost grain exports to china tajikistan and afghanistan",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-20T08:59:34+00:00",
+          "title": "Kazakhstan boost grain exports to China, Tajikistan and Afghanistan - Qazinform",
+          "source": "Archive Kazakhstan Economy recent",
+          "sector": "Food",
+          "country": "China",
+          "region": "Kazakhstan",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWC1Wcl8ybnBEUllZRENzWnl0MkpmYlJYLU5HQTVHLWhFS1ZwNkZWZ2dLOGx4YzBVWUV5TDZyenlxNUNpbUt5Zmw1U1UyU1R0UGNDS2M1U2xMdXBuS0Q5aExONmxpRGd6TEkxOGdEbzl1eGpMRk4zcm52czkxZnM4LWJDeDhEa1VCU2twakpvbE5XRGcxZlZWSUpUSERsN0pSc1HSAaIBQVVfeXFMT1gtVnJfMm5wRFJZWURDc1p5dDJKZmJSWC1OR0E1Ry1oRUtWcDZGVmdnSzhseGMwVVlFeUw2cnp5cTVDaW1LeWZsNVNVMlNUdFBjQ0tjNVNsTHVwbktEOWhMTjZsaURnekxJMThnRG85dXhqTEZOM3JudnM5MWZzOC1iQ3g4RGtVQlNrcGpKb2xOV0RnMWZWVklKVEhEbDdKUnNR?oc=5",
+          "id": "590b9a6bc134b902fa"
+        },
+        {
+          "published": "2026-11-20T08:59:31+00:00",
+          "title": "Kazakhstan boost grain exports to China, Tajikistan and Afghanistan - Qazinform",
+          "source": "Google News Central Asia",
+          "sector": "Food",
+          "country": "China",
+          "region": "Central Asia",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUXBUcVg5anM2MzZ3Y2N1LUZGZ3QtQjFLblNNNEk4TDdRMkRTV3BJU2phNW5yZXlKMmVsR3BSQTNtZjRldHQ4aVVJTUMtMmpQZzRpbEo4MXhNNS1hb19USkhMYXdFbG9XeFBvb0hscUh6RkNMUHNtbnJLWDZvUXZpMlVWZGRqbmtkVGN5TWIxejZpUHlFam4wQjRUM0tiTXhEdnfSAaIBQVVfeXFMT1gtVnJfMm5wRFJZWURDc1p5dDJKZmJSWC1OR0E1Ry1oRUtWcDZGVmdnSzhseGMwVVlFeUw2cnp5cTVDaW1LeWZsNVNVMlNUdFBjQ0tjNVNsTHVwbktEOWhMTjZsaURnekxJMThnRG85dXhqTEZOM3JudnM5MWZzOC1iQ3g4RGtVQlNrcGpKb2xOV0RnMWZWVklKVEhEbDdKUnNR?oc=5",
+          "id": "ad39325c812e642082"
+        }
+      ]
+    },
+    {
+      "title": "kazakhstan bans steel slab exports for six months",
+      "count": 2,
+      "examples": [
+        {
+          "published": "2026-11-20T08:27:25+00:00",
+          "title": "Kazakhstan bans steel slab exports for six months - Qazinform",
+          "source": "Archive Kazakhstan Economy recent",
+          "sector": "Trade",
+          "country": "Kazakhstan",
+          "region": "Kazakhstan",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRGpfczF6c0l0ZS1uRGc5TTBxeFNib05GZTlnVWZVRXhLSWx3Y3pjZng4cU1TZUFMNXJTTWRCRkhmNUhjd1hOV0FGdHlWaW5ZYzhKenBXVGtqN3NxNXdqSGxTZWpqVi00MkhvQ2VIc3AwODdNVEJ3RGtiUFZvbGlBbW9kMWRqVHU3Wmlj0gGLAUFVX3lxTE9Eal9zMXpzSXRlLW5EZzlNMHF4U2JvTkZlOWdVZlVFeEtJbHdjemNmeDhxTVNlQUw1clNNZEJGSGY1SGN3WE5XQUZ0eVZpblljOEp6cFdUa2o3c3E1d2pIbFNlampWLTQySG9DZUhzcDA4N01UQndEa2JQVm9saUFtb2QxZGpUdTdaaWM?oc=5",
+          "id": "49df5f51c1fa140629"
+        },
+        {
+          "published": "2026-11-20T08:27:22+00:00",
+          "title": "Kazakhstan bans steel slab exports for six months - Qazinform",
+          "source": "Archive Kazakhstan Economy recent",
+          "sector": "Trade",
+          "country": "Kazakhstan",
+          "region": "Kazakhstan",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPY1kzSDJnbFFGczFSRFRKLXlJYTVJUzFSd3dVdjNpUC1WWXZxSTE5M2RibE9GU0FnaWhRYlhmb0FhaklFMmg3Y1p3UWJKZFVZUl9FQ2FkbGVyZXR3SEV3Nnh1cGNXazN1YXBnRWFEa3p1a1VpVVNqMFVmbDVJaDlQWDduN0pVQ2JsekdZ0gGLAUFVX3lxTE9Eal9zMXpzSXRlLW5EZzlNMHF4U2JvTkZlOWdVZlVFeEtJbHdjemNmeDhxTVNlQUw1clNNZEJGSGY1SGN3WE5XQUZ0eVZpblljOEp6cFdUa2o3c3E1d2pIbFNlampWLTQySG9DZUhzcDA4N01UQndEa2JQVm9saUFtb2QxZGpUdTdaaWM?oc=5",
+          "id": "4f56dac3a5c22c46d6"
+        }
+      ]
+    },
+    {
       "title": "kazakhstan sees sharp rise in beef exports in 2026",
       "count": 2,
       "examples": [
@@ -1087,8 +1170,19 @@
     },
     {
       "title": "kazakhstan eyes swedish investment in mining sector",
-      "count": 2,
+      "count": 3,
       "examples": [
+        {
+          "published": "2026-11-20T05:33:01+00:00",
+          "title": "Kazakhstan eyes Swedish investment in mining sector - Qazinform",
+          "source": "Archive Kazakhstan Mining recent",
+          "sector": "Mining",
+          "country": "Kazakhstan",
+          "region": "Kazakhstan",
+          "tier": "Kazakhstan mentioned",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRThJZURLSU9IcXl5cDd6dnUtUFJNR2toN1VTZ1pwM2huUzJqeFpOa2lvU0pMU1o5Nlp5d1NvS1E4bGFfV0F1a1hQYkZjR0p4YzZOWXViMms0Mm9EYVdUcXpvdmI3VDRLekluMGtCUEdReFd4cWFCWWEwcGwzS0pxeDMtNHFjUkpTZVVsb2NR0gGOAUFVX3lxTFBFOEllREtJT0hxeXlwN3p2dS1QUk1Ha2g3VVNnWnAzaG5TMmp4Wk5raW9TSkxTWjk2Wnl3U29LUThsYV9XQXVrWFBiRmNHSnhjNk5ZdWIyazQyb0RhV1Rxem92YjdUNEt6SW4wa0JQR1F4V3hxYUJZYTBwbDNLSnF4My00cWNSSlNlVWxvY1E?oc=5",
+          "id": "26ade52339986ada04"
+        },
         {
           "published": "2026-11-20T05:32:55+00:00",
           "title": "Kazakhstan eyes Swedish investment in mining sector - Qazinform",
@@ -1703,101 +1797,6 @@
           "tier": "Kazakhstan mentioned",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNU05abDItMk5XcjZ1VEtmZ3RvS1pIaVowaVhpS2xzLXh5eTFvR1FGVERlVVJCVE12QjhFOURtb1J5ckZFdzBPOVlWRlh5ZkREa0lET2hLcjQzNnU2UElSYktRSEVkRlNlWWZSRHNjcTBMLTFNeEliY01KTFI2SU91UXpLbzdvdFY3M1gwZS1RRHpUcmxmUlFhYnQwaDhHUDJ2ODdtLXUxb3hpSDVkYmpiZVRHZy1vTkhDLVgw0gG7AUFVX3lxTE9lV2Q4alJRRUtFdV9OdE1tYWN1c1QxZG96djdWTFgtYl9IOEZEVS1qNGkyLXRQNkV5U1VmME1JcWpsU1BwMWg0Y2tQcEItcmY2RkFMcXdpQnJZdDRSQzRGV2FYMkxsX0ZBQlJYcnZOdkxsM25ZOEp2NlpCMERPR015eHoyRUdhU2xJeVRZMzhrUDhTUHg2V1A0QmF5b2lRV1RhN0JDNXBvY1pzVGdhU01DRmZieW5zRzNGdkU?oc=5",
           "id": "3a6d04435f189bab65"
-        }
-      ]
-    },
-    {
-      "title": "euronext wheat climbs on euro weakness and black sea disruption by investing com",
-      "count": 2,
-      "examples": [
-        {
-          "published": "2026-11-16T18:54:08+00:00",
-          "title": "Euronext wheat climbs on euro weakness and Black Sea disruption By Investing.com - Investing.com Nigeria",
-          "source": "Archive Kazakhstan Wheat Access recent",
-          "sector": "Food",
-          "country": "Nigeria",
-          "region": "Global",
-          "tier": "External shock watch",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbW83ZGxFaU9ETndrS2FfNTB5c2RUckFTbG9JQ2RpM3R1UFhXZHlveWRWcG56S2ZjYVliLVdUdVczVVJ3ekd5RWJyXzBlRmE5elpVQU1oSXRma3V5anpTcGxLeWdLdm1EV1pZcjBWOU9seDhYNVpMRS1pdDRYX2U4eEpGcERKY3VFZ1M2dloyQzZINGtsbUFmaDVuVE5tTmpOdk5wSmEzd3ctSUFqY3lvMmxjTWlHUGdFdXB4XzY4UGFMdw?oc=5",
-          "id": "bbf27f05245505b803"
-        },
-        {
-          "published": "2026-11-16T18:48:00+00:00",
-          "title": "Euronext wheat climbs on euro weakness and Black Sea disruption By Investing.com - Investing.com UK",
-          "source": "Archive Kazakhstan Wheat Access recent",
-          "sector": "Food",
-          "country": "Unknown",
-          "region": "Global",
-          "tier": "External shock watch",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaUJsbjdUeE15QktvZ0NfYkVvV1JEVGlOSlo1VEpDZlRtdjM0bDl1WDUzRmcza0VCbTVRNFJtTTBjQTNrUXZ4M0wzREw2ak16UFJ1WFpTT25KcG5sRnRrTHU2MWdua1Q3VXVWdXl0V2hxcDloUkZoWDJsTER3TUlCckFPMFFLWnJlOUpEY0JYdG9MRGRlcE1DU3U3bTliR0x0ak1jZjJIejdtUXFBa1hIY2hfa3F2bUx6V3JfUVo5djNYQQ?oc=5",
-          "id": "0b932f01e95669dc2c"
-        }
-      ]
-    },
-    {
-      "title": "eu imposes fresh sanctions on russia s banks oil sector and business elite",
-      "count": 4,
-      "examples": [
-        {
-          "published": "2026-11-16T18:08:00+00:00",
-          "title": "EU imposes fresh sanctions on Russia's banks, oil sector and business elite - Modern Ghana",
-          "source": "Archive Russia Oil Sanction Event recent",
-          "sector": "Trade",
-          "country": "Russia",
-          "region": "Russia/Eurasia",
-          "tier": "External shock watch",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTnZIQ3RzR2hFbF9MTzUtY1JrRE1TTWNMTWF6ODN6RHpGU1hnUzU5aDd4WTE5clZkX2hRdXNVR2JsdzN4aGF1TFZlek9Hb2lFdUFneFYxRE9sRnR6R3RfbzVTRThxYnlGM0NxbkZ5OG8xRlQ5aDdHUlQ2Qi0zcmhObTNZdjlVV3o0OEwyU2o3MWNIMGvSAZIBQVVfeXFMUEpJY2Y5bnZRem1xQnFYMXM2QU9QU2g0bFNsT25EekJGZENRcnktX1o4ZWV4ckNMOXVHLTZSNVNudlN2LXYzM1pTaDlDS2UyZnFYb283S25vRHdYM3JiWXNPd0FKcXJXSkNOajlJbTI5aWpaYUZGUFlJSGNvTGZCSUExUGxXcXF5S1FENGpJbmJrRWc?oc=5",
-          "id": "11a39e49395379ad3f"
-        },
-        {
-          "published": "2026-11-16T17:12:14+00:00",
-          "title": "EU imposes fresh sanctions on Russia's banks, oil sector and business elite - RFI",
-          "source": "Archive Russia Oil Sanction Event recent",
-          "sector": "Trade",
-          "country": "Russia",
-          "region": "Russia/Eurasia",
-          "tier": "External shock watch",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOE8tU3FNUk5wS0pCdzZlRXEwb2pTSHAxWGU2YVNZZjVMV1dRVEZxV29TVXU4NmRqRC1VTks3UjdweEt0eGVnU2M4YzlIcS1mTDRuSms3Z1JmTGViTVpvQVlfM0UxX2RWZHZTLVllQXdEeWozWFVmTUdsV1NxZHQyVVRWVTJzYjQ0RTFWWlBCWkR3WGQ0WDlSZEtqRmxRVl8wRW1KSE5VSnlQZnhlT2piaVVXT2dqX3lGelk0?oc=5",
-          "id": "92476f6b6ca42676c4"
-        },
-        {
-          "published": "2026-11-16T17:12:14+00:00",
-          "title": "EU imposes fresh sanctions on Russia's banks, oil sector and business elite - AOL.co.uk",
-          "source": "Archive Russia Oil Sanction Event recent",
-          "sector": "Trade",
-          "country": "Russia",
-          "region": "Russia/Eurasia",
-          "tier": "External shock watch",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeWlFdjFJLU1TemtNUE9TaVpIeHJJMlJyR0tacUNRM1A1eW5DcGRITEtzR3hKdXhDMTZQam1rcnBEYlRvRlUta3pNaG9WOTYyZDVJZTdjclBCUVo4SnY5N2RQaXVsUE9mV1d5M3hRLUw5WDhOT1ZGM1A0Q3NQQzNacXoydjBiVW8?oc=5",
-          "id": "c4ad48946cec1ad9c4"
-        }
-      ]
-    },
-    {
-      "title": "eu imposes sweeping sanctions on russian banks shadow fleet and e commerce",
-      "count": 2,
-      "examples": [
-        {
-          "published": "2026-11-16T12:47:00+00:00",
-          "title": "EU imposes sweeping sanctions on Russian banks, shadow fleet and e-commerce - Українська правда",
-          "source": "Google News Eurasia",
-          "sector": "Trade",
-          "country": "Unknown",
-          "region": "Russia/Eurasia",
-          "tier": "External shock watch",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBVaHFpV2dya0hmOGdCT1V0bjN1aGROQmlicnRsTzJIdHB1Z0lvMHFLN2VRU2RpWXYtSkpveDNTbEJNNnFzbTBJdTdPNEM1dUNFeTdsQTNjYzhhT1JPcWw3eGNaM1rSAXBBVV95cUxNRTZKdHgwaTJQN1paaEM2bzY4TTB0R0E4QjR5LUVFVTdOcklqMmtyOVF1d3BEbGZlRWlhRUFqYm5Oaldxamxpd1FNcW0ySWJMamo2WGdIMWJBRjRxazlJTmxFaURNTFBPcGJfN2tOd1pG?oc=5",
-          "id": "d416638f003f1601ef"
-        },
-        {
-          "published": "2026-11-16T11:51:07+00:00",
-          "title": "EU imposes sweeping sanctions on Russian banks, shadow fleet and e-commerce - Європейська правда",
-          "source": "Google News Eurasia",
-          "sector": "Trade",
-          "country": "Unknown",
-          "region": "Russia/Eurasia",
-          "tier": "External shock watch",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1weFVxT1g2cEFFU3JsdmpBQmVQRmZFaW5xN2VGb1U3eHpmcFUzRFM0dzk2RGxiSnN5VzlmX1FHbGh3S2pPWkxKcWlNWS1WaW56NXh6Rlprbmlrb3ZmUjhoZ1J1TjRGZU9hTWRwbGRyMEk?oc=5",
-          "id": "90f0c0ec20bc267a43"
         }
       ]
     }
