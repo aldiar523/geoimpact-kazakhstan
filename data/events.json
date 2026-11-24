@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T09:52:57.940261+00:00",
+  "generated_at": "2026-11-24T22:25:51.092575+00:00",
   "lookback_start": "2026-10-25",
   "lookback_end": "2026-11-24",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
@@ -983,15 +983,14 @@
       },
       "news_group_id": "event-77ca3cd4d76f00bc43",
       "situation_cluster": "hormuz-tanker-incidents",
-      "article_count": 7,
+      "article_count": 6,
       "publisher_names": [
-        "anadolu ajansı",
         "energynow",
         "https://houseofsaud.com/",
         "newscord",
         "wana news agency"
       ],
-      "publisher_count_heuristic": 5,
+      "publisher_count_heuristic": 4,
       "related_sources": [
         {
           "title": "Third Tanker Explodes in Strait of Hormuz - WANA News Agency",
@@ -1034,13 +1033,6 @@
           "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQT2RIVTlPbjc1a2hmTlBYZzVWX015V1otQ2FEYzVKMW8wanBwRkZ5dkdudzVaSHA1WFg1bmNEaTZFWEM2MWxCeHloVEN5NG8waFdCTlhFVDV5VVVTZDlYRTJ4RDEtRDlTdjVGcFp2UzloZlA1VlRaSVZjNzZuRk9FR3kyQWxOY2FndUR3VUtHczEwSVhCM3dZZVVjM1htdlZnSFAzcXVmRTBJeWtTS0pDcGxWTjRpcl93aDFvOC03ZDN0a20wSlh0QmIzVU9iTF91OFJ2T181bFRMR3VtUXpicG83STJtR29UQ1E?oc=5",
           "published": "2026-11-12T17:36:33+00:00",
           "publisher_guess": "newscord"
-        },
-        {
-          "title": "Iran’s Revolutionary Guard says 2 oil tankers exploded in Strait of Hormuz - Anadolu Ajansı",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPd0dVRHZuQnJxdGFrLW5KZ1lndzRNOXVOSm13aWZuZmQ2bVJRQ3ctMl94dVVfYWNWVUJPbWhydWozRXRKQmJvWGJhel8wZUlRRFd0Y2VpVWx4UHdTX1NFN3c2TFJIb2Q1WFRBcGVXeWJuMjNYVUU0ZXdjUE1SakRlbnhkbW9JYVZvQ25MXzlsdmIxS0pqbEY3TV81Y3pxSndRSmNPZXdFWlFLY2xYU24xSV9CYXc5dw?oc=5",
-          "published": "2026-11-12T08:54:05+00:00",
-          "publisher_guess": "anadolu ajansı"
         }
       ],
       "article_ids": [
@@ -1049,8 +1041,7 @@
         "769fcf232f333ed396",
         "1731faadc4aa806fd2",
         "f78d81e1a58be688f4",
-        "77ca3cd4d76f00bc43",
-        "6263567a4a0bc37286"
+        "77ca3cd4d76f00bc43"
       ],
       "event_status": "Reported event candidate — not independently verified"
     },
@@ -1165,123 +1156,6 @@
       ],
       "article_ids": [
         "880a04b4f09cc32bad"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "3477101ff9134c4e2f",
-      "title": "OPEC October Output Rose 2 Million Bpd as Brent Fell Below $90 - https://houseofsaud.com/",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WdE5OUlY3WFBmUHJIak1DR2xobjFreUpNSTY0SkwzeExpUllEbnAxNVJkV1J5bFpSbkZkMGJmOUpMVFRjWnB6NnNWa1pUTTR3WWJ2aFNhZ1B6NjFEcEg2amFYcE9BVjAxdVZDdkZR?oc=5",
-      "summary": "OPEC October Output Rose 2 Million Bpd as Brent Fell Below $90 https://houseofsaud.com/",
-      "published": "2026-11-12T08:02:05+00:00",
-      "source": "Archive Oil Market OPEC recent",
-      "region": "Global",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-11-12T19:53:16.239127+00:00",
-      "sector": "Oil",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "measured development",
-        "score": 6,
-        "priority": "medium",
-        "reason": "global commodity or infrastructure channel; measured or sharp change",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-3477101ff9134c4e2f",
-      "article_count": 1,
-      "publisher_names": [
-        "https://houseofsaud.com/"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "OPEC October Output Rose 2 Million Bpd as Brent Fell Below $90 - https://houseofsaud.com/",
-          "source": "Archive Oil Market OPEC recent",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WdE5OUlY3WFBmUHJIak1DR2xobjFreUpNSTY0SkwzeExpUllEbnAxNVJkV1J5bFpSbkZkMGJmOUpMVFRjWnB6NnNWa1pUTTR3WWJ2aFNhZ1B6NjFEcEg2amFYcE9BVjAxdVZDdkZR?oc=5",
-          "published": "2026-11-12T08:02:05+00:00",
-          "publisher_guess": "https://houseofsaud.com/"
-        }
-      ],
-      "article_ids": [
-        "3477101ff9134c4e2f"
       ],
       "event_status": "Reported event candidate — not independently verified"
     }
