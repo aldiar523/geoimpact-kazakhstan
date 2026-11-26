@@ -1,9 +1,184 @@
 {
-  "generated_at": "2026-11-26T08:15:02.751125+00:00",
+  "generated_at": "2026-11-26T21:30:04.039402+00:00",
   "lookback_start": "2026-10-27",
   "lookback_end": "2026-11-26",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
   "events": [
+    {
+      "id": "4fc23f8f90d5d1b017",
+      "title": "Two Italians killed in drone strike on Kuwait, Iran denies involvement",
+      "url": "https://www.abc.net.au/news/2026-11-27/italians-killed-in-kuwait-attack-iran/107432996",
+      "summary": "The attack was one of several reported across the region over 24 hours, including two targeting ships transiting through the Strait of Hormuz.",
+      "published": "2026-11-26T15:19:02+00:00",
+      "source": "ABC Asia Pacific",
+      "region": "ASEAN",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-26T21:29:53.460621+00:00",
+      "sector": "Oil",
+      "country": "Strait of Hormuz",
+      "lat": 26.6,
+      "lon": 56.3,
+      "direction": "Mixed",
+      "tier": "Systemic-market candidate",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Potential global market exposure",
+      "event_type": "Oil / systemic market exposure",
+      "overall_effect": "mixed",
+      "scenario": true,
+      "impact_channels": [
+        {
+          "id": "oil-export-revenue",
+          "label": "Oil export earnings & fiscal receipts",
+          "direction": "positive",
+          "sector": "Oil / fiscal",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
+          "affected": [
+            "Oil producers",
+            "National Fund / state budget"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan assessment, June 2026",
+              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
+            }
+          ]
+        },
+        {
+          "id": "oil-import-cost",
+          "label": "Energy-import, freight & inflation exposure",
+          "direction": "negative",
+          "sector": "Prices / household",
+          "severity": null,
+          "observed": false,
+          "evidence_status": "conditional pathway",
+          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
+          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
+          "affected": [
+            "Fuel and energy consumers",
+            "Importers",
+            "Households"
+          ],
+          "source_links": [
+            {
+              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
+              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
+            }
+          ]
+        }
+      ],
+      "market_evidence": [
+        {
+          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
+          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+          "role": "Background on physical exposure; not evidence that this report is correct"
+        },
+        {
+          "label": "IMF: Kazakhstan outlook (June 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
+          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
+        },
+        {
+          "label": "IMF: Kazakhstan external risks (Nov 2025)",
+          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
+          "role": "Background on oil-price and CPC vulnerabilities"
+        }
+      ],
+      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
+      "origin_type": "Maritime chokepoint",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported incident",
+        "score": 7,
+        "priority": "high",
+        "reason": "global commodity or infrastructure channel; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-4fc23f8f90d5d1b017",
+      "article_count": 1,
+      "publisher_names": [
+        "abc asia pacific"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Two Italians killed in drone strike on Kuwait, Iran denies involvement",
+          "source": "ABC Asia Pacific",
+          "url": "https://www.abc.net.au/news/2026-11-27/italians-killed-in-kuwait-attack-iran/107432996",
+          "published": "2026-11-26T15:19:02+00:00",
+          "publisher_guess": "abc asia pacific"
+        }
+      ],
+      "article_ids": [
+        "4fc23f8f90d5d1b017"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
+    {
+      "id": "6f8dff2ad760d24bf2",
+      "title": "Kazakhstan approves tariff quota rules for Iranian fruit and vegetables - FreshPlaza",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWk5fTmJQeTYwaHgweGRZOE95aEZyQ2RoRmxrbnV2d2NyaEwxY2pOTkNEaVYyTjZxUnlVYVJEV0tNU3RFSE9Ga3R1NVlPaHVNMEo0c18wb0ljOUpqSlNDTUwtNzl4STFhMFRrenhIYzJwdXlod1MzNlZVNldiaDRNc25EOGMzc1MxcHlyR3VaYlBBZ1BvV1E0cFh5M0QtTVlURjlpa0tuOHZ4cndNVnF1VV8tTWVadw?oc=5",
+      "summary": "Kazakhstan approves tariff quota rules for Iranian fruit and vegetables FreshPlaza",
+      "published": "2026-11-26T14:37:30+00:00",
+      "source": "Google News Central Asia",
+      "region": "Central Asia",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-26T21:29:53.460621+00:00",
+      "sector": "Trade",
+      "country": "Kazakhstan",
+      "lat": 48,
+      "lon": 67,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 6,
+        "priority": "medium",
+        "reason": "Kazakhstan explicitly exposed; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-6f8dff2ad760d24bf2",
+      "article_count": 1,
+      "publisher_names": [
+        "freshplaza"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Kazakhstan approves tariff quota rules for Iranian fruit and vegetables - FreshPlaza",
+          "source": "Google News Central Asia",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWk5fTmJQeTYwaHgweGRZOE95aEZyQ2RoRmxrbnV2d2NyaEwxY2pOTkNEaVYyTjZxUnlVYVJEV0tNU3RFSE9Ga3R1NVlPaHVNMEo0c18wb0ljOUpqSlNDTUwtNzl4STFhMFRrenhIYzJwdXlod1MzNlZVNldiaDRNc25EOGMzc1MxcHlyR3VaYlBBZ1BvV1E0cFh5M0QtTVlURjlpa0tuOHZ4cndNVnF1VV8tTWVadw?oc=5",
+          "published": "2026-11-26T14:37:30+00:00",
+          "publisher_guess": "freshplaza"
+        }
+      ],
+      "article_ids": [
+        "6f8dff2ad760d24bf2"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
     {
       "id": "dde6bca1b6530dc1e9",
       "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
@@ -969,181 +1144,6 @@
       ],
       "article_ids": [
         "541be32c2c06c71559"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "1e9cf7e0e8cfec5ff5",
-      "title": "Kazakhstan extends ban on chicken egg imports for two months - Trend News Agency",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KVnJtcmtIazRiZHA2dWFsdXJYM0NpQ25xUWI2OGs1RWZPMWVRc0swT21RSW5OekhOd0MwdnRpbGhOQUE0MVRvV2RwX3ZieUxYbGlhWXdVY3dsMFg1dkc4?oc=5",
-      "summary": "Kazakhstan extends ban on chicken egg imports for two months Trend News Agency",
-      "published": "2026-11-16T06:00:15+00:00",
-      "source": "Archive Kazakhstan Caspian recent",
-      "region": "Central Asia",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-11-16T06:27:09.791988+00:00",
-      "sector": "Trade",
-      "country": "Kazakhstan",
-      "lat": 48,
-      "lon": 67,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Corroborated reporting; primary evidence missing",
-      "evidence_sources_count": 2,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 6,
-        "priority": "medium",
-        "reason": "Kazakhstan explicitly exposed; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-1e9cf7e0e8cfec5ff5",
-      "article_count": 1,
-      "publisher_names": [
-        "trend news agency"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Kazakhstan extends ban on chicken egg imports for two months - Trend News Agency",
-          "source": "Archive Kazakhstan Caspian recent",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KVnJtcmtIazRiZHA2dWFsdXJYM0NpQ25xUWI2OGs1RWZPMWVRc0swT21RSW5OekhOd0MwdnRpbGhOQUE0MVRvV2RwX3ZieUxYbGlhWXdVY3dsMFg1dkc4?oc=5",
-          "published": "2026-11-16T06:00:15+00:00",
-          "publisher_guess": "trend news agency"
-        }
-      ],
-      "article_ids": [
-        "1e9cf7e0e8cfec5ff5"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "dbe3844baa4ea42f52",
-      "title": "Iran says supertanker carrying oil sank in Strait of Hormuz - Around Prague",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWmZ4UnVxSnhfUzBrSDNDSGY4YU1uZWh4SWd4dEVqc05nVXAzczFLTlhrZnZnc1VJR2JhOFVmeDMtZGUySGR3LVZJZjF5aWZXaHh4cWNWd19YNVVnWER6VFd4NU4zd1U2bE9JRXpsd1JYcmlQd056eDNYZ09uQm5PSVByUEY1UUx4Y1FMWEh3dE8zOFFFSXlPUUhn?oc=5",
-      "summary": "Iran says supertanker carrying oil sank in Strait of Hormuz Around Prague",
-      "published": "2026-11-15T20:11:13+00:00",
-      "source": "Archive Hormuz Oil recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-11-16T06:27:09.791988+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 7,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-dbe3844baa4ea42f52",
-      "article_count": 1,
-      "publisher_names": [
-        "around prague"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Iran says supertanker carrying oil sank in Strait of Hormuz - Around Prague",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWmZ4UnVxSnhfUzBrSDNDSGY4YU1uZWh4SWd4dEVqc05nVXAzczFLTlhrZnZnc1VJR2JhOFVmeDMtZGUySGR3LVZJZjF5aWZXaHh4cWNWd19YNVVnWER6VFd4NU4zd1U2bE9JRXpsd1JYcmlQd056eDNYZ09uQm5PSVByUEY1UUx4Y1FMWEh3dE8zOFFFSXlPUUhn?oc=5",
-          "published": "2026-11-15T20:11:13+00:00",
-          "publisher_guess": "around prague"
-        }
-      ],
-      "article_ids": [
-        "dbe3844baa4ea42f52"
       ],
       "event_status": "Reported event candidate — not independently verified"
     }
