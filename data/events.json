@@ -1,9 +1,66 @@
 {
-  "generated_at": "2026-11-27T21:16:25.371086+00:00",
-  "lookback_start": "2026-10-28",
-  "lookback_end": "2026-11-27",
+  "generated_at": "2026-11-28T07:46:58.244989+00:00",
+  "lookback_start": "2026-10-29",
+  "lookback_end": "2026-11-28",
   "status": "Provisional reported developments: eventness and Kazakhstan linkage screened; facts and impacts not independently verified",
   "events": [
+    {
+      "id": "502e2f85f42a458e9f",
+      "title": "Kazakhstan cuts oil exports to Romania by 41% in Jan-Sep - Trend News Agency",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YcWNMMFFJb3lXaVVqNmdfVU0wdHVQeS03SDUzSjJ2amsyZ3Y1a3VNekw4bDMwLWV4YVFMQjVHcGxBamxhSjh2b3NvaXRZWjhnUlcxZGxKOElIaTl6Z2E4?oc=5",
+      "summary": "Kazakhstan cuts oil exports to Romania by 41% in Jan-Sep Trend News Agency",
+      "published": "2026-11-28T06:02:36+00:00",
+      "source": "Archive Kazakhstan Economy recent",
+      "region": "Kazakhstan",
+      "verification": "News candidate — not primary-source verified",
+      "detected_at": "2026-11-28T07:46:49.259962+00:00",
+      "sector": "Oil",
+      "country": "Romania",
+      "lat": 46,
+      "lon": 25,
+      "direction": "Unknown",
+      "tier": "Kazakhstan mentioned",
+      "matches": [],
+      "probability": "Unassessed",
+      "severity": null,
+      "reason": "Kazakhstan explicitly mentioned",
+      "event_type": "Asset or policy investigation",
+      "overall_effect": "unknown",
+      "scenario": false,
+      "impact_channels": [],
+      "market_evidence": [],
+      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
+      "investigation_stage": "Single news candidate; primary evidence missing",
+      "evidence_sources_count": 1,
+      "human_reviewed": false,
+      "triage": {
+        "included": true,
+        "kind": "reported action",
+        "score": 6,
+        "priority": "medium",
+        "reason": "Kazakhstan explicitly exposed; concrete reported development",
+        "source_role": "Publication count does not establish independent corroboration"
+      },
+      "news_group_id": "event-502e2f85f42a458e9f",
+      "article_count": 1,
+      "publisher_names": [
+        "trend news agency"
+      ],
+      "publisher_count_heuristic": 1,
+      "related_sources": [
+        {
+          "title": "Kazakhstan cuts oil exports to Romania by 41% in Jan-Sep - Trend News Agency",
+          "source": "Archive Kazakhstan Economy recent",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YcWNMMFFJb3lXaVVqNmdfVU0wdHVQeS03SDUzSjJ2amsyZ3Y1a3VNekw4bDMwLWV4YVFMQjVHcGxBamxhSjh2b3NvaXRZWjhnUlcxZGxKOElIaTl6Z2E4?oc=5",
+          "published": "2026-11-28T06:02:36+00:00",
+          "publisher_guess": "trend news agency"
+        }
+      ],
+      "article_ids": [
+        "502e2f85f42a458e9f"
+      ],
+      "event_status": "Reported event candidate — not independently verified"
+    },
     {
       "id": "1bf7ce10affd8a2d7c",
       "title": "Multiple reported tanker attacks and incidents near Strait of Hormuz",
@@ -793,307 +850,6 @@
       ],
       "article_ids": [
         "1abb3b0028367080e8"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "99f694f8b51a521ca1",
-      "title": "Third Tanker Explodes in Strait of Hormuz - WANA News Agency",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1sa25DV3RMTzdickJwckVkNE0xbExYMGI2YUhoRjZWa05sLVZ1OU0wMFFTc0VVYTN4cFdzdXhtemRBalY4akp0eU9iZnU0N05NcWtFUHVYa1JaUW1NVkVlR0RGR0lDTWVyd21nLUtB?oc=5",
-      "summary": "Third Tanker Explodes in Strait of Hormuz WANA News Agency",
-      "published": "2026-11-17T20:32:06+00:00",
-      "source": "Archive Hormuz Oil recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-11-18T07:26:47.489004+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 7,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-99f694f8b51a521ca1",
-      "article_count": 1,
-      "publisher_names": [
-        "wana news agency"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Third Tanker Explodes in Strait of Hormuz - WANA News Agency",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1sa25DV3RMTzdickJwckVkNE0xbExYMGI2YUhoRjZWa05sLVZ1OU0wMFFTc0VVYTN4cFdzdXhtemRBalY4akp0eU9iZnU0N05NcWtFUHVYa1JaUW1NVkVlR0RGR0lDTWVyd21nLUtB?oc=5",
-          "published": "2026-11-17T20:32:06+00:00",
-          "publisher_guess": "wana news agency"
-        }
-      ],
-      "article_ids": [
-        "99f694f8b51a521ca1"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "f4d53871526c71a988",
-      "title": "Kazakh miner ERG shareholders approve split handing Ibragimov family DR Congo and Zambia mining assets worth over $2bn - IntelliNews",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc1ctb3VzSmx3bm04OXRfVmZSdmlCbFFQRnlwS09qTU1LSE1hUzJ0TmFCZkN3b01rMENUMFlwRUEwazRjOU1Wdk9CS281QnhBdDJhdnR6Wk4yQWlHaE9oRkV5akk3bDU5cVhvZVkwNEtPYmpGcnFvYzUyeWNUMTN6MHhSTHNQQmd4V2I1Z1AwZWp1Q0tYVzRxQWtzaVNzbXZqRUM4NHo2emRnUnp2eWItT0g5OFZ3eXlzSGZEYVhoaF9oeFZQaWZYX0MxdmptcS1pLTVfcnJOc1BwYjEzZlN3NDlpUDZvTnZF?oc=5",
-      "summary": "Kazakh miner ERG shareholders approve split handing Ibragimov family DR Congo and Zambia mining assets worth over $2bn IntelliNews",
-      "published": "2026-11-17T18:51:51+00:00",
-      "source": "Archive Africa Mining Export Shock recent",
-      "region": "Africa",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-11-22T19:38:05.797451+00:00",
-      "sector": "Mining",
-      "country": "Zambia",
-      "lat": -13.1,
-      "lon": 27.9,
-      "direction": "Unknown",
-      "tier": "Kazakhstan mentioned",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Kazakhstan explicitly mentioned",
-      "event_type": "Asset or policy investigation",
-      "overall_effect": "unknown",
-      "scenario": false,
-      "impact_channels": [],
-      "market_evidence": [],
-      "impact_summary": "Kazakhstan transmission and realised consequences need independent assessment.",
-      "investigation_stage": "Corroborated reporting; primary evidence missing",
-      "evidence_sources_count": 2,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 6,
-        "priority": "medium",
-        "reason": "Kazakhstan explicitly exposed; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-f4d53871526c71a988",
-      "article_count": 2,
-      "publisher_names": [
-        "intellinews"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "Kazakh miner ERG shareholders approve split handing Ibragimov family DR Congo and Zambia mining assets worth over $2bn - IntelliNews",
-          "source": "Archive Africa Mining Export Shock recent",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc1ctb3VzSmx3bm04OXRfVmZSdmlCbFFQRnlwS09qTU1LSE1hUzJ0TmFCZkN3b01rMENUMFlwRUEwazRjOU1Wdk9CS281QnhBdDJhdnR6Wk4yQWlHaE9oRkV5akk3bDU5cVhvZVkwNEtPYmpGcnFvYzUyeWNUMTN6MHhSTHNQQmd4V2I1Z1AwZWp1Q0tYVzRxQWtzaVNzbXZqRUM4NHo2emRnUnp2eWItT0g5OFZ3eXlzSGZEYVhoaF9oeFZQaWZYX0MxdmptcS1pLTVfcnJOc1BwYjEzZlN3NDlpUDZvTnZF?oc=5",
-          "published": "2026-11-17T18:51:51+00:00",
-          "publisher_guess": "intellinews"
-        },
-        {
-          "title": "Kazakh miner ERG shareholders approve split handing Ibragimov family DR Congo and Zambia mining assets worth over $2bn - IntelliNews",
-          "source": "Archive Kazakhstan Africa recent",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOdzhFNHNGY21YbmstVU5KaTF5SWJsbHItcWx5cUhSMFZWU0ZBRWZzc2Y1eXIwWkh1QlhiR1Q0b1lOQnJkbGdzVmx2Vm5mWEl0VV85NndZLUtyNGVKWDU4Y0pyZnJxNzk5X0NCaUxuV3ZvTXp6VjY4MlpHdWdMemRTeWhFRlRDRFZpVUFlTkgwUjRNaTBzaWFSVlY5Qkk5REdkbnM3Ukhpa0M4a09JZVQ3ZVVQaUFHQ3RRUHZEblZfT1ZMQWowWFNQVlhSNlA5Ty1FQjNKYU1OQTdzSVY1WGNha2ZBVXNQbDhWWGZrTGlDRVI1VDh5TUdaYWZDdEpCZjdM?oc=5",
-          "published": "2026-11-17T18:47:33+00:00",
-          "publisher_guess": "intellinews"
-        }
-      ],
-      "article_ids": [
-        "f4d53871526c71a988",
-        "65bd4a800255b4a60e"
-      ],
-      "event_status": "Reported event candidate — not independently verified"
-    },
-    {
-      "id": "77c40fd021f33ca206",
-      "title": "LPG carrier explodes in Strait of Hormuz - Lloyd's List",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbjQ4a0VuaXp2ZUx5Vm5pSFdCRGpGN3FKdGpWeWk4SV9WWFJkUnlTaS1qa3A5YnVZNmV0VzRZUl9zRFBrVG0zd3l3X3JJUkpIbGs2SEZaOEdTdHVOQXhodUkzd3ppVzdJaEFKQlBGMWFPUjFTWmJLNGZlYnB5em04NHhuRQ?oc=5",
-      "summary": "LPG carrier explodes in Strait of Hormuz Lloyd's List",
-      "published": "2026-11-17T15:41:52+00:00",
-      "source": "Archive Hormuz Oil recent",
-      "region": "MENA",
-      "verification": "News candidate — not primary-source verified",
-      "detected_at": "2026-11-18T20:29:58.669505+00:00",
-      "sector": "Oil",
-      "country": "Strait of Hormuz",
-      "lat": 26.6,
-      "lon": 56.3,
-      "direction": "Mixed",
-      "tier": "Systemic-market candidate",
-      "matches": [],
-      "probability": "Unassessed",
-      "severity": null,
-      "reason": "Potential global market exposure",
-      "event_type": "Oil / systemic market exposure",
-      "overall_effect": "mixed",
-      "scenario": true,
-      "impact_channels": [
-        {
-          "id": "oil-export-revenue",
-          "label": "Oil export earnings & fiscal receipts",
-          "direction": "positive",
-          "sector": "Oil / fiscal",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher realized export prices may increase gross oil receipts and oil-related fiscal revenues, holding volumes, tax rules and discounts constant.",
-          "affected": [
-            "Oil producers",
-            "National Fund / state budget"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan assessment, June 2026",
-              "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit"
-            }
-          ]
-        },
-        {
-          "id": "oil-import-cost",
-          "label": "Energy-import, freight & inflation exposure",
-          "direction": "negative",
-          "sector": "Prices / household",
-          "severity": null,
-          "observed": false,
-          "evidence_status": "conditional pathway",
-          "condition": "If the event raises and sustains global benchmark oil prices, with pass-through to Kazakhstan's realized export price",
-          "mechanism": "Higher international energy and freight costs may increase costs for importers, firms and households, depending on administered fuel prices, exchange rates and pass-through.",
-          "affected": [
-            "Fuel and energy consumers",
-            "Importers",
-            "Households"
-          ],
-          "source_links": [
-            {
-              "label": "IMF Kazakhstan risk analysis, Nov. 2025",
-              "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission"
-            }
-          ]
-        }
-      ],
-      "market_evidence": [
-        {
-          "label": "US EIA: World Oil Transit Chokepoints (updated March 2026)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "role": "Background on physical exposure; not evidence that this report is correct"
-        },
-        {
-          "label": "IMF: Kazakhstan outlook (June 2026)",
-          "url": "https://www.imf.org/en/news/articles/2026/06/15/pr26207-kazakhstan-imf-staff-concludes-visit",
-          "role": "Background on oil and Kazakhstan macroeconomy; no article-specific causal estimate"
-        },
-        {
-          "label": "IMF: Kazakhstan external risks (Nov 2025)",
-          "url": "https://www.imf.org/en/news/articles/2025/11/20/cs-kazakhstan-staff-concluding-statement-for-the-2025-article-iv-mission",
-          "role": "Background on oil-price and CPC vulnerabilities"
-        }
-      ],
-      "impact_summary": "Two opposing price-mediated pathways are plausible under the stated condition. The headline alone does not establish the price change, net welfare effect, timing or magnitude.",
-      "origin_type": "Maritime chokepoint",
-      "investigation_stage": "Single news candidate; primary evidence missing",
-      "evidence_sources_count": 1,
-      "human_reviewed": false,
-      "triage": {
-        "included": true,
-        "kind": "reported action",
-        "score": 7,
-        "priority": "high",
-        "reason": "global commodity or infrastructure channel; concrete reported development",
-        "source_role": "Publication count does not establish independent corroboration"
-      },
-      "news_group_id": "event-77c40fd021f33ca206",
-      "article_count": 1,
-      "publisher_names": [
-        "lloyd's list"
-      ],
-      "publisher_count_heuristic": 1,
-      "related_sources": [
-        {
-          "title": "LPG carrier explodes in Strait of Hormuz - Lloyd's List",
-          "source": "Archive Hormuz Oil recent",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbjQ4a0VuaXp2ZUx5Vm5pSFdCRGpGN3FKdGpWeWk4SV9WWFJkUnlTaS1qa3A5YnVZNmV0VzRZUl9zRFBrVG0zd3l3X3JJUkpIbGs2SEZaOEdTdHVOQXhodUkzd3ppVzdJaEFKQlBGMWFPUjFTWmJLNGZlYnB5em04NHhuRQ?oc=5",
-          "published": "2026-11-17T15:41:52+00:00",
-          "publisher_guess": "lloyd's list"
-        }
-      ],
-      "article_ids": [
-        "77c40fd021f33ca206"
       ],
       "event_status": "Reported event candidate — not independently verified"
     }
